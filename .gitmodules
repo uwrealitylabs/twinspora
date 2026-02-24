@@ -1,3 +1,3 @@
-[submodule "library"]
-	path = library
-	url = https://github.com/uwrealitylabs/library
+[submodule "twinspora/library"]
+	path = twinspora/library
+	url = https://github.com/uwrealitylabs/library.git
