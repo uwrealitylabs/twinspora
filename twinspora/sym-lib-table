@@ -16,4 +16,6 @@
 	(lib (name "Sensor_Motion") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Sensor_Motion.kicad_symdir") (options "") (descr ""))
 	(lib (name "Basic_Capacitors_Resistors") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Basic_Capacitors_Resistors.kicad_symdir") (options "") (descr ""))
 	(lib (name "Oscillator") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Oscillator.kicad_symdir") (options "") (descr ""))
+	(lib (name "Connector_SH1.0") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Connector_SH1.0.kicad_symdir") (options "") (descr ""))
+	(lib (name "Connector_XH2.54") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Connector_XH2.54.kicad_symdir") (options "") (descr ""))
 )
