@@ -18,4 +18,6 @@
 	(lib (name "MCU_WCH") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/MCU_WCH.kicad_symdir") (options "") (descr ""))
 	(lib (name "Memory_Flash") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Memory_Flash.kicad_symdir") (options "") (descr ""))
 	(lib (name "Sensor_Motion") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Sensor_Motion.kicad_symdir") (options "") (descr ""))
+	(lib (name "Connector_Amass") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Connector_Amass.kicad_symdir") (options "") (descr ""))
+	(lib (name "Mechanical") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Mechanical.kicad_symdir") (options "") (descr ""))
 )

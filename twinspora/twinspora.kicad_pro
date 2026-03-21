@@ -53,7 +53,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -94,9 +100,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -136,7 +142,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -186,7 +192,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -213,7 +221,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -493,6 +506,96 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 16,
+        "name": "3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgb(255, 191, 195)",
+        "tuning_profile": "",
+        "wire_width": 8
+      },
+      {
+        "bus_width": 20,
+        "name": "5V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgb(255, 155, 166)",
+        "tuning_profile": "",
+        "wire_width": 10
+      },
+      {
+        "bus_width": 24,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(188, 188, 188)",
+        "tuning_profile": "",
+        "wire_width": 12
+      },
+      {
+        "bus_width": 24,
+        "name": "H_PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 9,
+        "schematic_color": "rgb(255, 3, 10)",
+        "tuning_profile": "",
+        "wire_width": 12
+      },
+      {
+        "bus_width": 12,
+        "name": "SPI1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgb(80, 176, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "SPI2",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgb(81, 85, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "SPI3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(190, 114, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "SPI4",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 130, 248)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "TIM1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgb(78, 255, 237)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "TIM2",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(91, 255, 133)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -500,7 +603,64 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "H_PWR",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "H_PWR",
+        "pattern": "/PH*"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/BUCK"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/5V*"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "TIM1",
+        "pattern": "/TIM1*"
+      },
+      {
+        "netclass": "TIM2",
+        "pattern": "/TIM8*"
+      },
+      {
+        "netclass": "SPI1",
+        "pattern": "/SPI1*"
+      },
+      {
+        "netclass": "SPI2",
+        "pattern": "/SPI2*"
+      },
+      {
+        "netclass": "SPI3",
+        "pattern": "/SPI3*"
+      },
+      {
+        "netclass": "SPI4",
+        "pattern": "/SPI4*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -520,9 +680,9 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "D:\\gehub\\dubIS\\data\\twinspora.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -584,12 +744,48 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Symbol Name",
+          "name": "Symbol Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -642,13 +838,21 @@
         "uuid": "64e594d2-0aaa-4fb1-a4b5-254d61e53018"
       }
     ],
-    "used_designators": "J8-14,R7,R14-16,R19,R21,R23-44,LED3-4,C21-23,C28-30,C35-68,L3-4,D4-6,#PWR59-116,Q2,U4,U11-18,X3",
+    "used_designators": "C6,U2-3,U10-11,H13-16",
     "variants": []
   },
   "sheets": [
     [
       "64e594d2-0aaa-4fb1-a4b5-254d61e53018",
       "twinspora"
+    ],
+    [
+      "e10c8a45-fef0-4bcf-826b-88ad718f533d",
+      "motor_driver"
+    ],
+    [
+      "7d96679b-218a-4072-9a5c-233e6796257a",
+      "motor_driver1"
     ]
   ],
   "text_variables": {},
