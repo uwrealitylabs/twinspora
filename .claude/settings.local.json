@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:datasheet.lcsc.com)",
+      "WebFetch(domain:www.st.com)",
+      "WebFetch(domain:www.lcsc.com)",
+      "WebSearch"
     ]
   }
 }
