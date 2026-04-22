@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20260101)
+	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "64e594d2-0aaa-4fb1-a4b5-254d61e53018")
@@ -18051,7 +18051,7 @@
 			(uuid "08b314d0-fd80-4c4b-adbd-741fb7ed246f")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "LED1")
 					(unit 1)
@@ -18418,7 +18418,7 @@
 			(uuid "48300c08-a673-424a-9001-79db372298bc")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "C49")
 					(unit 1)
@@ -18758,7 +18758,7 @@
 			(uuid "2b700e72-437d-4ec6-ac97-29f512353b0c")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "#PWR18")
 					(unit 1)
@@ -19435,7 +19435,7 @@
 			(uuid "9a5da85e-23a6-450e-949e-6e6adad92c4c")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "R4")
 					(unit 1)
@@ -19628,7 +19628,7 @@
 			(uuid "55a8817f-d6b9-4427-a2c1-64720c78d2dc")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J5")
 					(unit 1)
@@ -21008,7 +21008,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "FID1")
 					(unit 1)
@@ -21277,7 +21277,7 @@
 			(uuid "67d1e0f9-a917-4a3f-952c-d81c5796d730")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "U1")
 					(unit 1)
@@ -21736,7 +21736,7 @@
 			(uuid "c0b980d8-5b74-4704-9a0f-f3b2e4cd296c")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "LED2")
 					(unit 1)
@@ -21997,7 +21997,7 @@
 			(uuid "67caa95e-ebde-43b4-a431-492ea88c252b")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "TP1")
 					(unit 1)
@@ -22446,7 +22446,7 @@
 			(uuid "ac1688c4-d679-4e54-a7cd-6084182e8b87")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J4")
 					(unit 1)
@@ -23382,7 +23382,7 @@
 			(uuid "e164051b-fca9-4424-9bf6-63f4f0cc6688")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J3")
 					(unit 1)
@@ -23657,7 +23657,7 @@
 			(uuid "c58f0d2c-4335-4c5b-9592-a94ebf06e0b5")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "H1")
 					(unit 1)
@@ -23837,7 +23837,7 @@
 			(uuid "4866238b-7978-451b-8072-c16b73257463")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J2")
 					(unit 1)
@@ -25225,7 +25225,7 @@
 			(uuid "ceaaf133-923f-4dbc-bbfd-7e9be0147588")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "R5")
 					(unit 1)
@@ -25408,7 +25408,7 @@
 			(uuid "a8ffac0e-d48d-4784-bd94-e7025b306ced")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "C10")
 					(unit 1)
@@ -25981,7 +25981,7 @@
 			(uuid "9e6f5ede-40ce-4c1e-a14d-eb193e620035")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J6")
 					(unit 1)
@@ -26502,7 +26502,7 @@
 			(uuid "a2b0ccdc-a62a-4ebd-8816-c321edc7a1cf")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "R1")
 					(unit 1)
@@ -26764,7 +26764,7 @@
 			(uuid "3b118784-3955-41df-83f5-5474fca0a686")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "U2")
 					(unit 1)
@@ -27192,7 +27192,7 @@
 			(uuid "31d3cd80-4390-4456-bc91-2cffe918b81a")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "U5")
 					(unit 1)
@@ -27392,7 +27392,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "96a5466b-eae9-4819-9b3c-0b10215e522f")
 		(property "Reference" "J13"
 			(at 55.88 251.46 0)
@@ -29234,7 +29234,7 @@
 			(uuid "e6b2a93c-0ace-44c6-b6a8-232be69afc98")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "X1")
 					(unit 1)
@@ -29355,7 +29355,7 @@
 			(uuid "2f0ff38c-d7d3-41e9-ae6f-59d0c64b885c")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J12")
 					(unit 1)
@@ -29447,7 +29447,7 @@
 			(uuid "abd2ac40-4756-4911-ade9-89d389c936e4")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "H13")
 					(unit 1)
@@ -29645,7 +29645,7 @@
 			(uuid "0543406d-8a63-4803-931a-24ecb37e6a51")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J10")
 					(unit 1)
@@ -29999,7 +29999,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bd522f69-a062-4686-a8d4-e85dfc5fc47f")
 		(property "Reference" "J7"
 			(at 40.64 224.79 0)
@@ -30949,7 +30949,7 @@
 			(uuid "9e526108-6ab0-4bdf-b265-f6a87c322693")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J1")
 					(unit 1)
@@ -33451,7 +33451,7 @@
 			(uuid "8ea1c75f-9149-4682-8f58-06d982696bf1")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "J11")
 					(unit 1)
@@ -34042,7 +34042,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(page "4")
 				)
@@ -34474,7 +34474,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(page "2")
 				)

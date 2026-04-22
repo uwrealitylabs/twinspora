@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20260101)
+	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "bb452f0c-54ff-4d07-8e11-fac8e020b89b")
@@ -3112,7 +3112,7 @@
 			(uuid "6a119346-045b-4e6b-b688-3204c8ec2e57")
 		)
 		(instances
-			(project ""
+			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
 					(reference "R27")
 					(unit 1)

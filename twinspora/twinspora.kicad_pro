@@ -258,7 +258,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "B"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -848,6 +848,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC ID",
+          "name": "LCSC ID",
           "show": false
         }
       ],
