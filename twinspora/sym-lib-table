@@ -23,4 +23,5 @@
 	(lib (name "Transistor_BJT_UWRL") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Transistor_BJT_UWRL.kicad_symdir") (options "") (descr ""))
 	(lib (name "Capacitor_SMD_UWRL") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Capacitor_SMD_UWRL.kicad_symdir") (options "") (descr ""))
 	(lib (name "Connector_HRS_BK22") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Connector_HRS_BK22.kicad_symdir") (options "") (descr ""))
+	(lib (name "Diode_UWRL") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/Diode_UWRL.kicad_symdir") (options "") (descr ""))
 )

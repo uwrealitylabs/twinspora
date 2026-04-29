@@ -3934,193 +3934,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148WS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4148WS"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*SOD?323*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "1N4148WS_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4148WS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:SRV05-4"
 			(pin_names
 				(offset 0)
@@ -4152,7 +3965,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "lemon-pepper-footprints:SOT-23-6"
+			(property "Footprint" "Diode:SOT-23-6"
 				(at 17.78 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4759,6 +4572,159 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode_UWRL:1N4148WS_T4"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148WS_T4"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/295156.html"
+				(at -6.35 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2128"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C2128"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N4148WS_T4_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.524) (xy -1.27 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.524) (xy -1.27 0) (xy 1.27 -1.524) (xy 1.27 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
 							)
 						)
 					)
@@ -20761,7 +20727,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c41e01d-0650-4e6d-97ff-074389457401")
-		(property "Reference" "#FLG010"
+		(property "Reference" "#FLG10"
 			(at 46.355 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -20821,7 +20787,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#FLG010")
+					(reference "#FLG10")
 					(unit 1)
 				)
 			)
@@ -21528,7 +21494,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "29412d40-f7e5-437d-b08f-d73b0346cad2")
-		(property "Reference" "#FLG011"
+		(property "Reference" "#FLG11"
 			(at 22.225 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -21588,7 +21554,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#FLG011")
+					(reference "#FLG11")
 					(unit 1)
 				)
 			)
@@ -21685,7 +21651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a730297-510a-4206-9bda-8e8c6014b4f2")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR90"
 			(at 102.87 279.4 0)
 			(hide yes)
 			(show_name no)
@@ -21745,7 +21711,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR090")
+					(reference "#PWR90")
 					(unit 1)
 				)
 			)
@@ -22365,7 +22331,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "313ef8ab-a486-426c-bd57-7ab27a59abbe")
-		(property "Reference" "#FLG09"
+		(property "Reference" "#FLG9"
 			(at 71.12 221.615 0)
 			(hide yes)
 			(show_name no)
@@ -22425,7 +22391,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#FLG09")
+					(reference "#FLG9")
 					(unit 1)
 				)
 			)
@@ -23537,7 +23503,7 @@
 		(dnp no)
 		(uuid "3f3ad079-b865-4f53-84c4-acd59a9b049d")
 		(property "Reference" "R32"
-			(at 78.74 242.57 0)
+			(at 74.93 242.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24295,7 +24261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49fa7a28-7349-48c0-8e6e-da034978648a")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR85"
 			(at 25.4 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -24355,7 +24321,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR085")
+					(reference "#PWR85")
 					(unit 1)
 				)
 			)
@@ -25748,7 +25714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "629b9559-eb29-404a-a5b8-65e6ec99dce3")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR84"
 			(at 41.91 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -25808,7 +25774,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR084")
+					(reference "#PWR84")
 					(unit 1)
 				)
 			)
@@ -28027,7 +27993,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" ""
 			(at 149.86 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -28423,14 +28389,13 @@
 		(dnp no)
 		(uuid "87cad0c8-d919-4d41-bf3c-a85714c3cacb")
 		(property "Reference" "J12"
-			(at 73.66 43.1802 0)
+			(at 62.738 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "XY-SH1_0-3A61"
@@ -28558,7 +28523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lemon-pepper-footprints:SOT-23-6"
+		(property "Footprint" "Diode:SOT-23-6"
 			(at 273.05 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -28820,7 +28785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lemon-pepper-footprints:SOT-23-6"
+		(property "Footprint" "Diode:SOT-23-6"
 			(at 157.48 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -28981,7 +28946,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d3197bb-9ce3-439a-80b2-017ef500e383")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR88"
 			(at 113.03 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -29041,7 +29006,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR088")
+					(reference "#PWR88")
 					(unit 1)
 				)
 			)
@@ -29931,7 +29896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e8065a1-a2e7-4f4f-a490-393cd706f699")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR87"
 			(at 58.42 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -29991,7 +29956,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR087")
+					(reference "#PWR87")
 					(unit 1)
 				)
 			)
@@ -30192,7 +30157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a142d8a0-1c68-481b-abe6-6bd7c510cb68")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR89"
 			(at 69.85 269.24 0)
 			(hide yes)
 			(show_name no)
@@ -30252,7 +30217,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR089")
+					(reference "#PWR89")
 					(unit 1)
 				)
 			)
@@ -30651,7 +30616,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
+		(lib_id "Diode_UWRL:1N4148WS_T4")
 		(at 231.14 49.53 0)
 		(mirror y)
 		(unit 1)
@@ -30663,7 +30628,7 @@
 		(dnp no)
 		(uuid "a758823a-616d-4a6d-9dc2-4cab71d4e1a7")
 		(property "Reference" "D1"
-			(at 231.14 43.18 0)
+			(at 231.14 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30672,8 +30637,8 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 231.14 45.72 0)
+		(property "Value" "1N4148WS_T4"
+			(at 231.14 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30682,8 +30647,20 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 231.14 53.975 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 231.14 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/295156.html"
+			(at 237.49 58.166 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30691,9 +30668,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+		(property "Description" ""
 			(at 231.14 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30704,29 +30682,7 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 231.14 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 231.14 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "LCSC" "C2128"
 			(at 231.14 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -31502,7 +31458,7 @@
 		(dnp no)
 		(uuid "b0fd850a-4781-4ed6-b958-a5c564a14955")
 		(property "Reference" "R33"
-			(at 106.68 237.49 0)
+			(at 106.68 233.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32210,7 +32166,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bec1bb55-81da-4821-b4b4-efab302af408")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG8"
 			(at 106.68 221.615 0)
 			(hide yes)
 			(show_name no)
@@ -32270,7 +32226,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#FLG08")
+					(reference "#FLG8")
 					(unit 1)
 				)
 			)
@@ -32549,7 +32505,7 @@
 		(dnp no)
 		(uuid "c1c51554-c8fc-4a0a-883e-830870910ca5")
 		(property "Reference" "R34"
-			(at 93.98 271.78 0)
+			(at 93.98 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32941,7 +32897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3fe538a-73e1-4d78-8527-035ea8649a00")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR83"
 			(at 26.67 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -33001,7 +32957,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR083")
+					(reference "#PWR83")
 					(unit 1)
 				)
 			)
@@ -33019,7 +32975,7 @@
 		(dnp no)
 		(uuid "c4f5842d-95f2-458a-80f0-a990166bb822")
 		(property "Reference" "R3"
-			(at 149.606 116.84 0)
+			(at 146.05 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33992,7 +33948,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
+		(lib_id "Diode_UWRL:1N4148WS_T4")
 		(at 64.77 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -34003,7 +33959,7 @@
 		(dnp no)
 		(uuid "d1dc2973-e99d-4c96-b437-89c9c147c875")
 		(property "Reference" "D4"
-			(at 64.77 226.06 0)
+			(at 64.77 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34012,8 +33968,8 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 64.77 228.6 0)
+		(property "Value" "1N4148WS_T4"
+			(at 64.77 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34022,8 +33978,20 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 64.77 236.855 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 64.77 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/295156.html"
+			(at 58.42 241.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34031,9 +33999,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+		(property "Description" ""
 			(at 64.77 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -34044,29 +34013,7 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 64.77 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 64.77 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "LCSC" "C2128"
 			(at 64.77 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -35463,7 +35410,7 @@
 		(dnp no)
 		(uuid "ef9c130e-578b-447e-8bcb-ce6d1d98c992")
 		(property "Reference" "U14"
-			(at 76.2 228.346 90)
+			(at 77.47 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35473,7 +35420,7 @@
 			)
 		)
 		(property "Value" "FMMT620TA"
-			(at 75.946 230.632 90)
+			(at 73.66 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36001,7 +35948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4de8f44-204c-416e-a042-1413f08fc096")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR86"
 			(at 43.18 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -36061,7 +36008,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "#PWR086")
+					(reference "#PWR86")
 					(unit 1)
 				)
 			)
