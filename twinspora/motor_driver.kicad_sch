@@ -18,7 +18,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 3.81 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -38,7 +38,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:R0402"
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -156,7 +156,7 @@
 				)
 			)
 			(symbol "0402WGF1003TCE_1_1"
-				(text "100kΩ"
+				(text "100k"
 					(at 0 2.032 0)
 					(effects
 						(font
@@ -168,7 +168,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Basic_Capacitors_Resistors:0402WGF5101TCE"
+		(symbol "Basic_Capacitors_Resistors:0402WGF3300TCE"
 			(pin_numbers
 				(hide yes)
 			)
@@ -181,7 +181,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 3.81 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -190,7 +190,7 @@
 					)
 				)
 			)
-			(property "Value" "0402WGF5101TCE"
+			(property "Value" "0402WGF3300TCE"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -201,7 +201,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:R0402"
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -225,7 +225,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor"
+			(property "Description" "RES 330Ω ±1% 62.5mW 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -236,7 +236,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C25905"
+			(property "LCSC" "C25104"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -247,7 +247,7 @@
 					)
 				)
 			)
-			(property "Symbol Name" "0402WGF5101TCE"
+			(property "Symbol Name" "0402WGF3300TCE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -258,7 +258,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "C25905"
+			(property "ki_keywords" "C25104"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -269,7 +269,7 @@
 					)
 				)
 			)
-			(symbol "0402WGF5101TCE_0_1"
+			(symbol "0402WGF3300TCE_0_1"
 				(rectangle
 					(start -2.54 1.016)
 					(end 2.54 -1.016)
@@ -318,8 +318,8 @@
 					)
 				)
 			)
-			(symbol "0402WGF5101TCE_1_1"
-				(text "5.1kΩ"
+			(symbol "0402WGF3300TCE_1_1"
+				(text "330Ω"
 					(at 0 2.032 0)
 					(effects
 						(font
@@ -344,7 +344,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 0 4.826 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -364,7 +364,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -944,7 +944,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 0 5.08 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -954,7 +954,7 @@
 				)
 			)
 			(property "Value" "GRM21BR61H106KE43L"
-				(at 0 -2.54 0)
+				(at 0 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -964,7 +964,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+			(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -977,7 +977,7 @@
 				)
 			)
 			(property "Datasheet" "https://item.szlcsc.com/373011.html"
-				(at -5.588 -11.303 0)
+				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -989,7 +989,7 @@
 				)
 			)
 			(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-				(at -3.302 -11.43 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1011,7 +1011,7 @@
 				)
 			)
 			(property "Symbol Name" "GRM21BR61H106KE43L"
-				(at -1.016 -5.842 0)
+				(at 0 -4.064 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1120,7 +1120,220 @@
 			)
 			(symbol "GRM21BR61H106KE43L_1_1"
 				(text "10uF"
-					(at 0 3.302 0)
+					(at 0 3.048 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(color 163 59 255 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capacitor_SMD_UWRL:EEEFT1H331GP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "EEEFT1H331GP"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD_UWRL:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/245683.html"
+				(at -2.286 0.127 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C542207"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C542207"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EEEFT1H331GP_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy -1.778 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 1.778) (xy -0.508 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.1278 -1.7526)
+					(mid 0.4218 0.0211)
+					(end 1.1506 1.7856)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(symbol "EEEFT1H331GP_1_1"
+				(text "330uF"
+					(at 0 3.048 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1331,7 +1544,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0 3.302 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1340,8 +1553,8 @@
 					)
 				)
 			)
-			(property "Value" "BZT52B5V1S"
-				(at 0 -3.302 0)
+			(property "Value" "BZT52B5V1S_C19077434"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1350,7 +1563,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode:SOD-323_L1.7-W1.3-LS2.6-RD"
+			(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1678,6 +1891,207 @@
 						(font
 							(size 1.27 1.27)
 							(color 163 59 255 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED:KT-0603R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LED"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KT-0603R"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LED:LED0603-RD"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/347874.html"
+				(at -2.286 0.127 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2286"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C2286"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "KT-0603R_0_1"
+				(polyline
+					(pts
+						(xy -3.81 3.302) (xy -2.794 2.794) (xy -3.302 2.286) (xy -3.81 3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 4.318) (xy -1.778 3.81) (xy -2.286 3.302) (xy -2.794 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 1.524) (xy -3.81 3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.54) (xy -2.794 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.524) (xy -1.27 0) (xy 1.27 1.778) (xy 1.27 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
 						)
 					)
 				)
@@ -3093,6 +3507,12 @@
 		(uuid "5443a251-5a81-4ef6-8388-7f46c6e472d4")
 	)
 	(junction
+		(at 184.15 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56805005-e941-45e7-84be-1e13996eaabd")
+	)
+	(junction
 		(at 176.53 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3111,7 +3531,7 @@
 		(uuid "6066c589-1f3d-4bae-8507-f561bb50a2bc")
 	)
 	(junction
-		(at 104.14 110.49)
+		(at 95.25 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6677ea52-eee0-43ee-a2b8-068d5503d424")
@@ -3133,12 +3553,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75ae4e7c-3c76-421f-9ca2-d6c5188dfc85")
-	)
-	(junction
-		(at 184.15 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7726dac8-0d43-4524-9224-988b0cb0b95a")
 	)
 	(junction
 		(at 194.31 92.71)
@@ -3177,6 +3591,12 @@
 		(uuid "932c0e45-e0bc-45c5-8109-53ce640c2776")
 	)
 	(junction
+		(at 146.05 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99b78256-0578-4805-bcb4-b15a27971d8e")
+	)
+	(junction
 		(at 184.15 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3189,16 +3609,16 @@
 		(uuid "a691edeb-4d2d-4150-9a8e-dec9f05c7f64")
 	)
 	(junction
+		(at 194.31 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b882c8b8-5b12-418c-82e4-a345cf161abe")
+	)
+	(junction
 		(at 194.31 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2f38489-978d-43b2-aaf2-aaa7ec7525cb")
-	)
-	(junction
-		(at 110.49 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3315936-edf6-4689-97ca-97002ea48327")
 	)
 	(junction
 		(at 167.64 107.95)
@@ -3225,6 +3645,12 @@
 		(uuid "f0b1b57c-b92b-48ef-a84b-c4c9297fd364")
 	)
 	(junction
+		(at 184.15 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f222717b-a864-47a0-b6d5-0bac85b363f7")
+	)
+	(junction
 		(at 161.29 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3233,6 +3659,10 @@
 	(no_connect
 		(at 161.29 69.85)
 		(uuid "0c36d2fd-1242-4ff7-adb0-bb2ebe6a0f07")
+	)
+	(no_connect
+		(at 0.6858 0.6858)
+		(uuid "35b7ceea-4cd3-4cd5-8879-3c2964f213a6")
 	)
 	(no_connect
 		(at 125.73 115.57)
@@ -3244,13 +3674,33 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 110.49) (xy 104.14 107.95)
+			(xy 95.25 110.49) (xy 95.25 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "08da8985-83a2-466f-bc18-b98e8918dec7")
+	)
+	(wire
+		(pts
+			(xy 194.31 123.19) (xy 194.31 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf10d75-e13b-4821-aeb1-4a8e2d777062")
+	)
+	(wire
+		(pts
+			(xy 109.22 95.25) (xy 109.22 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e428fcd-318f-4d26-830f-c9efda47cd0d")
 	)
 	(wire
 		(pts
@@ -3264,7 +3714,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 110.49) (xy 125.73 110.49)
+			(xy 184.15 134.62) (xy 184.15 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15cecd50-239b-4ea4-917b-2f9416e81591")
+	)
+	(wire
+		(pts
+			(xy 95.25 110.49) (xy 125.73 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3394,6 +3854,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 85.09) (xy 109.22 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ef02f4a-ca2a-496c-9b06-649f65890e2b")
+	)
+	(wire
+		(pts
 			(xy 194.31 58.42) (xy 194.31 62.23)
 		)
 		(stroke
@@ -3411,6 +3881,16 @@
 			(type default)
 		)
 		(uuid "48ad0d3c-396c-42bb-a86b-ac8833fe593a")
+	)
+	(wire
+		(pts
+			(xy 146.05 53.34) (xy 146.05 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bc98a61-aca4-4199-9b70-0baf2b5be2f5")
 	)
 	(wire
 		(pts
@@ -3464,7 +3944,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 123.19) (xy 104.14 127)
+			(xy 95.25 123.19) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
@@ -3474,7 +3954,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 95.25) (xy 110.49 102.87)
+			(xy 115.57 83.82) (xy 115.57 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3524,7 +4004,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 113.03) (xy 104.14 110.49)
+			(xy 125.73 107.95) (xy 125.73 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77dcd2e1-fe4c-4309-bf69-21df75383775")
+	)
+	(wire
+		(pts
+			(xy 95.25 113.03) (xy 95.25 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3644,6 +4134,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 123.19) (xy 184.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9219e3c2-dbfd-436f-8f6e-d7d176a1b680")
+	)
+	(wire
+		(pts
 			(xy 146.05 62.23) (xy 146.05 64.77)
 		)
 		(stroke
@@ -3694,7 +4194,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 102.87) (xy 125.73 102.87)
+			(xy 115.57 102.87) (xy 125.73 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3754,17 +4254,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 102.87) (xy 110.49 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0504f0f-6642-4fe5-9e13-125175195ac3")
-	)
-	(wire
-		(pts
-			(xy 104.14 95.25) (xy 104.14 97.79)
+			(xy 95.25 95.25) (xy 95.25 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3824,13 +4314,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 107.95) (xy 125.73 107.95)
+			(xy 125.73 106.68) (xy 109.22 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dcd90e70-705f-4c3b-94e4-86823c36c9d8")
+		(uuid "df201939-a69f-45a9-9b5c-3dcc08ac9ada")
 	)
 	(wire
 		(pts
@@ -3841,16 +4331,6 @@
 			(type default)
 		)
 		(uuid "e170851d-cdec-47bf-bc6e-43be5fbb6501")
-	)
-	(wire
-		(pts
-			(xy 184.15 123.19) (xy 184.15 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e469fcbc-c6c0-48f9-9405-61c4c2ba3b4b")
 	)
 	(wire
 		(pts
@@ -3988,6 +4468,17 @@
 		)
 		(uuid "2950a06e-af90-4b63-83e4-2d276a39c8a9")
 	)
+	(hierarchical_label "nFAULT"
+		(shape input)
+		(at 125.73 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "37cac33c-e6dc-42ab-bb20-7e0f9811410b")
+	)
 	(hierarchical_label "MISO"
 		(shape input)
 		(at 125.73 85.09 180)
@@ -4020,6 +4511,17 @@
 			(justify right)
 		)
 		(uuid "75c9e2e7-01e0-4c30-80e5-2592b7c5a232")
+	)
+	(hierarchical_label "VCP"
+		(shape passive)
+		(at 146.05 53.34 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8223b29e-4931-4ba9-ae2b-fadf8d0b0fe0")
 	)
 	(hierarchical_label "CH1"
 		(shape input)
@@ -4143,8 +4645,90 @@
 		(uuid "f8eed6d0-c489-4e19-a763-2c533ea2d3eb")
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f3c915-ba22-4594-a9d9-803d2ac50395")
+		(property "Reference" "#PWR091"
+			(at 109.22 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 109.22 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78d4bef3-800b-4d95-a09d-cfaef0b09dbf")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "#PWR092")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF1003TCE")
-		(at 104.14 102.87 270)
+		(at 95.25 102.87 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4155,7 +4739,7 @@
 		(dnp no)
 		(uuid "0b7a8ced-e9ab-49cb-8449-0f68b65d718c")
 		(property "Reference" "R19"
-			(at 107.95 102.87 0)
+			(at 96.52 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4165,7 +4749,7 @@
 			)
 		)
 		(property "Value" "0402WGF1003TCE"
-			(at 101.6 102.87 0)
+			(at 92.71 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4175,8 +4759,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:R0402"
-			(at 93.98 102.87 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 85.09 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4188,7 +4772,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 104.267 105.156 0)
+			(at 95.377 105.156 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4200,7 +4784,7 @@
 			)
 		)
 		(property "Description" "100kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 104.14 102.87 0)
+			(at 95.25 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4211,7 +4795,7 @@
 			)
 		)
 		(property "LCSC" "C25741"
-			(at 104.14 102.87 0)
+			(at 95.25 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,7 +4806,7 @@
 			)
 		)
 		(property "Symbol Name" "0402WGF1003TCE"
-			(at 104.14 102.87 0)
+			(at 95.25 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4253,7 +4837,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 110.49 95.25 0)
+		(at 115.57 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4263,8 +4847,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d25c1d3-5d53-4d00-9341-074b03866191")
-		(property "Reference" "#PWR035"
-			(at 110.49 99.06 0)
+		(property "Reference" "#PWR35"
+			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4275,7 +4859,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 110.49 90.17 0)
+			(at 115.57 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4285,7 +4869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 95.25 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4296,7 +4880,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 95.25 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4307,7 +4891,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 110.49 95.25 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4323,11 +4907,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR042")
+					(reference "#PWR42")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR035")
+					(reference "#PWR35")
 					(unit 1)
 				)
 			)
@@ -4335,7 +4919,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 127 0)
+		(at 95.25 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4345,8 +4929,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10c036be-fa0e-40bd-abcb-9da1f0d06e0d")
-		(property "Reference" "#PWR036"
-			(at 104.14 133.35 0)
+		(property "Reference" "#PWR36"
+			(at 95.25 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4357,7 +4941,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 132.08 0)
+			(at 95.25 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4367,7 +4951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 127 0)
+			(at 95.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4378,7 +4962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 127 0)
+			(at 95.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,7 +4973,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 127 0)
+			(at 95.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4405,11 +4989,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR041")
+					(reference "#PWR41")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR036")
+					(reference "#PWR36")
 					(unit 1)
 				)
 			)
@@ -4644,7 +5228,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 125.73 0)
+			(at 189.23 129.794 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4654,7 +5238,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -4667,7 +5251,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 134.493 0)
+			(at 186.944 123.063 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4679,7 +5263,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 134.62 0)
+			(at 189.23 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4701,7 +5285,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 129.032 0)
+			(at 189.23 127.254 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4742,7 +5326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22da791d-7bd8-4490-836f-6cc4e1c7d50d")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR33"
 			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4802,11 +5386,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR045")
+					(reference "#PWR45")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR033")
+					(reference "#PWR33")
 					(unit 1)
 				)
 			)
@@ -4835,7 +5419,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 74.93 0)
+			(at 189.23 78.994 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4845,7 +5429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4858,7 +5442,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 83.693 0)
+			(at 186.944 72.263 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4870,7 +5454,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 83.82 0)
+			(at 189.23 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4892,7 +5476,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 78.232 0)
+			(at 189.23 76.454 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4923,7 +5507,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 104.14 95.25 0)
+		(at 95.25 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4933,8 +5517,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29926bea-97fa-41c3-a519-291a241a3a5f")
-		(property "Reference" "#PWR034"
-			(at 104.14 99.06 0)
+		(property "Reference" "#PWR34"
+			(at 95.25 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4945,7 +5529,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 104.14 90.17 0)
+			(at 95.25 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4955,7 +5539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 95.25 0)
+			(at 95.25 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4966,7 +5550,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 95.25 0)
+			(at 95.25 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +5561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 104.14 95.25 0)
+			(at 95.25 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4993,11 +5577,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR040")
+					(reference "#PWR40")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR034")
+					(reference "#PWR34")
 					(unit 1)
 				)
 			)
@@ -5036,7 +5620,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 189.23 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5124,28 +5708,26 @@
 		(dnp no)
 		(uuid "35e193ce-e6f5-47d6-8298-13ace3171dba")
 		(property "Reference" "J14"
-			(at 218.44 86.3599 0)
+			(at 215.9 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 218.44 88.8999 0)
+			(at 215.9 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_DORABO:CONN-TH_DB125-2.54-3P-GN"
+		(property "Footprint" ""
 			(at 215.9 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5223,7 +5805,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 115.57 0)
+			(at 189.23 119.634 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5233,7 +5815,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -5246,7 +5828,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 124.333 0)
+			(at 186.944 112.903 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5258,7 +5840,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 124.46 0)
+			(at 189.23 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5280,7 +5862,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 118.872 0)
+			(at 189.23 117.094 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5321,7 +5903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5522121f-0fb0-484b-9434-528e086607c6")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR38"
 			(at 143.51 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5381,11 +5963,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR044")
+					(reference "#PWR44")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR038")
+					(reference "#PWR38")
 					(unit 1)
 				)
 			)
@@ -5513,7 +6095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7008b3b7-b22c-4050-adad-a0034055e200")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR39"
 			(at 166.37 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5573,11 +6155,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR046")
+					(reference "#PWR46")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR039")
+					(reference "#PWR39")
 					(unit 1)
 				)
 			)
@@ -5595,7 +6177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7944ce74-8490-4366-ba09-a73f5142c940")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR37"
 			(at 123.19 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5655,11 +6237,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR043")
+					(reference "#PWR43")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR037")
+					(reference "#PWR37")
 					(unit 1)
 				)
 			)
@@ -5677,7 +6259,7 @@
 		(dnp no)
 		(uuid "7be19cb9-c1aa-4517-bde9-3b77c0ad291b")
 		(property "Reference" "C28"
-			(at 181.61 101.6 0)
+			(at 177.8 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5687,7 +6269,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 173.99 101.6 0)
+			(at 169.926 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5697,7 +6279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 166.37 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5710,7 +6292,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 165.227 96.012 0)
+			(at 176.657 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5722,7 +6304,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 165.1 98.298 0)
+			(at 176.53 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5744,7 +6326,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 170.688 100.584 0)
+			(at 172.466 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5775,7 +6357,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 127 0)
+		(at 184.15 139.7 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5786,8 +6368,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93187373-aaba-49ca-88f2-425003286e1b")
-		(property "Reference" "#PWR059"
-			(at 184.15 133.35 0)
+		(property "Reference" "#PWR59"
+			(at 184.15 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,7 +6380,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 132.08 0)
+			(at 184.15 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5808,7 +6390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 127 0)
+			(at 184.15 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5819,7 +6401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 127 0)
+			(at 184.15 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5830,7 +6412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 127 0)
+			(at 184.15 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5846,11 +6428,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR061")
+					(reference "#PWR61")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR059")
+					(reference "#PWR59")
 					(unit 1)
 				)
 			)
@@ -5966,6 +6548,201 @@
 		)
 	)
 	(symbol
+		(lib_id "Capacitor_SMD_UWRL:EEEFT1H331GP")
+		(at 189.23 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d2357ec-39e0-4afc-a322-60e028726598")
+		(property "Reference" "C54"
+			(at 189.23 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EEEFT1H331GP"
+			(at 189.23 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD_UWRL:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
+			(at 189.23 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/245683.html"
+			(at 186.944 134.493 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C542207"
+			(at 189.23 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ec03fa9c-5085-4bd6-ae3a-211d9b3d2bd1")
+		)
+		(pin "1"
+			(uuid "ffdb6db7-b3e4-4067-8fbb-b16b59b393c1")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "C55")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:KT-0603R")
+		(at 109.22 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fc0eb18-b560-4fa4-a348-1c0316bf7663")
+		(property "Reference" "LED4"
+			(at 100.33 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KT-0603R"
+			(at 102.87 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED:LED0603-RD"
+			(at 119.38 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/347874.html"
+			(at 109.093 92.456 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 109.22 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "936aac4a-6663-46a9-b54e-85bc1361d692")
+		)
+		(pin "1"
+			(uuid "9924655c-23f6-4a85-99b8-239d5938d2f3")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "LED5")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
 		(at 189.23 102.87 0)
 		(unit 1)
@@ -5988,7 +6765,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 105.41 0)
+			(at 189.23 109.474 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5998,7 +6775,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6011,7 +6788,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 114.173 0)
+			(at 186.944 102.743 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6023,7 +6800,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 114.3 0)
+			(at 189.23 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6045,7 +6822,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 108.712 0)
+			(at 189.23 106.934 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6303,7 +7080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4453a37-3463-40b3-9638-65fc68318539")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR60"
 			(at 194.31 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -6363,119 +7140,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR062")
+					(reference "#PWR62")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:0402WGF5101TCE")
-		(at 115.57 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c70b9d11-ee3c-41d2-b444-4b11e9a009ff")
-		(property "Reference" "R20"
-			(at 115.57 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0402WGF5101TCE"
-			(at 115.57 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Basic_Capacitors_Resistors:R0402"
-			(at 115.57 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 113.284 107.823 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25905"
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "0402WGF5101TCE"
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c5d84623-4a8c-4f62-9c4b-52be15a11eda")
-		)
-		(pin "1"
-			(uuid "0751a462-1b21-4020-bad4-cc92706156b3")
-		)
-		(instances
-			(project "twinspora"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "R22")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "R20")
+					(reference "#PWR60")
 					(unit 1)
 				)
 			)
@@ -6483,7 +7152,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BZT52B5V1S_C19077434")
-		(at 104.14 118.11 90)
+		(at 95.25 118.11 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6494,7 +7163,7 @@
 		(dnp no)
 		(uuid "c9b007a1-9dfb-4963-9438-628f3c5ca2f9")
 		(property "Reference" "D2"
-			(at 100.838 118.11 0)
+			(at 93.98 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6503,8 +7172,8 @@
 				)
 			)
 		)
-		(property "Value" "BZT52B5V1S"
-			(at 107.442 118.11 0)
+		(property "Value" "BZT52B5V1S_C19077434"
+			(at 97.79 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6513,8 +7182,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode:SOD-323_L1.7-W1.3-LS2.6-RD"
-			(at 114.3 118.11 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 105.41 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6526,7 +7195,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200225/C485496_BB753C4664B20481CFEA6C9542536A94.pdf"
-			(at 104.013 115.824 0)
+			(at 95.123 115.824 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6538,7 +7207,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.14 118.11 0)
+			(at 95.25 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,7 +7218,7 @@
 			)
 		)
 		(property "LCSC" "C19077434"
-			(at 104.14 118.11 0)
+			(at 95.25 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6590,7 +7259,7 @@
 		(dnp no)
 		(uuid "cd57f81d-e8c5-4dc6-b330-7e312299a81f")
 		(property "Reference" "C27"
-			(at 172.72 101.6 0)
+			(at 168.91 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6600,7 +7269,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 165.1 101.6 0)
+			(at 161.036 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6610,7 +7279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 157.48 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6623,7 +7292,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 156.337 96.012 0)
+			(at 167.767 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +7304,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 156.21 98.298 0)
+			(at 167.64 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6657,7 +7326,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 161.798 100.584 0)
+			(at 163.576 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6698,7 +7367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6c833d3-70ff-4fce-88f7-ec4e4ce3728f")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG5"
 			(at 176.53 93.345 0)
 			(hide yes)
 			(show_name no)
@@ -6758,11 +7427,121 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#FLG07")
+					(reference "#FLG7")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#FLG05")
+					(reference "#FLG5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Basic_Capacitors_Resistors:0402WGF3300TCE")
+		(at 109.22 101.6 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3b94682-0319-4060-8d64-518f1ff4dd85")
+		(property "Reference" "R35"
+			(at 104.14 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0402WGF3300TCE"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 119.38 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/323315.html"
+			(at 109.093 99.314 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "RES 330Ω ±1% 62.5mW 0402"
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25104"
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "0402WGF3300TCE"
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d06c3b05-e5f2-43a0-9168-77889fc7cca1")
+		)
+		(pin "2"
+			(uuid "db1a7f17-7eb2-4aae-a076-d2ea18e99d29")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "R36")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -6791,7 +7570,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 85.09 0)
+			(at 189.23 89.154 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6801,7 +7580,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -6814,7 +7593,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 93.853 0)
+			(at 186.944 82.423 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6826,7 +7605,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 93.98 0)
+			(at 189.23 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6848,7 +7627,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 88.392 0)
+			(at 189.23 86.614 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6900,7 +7679,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 95.25 0)
+			(at 189.23 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6910,7 +7689,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 189.23 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6923,7 +7702,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 183.642 104.013 0)
+			(at 186.944 92.583 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6935,7 +7714,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 185.928 104.14 0)
+			(at 189.23 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6957,7 +7736,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 188.214 98.552 0)
+			(at 189.23 96.774 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

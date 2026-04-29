@@ -38,7 +38,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:R0603"
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -181,7 +181,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 0 4.826 0)
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -201,7 +201,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -375,7 +375,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 1.27 0)
+				(at -2.032 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -385,7 +385,7 @@
 				)
 			)
 			(property "Value" "XY-SH1_0-6A51"
-				(at 0 -2.54 0)
+				(at 12.192 -17.018 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -486,7 +486,18 @@
 						(type background)
 					)
 				)
-				(pin bidirectional line
+			)
+			(symbol "XY-SH1_0-6A51_1_1"
+				(text "SH1.0 6A51"
+					(at 4.064 0 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(color 163 59 255 1)
+						)
+					)
+				)
+				(pin passive line
 					(at -5.08 6.35 0)
 					(length 2.54)
 					(name "1"
@@ -504,7 +515,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 3.81 0)
 					(length 2.54)
 					(name "2"
@@ -522,7 +533,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 1.27 0)
 					(length 2.54)
 					(name "3"
@@ -540,7 +551,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 -1.27 0)
 					(length 2.54)
 					(name "4"
@@ -558,7 +569,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 -3.81 0)
 					(length 2.54)
 					(name "5"
@@ -576,7 +587,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -5.08 -6.35 0)
 					(length 2.54)
 					(name "6"
@@ -627,17 +638,6 @@
 							(font
 								(size 1 1)
 							)
-						)
-					)
-				)
-			)
-			(symbol "XY-SH1_0-6A51_1_1"
-				(text "SH 1.0 6A51"
-					(at 3.81 0 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-							(color 84 80 51 1)
 						)
 					)
 				)
@@ -2068,10 +2068,10 @@
 		)
 		(uuid "699b49e3-ef84-4773-8e8c-74a51b1a8bea")
 	)
-	(text_box "SH breakouts for remote motor encoder connection (Must remove existing sensor)"
+	(text_box "SH breakouts for remote motor encoder connection (Desolder 0603 0Ω resistors)"
 		(exclude_from_sim no)
-		(at 182.88 66.04 0)
-		(size 26.67 13.3968)
+		(at 181.61 70.4232 0)
+		(size 24.13 9.5868)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2562,7 +2562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18f4f003-1071-498a-a644-4dc2fe469365")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR75"
 			(at 173.99 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2622,11 +2622,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR076")
+					(reference "#PWR76")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR075")
+					(reference "#PWR75")
 					(unit 1)
 				)
 			)
@@ -2665,7 +2665,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 115.57 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2754,7 +2754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32a17372-fd55-430b-a8af-f8d78431792f")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR73"
 			(at 215.9 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2814,11 +2814,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR078")
+					(reference "#PWR78")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR073")
+					(reference "#PWR73")
 					(unit 1)
 				)
 			)
@@ -2837,7 +2837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "402b9f3c-7b16-46dc-8e49-1609a93dd75e")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR74"
 			(at 176.53 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -2897,11 +2897,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR077")
+					(reference "#PWR77")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR074")
+					(reference "#PWR74")
 					(unit 1)
 				)
 			)
@@ -2919,7 +2919,7 @@
 		(dnp no)
 		(uuid "636de399-a77f-4a63-9557-0c94d002e7e0")
 		(property "Reference" "C33"
-			(at 152.654 110.49 0)
+			(at 156.21 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2939,7 +2939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 167.64 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -3048,7 +3048,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 107.95 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3137,7 +3137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2cd67f9-a408-412c-bf2f-d3d31186e06c")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR48"
 			(at 140.97 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -3197,11 +3197,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR049")
+					(reference "#PWR49")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR048")
+					(reference "#PWR48")
 					(unit 1)
 				)
 			)
@@ -3219,18 +3219,17 @@
 		(dnp no)
 		(uuid "ba041a72-3e2b-405a-8aca-7a9f14dea4b4")
 		(property "Reference" "J8"
-			(at 190.5 101.5999 0)
+			(at 182.118 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "XY-SH1_0-6A51"
-			(at 184.15 104.14 0)
+			(at 196.342 118.618 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3347,7 +3346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc546f9a-330b-4787-a625-d7c44be07daa")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR51"
 			(at 140.97 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -3407,11 +3406,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR052")
+					(reference "#PWR52")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR051")
+					(reference "#PWR51")
 					(unit 1)
 				)
 			)
@@ -3450,7 +3449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3668,7 +3667,7 @@
 		(dnp no)
 		(uuid "d77a06a7-c1ce-439e-b61c-29add87d5a90")
 		(property "Reference" "U10"
-			(at 219.0181 87.63 0)
+			(at 219.0497 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3679,7 +3678,7 @@
 			)
 		)
 		(property "Value" "SRV05-4A"
-			(at 219.0181 90.17 0)
+			(at 219.0497 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3689,7 +3688,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "lemon-pepper-footprints:SOT-23-6"
 			(at 233.68 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -3777,7 +3776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9abe8fb-c880-4488-8212-fc5b9ecc573a")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR72"
 			(at 215.9 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -3837,11 +3836,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4"
-					(reference "#PWR079")
+					(reference "#PWR79")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "#PWR072")
+					(reference "#PWR72")
 					(unit 1)
 				)
 			)
