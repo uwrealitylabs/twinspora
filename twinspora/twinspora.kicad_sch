@@ -11314,12 +11314,6 @@
 		(uuid "276a2ec1-815e-43fd-adae-f383da7629ba")
 	)
 	(junction
-		(at 322.58 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28f662a6-f4d9-4a2d-80fe-b4dd414dff1b")
-	)
-	(junction
 		(at 119.38 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11642,6 +11636,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d9f495c-6478-4a72-8315-cccdef03ebfa")
+	)
+	(junction
+		(at 328.93 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1b975a1-3408-445c-a4d8-eb074d5a4f72")
 	)
 	(junction
 		(at 289.56 41.91)
@@ -13597,7 +13597,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 60.96) (xy 322.58 66.04)
+			(xy 328.93 60.96) (xy 328.93 66.04)
 		)
 		(stroke
 			(width 0)
@@ -13934,16 +13934,6 @@
 			(type default)
 		)
 		(uuid "99ae2ce5-08ef-436a-abc8-21456332f23b")
-	)
-	(wire
-		(pts
-			(xy 322.58 33.02) (xy 322.58 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aa47061-999e-478a-a3d8-c4f947259769")
 	)
 	(wire
 		(pts
@@ -14577,6 +14567,16 @@
 	)
 	(wire
 		(pts
+			(xy 328.93 46.99) (xy 328.93 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8cd5bd0-e25c-4644-8e85-dae541904d8e")
+	)
+	(wire
+		(pts
 			(xy 81.28 232.41) (xy 82.55 232.41)
 		)
 		(stroke
@@ -14594,6 +14594,16 @@
 			(type default)
 		)
 		(uuid "c99af2a7-5ad0-41a0-a972-a73b1145975b")
+	)
+	(wire
+		(pts
+			(xy 317.5 49.53) (xy 334.01 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a7105a-4d6d-4449-b1b6-11c48072cd95")
 	)
 	(wire
 		(pts
@@ -14897,6 +14907,16 @@
 	)
 	(wire
 		(pts
+			(xy 328.93 46.99) (xy 334.01 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ac26e9-7bb9-4f04-b196-376a18c4c18a")
+	)
+	(wire
+		(pts
 			(xy 25.4 240.03) (xy 25.4 259.08)
 		)
 		(stroke
@@ -14997,7 +15017,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 46.99) (xy 322.58 50.8)
+			(xy 328.93 33.02) (xy 328.93 46.99)
 		)
 		(stroke
 			(width 0)
@@ -15014,6 +15034,16 @@
 			(type default)
 		)
 		(uuid "ed0d2305-34a6-4d8b-9418-dc6272c143d3")
+	)
+	(wire
+		(pts
+			(xy 317.5 41.91) (xy 334.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee307df9-92d6-4cf5-9493-be6c7f95f66d")
 	)
 	(wire
 		(pts
@@ -15124,16 +15154,6 @@
 			(type default)
 		)
 		(uuid "f463209c-f3b6-46de-9904-dd4d50e5a506")
-	)
-	(wire
-		(pts
-			(xy 322.58 46.99) (xy 334.01 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46a0ae2-6946-4d89-9b9c-c263c411a48f")
 	)
 	(wire
 		(pts
@@ -17740,7 +17760,7 @@
 		(uuid "81cba522-e0bc-46bd-9cad-6580d2500cec")
 	)
 	(label "FDCAN_TX"
-		(at 334.01 41.91 180)
+		(at 317.5 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17910,7 +17930,7 @@
 		(uuid "a2afd8f9-c157-473e-b530-eb14d99503ce")
 	)
 	(label "FDCAN_RX"
-		(at 334.01 49.53 180)
+		(at 317.5 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20639,7 +20659,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 322.58 66.04 0)
+		(at 328.93 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20650,7 +20670,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bf3160e-1c1b-4a5f-a3ef-8dfd3a289c31")
 		(property "Reference" "#PWR29"
-			(at 322.58 72.39 0)
+			(at 328.93 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20661,7 +20681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 322.58 71.12 0)
+			(at 328.93 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20671,7 +20691,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 322.58 66.04 0)
+			(at 328.93 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20682,7 +20702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 322.58 66.04 0)
+			(at 328.93 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20693,7 +20713,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 322.58 66.04 0)
+			(at 328.93 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26773,7 +26793,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 322.58 33.02 0)
+		(at 328.93 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26784,7 +26804,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e2ab8c5-a772-4ffa-bd70-f109e6e2236a")
 		(property "Reference" "#PWR28"
-			(at 322.58 36.83 0)
+			(at 328.93 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26795,7 +26815,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 322.58 27.94 0)
+			(at 328.93 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26805,7 +26825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 322.58 33.02 0)
+			(at 328.93 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26816,7 +26836,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 322.58 33.02 0)
+			(at 328.93 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26827,7 +26847,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 322.58 33.02 0)
+			(at 328.93 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29626,7 +29646,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05B104KB54PNC")
-		(at 322.58 55.88 90)
+		(at 328.93 55.88 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29636,7 +29656,7 @@
 		(dnp no)
 		(uuid "97cd74cf-e102-4638-9850-ba0a0dfb2e11")
 		(property "Reference" "C24"
-			(at 321.31 55.88 0)
+			(at 327.66 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29646,7 +29666,7 @@
 			)
 		)
 		(property "Value" "CL05B104KB54PNC"
-			(at 325.12 55.88 0)
+			(at 331.47 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29657,7 +29677,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 332.74 55.88 0)
+			(at 339.09 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29669,7 +29689,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/15869.html"
-			(at 322.453 58.166 0)
+			(at 328.803 58.166 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29681,7 +29701,7 @@
 			)
 		)
 		(property "Description" "100nF ±10% 50V Ceramic Capacitor X7R 0402"
-			(at 322.58 55.88 0)
+			(at 328.93 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29692,7 +29712,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 322.58 55.88 0)
+			(at 328.93 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29703,7 +29723,7 @@
 			)
 		)
 		(property "Symbol Name" "CL05B104KB54PNC"
-			(at 322.58 55.88 0)
+			(at 328.93 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
