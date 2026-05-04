@@ -11314,6 +11314,12 @@
 		(uuid "276a2ec1-815e-43fd-adae-f383da7629ba")
 	)
 	(junction
+		(at 195.58 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3072b6d9-465f-45ca-8108-04faf414a673")
+	)
+	(junction
 		(at 119.38 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11536,12 +11542,6 @@
 		(uuid "79d5ee15-7981-412a-8148-fbbaa6b397d0")
 	)
 	(junction
-		(at 195.58 252.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a22adfb-4577-4924-b999-28dd954b3a09")
-	)
-	(junction
 		(at 360.68 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11668,6 +11668,12 @@
 		(uuid "a6617569-f98c-43ba-add8-0eb0e27bd996")
 	)
 	(junction
+		(at 172.72 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6af33db-32a6-4c6e-a228-b12a3f68d694")
+	)
+	(junction
 		(at 350.52 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11726,12 +11732,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc186174-065f-4a92-8b8e-01833fa13a81")
-	)
-	(junction
-		(at 172.72 252.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc1de668-b541-4e9d-89cb-f2e5575a62d7")
 	)
 	(junction
 		(at 271.78 172.72)
@@ -11932,16 +11932,32 @@
 		(uuid "fe7963c2-9ea1-482c-a762-61d2da22fe93")
 	)
 	(no_connect
+		(at 27.94 248.92)
+		(uuid "0498f5f6-74fe-4d25-8e53-baa14ede004e")
+	)
+	(no_connect
+		(at 27.94 214.63)
+		(uuid "255df7b8-332b-4970-9aad-74d2b08ffedc")
+	)
+	(no_connect
 		(at 119.38 48.26)
 		(uuid "357f3e68-c51a-492d-bcd7-14969ce2f08a")
+	)
+	(no_connect
+		(at 27.94 246.38)
+		(uuid "4b1a4ac4-c2d0-46ad-8707-cc9ad1558b38")
 	)
 	(no_connect
 		(at 119.38 50.8)
 		(uuid "514f4ef2-8661-4f99-8ceb-2617900b47c8")
 	)
 	(no_connect
-		(at 107.95 161.29)
-		(uuid "8711ed44-8b31-4979-a491-813652c32a59")
+		(at 27.94 217.17)
+		(uuid "64500b75-5edf-4a89-9849-cd4ff97f9a81")
+	)
+	(no_connect
+		(at 107.95 115.57)
+		(uuid "73d61a56-7371-469d-ba16-a05b841285f1")
 	)
 	(no_connect
 		(at 251.46 255.27)
@@ -12354,16 +12370,6 @@
 			(type default)
 		)
 		(uuid "1af84a70-f7d9-4cd9-b76e-787e5008c18e")
-	)
-	(wire
-		(pts
-			(xy 172.72 252.73) (xy 195.58 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1afaeef3-dd80-4995-a353-f98945ced242")
 	)
 	(wire
 		(pts
@@ -13047,13 +13053,13 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 248.92) (xy 27.94 248.92)
+			(xy 388.62 237.49) (xy 382.27 237.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e51dfad-a8ae-4541-b912-27d702d8ab3b")
+		(uuid "4ef49a9b-caec-4d84-b4bb-8f90b7b69261")
 	)
 	(wire
 		(pts
@@ -13304,16 +13310,6 @@
 			(type default)
 		)
 		(uuid "634ef494-fc82-45fe-aaaa-5b6e3dea5423")
-	)
-	(wire
-		(pts
-			(xy 149.86 252.73) (xy 172.72 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63504ee5-8ffd-4564-b03d-899d175e2808")
 	)
 	(wire
 		(pts
@@ -13687,16 +13683,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 252.73) (xy 218.44 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86bc23bd-7819-43c9-8de9-97158494b679")
-	)
-	(wire
-		(pts
 			(xy 298.45 218.44) (xy 298.45 219.71)
 		)
 		(stroke
@@ -13957,6 +13943,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 252.73) (xy 172.72 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cbb9dc0-05a9-4258-8e21-09132977d6aa")
+	)
+	(wire
+		(pts
 			(xy 43.18 223.52) (xy 43.18 255.27)
 		)
 		(stroke
@@ -14147,16 +14143,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 217.17) (xy 27.94 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8ce8b0e-bbc8-4291-ac53-216f7730f3e5")
-	)
-	(wire
-		(pts
 			(xy 27.94 255.27) (xy 26.67 255.27)
 		)
 		(stroke
@@ -14337,6 +14323,16 @@
 	)
 	(wire
 		(pts
+			(xy 382.27 237.49) (xy 382.27 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b78380c0-6db2-4bd0-aa5d-de6c90a0d29b")
+	)
+	(wire
+		(pts
 			(xy 58.42 50.8) (xy 67.31 50.8)
 		)
 		(stroke
@@ -14464,16 +14460,6 @@
 			(type default)
 		)
 		(uuid "c18d98ac-8c19-445d-a4a8-eee944aba8a6")
-	)
-	(wire
-		(pts
-			(xy 22.86 246.38) (xy 27.94 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c19ba0b5-1bed-4bf8-9569-5a663a91122d")
 	)
 	(wire
 		(pts
@@ -14987,6 +14973,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 252.73) (xy 195.58 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea3385dd-4e41-4ba5-a2da-2dd9bc7c838a")
+	)
+	(wire
+		(pts
 			(xy 137.16 157.48) (xy 137.16 160.02)
 		)
 		(stroke
@@ -15024,6 +15020,16 @@
 			(type default)
 		)
 		(uuid "ebe1d2dc-18f6-4163-a8f2-f35372e1efd6")
+	)
+	(wire
+		(pts
+			(xy 195.58 252.73) (xy 218.44 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec41f00c-8e8c-4cc5-8041-30365fb6319c")
 	)
 	(wire
 		(pts
@@ -15334,16 +15340,6 @@
 			(type default)
 		)
 		(uuid "ff5be851-991d-4fcc-850a-0802dfa598a5")
-	)
-	(wire
-		(pts
-			(xy 22.86 214.63) (xy 27.94 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff676ac9-a7b0-489a-b214-b5a405361de2")
 	)
 	(image
 		(at 242.7853 193.545)
@@ -16739,16 +16735,6 @@
 			"DF9EREREAmL4IiIiIhLQ/wcJMhasVaDkJQAAAABJRU5ErkJggg=="
 		)
 	)
-	(label "CAN_L"
-		(at 22.86 248.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "001026f6-ab67-469f-a0ae-a5d59722c23e")
-	)
 	(label "ADC5_IN1"
 		(at 218.44 129.54 0)
 		(effects
@@ -16768,16 +16754,6 @@
 			(justify right bottom)
 		)
 		(uuid "0147f24b-8c3d-4591-a36d-3ffda0b11b8a")
-	)
-	(label "VCP"
-		(at 107.95 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "023d1833-18bd-412a-b717-2700aa7fed30")
 	)
 	(label "FDCAN_TX"
 		(at 388.62 133.35 180)
@@ -16859,16 +16835,6 @@
 		)
 		(uuid "0eefa7f8-4dfd-425e-9844-c3d282cd904c")
 	)
-	(label "CAN_H"
-		(at 22.86 246.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "11995509-9900-4bd8-bae1-cdcd7597ee3a")
-	)
 	(label "ADC5_IN2"
 		(at 218.44 132.08 0)
 		(effects
@@ -16909,16 +16875,6 @@
 		)
 		(uuid "1448503f-9ade-4a05-87b4-60040e343fc6")
 	)
-	(label "CAN_H"
-		(at 22.86 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "15ab1cda-fac8-4987-a227-0ef8571938fa")
-	)
 	(label "CAN_L"
 		(at 45.72 217.17 0)
 		(effects
@@ -16958,6 +16914,16 @@
 			(justify right bottom)
 		)
 		(uuid "1b02e723-0077-4884-9dde-44eefb7a5146")
+	)
+	(label "VCP"
+		(at 107.95 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b0fd03d-1e33-49c3-afb6-3fbdce2655b6")
 	)
 	(label "GPIO1"
 		(at 182.88 167.64 180)
@@ -17119,16 +17085,6 @@
 		)
 		(uuid "2fec5b2e-17c8-4382-98b6-6c3a3b923e07")
 	)
-	(label "CAN_L"
-		(at 22.86 217.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3048b0e4-8e38-4173-a828-1c5c9beadd61")
-	)
 	(label "PHC2"
 		(at 107.95 153.67 0)
 		(effects
@@ -17188,6 +17144,16 @@
 			(justify right bottom)
 		)
 		(uuid "39f4ff4d-1117-4320-bda1-f8a442f29f38")
+	)
+	(label "VCP"
+		(at 388.62 242.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b16a53a-a9b3-499d-bf9c-5bc8886d025b")
 	)
 	(label "I2C_SCL"
 		(at 388.62 185.42 180)
@@ -18088,6 +18054,16 @@
 			(justify right bottom)
 		)
 		(uuid "b8ca7c3c-7a8c-4dd9-b061-012f0be7939f")
+	)
+	(label "BUCK"
+		(at 388.62 240.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b9df4098-6d47-46a5-9c21-32ad56666342")
 	)
 	(label "TIM1_CH3N"
 		(at 77.47 113.03 180)
@@ -23252,6 +23228,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Test_Point")
+		(at 391.16 240.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a35806e-8d46-4cc6-9941-b1c499508fe9")
+		(property "Reference" "TP45"
+			(at 393.7 240.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 391.16 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 391.16 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 391.16 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "627228e7-d4f9-490a-970d-7daf43904981")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "TP45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05B103KB5NNNC")
 		(at 288.29 133.35 90)
 		(unit 1)
@@ -27668,6 +27722,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 218.44 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ad0c3f3-d556-47f5-8499-5c726fdb311e")
+		(property "Reference" "H8"
+			(at 220.98 247.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 220.98 250.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 218.44 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 218.44 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fae70f5b-337d-4095-a166-3478e8224a33")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF499JTCE")
 		(at 302.26 120.65 0)
 		(mirror x)
@@ -28013,7 +28146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 149.86 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -29983,85 +30116,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 218.44 250.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9eadcf7b-f366-46cb-968a-5271c41f9245")
-		(property "Reference" "H8"
-			(at 220.98 247.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 220.98 250.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 218.44 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4a6ecee-1c90-4e75-9e39-a6ee49b1f782")
-		)
-		(instances
-			(project "twinspora"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "H8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05B103KB5NNNC")
 		(at 262.89 127 90)
 		(unit 1)
@@ -31860,164 +31914,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 172.72 250.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b78a2325-86ed-4fe0-bcaf-0e3e9d0846c2")
-		(property "Reference" "H6"
-			(at 175.26 247.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 175.26 250.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 172.72 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7a76b0c9-a1f6-40ef-a194-ae1a579652af")
-		)
-		(instances
-			(project "twinspora"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "H6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 195.58 250.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9ec4dc9-9f3c-4036-b3e7-43765a2edfc9")
-		(property "Reference" "H7"
-			(at 198.12 247.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 198.12 250.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 195.58 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ad860e0a-57e7-4f2a-9277-699a8a362105")
-		)
-		(instances
-			(project "twinspora"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 132.08 187.96 0)
 		(unit 1)
@@ -32090,6 +31986,85 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "#PWR9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 172.72 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc4c9fde-dc0b-4cb0-b480-1933c4b0d103")
+		(property "Reference" "H6"
+			(at 175.26 247.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 175.26 250.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 172.72 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 172.72 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f783d21-599e-417b-89be-8a9dc29d5129")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -34060,6 +34035,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Test_Point")
+		(at 391.16 237.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d91eaa13-5c6b-45a6-b2d2-d8b982304b99")
+		(property "Reference" "TP44"
+			(at 393.7 237.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 391.16 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 391.16 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 391.16 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ba4fa3d-1c86-4187-94a7-3d4210a1dace")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "TP44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 379.73 173.99 0)
 		(mirror y)
@@ -34297,6 +34350,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 382.27 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc9d511c-4ada-48f5-8ead-7abfe53d42ed")
+		(property "Reference" "#PWR093"
+			(at 382.27 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 382.27 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 382.27 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.27 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 382.27 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3dd3fb4a-ae24-4b85-88ea-1dd6878f0466")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 175.26 29.21 0)
 		(mirror y)
@@ -34370,6 +34501,84 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "#PWR67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Test_Point")
+		(at 391.16 242.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df5b1f7e-ebba-4135-9123-91c8f3ca0a7e")
+		(property "Reference" "TP46"
+			(at 393.7 242.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 391.16 242.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 391.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 391.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a1cd469-fb2f-421c-a7cd-1d4b61c91eae")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "TP46")
 					(unit 1)
 				)
 			)
@@ -34734,6 +34943,85 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 195.58 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4b066ea-9864-42c8-9e8d-b8f0de762d4a")
+		(property "Reference" "H7"
+			(at 198.12 247.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 198.12 250.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 195.58 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 195.58 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae2f44c5-5e8e-4184-9bdc-391011d8c68b")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "H7")
 					(unit 1)
 				)
 			)

@@ -149,7 +149,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.16,
-        "min_via_annular_width": 0.15,
+        "min_via_annular_width": 0.075,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -917,7 +917,7 @@
         "uuid": "64e594d2-0aaa-4fb1-a4b5-254d61e53018"
       }
     ],
-    "used_designators": "U13-16,#PWR82-92,D4,J12,#FLG8-11,R1-2,R32-36,LED1-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
