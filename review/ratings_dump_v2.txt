@@ -1,0 +1,94 @@
+﻿
+======================================================================
+AO3401A.pdf  (5 pages)
+======================================================================
+
+--- p1 ---
+  ID  (at VGS=-10V) -4.0A
+  RDS(ON) (at VGS=-10V) < 50mW
+  RDS(ON) (at VGS =-4.5V) < 60mW
+  RDS(ON) (at VGS=-2.5V) < 85mW
+  Absolute Maximum Ratings  TA=25? C unless otherwise noted
+
+--- p2 ---
+  BVDSS -30 V
+  VDS=-30V, VGS=0V -1
+  VGS(th) Gate Threshold Voltage -0.5 -0.9 -1.3 V
+  ID(ON) -27 A
+  VGS=0V, VDS=-15V, f=1MHz
+  ID=-250mA, VGS=0V
+  VGS=-10V, VDS=-5V
+  VGS=-10V, ID=-4.0A
+  VDS=VGS  ID=-250mA
+  VDS=0V, VGS= ? 12V
+  IS=-1A,VGS=0V
+  VDS=-5V, ID=-4.0A
+  VGS=-2.5V, ID=-2.5A
+  VGS=-4.5V, ID=-3.5A
+  Gate resistance VGS=0V, VDS=0V, f=1MHz
+  VGS=-10V, VDS=-15V, ID=-4.0A
+  VGS=-10V, VDS=-15V, RL=3.75W,
+
+--- p3 ---
+  VGS=-2.5V
+  ID=-2.5A
+  VGS=-10V
+  ID=-4A
+  VGS=-4.5V
+  ID=-3.5A
+  VDS=-5V
+  VGS=-4.5V
+  VGS=-10V
+  ID=-4A
+  VGS=-2.0V
+  VGS=-2.5V
+
+--- p4 ---
+  VDS=-15V
+  ID=-4A
+
+======================================================================
+FMMT620TA.pdf  (7 pages)
+======================================================================
+
+--- p1 ---
+  80V NPN SILICON LOW SATURATION TRANSISTOR IN SOT23
+  ? I C = 1.5A Continuous Collector Current
+
+--- p2 ---
+  Collector-Base Voltage VCBO 100 V
+  Collector-Emitter Voltage VCEO 80 V
+  Emitter-Base Voltage VEBO 7 V
+  Continuous Collector Current  IC 1.5 A
+  Peak Pulse Current ICM 5 A
+
+--- p4 ---
+  Collector-Base Breakdown Voltage BVCBO 100 180 - V IC = 100?A
+  Collector-Emitter Breakdown Voltage (Note 9) BVCEO 80 110 - V IC = 1mA
+  Emitter-Base Breakdown Voltage BVEBO 7 8 - V IE = 100?A
+  Collector Cut-off Current ICBO - - 100 nA VCB = 80V
+  Collector Emitter Cut-off Current ICES - - 100 nA VCES = 80V
+  IC = 200mA, VCE = 2V
+  IC = 1A, VCE = 2V
+  IC = 1.5A, VCE = 2V
+  IC = 3A, VCE = 2V
+  IC = 5A, VCE = 2V
+  IC = 0.5A, IB = 50mA
+  IC = 1A, IB = 20mA
+  IC = 1.5A, IB = 20mA
+  Base-Emitter Saturation Voltage (Note 9) VBE(sat) - 0.86 1.0 V IC = 1.5A, IB = 50mA
+  Base-Emitter Saturation Voltage (Note 9) VBE(on) - 0.82 0.95 V IC = 1.5A, VCE = 2V
+  Transition Frequency fT 100 160 - MHz IC = 50mA, VCE = 10V,
+  Collector Output Capacitance Cobo - 11.5 18 pF VCB = 10V, f = 1MHz
+  Turn-On Time t(on) - 86 - ns VCC = 10V, IC = 500mA,
+
+======================================================================
+PRS3015-470.pdf  (3 pages)
+======================================================================
+
+======================================================================
+BZT52B5V1S.pdf  (4 pages)
+======================================================================
+
+--- p3 ---
+  Fig. 1  Zener Characteristics(Vz 5.1V to 20V)

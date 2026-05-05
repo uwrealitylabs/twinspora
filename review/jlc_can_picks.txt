@@ -1,0 +1,120 @@
+﻿File size: 5,711,184 chars
+partdetail anchors: 350
+Unique C-numbers: 350
+
+=== CAN bus ESD candidates ===
+       C8800  SMBJ18CA                   Extended   stk=3        $0.0128
+             -55℃~+150℃ 18V 1uA 20.5A 23.3V 29.2V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROHS
+
+     C907830  PESD2CAN                   Extended   stk=37499    $0.0235
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C284094  PESD1CAN                   Extended   stk=63254    $0.024
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C907838  PESD1CAN                   Extended   stk=84963    $0.0242
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C284078  PESD2CAN                   Extended   stk=212426   $0.0272
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+    C2830117  NUP2105LT1G-MS             Extended   stk=1314     $0.0278
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+    C2890118  NUP2105LT1G                Extended   stk=130695   $0.028
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C284104  NUP2105L                   Extended   stk=37542    $0.0317
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+    C2891678  KPESD1CAN                  Extended   stk=864      $0.0379
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C970033  TPCDSOT23-T24CAN           Extended   stk=1369     $0.0384
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+       C8835  SMBJ26CA                   Extended   stk=3805     $0.039
+             -55℃~+150℃ 14.2A 1uA 26V 33.2V 42.1V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROHS
+
+     C970029  TPSM24CANB-02HTG           Extended   stk=24987    $0.0405
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C970030  TPESDCAN24-2BLY            Extended   stk=63315    $0.0417
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+       C8833  SMBJ22CA                   Extended   stk=4096     $0.0419
+             -55℃~+150℃ 16.9A 1uA 22V 28V 35.5V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROHS
+
+       C8834  SMBJ24CA                   Extended   stk=923      $0.0419
+             -55℃~+150℃ 15.2A 1uA 24V 30.7V 38.9V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROHS
+
+     C233494  SZNUP2105LT1G              Extended   stk=207251   $0.0429
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+       C8837  SMBJ30CA                   Extended   stk=2        $0.0441
+             -55℃~+150℃ 12.4A@10/1000us 1uA 30V 38.3V 48.4V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROH
+
+       C8832  SMBJ20CA                   Extended   stk=1617     $0.0457
+             -55℃~+150℃ 18.5A@10/1000us 1uA 20V 25.5V 32.4V 600W@10/1000us Bidirectional IEC 61000-4-2、IEC 61000-4-4 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD) ROH
+
+     C508188  DESD1CAN2SOQ-7             Extended   stk=44464    $0.0534
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+       C7519  USBLC6-2SC6                Extended   stk=51711    $0.0801
+             -40℃~+125℃ 150nA 17V 2 3.5pF 5.25V 5A 6V ESD IEC 61000-4-2 Unidirectional SOT-23-6L ESD and Surge Protection (TVS/ESD) ROHS
+
+     C413455  VCAN26A2-03GHE3-08         Extended   stk=2886     $0.0834
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C246766  ESDCAN24-2BLY              Extended   stk=4567     $0.0884
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+      C90849  ESDONCAN1LT1G              Extended   stk=1        $0.106
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+     C152727  PESD1CAN-UX                Extended   stk=5437     $0.1076
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+    C1851984  VCAN33A2-03G-E3-08         Extended   stk=2993     $0.1149
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+
+
+=== All parts with 'CAN' in MPN ===
+      C90849  ESDONCAN1LT1G              Extended   stk=1        $0.106
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C152727  PESD1CAN-UX                Extended   stk=5437     $0.1076
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C194383  DESD2CAN2SOQ-7             Extended   stk=5956     $0.1205
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C246766  ESDCAN24-2BLY              Extended   stk=4567     $0.0884
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C284078  PESD2CAN                   Extended   stk=212426   $0.0272
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C284094  PESD1CAN                   Extended   stk=63254    $0.024
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C413455  VCAN26A2-03GHE3-08         Extended   stk=2886     $0.0834
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C508188  DESD1CAN2SOQ-7             Extended   stk=44464    $0.0534
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C896724  ESDONCAN1LT3G              Extended   stk=8        $0.3036
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C907830  PESD2CAN                   Extended   stk=37499    $0.0235
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C907838  PESD1CAN                   Extended   stk=84963    $0.0242
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C970029  TPSM24CANB-02HTG           Extended   stk=24987    $0.0405
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C970030  TPESDCAN24-2BLY            Extended   stk=63315    $0.0417
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+     C970033  TPCDSOT23-T24CAN           Extended   stk=1369     $0.0384
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+    C1851980  VCAN16A2-03S-E3-08         Extended   stk=126      $0.1188
+             3-3 ESD and Surge Protection (TVS/ESD) ROHS
+    C1851981  VCAN16A2-03SHE3-08         Extended   stk=3        $0.3036
+             3-3 ESD and Surge Protection (TVS/ESD) ROHS
+    C1851982  VCAN33A2-03GHE3-08         Extended   stk=115      $0.1462
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+    C1851984  VCAN33A2-03G-E3-08         Extended   stk=2993     $0.1149
+             3 ESD and Surge Protection (TVS/ESD) ROHS
+    C2891678  KPESD1CAN                  Extended   stk=864      $0.0379
+             3 ESD and Surge Protection (TVS/ESD) ROHS

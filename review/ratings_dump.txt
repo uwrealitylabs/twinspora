@@ -1,0 +1,368 @@
+﻿
+======================================================================
+DRV8316.pdf  (95 pages)
+======================================================================
+
+--- p1 ---
+  ? 1.5-?A at VVM = 24-V, TA = 25?C
+  1/2-H bridges with 40-V absolute maximum capability
+  4.5V to 35V (40V abs max)
+
+--- p2 ---
+  7.1 Absolute Maximum Ratings........................................ 6
+  7.3 Recommended Operating Conditions.........................6
+
+--- p6 ---
+  7.1 Absolute Maximum Ratings
+  Power supply pin voltage (VM) ?0.3 40 V
+  Power supply voltage ramp (VM) 4 V/?s
+  Charge pump voltage (CPH, CP) ?0.3 VM + 6 V
+  Charge pump negative switching pin voltage (CPL) ?0.3 VM + 0.3 V
+  Switching node pin voltage (SW_BK) ?0.3 VM + 0.3 V
+  Output pin voltage (OUTA, OUTB, OUTC) ?1 VM + 1 V
+  Junction temperature, TJ ?40 150 ?C
+  (1) Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply
+  functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions.
+  If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully
+  7.3 Recommended Operating Conditions
+  VVM Power supply voltage VVM 4.5 24 35 V
+  TA Operating ambient temperature ?40 125 ?C
+  TJ Operating Junction temperature ?40 150 ?C
+
+--- p7 ---
+  R?JA Junction-to-ambient thermal resistance 25.7 ?C/W
+  R?JC(top) Junction-to-case (top) thermal resistance 15.2 ?C/W
+  R?JB Junction-to-board thermal resistance 7.3 ?C/W
+  ?JT Junction-to-top characterization parameter 0.2 ?C/W
+  ?JB Junction-to-board characterization parameter 7.2 ?C/W
+  R?JC(bot) Junction-to-case (bottom) thermal resistance 2.0 ?C/W
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VVM > 6 V, nSLEEP = 0, TA = 25 ?C 1.5 2.5 ?A
+  'OFF', BUCK_DIS = 1; 4 10 mA
+  VVM > 6 V, nSLEEP = 1, INHx = INLx =
+  0, SPI = 'OFF', TA = 25 ?C, BUCK_DIS =
+  VVM > 6 V, nSLEEP = 1, INHx = INLx
+  'OFF', IBK = 0, BUCK_DIS = 0; 6 10 mA
+  VVM > 6 V, nSLEEP = 1, fPWM = 25 kHz,
+  TA = 25 ?C, BUCK_DIS = 1 10 13 mA
+  VVM > 6 V, nSLEEP = 1, fPWM = 200 kHz,
+  TA = 25 ?C, BUCK_DIS = 1 18 21 mA
+  nSLEEP =1, fPWM = 25 kHz, BUCK_DIS
+  BUCK_DIS = 1 17 25 mA
+  VVM > 6 V, nSLEEP = 1, fPWM =
+  25 kHz, TA = 25 ?C, BUCK_DIS =
+  VVM > 6 V, nSLEEP = 1, fPWM =
+  200 kHz, TA = 25 ?C, BUCK_DIS =
+  nSLEEP =1, fPWM = 25 kHz, BUCK_DIS
+  = 0; BUCK_PS_DIS = 0 12 17 mA
+
+--- p8 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VVM > 6 V, 0 mA ? IBK ? 200 mA,
+  BUCK_SEL = 00b 3.1 3.3 3.5 V
+  VVM > 6 V, 0 mA ? IBK ? 200 mA,
+  BUCK_SEL = 01b 4.6 5.0 5.4 V
+  VVM > 6 V, 0 mA ? IBK ? 200 mA,
+  BUCK_SEL = 10b 3.7 4.0 4.3 V
+  VVM > 6.7 V, 0 mA ? IBK ? 200 mA,
+  BUCK_SEL = 11b 5.2 5.7 6.2 V
+  VVM < 6.0 V (BUCK_SEL = 00b, 01b,
+  10b) or VVM < 6.0 V (BUCK_SEL = 11b),
+  VVM  > 6 V, 0 mA ? IBK ? 50 mA,
+  BUCK_SEL = 00b 3.1 3.3 3.5 V
+  VVM > 6 V, 0 mA ? IBK ? 50 mA,
+  BUCK_SEL = 01b 4.6 5.0 5.4 V
+  VVM  > 6 V, 0 mA ? IBK ? 50 mA,
+  BUCK_SEL = 10b 3.7 4.0 4.3 V
+  VVM  > 6.7 V, 0 mA ? IBK ? 50 mA,
+  BUCK_SEL = 11b 5.2 5.7 6.2 V
+  VVM < 6.0 V (BUCK_SEL = 00b, 01b,
+  10b) or VVM < 6.0 V (BUCK_SEL = 11b),
+  VVM  > 6 V, 0 mA ? IBK ? 40 mA,
+  BUCK_SEL = 00b 3.1 3.3 3.5 V
+  VVM > 6 V, 0 mA ? IBK ? 40 mA,
+  BUCK_SEL = 01b 4.6 5.0 5.4 V
+
+--- p9 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VVM > 6 V, 0 mA ? IBK ? 50 mA,
+  VVM > 6 V, 0 mA ? IBK ? 50
+  VVM > 6 V, 0 mA ? IBK ? 50
+  VVM > 6.7 V, 0 mA ? IBK ? 50 mA,
+  VVM < 6.0 V, 0 mA ? IBK ? 50 mA
+  VVM > 6 V, 0 mA ? IBK ? 40 mA,
+  VVM > 6 V, 0 mA ? IBK ? 40
+  VVM > 6 V, 0 mA ? IBK ? 40
+  VVM > 6.7 V, 0 mA ? IBK ? 40 mA,
+  VVM  < 6.0 V, 0 mA ? IBK ? 40 mA
+  VVM  > 6 V, 0 mA ? IBK ? 200 mA, Buck
+  VVM  > 6 V, 0 mA ? IBK ? 50 mA, Buck
+  VVM  > 6 V, 0 mA ? IBK ? 50 mA, Buck
+  BUCK_PS_DIS = 1b 200 mA
+  22 ?F, BUCK_PS_DIS = 1b 50 mA
+  22 ?F, BUCK_PS_DIS = 1b 40 mA
+
+--- p10 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VBK rising, BUCK_SEL = 00b 2.7 2.8 2.9 V
+  VBK falling, BUCK_SEL = 00b 2.5 2.6 2.7 V
+  VBK rising, BUCK_SEL = 01b 4.2 4.4 4.55 V
+  VBK falling, BUCK_SEL = 01b 4.0 4.2 4.35 V
+  VBK rising, BUCK_SEL = 10b 2.7 2.8 2.9 V
+  VBK falling, BUCK_SEL = 10b 2.5 2.6 2.7 V
+  VBK rising, BUCK_SEL = 11b 4.2 4.4 4.55 V
+  VBK falling, BUCK_SEL = 11b 4 4.2 4.35 V
+  BUCK_CL = 0b 360 600 900 mA
+  BUCK_CL = 1b 80 150 250 mA
+
+--- p11 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VVM > 6 V, IOUT = 1 A, TA = 25?C 95 120 m?
+  VVM < 6 V, IOUT = 1 A, TA = 25?C 105 130 m?
+  VVM > 6 V, IOUT = 1 A, TJ = 150 ?C 140 185 m?
+  VVM < 6 V, IOUT = 1 A, TJ = 150 ?C 145 190 m?
+  VVM = 24 V, SLEW = 00b or SLEW pin
+  VVM = 24 V, SLEW = 01b or SLEW pin to
+  VVM = 24 V, SLEW = 10b or SLEW pin to
+  VVM = 24 V, SLEW = 11b or SLEW pin
+
+--- p12 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VVM = 24 V, SLEW = 00b or SLEW pin
+  VVM = 24 V, SLEW = 01b or SLEW pin to
+  VVM = 24 V, SLEW = 10b or SLEW pin to
+  VVM = 24 V, SLEW = 11b or SLEW pin
+  Leakage current on OUTx VOUTx = VVM, nSLEEP = 1 5 mA
+  VVM = 24 V, SR = 25 V/?s, HS driver ON
+  VVM = 24 V, SR = 50 V/?s, HS driver ON
+  VVM = 24 V, SR = 125 V/?s, HS driver
+  VVM = 24 V, SR = 200 V/?s, HS driver
+  VVM = 24 V, INHx = 1 to OUTx
+  VVM = 24 V, INHx = 1 to OUTx
+  VVM = 24 V, INHx = 1 to OUTx
+  VVM = 24 V, INHx = 1 to OUTx
+
+--- p13 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+  VM rising 4.3 4.4 4.5 V
+  VM falling 4.1 4.2 4.3 V
+
+--- p14 ---
+  TJ = ?40?C to +150?C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25?C, VVM = 24 V
+
+--- p19 ---
+  Table 8-1 lists the recommended values of the external components for the driver.
+
+--- p25 ---
+  Table 8-5. Recommended settings for Buck Regulator
+  Inductor - 47 ?H 3.3 V or 4.0 V 30 mA 200 mA - IAVDD 600 mA (BUCK_CL =
+  Inductor - 47 ?H 5.0 V or 5.7 V 30 mA 200 mA - IAVDD 600 mA (BUCK_CL =
+  Inductor - 22 ?H 5.0 V or 5.7 V 30 mA 50 mA - IAVDD 150 mA (BUCK_CL =
+  Inductor - 22 ?H 3.3 V or 4.0 V 30 mA 50 mA - IAVDD 150 mA (BUCK_CL =
+  Resistor - 22 ?H 5.0 V or 5.7 V 30 mA 40 mA - IAVDD 150 mA (BUCK_CL =
+  Resistor - 22 ?H 3.3 V or 4.0 V 30 mA 40 mA - IAVDD 150 mA (BUCK_CL =
+
+--- p28 ---
+  BUCK_PS_DIS bit . Power sequencing is supported only when buck output voltage is set to 5.0 V or 5.7 V.
+
+--- p30 ---
+  For example, at a V VM of 24 V, drawing 20 mA out of AVDD results in a power dissipation as shown in Equation
+
+--- p35 ---
+  The input can be with a voltage or external resistor. It is recommended to put these pins low in device sleep
+
+--- p70 ---
+  Supply voltage VVM 24 V
+  Motor RMS current IRMS 3 A
+  Motor peak current IPEAK 8 A
+  Brushless-DC motors are typically rated for a certain voltage (for example 12 V or 24 V). Operating a motor at a
+  possible operating voltages because of a maximum VM rating of 40 V.
+
+--- p72 ---
+  recommended in the datasheets to choose a target delay time that is equal to the propagation delay time plus
+  22-uH or 47-uH inductor be used for L BK. CBK is recommended to be 22-uF. Ensure an appropriate inductor is
+
+--- p73 ---
+  inductance at the SOx traces, or routing of SOx traces near high frequency components. It is recommended to
+  high frequency noise. A recommended RC filter is 330-ohms, 22-pF to add minimal parallel capacitance to the
+
+--- p75 ---
+  Supply voltage VVM 24 V
+  Motor peak current IPEAK 2 A
+
+--- p76 ---
+  Brushless-DC motors are typically rated for a certain voltage (for example 12 V or 24 V). Operating a motor at a
+  possible operating voltages because of a maximum VM rating of 40 V.
+
+--- p78 ---
+  Brushed motor rms current IRMS, BDC 1.0 A
+  Brushed motor peak current IPEAK, BDC 2.0 A
+  Solenoid rms current IRMS, SOL 0.5 A
+  Solenoid peak current IPEAK, SOL 1.0 A
+
+--- p80 ---
+  Solenoid rms current IRMS, SOL 1.0 A
+  Solenoid peak current IPEAK, SOL 1.5 A
+
+--- p82 ---
+  The data sheet generally provides a recommended value, but system-level testing is required to determine the
+
+--- p83 ---
+  Recommended Layout Example for VQFN Package shows a layout example for the DRV8316.
+
+--- p84 ---
+  Recommended Layout Example for VQFN Package
+
+--- p93 ---
+  on this view. It is recommended that vias under paste be filled, plugged or tented.
+
+======================================================================
+WSD4066DN.pdf  (7 pages)
+======================================================================
+
+--- p1 ---
+  Absolute Maximum Ratings
+  IS Diode Continuous Forward Current TA=25?C 2
+  1 Pulse Drain Current Tested TA=25?C 28
+
+--- p2 ---
+  BVDSS Drain-Source Breakdown Voltage VGS=0V ,  ID=250?A 40 --- --- V
+  VDS=32V ,  VGS=0V --- --- 1.0
+  VGS(th) Gate Threshold Voltage VGS=VDS ,  IDS=250?A 1.0 1.5 2.0 V
+  IGSS Gate Leakage Current VGS=?20V ,  VDS=0V --- --- ?100 nA
+  VGS=10V ,  ID=14A --- 14 17
+  VGS=4.5V ,  ID=12A --- 17 20
+  VSD 4 Diode Forward Voltage ISD=1A , VGS=0V --- 0.75 1.1 V
+  IDS=6A ,  dlSD/dt=100A/?s
+  Rg Gate Resistance VDS=0V , VGS=0V , F = 1.0MHz --- 2.5 --- ?
+  VGS=0V , VDS=20V ,
+  VDD=20V , RL=20? , IDS=1A ,
+  Qg Total Gate Charge VDS=20V , VGS=10V , IDS=6A --- 15.7 22
+  VDS=20V , VGS=4.5V , IDS=6A
+
+--- p4 ---
+  VGS=4,5,6,7,8,9,10V
+  VGS=10V
+  VGS=4.5V
+  IDS=6A
+  IDS =250mA
+
+--- p5 ---
+  VGS = 10V
+  IDS = 6A
+  VDS=20V
+  IDS=6A
+
+======================================================================
+SIT1042ATK_3.pdf  (20 pages)
+======================================================================
+
+--- p1 ---
+  ???? VCC  4.5 5.5 V
+
+--- p2 ---
+  ???? VCC -0.3~7 V
+  MCU ??? TXD?RXD?STB?VIO -0.3~7 V
+
+--- p4 ---
+  2 0.5VCC 3 V
+
+--- p5 ---
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+
+--- p6 ---
+  VCC=VIO=0V?
+  ???? CIN TXD=VIO  24  pF
+  ???? CID TXD=VIO  12  pF
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+
+--- p7 ---
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  ??? IIH(TXD) TXD=VIO -5  5 ?A
+  ??? TXD ??? IO(off) VCC=VIO=0V?
+  ??????? VIH SIT1042AT/3 0.7VIO  VIO+0.3 V
+  ??????? VIH SIT1042AT 2  VCC+0.3 V
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  ?? IIH(STB) STB=VIO -2  2 ?A
+
+--- p8 ---
+  ??? STB ??? IO(off) VCC=VIO=0V?
+  ??????? VIH SIT1042AT/3 0.7VIO  VIO+0.3 V
+  ??????? VIH SIT1042AT 2  VCC+0.3 V
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  RXD=VIO-0.4V -8 -3 -1 mA
+  ??? RXD ??? IO(off) VCC=VIO=0V?
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  STB=TXD=VIO  10 17 ?A
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+
+--- p9 ---
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+  VCC ???? Vuvd_VCC  3.7 4 4.3 V
+  VIO ???? Vuvd_VIO  1.7 2 2.3 V
+  ?????????????? 25?????? VCC=5V?VIO=5V???????RL=60? ???????
+
+======================================================================
+XC6206.pdf  (17 pages)
+======================================================================
+
+--- p3 ---
+  Output Voltage V OUT V SS ? 0.3 ~ VIN + 0.3 V
+
+--- p4 ---
+  VOUT(T)<4.5V:VOUT(T)+1.0V?VIN?6.0V
+  VOUT(T)>4.5V:5.5V?VIN?6.0V
+  * 1 Unless otherwise stated, VIN = VOUT(T) + 1.0V
+  * 3 VOUT(E) :Effective output voltage (le. The output voltage when "VOUT(T)+1.0V" is provided at the VIN pin while maintaining a certain IOUT value.)
+
+======================================================================
+CA-IF1044VD-Q1.pdf  (24 pages)
+======================================================================
+
+--- p1 ---
+  ? VIO ?? 3.0V ? 5.5V
+
+--- p3 ---
+  Version 1.03 ???VIO ?? 3.3V ? 5.5V???VIO ?? 3.0V ? 5.5V? 1,5
+
+--- p5 ---
+  VCC 5-V ?????? -0.3 7 V
+  VIO IO ???????? -0.3 7 V
+  VCC 5-V ?????? 4.5 5.5 V
+  VIO IO ???????? 3.0 5.5 V
+
+--- p6 ---
+  TXD=VCC, STB=0V,RL=50 Ohm????,?? 7-1  4.5 7.5 mA
+  TXD=VCC,STB=0V, RXD ??????  70 150 ?A
+  Vuv_vcc VCC UVLO ?? ??  4.2 4.45 V
+  Vuv_vcc VCC UVLO ?? ?? 3.65 4.0 4.4 V
+  Vuv_ vcc_sd VCC ??????(CA-IF1044) ??  1.56 1.9 V
+  Vuv_ vcc_sd VCC ??????(CA-IF1044) ?? 1.3 1.51 1.85 V
+  IIH  ???????? STB=VCC= 5.5V -2  2 ?A
+  IIL ???????? STB=0V,VCC= 5.5V -100 -60 -20 ?A
+  Ilek(off)  ??????? STB=5.5V, VCC=0V -1  1 ?A
+  IIH  ???????? TXD=VCC= 5.5V -2.5 0 1 ?A
+  IIL ???????? TXD=0V, VCC= 5.5V -200 -100 -20 ?A
+  Ilek(off)  ??????? TXD=5.5V, VCC= 0V -1 0 1 ?A
+  VOH  ????? Io=-2mA, ?? 7-2 0.8*VCC   V
+  VOL  ????? Io=+2mA,?? 7-2,   VIO=3.3V- 5.5V   0.2*VCC V
+  Ilek(off)  ??????? S=5.5V, VCC=0V -1 0 1 ?A
+
+--- p7 ---
+  STB=VCC, RL open, CANH -0.1  0.1 V
+  STB=VCC, RL open, CANL -0.1  0.1 V
+  STB=VCC, RL open, CANH-CANL -0.2  0.2 V
+  ILKG  ?????? VCC = 0V?VCAN=5V   8 ?A
+
+--- p12 ---
+  ?????????? CAN ??? CA-IF1044 ??????????? VCC ??????? 5V?CA-IF1044 ??
+  CA-IF1044V ????????? VIO ???? MCU ??????????????????????? 5V VCC
+
+--- p16 ---
+  ???????? 3.3V ? 5.0V ??????? VIO ?????? 3.3V ?????????+/-20V ????????
+
+--- p23 ---
+  Absolute current on CAN_H ICAN_H
+  Absolute current on CAN_L ICAN_L
