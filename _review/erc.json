@@ -1,0 +1,2600 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-05-05T17:19:09",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.1",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/64e594d2-0aaa-4fb1-a4b5-254d61e53018",
+            "violations": [
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHA1'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.9779
+                            },
+                            "uuid": "1b75b7c2-6e27-4943-bfb4-2bc1dc2f91ff"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHB1'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.0287
+                            },
+                            "uuid": "64bea450-e765-4082-a27c-956e8dafbf49"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHC1'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.0795
+                            },
+                            "uuid": "b27f9bf0-11aa-4066-afe7-4ae13147d903"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHA2'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.4351
+                            },
+                            "uuid": "5dc29fc5-3415-4762-aec1-69b4d24f979d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHB2'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.4859
+                            },
+                            "uuid": "f892df2f-cc56-4e4a-92fa-b161e267a9ac"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'PHC2'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.5367
+                            },
+                            "uuid": "36023697-63ea-4fb5-a214-d83cf76ba4a6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 2 [Vin, Power input, Line]",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 0.3683
+                            },
+                            "uuid": "c7c76324-de5a-45ea-b7ee-5818a1ad7d68"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG01 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.2413,
+                                "y": 2.2479
+                            },
+                            "uuid": "f383214c-cb1d-498a-8574-5db48440bd24"
+                        },
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.2479
+                            },
+                            "uuid": "334f1871-f18c-4e76-8a67-e3d3dda64fb4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.2479
+                            },
+                            "uuid": "334f1871-f18c-4e76-8a67-e3d3dda64fb4"
+                        },
+                        {
+                            "description": "Symbol #FLG04 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 2.2352
+                            },
+                            "uuid": "386ee897-e2a8-4fed-b04f-de3af72bc88b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U9 Pin 3 [Vout, Power output, Line]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 0.3175
+                            },
+                            "uuid": "58b8398e-c001-4c16-847b-57bbd87a35c2"
+                        },
+                        {
+                            "description": "Symbol #FLG06 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 2.4511,
+                                "y": 0.3175
+                            },
+                            "uuid": "1c867622-bccc-4481-84b3-fba59d19b246"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol H1 Pin 1 [1, Input, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 2.4384
+                            },
+                            "uuid": "c58f0d2c-4335-4c5b-9592-a94ebf06e0b5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Symbol 'SMTSOM225BTR' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol H3 [SMTSOM225BTR]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 2.5781
+                            },
+                            "uuid": "b31c0f30-1346-47b3-a58d-a58e112dd13b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 1 [TXD, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4064
+                            },
+                            "uuid": "1d889649-24a4-4dda-b905-51dc2444aadc"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 59 [PB6, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.6764
+                            },
+                            "uuid": "06c91a48-c68b-4fd9-9504-9d27c7d600bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 2 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4318
+                            },
+                            "uuid": "9a2b5045-4018-4dda-8633-a22d59b46a3e"
+                        },
+                        {
+                            "description": "Symbol C16 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 0.5969
+                            },
+                            "uuid": "9def818f-75e7-4615-a512-14b5da2e7136"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 3 [VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4572
+                            },
+                            "uuid": "1af3d0ad-33a6-47d0-b29b-a78bcd7e444c"
+                        },
+                        {
+                            "description": "Symbol C16 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 0.4953
+                            },
+                            "uuid": "1317f30d-dc7a-4a09-87cf-0214ff60ee09"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 4 [RXD, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4826
+                            },
+                            "uuid": "9df4da9f-4847-4a32-9597-c5fe9096e775"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 34 [PB12, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.8288
+                            },
+                            "uuid": "792f997a-c91f-4069-b5c0-0936495ca828"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol H3 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 2.6289
+                            },
+                            "uuid": "abd2ac40-4756-4911-ade9-89d389c936e4"
+                        },
+                        {
+                            "description": "Symbol #PWR022 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.4351,
+                                "y": 2.667
+                            },
+                            "uuid": "dc0c1f85-f821-4e34-9881-59272d50dbe3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'SMTSOM225BTR' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol H6 [SMTSOM225BTR]",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 2.5781
+                            },
+                            "uuid": "5539c6f7-4402-4d08-a57c-6f1cf6e1491f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol H6 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 2.6289
+                            },
+                            "uuid": "1c2482f8-7212-4849-9bbd-83849ae6b4fe"
+                        },
+                        {
+                            "description": "Symbol H5 Pin 1 [1, Input, Line]",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 2.5273
+                            },
+                            "uuid": "6f783d21-599e-417b-89be-8a9dc29d5129"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'SMTSOM225BTR' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol H9 [SMTSOM225BTR]",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 2.5781
+                            },
+                            "uuid": "7bd54e47-28e2-4b8e-9d4c-059cf8b04f61"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 9 [EP, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.381
+                            },
+                            "uuid": "31d3cd80-4390-4456-bc91-2cffe918b81a"
+                        },
+                        {
+                            "description": "Symbol R22 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 3.3147,
+                                "y": 0.5969
+                            },
+                            "uuid": "7d20baa9-657c-4a87-b94c-8df98abd2737"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Unspecified are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 8 [STB, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.4064
+                            },
+                            "uuid": "34e31da6-3d69-4773-9f0e-db0d661e15dd"
+                        },
+                        {
+                            "description": "Symbol U11 Pin 9 [EP, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.381
+                            },
+                            "uuid": "31d3cd80-4390-4456-bc91-2cffe918b81a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 7 [CANH, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.4318
+                            },
+                            "uuid": "def66e20-013f-4e33-9d7e-e8b5bcbc4fed"
+                        },
+                        {
+                            "description": "Symbol U12 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 3.3655,
+                                "y": 0.3429
+                            },
+                            "uuid": "3c6091b9-6575-4b29-bc90-f2d1e2783ca7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 6 [CANL, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.4572
+                            },
+                            "uuid": "0a5cc13f-fa82-4e22-a2fb-e55459a3267a"
+                        },
+                        {
+                            "description": "Symbol R24 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 3.3528,
+                                "y": 0.4445
+                            },
+                            "uuid": "2c520f65-6939-4359-b601-316e44022edc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 5 [VIO/NC, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.2385,
+                                "y": 0.4826
+                            },
+                            "uuid": "bc9e8486-3b32-4e29-ada8-8f6500b7408e"
+                        },
+                        {
+                            "description": "Symbol R22 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 3.3147,
+                                "y": 0.4953
+                            },
+                            "uuid": "74270e9c-0b58-4d6f-92d9-97760dadd382"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol H9 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 2.6289
+                            },
+                            "uuid": "ab9d4594-2aa3-4054-aa2e-b635a1a01ec6"
+                        },
+                        {
+                            "description": "Symbol H8 Pin 1 [1, Input, Line]",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 2.5273
+                            },
+                            "uuid": "ae2f44c5-5e8e-4184-9bdc-391011d8c68b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'SMTSOM225BTR' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol H12 [SMTSOM225BTR]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 2.5781
+                            },
+                            "uuid": "6a8c30bc-1372-450d-9e12-329e6a74f434"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol H12 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 2.6289
+                            },
+                            "uuid": "270b4957-cd38-4387-af8b-77d968b54186"
+                        },
+                        {
+                            "description": "Symbol H11 Pin 1 [1, Input, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 2.5273
+                            },
+                            "uuid": "fae70f5b-337d-4095-a166-3478e8224a33"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Footprint 'Tag-Connect_TC2030-IDC-NL' not found in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J3 [TC2030-NL]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 2.5527
+                            },
+                            "uuid": "f3adf36d-2ff5-4e2c-8261-ebabf748cbf6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TC2030-NL' not found in symbol library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J3 [TC2030-NL]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 2.5527
+                            },
+                            "uuid": "f3adf36d-2ff5-4e2c-8261-ebabf748cbf6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP1 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.8001
+                            },
+                            "uuid": "67caa95e-ebde-43b4-a431-492ea88c252b"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 18 [PA4, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.1938
+                            },
+                            "uuid": "e7020389-f5a8-428e-9423-fae0b0416ae8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP2 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.8255
+                            },
+                            "uuid": "daa72078-4b2f-4261-ac22-3c277c497c14"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 19 [PA5, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.2192
+                            },
+                            "uuid": "2a4695e0-92f4-4714-8043-28b2e52c60f8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP3 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.8509
+                            },
+                            "uuid": "ec0e6bc8-364c-4b7f-b98e-6625ce76f388"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 21 [PA7, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.27
+                            },
+                            "uuid": "e238887c-5470-4fdd-87b9-994333311d98"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP4 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.8763
+                            },
+                            "uuid": "a2d590d5-c6fd-40e4-9e85-bf3fe180655b"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 20 [PA6, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.2446
+                            },
+                            "uuid": "5575c4fa-a4ce-4e2c-a4e0-2e5867e7dac7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP1 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.8001
+                            },
+                            "uuid": "43076ea1-ec4f-4052-a2b0-d3a62cef379c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP5 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.9271
+                            },
+                            "uuid": "82c675cd-4ed5-49fa-b1e9-84f530d95a14"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 41 [PC9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.5494
+                            },
+                            "uuid": "9ac758e5-845c-43b9-9112-cced2c7ae825"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP2 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.8255
+                            },
+                            "uuid": "dc301d5d-600d-4f3b-9b36-53080ac53173"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP6 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.9525
+                            },
+                            "uuid": "3433e8ba-3d30-4d51-9054-383b9d061b19"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 35 [PB13, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.8542
+                            },
+                            "uuid": "e7b394e7-86eb-449f-8100-805abbef7715"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP3 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.8509
+                            },
+                            "uuid": "2346efbd-f4cf-4cdc-a513-f89f2322bad5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP7 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 0.9779
+                            },
+                            "uuid": "518fc103-482e-45f6-a083-683158a9fde3"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 37 [PB15, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.905
+                            },
+                            "uuid": "5cbda6ae-a80e-4385-bed7-030cff133ab9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP4 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.8763
+                            },
+                            "uuid": "acebc13a-89b2-49f6-925c-7ed3499a258f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP8 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.0033
+                            },
+                            "uuid": "4bca734b-ac12-408f-a05c-37906402b257"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 44 [PA10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.3462
+                            },
+                            "uuid": "45b52daf-158a-47bc-a7ae-d117994be0fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP5 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.9271
+                            },
+                            "uuid": "28d61f90-80c0-48e2-a5b3-b9e0fd878797"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP6 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.9525
+                            },
+                            "uuid": "bf82153d-403f-4e7e-90e2-328dc4968ff2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP9 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.0541
+                            },
+                            "uuid": "5d52df9b-03ee-4007-b8ba-f7f7fbbfebba"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 55 [PD2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.27
+                            },
+                            "uuid": "a4bdb044-6a8c-4f64-ba7c-504f69ab56ad"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP7 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.9779
+                            },
+                            "uuid": "b04c1019-7677-42d9-89a0-9a619767d2e7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP10 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.0795
+                            },
+                            "uuid": "a40affe0-0835-4ee5-9d11-bc63ea8bf06d"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 52 [PC10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.5748
+                            },
+                            "uuid": "83b33833-448c-414b-8e2a-9d9366ffcfa4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP8 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.0033
+                            },
+                            "uuid": "05a63e79-d03a-48ad-81d9-50af750f3bdb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP11 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.1049
+                            },
+                            "uuid": "5080b453-d6a7-4fe2-b2c8-a09691ce6cc7"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 54 [PC12, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.6256
+                            },
+                            "uuid": "6e71cf25-5ea5-4dd6-82cd-652ba07a4659"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP12 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.1303
+                            },
+                            "uuid": "8e2ed276-2fe2-4d2a-8e2c-0d7e04ffb2b3"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 53 [PC11, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.6002
+                            },
+                            "uuid": "f1f364c7-676c-44cc-be64-ebe36b193a6f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP9 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.0541
+                            },
+                            "uuid": "1485faad-7c0b-4095-a681-a247870839c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP10 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.0795
+                            },
+                            "uuid": "4a0c2741-2343-4e5f-b14b-387bbe88ad30"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP13 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.1811
+                            },
+                            "uuid": "5b7ad388-3453-47ae-b286-4fb6ba78c0b1"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 33 [PB11, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.8034
+                            },
+                            "uuid": "946676ca-ca40-4e30-be6d-afc1a52dafa4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP11 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.1049
+                            },
+                            "uuid": "3c99a2b3-be73-470d-8fe5-2d852da0ce13"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP14 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.2065
+                            },
+                            "uuid": "b718484e-79df-4101-b9d1-8b016a595cad"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 30 [PB10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.778
+                            },
+                            "uuid": "8f93c7fc-e95e-4396-b99c-73edb8242803"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP12 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.1303
+                            },
+                            "uuid": "05e95c1e-28c6-427c-ada2-943d6a5982ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP15 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.2319
+                            },
+                            "uuid": "49742120-0e09-4add-a486-3a49e1c6a1a0"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 25 [PB1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.5494
+                            },
+                            "uuid": "a15529b5-ff96-453d-ae2b-966b65248a6a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP16 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.2573
+                            },
+                            "uuid": "9799f4b9-5895-4712-8d41-cfb03e290fd6"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 24 [PB0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.524
+                            },
+                            "uuid": "e327937e-567f-4fab-b6a7-77f81467b53b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP13 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.1811
+                            },
+                            "uuid": "cb8e7121-b054-4623-97f2-b40b7d3f6736"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP14 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.2065
+                            },
+                            "uuid": "451d16b0-88b0-4fb9-8ea9-88daf1e95a45"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Unspecified are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP17 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.3081
+                            },
+                            "uuid": "4b9b9262-86ed-4dc5-a3e6-c070fee7a420"
+                        },
+                        {
+                            "description": "Symbol U11 Pin 1 [TXD, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4064
+                            },
+                            "uuid": "1d889649-24a4-4dda-b905-51dc2444aadc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP15 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.2319
+                            },
+                            "uuid": "c6ef289c-6409-4f40-9551-cae15c01fbad"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Unspecified are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP18 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.3335
+                            },
+                            "uuid": "2fe34814-9105-4d24-8736-562a62600c4b"
+                        },
+                        {
+                            "description": "Symbol U11 Pin 4 [RXD, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.9845,
+                                "y": 0.4826
+                            },
+                            "uuid": "9df4da9f-4847-4a32-9597-c5fe9096e775"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP16 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.2573
+                            },
+                            "uuid": "9125fe30-856f-4e8a-8346-44146f52075f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP17 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.3081
+                            },
+                            "uuid": "3277e755-5b0e-4c63-afbe-fa34adad3f54"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP18 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.3335
+                            },
+                            "uuid": "8c9529ae-b4b2-45bb-adda-c5d8ec3dc9f2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP19 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.4097
+                            },
+                            "uuid": "afd9ddf8-f174-4d8d-a291-c589a4c3e559"
+                        },
+                        {
+                            "description": "Symbol R12 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.7559,
+                                "y": 0.889
+                            },
+                            "uuid": "9f24c8b4-be8c-4910-940b-1e86a03df24a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP20 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.4351
+                            },
+                            "uuid": "5f2d88ed-8218-41f8-a0a1-f752d9fa7214"
+                        },
+                        {
+                            "description": "Symbol R17 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 1.0795
+                            },
+                            "uuid": "fb2bfc4b-3a34-4f08-81e1-030093194aef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP21 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.4605
+                            },
+                            "uuid": "3b9ee0fb-53df-44ef-9ad7-e65319b317ab"
+                        },
+                        {
+                            "description": "Symbol R13 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.8194,
+                                "y": 0.9525
+                            },
+                            "uuid": "59644fac-323c-44fe-9c13-aa2608d7e722"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP19 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.4097
+                            },
+                            "uuid": "52b55da2-710f-4e51-b7c6-4555014fcadd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP22 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.4859
+                            },
+                            "uuid": "b3e61130-558c-4b05-b463-b2cd6ad9e50a"
+                        },
+                        {
+                            "description": "Symbol R19 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 3.0099,
+                                "y": 1.143
+                            },
+                            "uuid": "85c9c584-9561-45cf-95a9-fc6b112d2e21"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP20 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.4351
+                            },
+                            "uuid": "3cbb8452-b863-4f3a-9daf-35c805234319"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP23 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.5113
+                            },
+                            "uuid": "04731f57-8a9c-4aa1-8fe2-dbee2f3049ce"
+                        },
+                        {
+                            "description": "Symbol R14 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.8829,
+                                "y": 1.016
+                            },
+                            "uuid": "93f906a3-419a-4cac-b3d4-f369d8b0d9af"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP21 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.4605
+                            },
+                            "uuid": "6fd872d4-9bed-4c96-930f-b063485966d7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP24 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.5367
+                            },
+                            "uuid": "8fedf24b-c84b-4b6c-a5b9-fadbe664fe80"
+                        },
+                        {
+                            "description": "Symbol R20 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 3.0734,
+                                "y": 1.2065
+                            },
+                            "uuid": "067dc81e-1fa9-45f9-ada7-7fe8bae70506"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP22 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.4859
+                            },
+                            "uuid": "60b3a7b0-d61d-4054-9e87-0200b6062e56"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP23 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.5113
+                            },
+                            "uuid": "6883bad8-ae85-4e99-a643-aae9e7cd9f48"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP24 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.5367
+                            },
+                            "uuid": "794ce01e-6d76-4e65-a9b8-c8eea0e23410"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP25 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.6383
+                            },
+                            "uuid": "1e88a111-6d57-427f-afc2-db5efdb8aea4"
+                        },
+                        {
+                            "description": "Symbol #PWR061 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 3.9116,
+                                "y": 1.6256
+                            },
+                            "uuid": "08a8578a-c01e-493c-ab63-202a26a067fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP26 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.6637
+                            },
+                            "uuid": "b63a18d3-d789-4fad-9242-059799845774"
+                        },
+                        {
+                            "description": "Symbol #PWR058 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 3.8481,
+                                "y": 1.6383
+                            },
+                            "uuid": "7f0e7d6f-a620-4295-b6ec-5f9ec22d241c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP27 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.6891
+                            },
+                            "uuid": "0e5f00ed-7ec7-4e68-b990-2ab62e07c004"
+                        },
+                        {
+                            "description": "Symbol #PWR059 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 3.8481,
+                                "y": 1.7145
+                            },
+                            "uuid": "9a879966-c620-4645-8c84-93c649cb96cf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP25 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.6383
+                            },
+                            "uuid": "c38f7610-0c75-4893-a663-7f53ec0a4de5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP28 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.7145
+                            },
+                            "uuid": "cad3cb43-ef4f-4de3-8229-f04d05e3e1d7"
+                        },
+                        {
+                            "description": "Symbol C29 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 3.6449,
+                                "y": 2.0701
+                            },
+                            "uuid": "b8034439-8f38-4f54-adb2-30151c234278"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP26 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.6637
+                            },
+                            "uuid": "332f5817-25bf-44e1-86fb-aec24a95f4a6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP27 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.6891
+                            },
+                            "uuid": "e754ad84-324c-4908-b3c7-5f0df8eb054e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP28 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.7145
+                            },
+                            "uuid": "0aab8584-4e8c-4bce-baa1-eaf786eabad0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP29 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.8034
+                            },
+                            "uuid": "20eb6bea-159d-4fbb-8917-71b752811a60"
+                        },
+                        {
+                            "description": "Symbol R15 Pin 1 [1, Passive, Line]",
+                            "pos": {
+                                "x": 2.7813,
+                                "y": 2.0828
+                            },
+                            "uuid": "5e9f3484-d321-4b5f-a93c-c2a44accd6bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP30 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.8288
+                            },
+                            "uuid": "46347cea-08cc-4157-b89d-016ed235d06a"
+                        },
+                        {
+                            "description": "Symbol R16 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 2.7813,
+                                "y": 2.1336
+                            },
+                            "uuid": "9fa9ccbc-d13f-42b5-ab93-079a3bfdfc5d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP29 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.8034
+                            },
+                            "uuid": "e032b63f-77c6-4370-bb6a-e740fc1bd881"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP30 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.8288
+                            },
+                            "uuid": "176d3e8f-2ca0-4110-9384-5fd562f2b923"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP31 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.8923
+                            },
+                            "uuid": "4d4b5ea0-0c43-4506-a682-18719d5cf504"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 62 [PB9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.7526
+                            },
+                            "uuid": "a2fbb558-43ed-4a73-9a5e-dec3b28ec435"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP32 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.9177
+                            },
+                            "uuid": "60a0e806-6e0c-4a2c-93a0-a760e06fe38b"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 10 [PC2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.3716
+                            },
+                            "uuid": "ef3d810e-3b3c-4a62-b943-f247168e4be1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP33 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.9431
+                            },
+                            "uuid": "1799502d-c89d-4b3e-b7ea-d2641837617b"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 36 [PB14, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.8796
+                            },
+                            "uuid": "5cdee483-df8d-484f-b77f-c3bbf627de47"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP31 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.8923
+                            },
+                            "uuid": "c8a17820-96cc-429f-8552-c2f5b4701f87"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP34 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.9685
+                            },
+                            "uuid": "033260f0-76d1-4c51-b529-1eb785ea3b3c"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 9 [PC1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.3462
+                            },
+                            "uuid": "147e3830-231b-4fc8-8b3b-221333a0214d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP32 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.9177
+                            },
+                            "uuid": "8b7cbb42-f2bb-4fe7-a322-227e9a544b69"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP35 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 1.9939
+                            },
+                            "uuid": "172a71c3-7602-43c6-a796-b78acac03da9"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 2 [PC13, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.651
+                            },
+                            "uuid": "104872ef-8902-4fc8-bafe-2af25e0a4ad8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP33 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.9431
+                            },
+                            "uuid": "20035581-e0fe-4e6a-859d-1a862afab39b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP34 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.9685
+                            },
+                            "uuid": "707c4823-372a-4582-86bb-35adc698daaf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP36 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.0193
+                            },
+                            "uuid": "bc389470-7914-4515-a98d-12a116f57a2c"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 8 [PC0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.3208
+                            },
+                            "uuid": "9ed832d1-ed84-4f9a-932d-a92fa877e412"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP35 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.9939
+                            },
+                            "uuid": "e3052f17-9a28-447a-a831-eb4ede1a834d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP36 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.0193
+                            },
+                            "uuid": "9a442808-2202-43f9-8aaa-61acf19b8787"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP37 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.0828
+                            },
+                            "uuid": "8a3bc7ff-e449-4bcc-9adb-6ad88fc2846e"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 58 [PB5, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.651
+                            },
+                            "uuid": "67d1e0f9-a917-4a3f-952c-d81c5796d730"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP38 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.1082
+                            },
+                            "uuid": "5f44fe87-d4e8-4c3c-b30c-81688dd28ae6"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 40 [PC8, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.524
+                            },
+                            "uuid": "fa23951f-dff0-4b72-a6f5-c9aea35331b3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP37 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.0828
+                            },
+                            "uuid": "2c780388-0d9c-4893-b1b6-0fbbea3c2bd7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP39 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.1336
+                            },
+                            "uuid": "dc9a256e-52bc-4ef2-b736-52faa11776f5"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 57 [PB4, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.6256
+                            },
+                            "uuid": "a41a5496-f812-47c4-b3ec-b92080e4dc42"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP38 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.1082
+                            },
+                            "uuid": "f5ca1b8f-db60-4aba-8186-caa4aff48563"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP40 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.159
+                            },
+                            "uuid": "6d05544e-e148-4adc-9cd9-fb075ec68ef6"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 39 [PC7, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.4986
+                            },
+                            "uuid": "37636853-043e-4432-a440-225e4678538b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP39 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.1336
+                            },
+                            "uuid": "7f01d351-28a5-4180-a895-3a5e6e019adb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP41 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.1844
+                            },
+                            "uuid": "c97a7f55-7b63-4e59-b34b-792c0e32ad9a"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 56 [PB3, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.6002
+                            },
+                            "uuid": "9e2cd880-a3db-4fbd-9a2b-2cfafd16164b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP40 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.159
+                            },
+                            "uuid": "2d8210d8-fdb8-4069-b1e6-4793945728ad"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Bidirectional are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP42 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.2098
+                            },
+                            "uuid": "c97cf84d-de6d-495e-a8a1-787140f7ed9b"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 38 [PC6, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.4732
+                            },
+                            "uuid": "6de6a0c9-f9fb-4783-b928-d7f1eb1d7a95"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP41 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.1844
+                            },
+                            "uuid": "9e26de64-d8ea-4ae2-ab20-fa053cde7cfd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP42 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.2098
+                            },
+                            "uuid": "c19a5206-a7da-4faf-aecb-3649d1af7931"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP43 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.2606
+                            },
+                            "uuid": "8b78cc65-6b00-44f9-8278-1473115108ce"
+                        },
+                        {
+                            "description": "Symbol C19 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 3.3528,
+                                "y": 0.4953
+                            },
+                            "uuid": "479b2b3b-f5aa-45fb-aa68-924b6a6e691a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP43 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.2606
+                            },
+                            "uuid": "e6d5ab5e-025d-4798-a2e6-c6d795666b33"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP44 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.3495
+                            },
+                            "uuid": "7ba4fa3d-1c86-4187-94a7-3d4210a1dace"
+                        },
+                        {
+                            "description": "Symbol #PWR060 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 3.8735,
+                                "y": 2.3368
+                            },
+                            "uuid": "3dd3fb4a-ae24-4b85-88ea-1dd6878f0466"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP45 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.3749
+                            },
+                            "uuid": "627228e7-d4f9-490a-970d-7daf43904981"
+                        },
+                        {
+                            "description": "Symbol Q1 Pin 3 [D, Passive, Line]",
+                            "pos": {
+                                "x": 2.0955,
+                                "y": 0.4953
+                            },
+                            "uuid": "585abd8f-8818-4519-a06a-bfcd0cbdd10b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP44 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.3495
+                            },
+                            "uuid": "d91eaa13-5c6b-45a6-b2d2-d8b982304b99"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Unspecified and Passive are connected",
+                    "items": [
+                        {
+                            "description": "Symbol TP46 Pin 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.4003
+                            },
+                            "uuid": "5a1cd469-fb2f-421c-a7cd-1d4b61c91eae"
+                        },
+                        {
+                            "description": "Symbol R4 Pin 2 [2, Passive, Line]",
+                            "pos": {
+                                "x": 0.9271,
+                                "y": 2.413
+                            },
+                            "uuid": "42a97a72-373f-4064-9f37-f1f1bd214054"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP45 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.3749
+                            },
+                            "uuid": "3a35806e-8d46-4cc6-9941-b1c499508fe9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'Test_Point' not found in symbol library 'Mechanical'",
+                    "items": [
+                        {
+                            "description": "Symbol TP46 [Test_Point]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.4003
+                            },
+                            "uuid": "df5b1f7e-ebba-4135-9123-91c8f3ca0a7e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        },
+        {
+            "path": "/motor_driver/",
+            "uuid_path": "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d",
+            "violations": [
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 13 [OUTA, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8001
+                            },
+                            "uuid": "db537a42-4e85-4d2b-adcf-b35a508e9ed1"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 14 [OUTA, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8255
+                            },
+                            "uuid": "f159819b-cc01-4574-9d43-97fd8b383df0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 16 [OUTB, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8509
+                            },
+                            "uuid": "3174c344-f862-47f1-a58b-28025a79fe5c"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 17 [OUTB, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8763
+                            },
+                            "uuid": "795015f6-ad79-4121-99ad-fad2e76de670"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 19 [OUTC, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.9017
+                            },
+                            "uuid": "5f591293-9197-4b5f-80f3-ed7bb2b7a3f7"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 20 [OUTC, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.9271
+                            },
+                            "uuid": "656dfb04-6272-475e-bbe3-81114236ca7c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.006858,
+                                "y": 0.006858
+                            },
+                            "uuid": "35b7ceea-4cd3-4cd5-8879-3c2964f213a6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 37 [VREF/ILIM, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.2573,
+                                "y": 1.0287
+                            },
+                            "uuid": "f8c05e16-0797-4767-a8fa-201f99527d11"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 3 [Vout, Power output, Line]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 0.3175
+                            },
+                            "uuid": "58b8398e-c001-4c16-847b-57bbd87a35c2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/motor_driver1/",
+            "uuid_path": "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a",
+            "violations": [
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 13 [OUTA, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8001
+                            },
+                            "uuid": "db537a42-4e85-4d2b-adcf-b35a508e9ed1"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 14 [OUTA, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8255
+                            },
+                            "uuid": "f159819b-cc01-4574-9d43-97fd8b383df0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 16 [OUTB, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8509
+                            },
+                            "uuid": "3174c344-f862-47f1-a58b-28025a79fe5c"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 17 [OUTB, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.8763
+                            },
+                            "uuid": "795015f6-ad79-4121-99ad-fad2e76de670"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 19 [OUTC, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.9017
+                            },
+                            "uuid": "5f591293-9197-4b5f-80f3-ed7bb2b7a3f7"
+                        },
+                        {
+                            "description": "Symbol U15 Pin 20 [OUTC, Output, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.9271
+                            },
+                            "uuid": "656dfb04-6272-475e-bbe3-81114236ca7c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Unconnected \"no connection\" flag",
+                    "items": [
+                        {
+                            "description": "No Connect",
+                            "pos": {
+                                "x": 0.006858,
+                                "y": 0.006858
+                            },
+                            "uuid": "35b7ceea-4cd3-4cd5-8879-3c2964f213a6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "no_connect_dangling"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 37 [VREF/ILIM, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.2573,
+                                "y": 1.0287
+                            },
+                            "uuid": "f8c05e16-0797-4767-a8fa-201f99527d11"
+                        },
+                        {
+                            "description": "Symbol U9 Pin 3 [Vout, Power output, Line]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 0.3175
+                            },
+                            "uuid": "58b8398e-c001-4c16-847b-57bbd87a35c2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/magnetic_encoder/",
+            "uuid_path": "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637",
+            "violations": []
+        },
+        {
+            "path": "/magnetic_encoder1/",
+            "uuid_path": "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/0c28785f-fbfa-498f-abec-3f4cc9ccf6c4",
+            "violations": []
+        }
+    ],
+    "source": "twinspora.kicad_sch"
+}

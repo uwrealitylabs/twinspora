@@ -1344,6 +1344,219 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Capacitor_THT_UWRL:50PX330MEFC10X16"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "50PX330MEFC10X16"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Capacitor_THT_UWRL:CAP-TH_BD10.0-P5.00-D1.0-FD"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/44833.html"
+				(at -2.286 0.127 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C88789"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C88789"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "50PX330MEFC10X16_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy -1.524 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 1.27) (xy -2.032 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.032) (xy -0.508 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2057 -1.827)
+					(mid 0.5092 0.0844)
+					(end 1.3264 1.9474)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(symbol "50PX330MEFC10X16_1_1"
+				(text "330uF"
+					(at 0 3.048 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(color 163 59 255 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
@@ -3464,6 +3677,32 @@
 		)
 		(uuid "579b72c8-c6da-4669-904e-dfec4abf2b30")
 	)
+	(text_box "Populate with 330uF ≥50V \nAluminum Electrolyic Capacitor\n\nThrough hole & SMD footprint for D10mm"
+		(exclude_from_sim no)
+		(at 201.93 124.4747 0)
+		(size 20.32 20.3053)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7a02d768-85ae-4d2a-96b8-77d6a6d828df")
+	)
+	(junction
+		(at 184.15 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06376883-4c84-493b-99b8-5a797089ef3d")
+	)
 	(junction
 		(at 161.29 86.36)
 		(diameter 0)
@@ -3495,6 +3734,12 @@
 		(uuid "3b3a515d-3149-49e6-8eb5-30f8d353d162")
 	)
 	(junction
+		(at 184.15 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4251efc3-d591-4bda-9b92-20d7b37c7e42")
+	)
+	(junction
 		(at 194.31 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3505,12 +3750,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5443a251-5a81-4ef6-8388-7f46c6e472d4")
-	)
-	(junction
-		(at 184.15 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56805005-e941-45e7-84be-1e13996eaabd")
 	)
 	(junction
 		(at 176.53 95.25)
@@ -3571,6 +3810,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8130db69-107a-4102-9d53-a85e89b1d474")
+	)
+	(junction
+		(at 194.31 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "894cac14-90e0-419c-8ff0-7da4a695deae")
 	)
 	(junction
 		(at 184.15 102.87)
@@ -3714,16 +3959,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 134.62) (xy 184.15 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15cecd50-239b-4ea4-917b-2f9416e81591")
-	)
-	(wire
-		(pts
 			(xy 95.25 110.49) (xy 125.73 110.49)
 		)
 		(stroke
@@ -3834,6 +4069,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 134.62) (xy 184.15 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3661bc-3db8-48fc-8e2b-2c2706bcd90e")
+	)
+	(wire
+		(pts
 			(xy 163.83 77.47) (xy 161.29 77.47)
 		)
 		(stroke
@@ -3881,6 +4126,16 @@
 			(type default)
 		)
 		(uuid "48ad0d3c-396c-42bb-a86b-ac8833fe593a")
+	)
+	(wire
+		(pts
+			(xy 184.15 147.32) (xy 184.15 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490f5edb-26af-4207-873f-91ca89026f01")
 	)
 	(wire
 		(pts
@@ -4164,6 +4419,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 147.32) (xy 185.42 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98844ab0-f378-4d53-b905-a87317bfb992")
+	)
+	(wire
+		(pts
 			(xy 167.64 95.25) (xy 176.53 95.25)
 		)
 		(stroke
@@ -4314,6 +4579,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 147.32) (xy 194.31 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0fc2b8d-f390-488f-bd84-013cd3f866e5")
+	)
+	(wire
+		(pts
 			(xy 125.73 106.68) (xy 109.22 106.68)
 		)
 		(stroke
@@ -4321,6 +4596,16 @@
 			(type default)
 		)
 		(uuid "df201939-a69f-45a9-9b5c-3dcc08ac9ada")
+	)
+	(wire
+		(pts
+			(xy 193.04 147.32) (xy 194.31 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1148cc7-52de-4a00-a91b-f9cf4fbadaa2")
 	)
 	(wire
 		(pts
@@ -4656,7 +4941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05f3c915-ba22-4594-a9d9-803d2ac50395")
-		(property "Reference" "#PWR91"
+		(property "Reference" "#PWR064"
 			(at 109.22 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4716,11 +5001,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR92")
+					(reference "#PWR074")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR91")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4738,7 +5023,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b7a8ced-e9ab-49cb-8449-0f68b65d718c")
-		(property "Reference" "R19"
+		(property "Reference" "R29"
 			(at 96.52 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4825,11 +5110,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "R21")
+					(reference "R31")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "R19")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -4847,7 +5132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d25c1d3-5d53-4d00-9341-074b03866191")
-		(property "Reference" "#PWR35"
+		(property "Reference" "#PWR065"
 			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4907,11 +5192,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR42")
+					(reference "#PWR075")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR35")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4929,7 +5214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10c036be-fa0e-40bd-abcb-9da1f0d06e0d")
-		(property "Reference" "#PWR36"
+		(property "Reference" "#PWR063"
 			(at 95.25 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -4989,11 +5274,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR41")
+					(reference "#PWR073")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR36")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -5010,7 +5295,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14f32151-19e3-4ada-adc1-3d05101a1a78")
-		(property "Reference" "C25"
+		(property "Reference" "C32"
 			(at 138.43 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5097,11 +5382,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C29")
+					(reference "C46")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C25")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -5217,7 +5502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21a578f0-95c7-4d80-adcf-ea015974993f")
-		(property "Reference" "C41"
+		(property "Reference" "C42"
 			(at 189.23 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5304,11 +5589,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C48")
+					(reference "C56")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C41")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -5326,7 +5611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22da791d-7bd8-4490-836f-6cc4e1c7d50d")
-		(property "Reference" "#PWR33"
+		(property "Reference" "#PWR068"
 			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5386,11 +5671,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR45")
+					(reference "#PWR078")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR33")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -5408,7 +5693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "258cc000-c186-4dec-9b8f-ecadab5b7db7")
-		(property "Reference" "C36"
+		(property "Reference" "C37"
 			(at 189.23 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5495,11 +5780,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C43")
+					(reference "C51")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C36")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -5517,7 +5802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29926bea-97fa-41c3-a519-291a241a3a5f")
-		(property "Reference" "#PWR34"
+		(property "Reference" "#PWR062"
 			(at 95.25 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5577,11 +5862,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR40")
+					(reference "#PWR072")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR34")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -5599,7 +5884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a8a6de9-e6fc-45aa-98f9-e26a64ad0256")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 189.23 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5686,11 +5971,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C42")
+					(reference "C50")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -5707,7 +5992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35e193ce-e6f5-47d6-8298-13ace3171dba")
-		(property "Reference" "J14"
+		(property "Reference" "J9"
 			(at 215.9 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5772,11 +6057,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "J15")
+					(reference "J10")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "J14")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -5794,7 +6079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "447b4e9c-02cd-42a8-80b9-c96b16dda2e2")
-		(property "Reference" "C40"
+		(property "Reference" "C41"
 			(at 189.23 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5881,11 +6166,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C47")
+					(reference "C55")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C40")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -5903,7 +6188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5522121f-0fb0-484b-9434-528e086607c6")
-		(property "Reference" "#PWR38"
+		(property "Reference" "#PWR067"
 			(at 143.51 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5963,11 +6248,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR44")
+					(reference "#PWR077")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR38")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -5985,7 +6270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d1a6ce8-9aab-46ca-bc5d-7a291f810a8c")
-		(property "Reference" "C20"
+		(property "Reference" "C31"
 			(at 124.46 118.1099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6073,11 +6358,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C21")
+					(reference "C45")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C20")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -6095,7 +6380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7008b3b7-b22c-4050-adad-a0034055e200")
-		(property "Reference" "#PWR39"
+		(property "Reference" "#PWR069"
 			(at 166.37 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6155,11 +6440,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR46")
+					(reference "#PWR079")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR39")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -6177,7 +6462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7944ce74-8490-4366-ba09-a73f5142c940")
-		(property "Reference" "#PWR37"
+		(property "Reference" "#PWR066"
 			(at 123.19 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6237,11 +6522,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR43")
+					(reference "#PWR076")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR37")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -6258,7 +6543,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7be19cb9-c1aa-4517-bde9-3b77c0ad291b")
-		(property "Reference" "C28"
+		(property "Reference" "C35"
 			(at 177.8 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6345,11 +6630,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C32")
+					(reference "C49")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C28")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -6357,7 +6642,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 139.7 0)
+		(at 184.15 152.4 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6368,8 +6653,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93187373-aaba-49ca-88f2-425003286e1b")
-		(property "Reference" "#PWR59"
-			(at 184.15 146.05 0)
+		(property "Reference" "#PWR070"
+			(at 184.15 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6380,7 +6665,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 144.78 0)
+			(at 184.15 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6390,7 +6675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 139.7 0)
+			(at 184.15 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6401,7 +6686,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 139.7 0)
+			(at 184.15 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6412,7 +6697,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 139.7 0)
+			(at 184.15 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6428,11 +6713,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR61")
+					(reference "#PWR080")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR59")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -6450,7 +6735,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "964c3ddb-60b2-494f-9381-147710eb96b3")
-		(property "Reference" "C26"
+		(property "Reference" "C33"
 			(at 151.13 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6537,11 +6822,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C30")
+					(reference "C47")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C26")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -6559,7 +6844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d2357ec-39e0-4afc-a322-60e028726598")
-		(property "Reference" "C54"
+		(property "Reference" "C43"
 			(at 189.23 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,11 +6920,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C55")
+					(reference "C57")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C54")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -6756,7 +7041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a53e3dac-97b1-4e7a-911a-46fb0191ffca")
-		(property "Reference" "C39"
+		(property "Reference" "C40"
 			(at 189.23 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6843,11 +7128,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C46")
+					(reference "C54")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C39")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -6866,7 +7151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad7d1a2b-1cfa-4c8d-aa4d-8940d0bf5980")
-		(property "Reference" "U6"
+		(property "Reference" "U14"
 			(at 146.2567 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7060,11 +7345,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "U7")
+					(reference "U15")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "U6")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -7082,7 +7367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4453a37-3463-40b3-9638-65fc68318539")
-		(property "Reference" "#PWR60"
+		(property "Reference" "#PWR071"
 			(at 194.31 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7142,11 +7427,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#PWR62")
+					(reference "#PWR081")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#PWR60")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -7164,7 +7449,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9b007a1-9dfb-4963-9438-628f3c5ca2f9")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 93.98 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7239,11 +7524,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -7260,7 +7545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd57f81d-e8c5-4dc6-b330-7e312299a81f")
-		(property "Reference" "C27"
+		(property "Reference" "C34"
 			(at 168.91 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7347,11 +7632,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C31")
+					(reference "C48")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C27")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -7369,7 +7654,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6c833d3-70ff-4fce-88f7-ec4e4ce3728f")
-		(property "Reference" "#FLG5"
+		(property "Reference" "#FLG07"
 			(at 176.53 93.345 0)
 			(hide yes)
 			(show_name no)
@@ -7429,11 +7714,108 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "#FLG7")
+					(reference "#FLG08")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "#FLG5")
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capacitor_THT_UWRL:50PX330MEFC10X16")
+		(at 189.23 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "d9d6f28c-ee03-4a12-b890-37e4d2f0affa")
+		(property "Reference" "C44"
+			(at 189.23 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50PX330MEFC10X16"
+			(at 189.23 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT_UWRL:CAP-TH_BD10.0-P5.00-D1.0-FD"
+			(at 189.23 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/44833.html"
+			(at 186.944 147.193 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C88789"
+			(at 189.23 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46562c6d-0c24-4dd1-af8a-dddd4383719f")
+		)
+		(pin "2"
+			(uuid "34ff4b6c-422f-447a-a4db-ce627a0deac0")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "C58")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -7452,7 +7834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3b94682-0319-4060-8d64-518f1ff4dd85")
-		(property "Reference" "R35"
+		(property "Reference" "R30"
 			(at 111.76 101.5999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7540,11 +7922,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "R36")
+					(reference "R32")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "R35")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -7562,7 +7944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5160c22-b13c-4d59-9e01-7e91a3d6b85e")
-		(property "Reference" "C37"
+		(property "Reference" "C38"
 			(at 189.23 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7649,11 +8031,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C44")
+					(reference "C52")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C37")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -7671,7 +8053,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f82bb597-879b-475e-9932-79a1042b40df")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 189.23 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7758,11 +8140,11 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C45")
+					(reference "C53")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "date": "2026-05-05T16:56:18",
+    "generator": "KiCad 10.0.1",
+    "project": "twinspora",
+    "board_name": "twinspora"
+  },
+  "board": {
+    "has_outline": true,
+    "width": "76.9500 mm",
+    "height": "36.9250 mm",
+    "area": "2831.439 mm²",
+    "front_component_density": "37.04",
+    "back_component_density": "9.59",
+    "front_copper_area": "2751.314 mm²",
+    "back_copper_area": "2614.151 mm²",
+    "min_track_clearance": "0.1998 mm",
+    "min_track_width": "0.1600 mm",
+    "min_drill_diameter": "0.3000 mm",
+    "board_thickness": "1.6167 mm",
+    "front_footprint_area": "1048.783 mm²",
+    "back_footprint_area": "271.657 mm²",
+    "front_footprint_density": "37.04",
+    "back_footprint_density": "9.59"
+  },
+  "pads": {
+    "through_hole": 58,
+    "smd": 619,
+    "connector": 6,
+    "npth": 9,
+    "castellated": 0,
+    "press_fit": 0
+  },
+  "vias": {
+    "through": 607,
+    "blind": 0,
+    "buried": 0,
+    "micro": 0
+  },
+  "components": {
+    "tht": {
+      "front": 7,
+      "back": 0,
+      "total": 7
+    },
+    "smd": {
+      "front": 143,
+      "back": 0,
+      "total": 143
+    },
+    "unspecified": {
+      "front": 55,
+      "back": 0,
+      "total": 55
+    },
+    "total": {
+      "front": 205,
+      "back": 0,
+      "total": 205
+    }
+  },
+  "drill_holes": [
+    {
+      "count": 520,
+      "shape": "Round",
+      "x_size": "0.3000 mm",
+      "y_size": "0.3000 mm",
+      "plated": true,
+      "source": "Via",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 87,
+      "shape": "Round",
+      "x_size": "0.4000 mm",
+      "y_size": "0.4000 mm",
+      "plated": true,
+      "source": "Via",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 32,
+      "shape": "Round",
+      "x_size": "0.5000 mm",
+      "y_size": "0.5000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 8,
+      "shape": "Round",
+      "x_size": "1.0000 mm",
+      "y_size": "1.0000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 6,
+      "shape": "Round",
+      "x_size": "1.4000 mm",
+      "y_size": "1.4000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 4,
+      "shape": "Round",
+      "x_size": "2.2000 mm",
+      "y_size": "2.2000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 4,
+      "shape": "Round",
+      "x_size": "3.8000 mm",
+      "y_size": "3.8000 mm",
+      "plated": false,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 4,
+      "shape": "Round",
+      "x_size": "3.2000 mm",
+      "y_size": "3.2000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 3,
+      "shape": "Round",
+      "x_size": "0.9906 mm",
+      "y_size": "0.9906 mm",
+      "plated": false,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Round",
+      "x_size": "0.7500 mm",
+      "y_size": "0.7500 mm",
+      "plated": false,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Slot",
+      "x_size": "0.8000 mm",
+      "y_size": "1.4000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 1,
+      "shape": "Slot",
+      "x_size": "0.8000 mm",
+      "y_size": "1.6000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 1,
+      "shape": "Slot",
+      "x_size": "0.8000 mm",
+      "y_size": "1.6000 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    }
+  ]
+}

@@ -43,11 +43,11 @@
           "height": 0.6,
           "width": 1.325
         },
-        "silk_line_width": 0.1,
+        "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.6,
+        "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.0
@@ -917,7 +917,7 @@
         "uuid": "64e594d2-0aaa-4fb1-a4b5-254d61e53018"
       }
     ],
-    "used_designators": "C10-11",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
