@@ -8,7 +8,7 @@ Twin DRV8316 motor drivers controlled by an STM32G473 with an onboard MT6701 mag
 
 - **MCU:** STM32G473
 - **Motor drivers:** 2× DRV8316CR (Controlled via SPI)
-- **Encoder:** MT6701 onboard. Optional SPI breakout for remotely-mounted motors — desolder 3× 0603 resistors to disconnect onboard sensor & use "JST" SH-1.0 5 pin header.
+- **Encoder:** MT6701 onboard. Optional SPI breakout for remotely-mounted motors — desolder 3× 0603 resistors to disconnect onboard sensor & use "JST" SH-1.0 6 pin header.
 - **Connectivity:** CAN-FD, USB 2.0, I²C
 
 ## Power & decoupling
