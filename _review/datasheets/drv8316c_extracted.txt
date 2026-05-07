@@ -1,0 +1,2203 @@
+PAGES: 95
+=== PAGE 1 ===
+DRV8316C Three-Phase Integrated FET Motor Driver
+1 Features
+•
+Three-phase BLDC motor driver
+–
+Cycle-by-cycle current limit to limit phase 
+current
+–
+Supports up to 200-kHz PWM frequency
+–
+Active demagnetization to reduce power losses
+•
+4.5-V to 35-V operating voltage (40-V abs max)
+•
+High output current capability: 8-A Peak
+•
+Low MOSFET on-state resistance
+–
+95-mΩ RDS(ON) (HS + LS) at TA = 25°C
+•
+Low power sleep mode
+–
+1.5-µA at VVM = 24-V, TA = 25°C
+•
+Multiple control interface options
+–
+6x PWM control interface
+–
+3x PWM control interface
+–
+6x PWM control interface with cycle by cycle 
+current limit
+–
+3x PWM control interface with cycle by cycle 
+current limit
+•
+Does not require external current sense resistors, 
+built-in current sensing
+•
+Flexible device configuration options
+–
+DRV8316CR: 5-MHz 16-bit SPI interface for 
+device configuration and fault status
+–
+DRV8316CT: Hardware pin based configuration
+•
+Supports 1.8-V, 3.3-V, and 5-V logic inputs
+•
+Built-in 3.3-V (5%), 30-mA LDO regulator
+•
+Built-in 3.3-V/5-V, 200-mA buck regulator
+•
+Built-in 3.3-V, 30-mA LDO
+•
+Delay compensation reduces duty cycle distortion
+•
+Suite of integrated protection features
+–
+Supply undervoltage lockout (UVLO)
+–
+Charge pump undervoltage (CPUV)
+–
+Overcurrent protection (OCP)
+–
+Thermal warning and shutdown (OTW/OTSD)
+–
+Fault condition indication pin (nFAULT)
+–
+Optional fault diagnostics over SPI interface
+2 Applications
+•
+CPAP machines
+•
+Brushless-DC (BLDC) Motor Modules
+•
+Printers
+•
+Camera gimbals
+•
+HVAC motors
+•
+Small home appliances
+•
+Office automation machines
+•
+Factory automation and robotics
+3 Description
+DRV8316C integrates three H-bridges with 40-V 
+absolute maximum capability and a very low RDS(ON) 
+of 95 mΩ (high-side + low-side) to enable high power 
+drive capability for 12-V/24-V brushless-DC motors. 
+DRV8316C provides integrated current sensing which 
+eliminates the need for external sense resistors. 
+DRV8316C integrates power management circuits 
+including an voltage-adjustable buck regulator (3.3 V / 
+5 V, 200-mA) and LDO (3.3 V / 30 mA) that can be 
+used to power external circuits.
+DRV8316C provides a configurable 6x or 3x PWM 
+control scheme which can be used to implement 
+sensored or sensorless field-oriented control (FOC), 
+sinusoidal control, or trapezoid control using an 
+external microcontroller. DRV8316C is capable of 
+driving a PWM frequency of up to 200 kHz. 
+DRV8316C is highly configurable either through SPI 
+(DRV8316CR) or pins (DRV8316CT) - PWM mode. 
+slew rate, OCP level, current sense gain are some of 
+the configurable features.
+A number of protection features including supply 
+undervoltage lockout (UVLO), overvoltage protection 
+(OVP), 
+charge 
+pump 
+undervoltage 
+(CPUV), 
+overcurrent 
+protection 
+(OCP), 
+over-temperature 
+warning (OTW) and over-temperature shutdown 
+(OTSD) are integrated into DRV8316C to protect the 
+device, motor, and system against fault events. Fault 
+conditions are indicated by the nFAULT pin.
+Refer Application Information for design consideration 
+and recommendation on device usage.
+Device Information(1) 
+PART NUMBER
+PACKAGE
+BODY SIZE (NOM)
+DRV8316CR
+VQFN (40)
+7.00 mm x 5.00 mm
+DRV8316CT
+VQFN (40)
+7.00 mm x 5.00 mm
+(1)
+For all available packages, see the orderable addendum at 
+the end of the data sheet.
+nSLEEP
+DRVOFF
+SPI
+Only on SPI 
+variant
+PWM input
+6x / 3x PWM
+CSA out
+nFAULT
+A
+B
+C
+4.5V to 35V (40V abs max)
+8-A peak output current,
+typically 12-V/24-V, 
+<80W motors
+Buck out
+3.3 or 5.0 V, up to 200mA
+DRV8316C
+MOSFETs
+Buck/LDO Regulator
+Integrated Current Sensing
+Built-in Protecon
+Charge Pump
+MCU
+LDO out
+3.3-V, up to 30-mA
+Simplified Schematic
+DRV8316C
+SLVSH07 – DECEMBER 2022
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+=== PAGE 2 ===
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Revision History.............................................................. 2
+5 Device Comparison Table ..............................................3
+6 Pin Configuration and Functions...................................4
+7 Specifications.................................................................. 6
+7.1 Absolute Maximum Ratings........................................ 6
+7.2 ESD Ratings............................................................... 6
+7.3 Recommended Operating Conditions.........................6
+7.4 Thermal Information....................................................7
+7.5 Electrical Characteristics.............................................7
+7.6 SPI Timing Requirements......................................... 14
+7.7 SPI Slave Mode Timings...........................................15
+7.8 Typical Characteristics..............................................15
+8 Detailed Description......................................................16
+8.1 Overview...................................................................16
+8.2 Functional Block Diagram.........................................17
+8.3 Feature Description...................................................19
+8.4 Device Functional Modes..........................................53
+8.5 SPI Communication.................................................. 54
+8.6 Register Map.............................................................57
+9 Application and Implementation..................................69
+9.1 Application Information............................................. 69
+9.2 Typical Applications.................................................. 70
+10 Power Supply Recommendations..............................82
+10.1 Bulk Capacitance....................................................82
+11 Layout...........................................................................83
+11.1 Layout Guidelines................................................... 83
+11.2 Layout Example...................................................... 84
+11.3 Thermal Considerations..........................................85
+12 Device and Documentation Support..........................86
+12.1 Documentation Support.......................................... 86
+12.2 Support Resources................................................. 86
+12.3 Trademarks.............................................................86
+12.4 Electrostatic Discharge Caution..............................86
+12.5 Glossary..................................................................86
+13 Mechanical, Packaging, and Orderable 
+Information.................................................................... 86
+4 Revision History
+DATE
+REVISION
+NOTES
+December 2022
+*
+Initial release.
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 5 ===
+Table 6-1. Pin Functions (continued)
+PIN
+40-pin Package
+TYPE(1)
+DESCRIPTION
+NAME
+DRV8316CR
+DRV8316CT
+INLB
+30
+30
+I
+Low-side driver control input for OUTB. This pin controls the output of the 
+low-side MOSFET.
+INLC
+32
+32
+I
+Low-side driver control input for OUTC. This pin controls the output of the 
+low-side MOSFET.
+MODE
+—
+33
+I
+PWM input mode setting. This pin is a 4-level input pin set by an external 
+resistor.
+NC
+1, 24
+1
+—
+No connection, open
+nFAULT
+22
+22
+O
+Fault indicator. Pulled logic-low with fault condition; Open-drain output requires 
+an external pull-up resistor to 1.8 V to 5.0 V. If external supply is used to pull 
+up nFAULT, ensure that it is pulled to >2.2 V on power up or the device will 
+enter test mode
+nSCS
+36
+—
+I
+Serial chip select. A logic low on this pin enables serial interface 
+communication.
+nSLEEP
+23
+23
+I
+Driver nSLEEP. When this pin is logic low, the device goes into a low-power 
+sleep mode. A 20 to 40-µs low pulse can be used to reset fault conditions 
+without entering sleep mode.
+OCP/SR
+—
+35
+I
+OCP level and Synchronous Rectification (Active Demagnetization) setting. 
+This pin is a 4-level input pin set by an external resistor.
+OUTA
+13, 14
+13, 14
+PWR O
+Half bridge output A
+OUTB
+16, 17
+16, 17
+PWR O
+Half bridge output B
+OUTC
+19, 20
+19, 20
+PWR O
+Half bridge output C
+PGND
+12, 15, 18
+12, 15, 18
+GND
+Device power ground. Refer Section 11.1 for connections recommendation.
+SCLK
+35
+—
+I
+Serial clock input. Serial data is shifted out and captured on the corresponding 
+rising and falling edge on this pin (SPI devices).
+SDI
+34
+—
+I
+Serial data input. Data is captured on the falling edge of the SCLK pin (SPI 
+devices).
+SDO
+33
+—
+O
+Serial data output. Data is shifted out on the rising edge of the SCLK pin. This 
+pin requires an external pullup resistor (SPI devices).
+SLEW
+—
+34
+I
+Slew rate control setting. This pin is a 4-level input pin set by an external 
+resistor.
+SOA
+40
+40
+O
+Current sense amplifier output. Supports capacitive load or low pass filter 
+(resistor in series and capacitor to GND)
+SOB
+39
+39
+O
+Current sense amplifier output. Supports capacitive load or low pass filter 
+(resistor in series and capacitor to GND)
+SOC
+38
+38
+O
+Current sense amplifier output. Supports capacitive load or low pass filter 
+(resistor in series and capacitor to GND)
+SW_BK
+5
+5
+PWR O
+Buck switch node. Connect this pin to an inductor or resistor.
+VM
+9, 10, 11
+9, 10, 11
+PWR I
+Power supply. Connect to motor supply voltage; bypass to PGND with two 
+0.1-µF capacitors (for each pin) plus one bulk capacitor rated for VM. TI 
+recommends a capacitor voltage rating at least twice the normal operating 
+voltage of the device.
+VSEL_BK
+—
+24
+I
+Buck output voltage setting. This pin is a 4-level input pin set by an external 
+resistor.
+VREF/ILIM
+37
+37
+PWR/I
+VREF in PWM Mode 1 and Mode 3: Current sense amplifier power supply 
+input and reference. Connect a X5R or X7R, 0.1-µF, 6.3-V ceramic capacitor 
+between the VREF and AGND pins.
+ILIM in PWM Mode 2 and Mode 4: Sets the threshold for phase current used 
+in cycle by cycle current limit.
+Thermal 
+pad
+GND
+Must be connected to analog ground.
+(1)
+I = input, O = output, GND = ground pin, PWR = power, NC = no connect
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: DRV8316C
+
+
+=== PAGE 6 ===
+7 Specifications
+7.1 Absolute Maximum Ratings
+over operating ambient temperature range (unless otherwise noted)(1)
+MIN
+MAX
+UNIT
+Power supply pin voltage (VM)
+–0.3
+40
+V
+Power supply voltage ramp (VM)
+4
+V/µs
+Voltage difference between ground pins (GND_BK, PGND, AGND)
+–0.3
+0.3
+V
+Charge pump voltage (CPH, CP)
+–0.3
+VM + 6
+V
+Charge pump negative switching pin voltage (CPL)
+–0.3
+VM + 0.3
+V
+Switching regulator pin voltage (FB_BK)
+–0.3
+5.75
+V
+Switching node pin voltage (SW_BK)
+–0.3
+VM + 0.3
+V
+Analog regulator pin voltage (AVDD)
+–0.3
+4
+V
+Logic pin input voltage (DRVOFF, INHx, INLx, nSCS, nSLEEP, SCLK, SDI)
+–0.3
+5.75
+V
+Logic pin output voltage (nFAULT, SDO)
+–0.3
+5.75
+V
+Output pin voltage (OUTA, OUTB, OUTC)
+–1
+VM + 1
+V
+Ambient temperature, TA
+–40
+125
+°C
+Junction temperature, TJ
+–40
+150
+°C
+Storage tempertaure, Tstg
+–65
+150
+°C
+(1)
+Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. 
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully 
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+7.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic 
+discharge
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001(1)
+±2000
+V
+Charged device model (CDM), per ANSI/ESDA/JEDEC JS-002(2)
+±500
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. 
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process. 
+7.3 Recommended Operating Conditions
+over operating ambient temperature range (unless otherwise noted)
+MIN
+NOM
+MAX
+UNIT
+VVM
+Power supply voltage
+VVM
+4.5
+24
+35
+V
+fPWM
+Output PWM frequency
+OUTA, OUTB, OUTC
+200
+kHz
+IOUT (1)
+Peak output winding current
+OUTA, OUTB, OUTC
+8
+A
+VIN
+Logic input voltage
+DRVOFF, INHx, INLx, nSCS, nSLEEP, 
+SCLK, SDI
+–0.1
+5.5
+V
+VOD
+Open drain pullup voltage
+nFAULT, SDO
+–0.1
+5.5
+V
+VSDO
+Push-pull voltage 
+SDO
+2.2
+5.5
+V
+IOD
+Open drain output current
+nFAULT, SDO
+5
+mA
+VVREF
+Voltage reference pin voltage
+VREF
+2.8
+AVDD
+V
+TA
+Operating ambient temperature
+–40
+125
+°C
+TJ
+Operating Junction temperature
+–40
+150
+°C
+(1)
+Power dissipation and thermal limits must be observed
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 7 ===
+7.4 Thermal Information
+THERMAL METRIC(1)
+DRV8316CR, 
+DRV8316CT
+UNIT
+VQFN (RGF)
+40 Pins
+RθJA 
+Junction-to-ambient thermal resistance
+25.7
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance
+15.2
+°C/W
+RθJB
+Junction-to-board thermal resistance
+7.3
+°C/W
+ΨJT
+Junction-to-top characterization parameter
+0.2
+°C/W
+ΨJB
+Junction-to-board characterization parameter
+7.2
+°C/W
+RθJC(bot)
+Junction-to-case (bottom) thermal resistance
+2.0
+°C/W
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application 
+report.
+7.5 Electrical Characteristics
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+POWER SUPPLIES
+IVMQ
+VM sleep mode current
+VVM > 6 V, nSLEEP = 0, TA = 25 °C
+1.5
+2.5
+µA
+nSLEEP = 0
+2.5
+5
+µA
+IVMS
+VM standby mode current
+(Buck regulator disabled) 
+nSLEEP = 1, INHx = INLx = 0, SPI = 
+'OFF', BUCK_DIS = 1;
+4
+10
+mA
+VVM > 6 V, nSLEEP = 1, INHx = INLx = 
+0, SPI = 'OFF', TA = 25 °C, BUCK_DIS = 
+1; 
+4
+5
+mA
+IVMS
+VM standby mode current
+(Buck regulator enabled)
+VVM > 6 V, nSLEEP = 1, INHx = INLx 
+= 0, SPI = 'OFF', IBK = 0, TA = 25 
+°C, BUCK_DIS = 0; 
+5
+6
+mA
+nSLEEP = 1, INHx = INLx = 0, SPI = 
+'OFF', IBK = 0, BUCK_DIS = 0; 
+6
+10
+mA
+IVM
+VM operating mode current
+(Buck regulator disabled)
+VVM > 6 V, nSLEEP = 1, fPWM = 25 kHz, 
+TA = 25 °C, BUCK_DIS = 1
+10
+13
+mA
+VVM > 6 V, nSLEEP = 1, fPWM = 200 kHz, 
+TA = 25 °C, BUCK_DIS = 1
+18
+21
+mA
+ nSLEEP =1, fPWM = 25 kHz, BUCK_DIS 
+= 1
+11
+16
+mA
+nSLEEP =1, fPWM = 200 kHz, 
+BUCK_DIS = 1
+17
+25
+mA
+IVM
+VM operating mode current
+(Buck regulator enabled)
+VVM > 6 V, nSLEEP = 1, fPWM = 
+25 kHz, TA = 25 °C, BUCK_DIS = 
+0; BUCK_PS_DIS = 0
+11
+13
+mA
+VVM > 6 V, nSLEEP = 1, fPWM = 
+200 kHz, TA = 25 °C, BUCK_DIS = 
+0; BUCK_PS_DIS = 0
+19
+22
+mA
+ nSLEEP =1, fPWM = 25 kHz, BUCK_DIS 
+= 0; BUCK_PS_DIS = 0
+12
+17
+mA
+ nSLEEP =1, fPWM = 200 kHz, 
+BUCK_DIS = 0; BUCK_PS_DIS = 0
+18
+27
+mA
+VAVDD
+Analog regulator voltage
+0 mA ≤ IAVDD ≤ 30 mA; BUCK_PS_DIS = 
+0
+3.1
+3.3
+3.465
+V
+IAVDD
+External analog regulator load
+30
+mA
+VVCP
+Charge pump regulator voltage
+VCP with respect to VM
+3.6
+4.7
+5.25
+V
+fCP
+Charge pump switching frequency
+400
+kHz
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: DRV8316C
+
+
+=== PAGE 8 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+tWAKE
+Wakeup time
+VVM > VUVLO, nSLEEP = 1 to outputs 
+ready and nFAULT released
+1
+ms
+tSLEEP
+Sleep Pulse time
+nSLEEP = 0 period to enter sleep mode
+120
+µs
+tRST
+Reset Pulse time
+nSLEEP = 0 period to reset faults
+20
+40
+µs
+BUCK REGULATOR
+VBK
+Buck regulator average voltage
+(LBK = 47 µH, CBK = 22 µF)
+(SPI Device)
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 mA, 
+BUCK_SEL = 00b
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 mA, 
+BUCK_SEL = 01b
+4.6
+5.0
+5.4
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 mA, 
+BUCK_SEL = 10b
+3.7
+4.0
+4.3
+V
+VVM > 6.7 V, 0 mA ≤ IBK ≤ 200 mA, 
+BUCK_SEL = 11b
+5.2
+5.7
+6.2
+V
+VVM < 6.0 V (BUCK_SEL = 00b, 01b, 
+10b) or VVM < 6.0 V (BUCK_SEL = 11b),   
+0 mA ≤ IBK ≤ 200 mA
+VVM–
+IBK*(RLBK+
+2)(1)
+V
+VBK
+Buck regulator average voltage
+(LBK = 22 µH, CBK = 22 µF)
+(SPI Device)
+VVM  > 6 V, 0 mA ≤ IBK ≤ 50 mA, 
+BUCK_SEL = 00b
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 50 mA, 
+BUCK_SEL = 01b
+4.6
+5.0
+5.4
+V
+VVM  > 6 V, 0 mA ≤ IBK ≤ 50 mA, 
+BUCK_SEL = 10b
+3.7
+4.0
+4.3
+V
+VVM  > 6.7 V, 0 mA ≤ IBK ≤ 50 mA, 
+BUCK_SEL = 11b
+5.2
+5.7
+6.2
+V
+VVM < 6.0 V (BUCK_SEL = 00b, 01b, 
+10b) or VVM < 6.0 V (BUCK_SEL = 11b),   
+0 mA ≤ IBK ≤ 50 mA
+VVM–
+IBK*(RLBK+
+2) (1)
+V
+VBK
+Buck regulator average voltage
+(RBK = 22 Ω, CBK = 22 µF)
+(SPI Device)
+VVM  > 6 V, 0 mA ≤ IBK ≤ 40 mA, 
+BUCK_SEL = 00b
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 40 mA, 
+BUCK_SEL = 01b
+4.6
+5.0
+5.4
+V
+VVM  > 6 V, 0 mA ≤ IBK ≤ 40 mA, 
+BUCK_SEL = 10b
+3.7
+4.0
+4.3
+V
+VVM  > 6.7 V, 0 mA ≤ IBK ≤ 40 mA, 
+BUCK_SEL = 11b
+5.2
+5.7
+6.2
+V
+VVM < 6.0 V (BUCK_SEL = 00b, 01b, 
+10b) or VVM < 6.0 V (BUCK_SEL = 11b),   
+0 mA ≤ IBK ≤ 40 mA
+VVM–
+IBK*(RBK+2
+)
+V
+VBK
+Buck regulator average voltage
+(LBK = 47 µH, CBK = 22 µF)
+(HW Device)
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 mA, 
+VSEL_BK pin tied to AGND  
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 
+mA, VSEL_BK pin to Hi-Z
+4.6
+5.0
+5.4
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 200 
+mA, VSEL_BK pin to 47 kΩ +/- 5% tied 
+to AVDD
+3.7
+4.0
+4.3
+V
+VVM > 6.7 V, 0 mA ≤ IBK ≤ 200 mA, 
+VSEL_BK pin tied to AVDD
+5.2
+5.7
+6.2
+V
+VVM < 6.0 V, 0 mA ≤ IBK ≤ 200 mA
+VVM–
+IBK*(RLBK+
+2)(1)
+V
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 9 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+VBK
+Buck regulator average voltage
+(LBK = 22 µH, CBK = 22 µF)
+(HW Device)
+VVM > 6 V, 0 mA ≤ IBK ≤ 50 mA, 
+VSEL_BK pin tied to AGND  
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 50 
+mA, VSEL_BK pin to Hi-Z
+4.6
+5.0
+5.4
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 50 
+mA, VSEL_BK pin to 47 kΩ +/- 5% tied 
+to AVDD
+3.7
+4.0
+4.3
+V
+VVM > 6.7 V, 0 mA ≤ IBK ≤ 50 mA, 
+VSEL_BK pin tied to AVDD
+5.2
+5.7
+6.2
+V
+VVM < 6.0 V, 0 mA ≤ IBK ≤ 50 mA
+VVM–
+IBK*(RLBK+
+2)(1)
+V
+VBK
+Buck regulator average voltage
+(RBK = 22 Ω, CBK = 22 µF)
+(HW Device)
+VVM > 6 V, 0 mA ≤ IBK ≤ 40 mA, 
+VSEL_BK pin tied to AGND  
+3.1
+3.3
+3.5
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 40 
+mA, VSEL_BK pin to Hi-Z
+4.6
+5.0
+5.4
+V
+VVM > 6 V, 0 mA ≤ IBK ≤ 40 
+mA, VSEL_BK pin to 47 kΩ +/- 5% tied 
+to AVDD
+3.7
+4.0
+4.3
+V
+VVM > 6.7 V, 0 mA ≤ IBK ≤ 40 mA, 
+VSEL_BK pin tied to AVDD
+5.2
+5.7
+6.2
+V
+VVM  < 6.0 V, 0 mA ≤ IBK ≤ 40 mA
+VVM–
+IBK*(RBK+2
+)
+V
+VBK_RIP
+Buck regulator ripple voltage
+VVM  > 6 V, 0 mA ≤ IBK ≤ 200 mA, Buck 
+regulator with inductor, LBK = 47 uH, CBK 
+= 22 µF
+–100
+100
+mV
+VVM  > 6 V, 0 mA ≤ IBK ≤ 50 mA, Buck 
+regulator with inductor, LBK = 22 uH, CBK 
+= 22 µF
+–100
+100
+mV
+VVM  > 6 V, 0 mA ≤ IBK ≤ 50 mA, Buck 
+regulator with resistor; RBK = 22 Ω, CBK 
+= 22 µF
+–100
+100
+mV
+IBK
+External buck regulator load
+LBK = 47 uH, CBK = 22 µF, 
+BUCK_PS_DIS = 1b
+200
+mA
+LBK = 47 uH, CBK = 22 µF, 
+BUCK_PS_DIS = 0b
+200 – 
+IAVDD
+mA
+LBK = 22 uH, CBK = 
+22 µF, BUCK_PS_DIS = 1b
+50
+mA
+LBK = 22 uH, CBK = 22 µF, 
+BUCK_PS_DIS = 0b
+50 – 
+IAVDD
+mA
+RBK = 22 Ω, CBK = 
+22 µF, BUCK_PS_DIS = 1b
+40
+mA
+RBK = 22 Ω, CBK = 22 µF, 
+BUCK_PS_DIS = 0b
+40 – 
+IAVDD
+mA
+fSW_BK
+Buck regulator switching frequency 
+Regulation Mode
+20
+535
+kHz
+Linear Mode
+20
+535
+kHz
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: DRV8316C
+
+
+=== PAGE 10 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+VBK_UV
+Buck regulator undervoltage lockout
+(SPI Device)
+VBK rising, BUCK_SEL = 00b
+2.7
+2.8
+2.9
+V
+VBK falling, BUCK_SEL = 00b
+2.5
+2.6
+2.7
+V
+VBK rising, BUCK_SEL = 01b
+4.2
+4.4
+4.55
+V
+VBK falling, BUCK_SEL = 01b
+4.0
+4.2
+4.35
+V
+VBK rising, BUCK_SEL = 10b
+2.7
+2.8
+2.9
+V
+VBK falling, BUCK_SEL = 10b
+2.5
+2.6
+2.7
+V
+VBK rising, BUCK_SEL = 11b
+4.2
+4.4
+4.55
+V
+VBK falling, BUCK_SEL = 11b
+4
+4.2
+4.35
+V
+VBK_UV
+Buck regulator undervoltage lockout
+(HW Device)
+VBK rising, VSEL_BK pin tied to AGND
+2.7
+2.8
+2.9
+V
+VBK falling, VSEL_BK pin tied to AGND
+2.5
+2.6
+2.7
+V
+VBK rising, VSEL_BK pin to 47 kΩ +/- 5% 
+tied to AVDD
+4.3
+4.4
+4.5
+V
+VBK falling, VSEL_BK pin to 47 kΩ +/- 
+5% tied to AVDD
+4.1
+4.2
+4.3
+V
+VBK rising, VSEL_BK pin to Hi-Z
+2.7
+2.8
+2.9
+V
+VBK falling, VSEL_BK pin to Hi-Z
+2.5
+2.6
+2.7
+V
+VBK rising, VSEL_BK pin tied to AVDD
+4.2
+4.4
+4.55
+V
+VBK falling, VSEL_BK pin tied to AVDD
+4.0
+4.2
+4.35
+V
+VBK_UV_HYS
+Buck regulator undervoltage lockout 
+hysteresis
+Rising to falling threshold
+90
+200
+320
+mV
+IBK_CL
+Buck regulator Current limit threshold
+(SPI Device)
+BUCK_CL = 0b
+360
+600
+900
+mA
+BUCK_CL = 1b
+80
+150
+250
+mA
+IBK_CL
+Buck regulator Current limit threshold 
+(HW Device)
+360
+600
+900
+mA
+IBK_OCP
+Buck regulator Overcurrent protection 
+trip point
+2
+3
+4
+A
+tBK_RETRY
+Overcurrent protection retry time
+0.7
+1
+1.3
+ms
+LOGIC-LEVEL INPUTS (DRVOFF, INHx, INLx, nSLEEP, SCLK, SDI)
+VIL
+Input logic low voltage
+0
+0.6
+V
+VIH
+Input logic high voltage
+Other Pins
+1.5
+5.5
+V
+nSLEEP
+1.6
+5.5
+V
+VHYS
+Input logic hysteresis
+Other PIns
+180
+300
+420
+mV
+nSLEEP
+95
+250
+420
+mV
+IIL
+Input logic low current
+VPIN (Pin Voltage) = 0 V
+–1
+1
+µA
+IIH
+Input logic high current
+nSLEEP, VPIN (Pin Voltage) = 5 V
+10
+30
+µA
+Other pins, VPIN (Pin Voltage) = 5 V
+30
+75
+µA
+RPD
+Input pulldown resistance
+nSLEEP
+150
+200
+300
+kΩ
+Other pins
+70
+100
+130
+kΩ
+CID
+Input capacitance
+30
+pF
+LOGIC-LEVEL INPUTS (nSCS)
+VIL
+Input logic low voltage
+0
+0.6
+V
+VIH
+Input logic high voltage
+1.5
+5.5
+V
+VHYS
+Input logic hysteresis
+180
+300
+420
+mV
+IIL
+Input logic low current
+VPIN (Pin Voltage) = 0 V
+75
+µA
+IIH
+Input logic high current
+VPIN (Pin Voltage) = 5 V
+–1
+25
+µA
+RPU
+Input pullup resistance
+80
+100
+130
+kΩ
+CID
+Input capacitance
+30
+pF
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 11 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+FOUR-LEVEL INPUTS (GAIN, MODE, SLEW, VSEL_BK)
+VL1
+Input mode 1 voltage
+Tied to AGND
+0
+0.2*AVD
+D
+V
+VL2
+Input mode 2 voltage
+Hi-Z
+0.27*AV
+DD
+0.5*AVDD 0.545*AV
+DD
+V
+VL3
+Input mode 3 voltage
+47 kΩ +/- 5% tied to AVDD
+0.606*AV
+DD
+0.757*AVD
+D
+0.909*AV
+DD
+V
+VL4
+Input mode 4 voltage
+Tied to AVDD
+0.945*AV
+DD
+AVDD
+V
+RPU
+Input pullup resistance
+To AVDD
+70
+100
+130
+kΩ
+RPD
+Input pulldown resistance
+To AGND
+70
+100
+130
+kΩ
+FOUR-LEVEL INPUTS (OCP/SR)
+VL1
+Input mode 1 voltage
+Tied to AGND
+0
+0.09*AV
+DD
+V
+VL2
+Input mode 2 voltage
+22 kΩ ± 5% to AGND
+0.12*AV
+DD 0.15*AVDD
+0.2*AVD
+D
+V
+VL3
+Input mode 3 voltage
+Hi-Z
+0.45*AV
+DD
+0.5*AVDD
+0.55*AV
+DD
+V
+VL4
+Input mode 4 voltage
+Tied to AVDD
+0.94*AV
+DD
+AVDD
+V
+RPU
+Input pullup resistance
+To AVDD
+80
+100
+120
+kΩ
+RPD
+Input pulldown resistance
+To AGND
+80
+100
+120
+kΩ
+OPEN-DRAIN OUTPUTS (nFAULT)
+VOL
+Output logic low voltage
+IOD = 5 mA
+0.4
+V
+IOH
+Output logic high current
+VOD = 5 V
+–1
+1
+µA
+COD
+Output capacitance
+30
+pF
+PUSH-PULL OUTPUTS (SDO)
+VOL
+Output logic low voltage
+IOP = 5 mA
+0
+0.4
+V
+VOH
+Output logic high voltage
+IOP = 5 mA
+2.2
+5.5
+V
+IOL
+Output logic low leakage current
+VOP = 0 V
+–1
+1
+µA
+IOH
+Output logic high leakage current
+VOP = 5 V
+–1
+1
+µA
+COD
+Output capacitance
+30
+pF
+DRIVER OUTPUTS
+RDS(ON)
+Total MOSFET on resistance (High-side 
++ Low-side)
+VVM > 6 V, IOUT = 1 A, TA = 25°C
+95
+120
+mΩ
+VVM < 6 V, IOUT = 1 A, TA = 25°C
+105
+130
+mΩ
+VVM > 6 V, IOUT = 1 A, TJ = 150 °C
+140
+185
+mΩ
+VVM < 6 V, IOUT = 1 A, TJ = 150 °C
+145
+190
+mΩ
+SR
+Phase pin slew rate switching low to high 
+(Rising from 20 % to 80 %)
+ 
+VVM = 24 V, SLEW = 00b or SLEW pin 
+tied to AGND
+14
+25
+45
+V/µs
+VVM = 24 V, SLEW = 01b or SLEW pin to 
+Hi-Z
+30
+50
+80
+V/µs
+VVM = 24 V, SLEW = 10b or SLEW pin to 
+47 kΩ +/- 5% to AVDD
+80
+125
+185
+V/µs
+VVM = 24 V, SLEW = 11b or SLEW pin 
+tied to AVDD
+130
+200
+280
+V/µs
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: DRV8316C
+
+
+=== PAGE 12 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+SR
+Phase pin slew rate switching high to low 
+(Falling from 80 % to 20 %)
+ 
+VVM = 24 V, SLEW = 00b or SLEW pin 
+tied to AGND
+14
+25
+45
+V/µs
+VVM = 24 V, SLEW = 01b or SLEW pin to 
+Hi-Z
+30
+50
+80
+V/µs
+VVM = 24 V, SLEW = 10b or SLEW pin to 
+47 kΩ +/- 5% to AVDD
+80
+125
+185
+V/µs
+VVM = 24 V, SLEW = 11b or SLEW pin 
+tied to AVDD
+110
+200
+280
+V/µs
+ILEAK
+Leakage current on OUTx
+VOUTx = VVM, nSLEEP = 1
+5
+mA
+Leakage current on OUTx 
+VOUTx = 0 V, nSLEEP = 1
+1
+µA
+tDEAD
+Output dead time (high to low / low to 
+high)
+VVM = 24 V, SR = 25 V/µs, HS driver 
+OFF to LS driver ON and LS driver OFF 
+to HS driver ON
+1800
+3400
+ns
+VVM = 24 V, SR = 50 V/µs, HS driver 
+OFF to LS driver ON and LS driver OFF 
+to HS driver ON
+1100
+1550
+ns
+VVM = 24 V, SR = 125 V/µs, HS driver 
+OFF to LS driver ON and LS driver OFF 
+to HS driver ON
+650
+1000
+ns
+VVM = 24 V, SR = 200 V/µs, HS driver 
+OFF to LS driver ON and LS driver OFF 
+to HS driver ON
+500
+750
+ns
+tPD
+Propagation delay (high-side / low-side 
+ON/OFF)
+VVM = 24 V, INHx/INLx = 1 to OUTx 
+transition, SR = 25 V/µs
+2000
+4550
+ns
+VVM = 24 V, INHx/INLx = 1 to OUTx 
+transition, SR = 50V/µs
+1200
+2150
+ns
+VVM = 24 V, INHx/INLx = 1 to OUTx 
+transition, SR = 125 V/µs
+800
+1350
+ns
+VVM = 24 V, INHx/INLx = 1 to OUTx 
+transition, SR = 200 V/µs
+650
+1050
+ns
+tMIN_PULSE
+Minimum output pulse width
+SR = 200 V/µs
+600
+ns
+CURRENT SENSE AMPLIFIER
+GCSA
+Current sense gain (SPI Device)
+CSA_GAIN = 00b
+0.15
+V/A
+CSA_GAIN = 01b
+0.3
+V/A
+CSA_GAIN = 10b
+0.6
+V/A
+CSA_GAIN = 11b
+1.2
+V/A
+GCSA
+Current sense gain (HW Device)
+GAIN pin tied to AGND
+0.15
+V/A
+GAIN pin to Hi-Z
+0.3
+V/A
+GAIN pin to 47 kΩ ± 5% to AVDD
+0.6
+V/A
+GAIN pin tied to AVDD
+1.2
+V/A
+GCSA_ERR
+Current sense gain error
+TA = 25°C, 0A ≤ IPHASE ≤ 4A
+–4.5
+2
+%
+GCSA_ERR
+Current sense gain error
+TA = 25°C, 4A < IPHASE ≤ 6A
+-3.5
+4.2
+%
+GCSA_ERR
+Current sense gain error
+TJ = 0°C to 125°C, 0A ≤ IPHASE ≤ 4A
+-5
+4
+%
+GCSA_ERR
+Current sense gain error
+TJ = 0°C to 125°C, 4A < IPHASE ≤ 6A
+-3.5
+6
+%
+GCSA_ERR
+Current sense gain error
+0A ≤ IPHASE ≤ 4A
+-5
+4.5
+%
+GCSA_ERR
+Current sense gain error
+4A < IPHASE ≤ 6A
+-6
+6.5
+%
+IMATCH
+Current sense gain error matching 
+between phases A, B and C
+TA = 25°C
+–3
+3
+%
+–5
+5
+%
+VLINEAR
+SOX output voltage linear range
+0.25
+VVREF – 
+0.25
+V
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 13 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+IOFFSET
+Current sense offset low side current in
+Phase current = 0 A, GCSA = 0.15 V/A
+–50
+50
+mA
+Phase current = 0 A, GCSA = 0.3 V/A
+–50
+50
+mA
+Phase current = 0 A, GCSA = 0.6 V/A
+–50
+50
+mA
+Phase current = 0 A, GCSA = 1.2 V/A
+–50
+50
+mA
+tSET
+Settling time to ±1%, 30 pF
+Step on SOX = 1.2 V, GCSA = 0.15 V/A
+1
+μs
+Step on SOX = 1.2 V, GCSA = 0.3 V/A
+1
+μs
+Step on SOX = 1.2 V, GCSA = 0.6 V/A
+1
+μs
+Step on SOX = 1.2 V, GCSA = 1.2 V/A
+1
+μs
+VDRIFT
+Drift offset
+Phase current = 0 A
+–160
+160
+µA/℃
+IVREF
+VREF input current
+VREF = 3.0 V
+50
+µA
+PSRR
+Power Supply Rejection Ratio
+AVDD to SOx, DC
+55
+80
+dB
+AVDD to SOx, 10 kHz
+39
+56
+dB
+AVDD to SOx, 500 kHz
+5
+22
+dB
+PULSE-BY-PULSE CURRENT LIMIT
+VLIM
+Voltage on VLIM pin for cycle by cycle 
+current limit
+AVDD/2
+AVDD/2–
+0.4
+V
+ILIMIT
+Current limit corresponding to VLIM pin 
+voltage range
+0
+8
+A
+ILIM_AC
+Current limit accuracy
+–10
+10
+%
+tBLANK
+Cycle by cycle current limit blank time
+5
+µs
+PROTECTION CIRCUITS
+VUVLO
+Supply undervoltage lockout (UVLO)
+VM rising
+4.3
+4.4
+4.5
+V
+VM falling
+4.1
+4.2
+4.3
+V
+VUVLO_HYS
+Supply undervoltage lockout hysteresis
+Rising to falling threshold
+140
+200
+350
+mV
+tUVLO
+Supply undervoltage lockout deglitch 
+time
+3
+5
+7
+µs
+VOVP
+Supply overvoltage protection (OVP)
+(SPI Device)
+Supply rising, OVP_EN = 1, OVP_SEL = 
+0
+32.5
+34
+35
+V
+Supply falling, OVP_EN = 1, OVP_SEL 
+= 0
+31.8
+33
+34.3
+V
+Supply rising, OVP_EN = 1, OVP_SEL = 
+1
+20
+22
+23
+V
+Supply falling, OVP_EN = 1, OVP_SEL 
+= 1
+19
+21
+22
+V
+VOVP_HYS
+Supply overvoltage protection hysteresis 
+(OVP)
+(SPI Device)
+Rising to falling threshold, OVP_SEL = 1
+0.9
+1
+1.1
+V
+Rising to falling threshold, OVP_SEL = 0
+0.7
+0.8
+0.9
+V
+tOVP
+Supply overvoltage protection deglitch 
+time
+2.5
+5
+7
+µs
+VCPUV
+Charge pump undervoltage lockout 
+(above VM)
+Supply rising
+2.3
+2.5
+2.7
+V
+Supply falling
+2.2
+2.4
+2.6
+V
+VCPUV_HYS
+Charge pump UVLO hysteresis
+Rising to falling threshold
+75
+100
+140
+mV
+VAVDD_UV
+Analog regulator undervoltage lockout
+Supply rising
+2.7
+2.85
+3
+V
+Supply falling
+2.5
+2.65
+2.8
+V
+VAVDD_
+UV_HYS
+Analog regulator undervoltage lockout 
+hysteresis
+Rising to falling threshold
+180
+200
+240
+mV
+IOCP
+Overcurrent protection trip point
+OCP_LVL = 0b or OCP pin tied to AGND
+10
+16
+22
+A
+IOCP
+Overcurrent protection trip point
+OCP_LVL = 1b or OCP pin tied to AVDD
+15
+24
+30
+A
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: DRV8316C
+
+
+=== PAGE 14 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+tOCP
+Overcurrent protection deglitch time
+(SPI Device)
+OCP_DEG = 00b
+0.06
+0.3
+0.7
+µs
+OCP_DEG = 01b
+0.2
+0.6
+1.2
+µs
+OCP_DEG = 10b
+0.6
+1.25
+1.8
+µs
+OCP_DEG = 11b
+1
+1.6
+2.5
+µs
+Overcurrent protection deglitch time
+(HW Device)
+0.06
+0.3
+0.6
+µs
+tRETRY
+Overcurrent protection retry time
+(SPI Device)
+OCP_RETRY = 0
+4
+5
+6
+ms
+OCP_RETRY = 1
+425
+500
+575
+ms
+tRETRY
+Overcurrent protection retry time
+(HW Device)
+4
+5
+6
+ms
+TOTW
+Thermal warning temperature
+Die temperature (TJ)
+135
+145
+155
+°C
+TOTW_HYS
+Thermal warning hysteresis
+Die temperature (TJ)
+15
+20
+25
+°C
+TTSD
+Thermal shutdown temperature 
+Die temperature (TJ)
+170
+180
+190
+°C
+TTSD_HYS
+Thermal shutdown hysteresis 
+Die temperature (TJ)
+15
+20
+25
+°C
+TTSD_FET
+Thermal shutdown temperature (FET)
+Die temperature (TJ)
+165
+175
+185
+°C
+TTSD_FET_HY
+S
+Thermal shutdown hysteresis (FET)
+Die temperature (TJ)
+20
+25
+30
+°C
+(1)
+RLBK is resistance of inductor LBK
+7.6 SPI Timing Requirements
+MIN
+NOM
+MAX
+UNIT
+tREADY
+SPI ready after power up
+1
+ms
+tHI_nSCS
+nSCS minimum high time
+300
+ns
+tSU_nSCS
+nSCS input setup time
+25
+ns
+tHD_nSCS
+nSCS input hold time
+25
+ns
+tSCLK
+SCLK minimum period
+100
+ns
+tSCLKH
+SCLK minimum high time
+50
+ns
+tSCLKL
+SCLK minimum low time
+50
+ns
+tSU_SDI
+SDI input data setup time
+25
+ns
+tHD_SDI
+SDI input data hold time
+25
+ns
+tDLY_SDO
+SDO output data delay time
+25
+ns
+tEN_SDO
+SDO enable delay time
+50
+ns
+tDIS_SDO
+SDO disable delay time
+50
+ns
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+=== PAGE 15 ===
+7.7 SPI Slave Mode Timings
+tHI_nSCS
+tSU_nSCS
+tSCLK
+tSCLKH
+tSCLKL
+MSB
+LSB
+tHD_SDI
+tSU_SDI
+Z
+Z
+MSB
+LSB
+tHD_nSCS
+tDIS_SDO
+X
+X
+tEN_SDO
+tDLY_SDO
+Figure 7-1. SPI Secondary Mode Timings
+7.8 Typical Characteristics
+Supply Voltage (V)
+Active Current (mA)
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+FPWM = 25 kHz
+FPWM = 200 kHz
+TJ = -40 C
+TJ = 25 C
+TJ = 150 C
+Figure 7-2. Supply current over supply voltage
+Junction Temperature (C)
+RDS(ON) (m)
+-40
+-20
+0
+20
+40
+60
+80
+100
+120
+140
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+Figure 7-3. RDS(ON) (high and low side combined) 
+for MOSFETs over temperature
+Supply Voltage (V)
+Buck Efficiency (%)
+4
+8
+12
+16
+20
+24
+28
+32
+36
+75
+77.5
+80
+82.5
+85
+87.5
+90
+92.5
+95
+97.5
+100
+TJ = -40 C
+TJ = 25 C
+TJ = -150 C
+Figure 7-4. Buck regulator efficiency over supply 
+voltage
+Buck Output Load Current (A)
+Buck Output Voltage (V)
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+0.18
+0.2
+3
+3.25
+3.5
+3.75
+4
+4.25
+4.5
+4.75
+5
+5.25
+5.5
+5.75
+BUCK_SEL = 00b
+BUCK_SEL = 01b
+BUCK_SEL = 10b
+BUCK_SEL = 11b
+Figure 7-5. Buck regulator output voltage over load 
+current
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: DRV8316C
+
+

@@ -3677,14 +3677,14 @@
 		)
 		(uuid "579b72c8-c6da-4669-904e-dfec4abf2b30")
 	)
-	(text_box "Populate with 330uF ≥50V \nAluminum Electrolyic Capacitor\n\nThrough hole & SMD footprint for D10mm"
+	(text_box "Populate with 330uF ≥50V \nAluminum Electrolyic Capacitor\n\nThrough hole & SMD footprint for 10mm diameter\n\nThrough hole recommended for better mechanical strength"
 		(exclude_from_sim no)
-		(at 201.93 124.4747 0)
-		(size 20.32 20.3053)
+		(at 199.39 120.65 0)
+		(size 20.32 30.5285)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type solid)
+			(type dot)
 		)
 		(fill
 			(type none)

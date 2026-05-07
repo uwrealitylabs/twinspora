@@ -1,156 +1,170 @@
-# Twinspora — Pre-Fabrication Review (Master Findings)
+# Twinspora — Pre-Fabrication Review (Master Findings, v2)
 
 **Date:** 2026-05-05
 **Board:** Twinspora dual BLDC motor controller
 **Specs:** 24 V nominal input, 3-5 A RMS / 8 A peak per motor phase, dual DRV8316C + dual MT6701 + STM32G473
-**Stackup:** 4-layer FR4, 1.62 mm, no impedance control specified
-**Outcome:** Board is structurally sound. Several real BLOCKERS require fixes before fab. Functional architecture works once fixed.
+**Stackup:** 4-layer FR4, 1.62 mm thick, no impedance control specified
 
-This document consolidates findings from 6 parallel reviews (one schematic, three PCB layer reviews, two datasheet reviews) plus my own analytical sims and DRC/ERC re-runs. Per-area details are in `01_*` through `06_*` files in this directory.
+This is the **v2 synthesis** after re-running every per-area agent with a strict "no paraphrasing — quote primary datasheets with section + page" mandate. The v1 versions are archived under `v1_archive/`. Per-area v2 details: `01_schematic.md`, `02_pcb_top.md`, `03_pcb_bottom.md`, `04_pcb_inner.md`, `05_datasheet_stm_drv.md`, `06_datasheet_others.md`, `07_smf30ca_deep_dive.md`.
+
+The two factual errors that triggered the re-run (DRV8316C abs max 35→40 V; FOC P_CON formula 1.5× → 3×) are now fully propagated through the analysis. Several v1 blockers turned out to be false positives, several new ones surfaced, and the corrected current-capability calculation is significantly tighter than v1 reported.
 
 ---
 
 ## A. BLOCKERS — must fix before fabrication
 
-### A1. Schematic / electrical
+### A1. PCB layout (mostly easy fixes)
 
 | # | Issue | Where | Action |
 |---|---|---|---|
-| 1 | **MT6701 protocol-mode ambiguity.** MODE pin (14) floating → internal 200 kΩ pull-up → I²C/SSI multifunction state. Schematic wires A=MISO, B=SCK, Z=NSS — that is **SSI** wiring. SSI vs I²C selection is OTP-set in the chip. The bare `MT6701QT` part number is the I²C variant; SSI requires `MT6701QT-Sxxx` ordering code (or an I²C-side OTP-write before SSI use). | U16/U18, sheets 4 & 5 | Confirm orderable part number with MagnTek; either order the SSI variant or write firmware that programs the OTP / uses I²C protocol on the same pins. |
-| 2 | **QWIIC I²C bus (J5) has no pull-ups.** R15 / R16 = 120 Ω are in **series** with SDA/SCL (CAN-style termination values, looks miscoded). Only pull-up (R18 10 kΩ on SDA) is gated by jumper **J4 = DNP**. SCL has no pull-up at all. | Top sheet, J5 area | Replace 120 Ω series Rs with 0 Ω (or remove); add 4.7-10 kΩ pull-ups on both SDA and SCL to +3.3 V; populate J4 or remove the jumper. |
-| 3 | **DRV8316 nFAULT / nSLEEP topology is risky.** Pull-up is referenced to **+24 V VCC**, and the resulting node is clamped only by 5.1 V Zener (D3/D4) before going to STM32 GPIO. STM32G473 GPIOs are not 5 V-tolerant on every pin — needs verification of which pins these route to (FT/FT_f tolerant pins only). | U14/U15 nFAULT/nSLEEP nets | Either change pull-up reference to +3.3 V (then no Zener needed) or verify GPIO pin is FT-class 5 V-tolerant. Also: in fault, the 5.1 V level on a 3.3 V pin still wastes ~22 mW per pin via the protection diode. |
-| 4 | **Cold-start brown-out when USB is absent.** Power tree: 24 V → DRV8316C internal buck (`BUCK_OUT`) → +5 V → XC6206 LDO → +3.3 V; **DRV8316 buck output defaults to 3.3 V at boot**. With buck stuck at 3.3 V, the XC6206 LDO operates in dropout (~3.05 V out), which is **below the MT6701 minimum (3.3 V)** and marginal for the STM32. Firmware must reprogram `BUCK_SEL` to 5 V via SPI before stable operation. **Chicken-and-egg at first power-on of an unflashed board.** | DRV8316 BUCK_OUT, U9 (XC6206), top sheet | Recommend a hardware fix: tie `BUCK_SEL` (or equivalent) high via a strap resistor so the buck comes up at 5 V regardless of firmware. Otherwise the board will only boot the first time when USB is connected. |
-| 5 | **SMF30CA TVS does not protect the DRV8316C.** VBR = 33.3-36.8 V, VC = 48.4 V at peak pulse current. DRV8316C absolute-max VM = **35 V**. The TVS clamps **after** the DRV is already at risk, and during a back-EMF transient the driver sees 36-48 V before the TVS fully conducts. | U5 on power input | Replace with a tighter-clamp TVS such as SMAJ24CA (VBR ~26 V, VC ~38 V) or SMF24CA. Or add an upstream LC + crowbar. |
-| 6 | **CAN bus ships unprotected and unterminated.** ACT1210D common-mode choke (U12) is DNP. 120 Ω termination jumper is also on DNP. Board would broadcast on CAN with neither filtering nor termination. | U12 / J5 / R15-21 | Populate U12 by default. Termination should be on a populate-by-default jumper at one or both bus endpoints (depends on whether this board is end-of-bus). |
-| 7 | **CAN_VIO driven from STM32 GPIO PC4.** CAN transceiver supply rail is gated by an MCU GPIO. CAN will not function until firmware drives PC4 high after boot — so any CAN bootloader use case is impossible, and a hung MCU stops responding on CAN even if the bus is otherwise alive. | U11 VIO pin / PC4 | Change CAN_VIO source to a permanent rail (3.3 V or 5 V depending on transceiver), or add a default pull-up so VIO is alive regardless of MCU state. |
+| 1 | **Bulk electrolytic pads overhang top board edge** — C43 (109.0, 106.8) and C57 (123.7, 106.8) have **0.000 mm** clearance from VCC pad to top Edge.Cuts (y=100.8). Fab router will cut copper. | Top side, C43/C57 | Move both ~1 mm inward. |
+| 2 | **GND via 0.190 mm from J9 PHB1 motor pin.** Drill registration tolerance can short motor phase to GND. | J9 vicinity | Move the via or shift J9. |
+| 3 | **J5 / J1 GND pads 0.175-0.196 mm from bottom Edge.Cuts** (y=137.725). Four pads in violation. | J5, J1 | Shift connectors ~0.3 mm up. |
+| 4 (NEW) | **U5 GND pad 0.165 mm from top Edge.Cuts.** Same family as #1-3, missed by v1. | U5 | Move ~0.3 mm inward. |
+| 5 (NEW) | **9 stacked duplicate vias** — 8 around U15's exposed pad at the eight outer XY positions, plus 1 under U7 at (115.6, 132.6). These are duplicated `(via ...)` blocks in the .kicad_pcb. Will cause double-drill or fab reject. Source of 9 of 13 `holes_co_located` DRC errors. | U15 EP, U7 area | Single-edit fix — remove the duplicate via blocks. |
+| 6 | **MT6701 encoders on the wrong side AND out of spec** — U16 (135.0, 120.03) and U18 (95.0, 120.03) are on F.Cu but motors mount on the back. Magnet→sensor distance: 1.617 mm FR4 + 0.700-0.800 mm package = **2.32-2.42 mm**. **MT6701 datasheet Rev 1.5 §5 page 8 specifies AG max = 2.0 mm** (typ 1.0, min 0.5). The encoder operates **0.32-0.42 mm OUT OF SPEC** — not "at the limit" as v1 claimed. | U16, U18 | Move both to B.Cu. |
+| 7 | **Continuous GND pour fills all 4 layers under U16/U18.** Zone `In1.GND` (line 66621) covers F.Cu / In1.Cu / In2.Cu / B.Cu over the entire board outline; both encoder centers are inside the filled polygon on F.Cu, In1.Cu, AND B.Cu. Eddy currents will distort the rotating magnetic field. (Note: MagnTek's MT6701 datasheet does not specify a numeric keepout dimension — this is a magnetics-physics requirement, not a datasheet directive.) | All 4 layers, encoder areas | Add a circular copper keepout (radius ≥ magnet radius + ~1 mm guard) on every copper layer concentric with the magnet axis. |
+| 8 | **Hard-switching PWM trace `/TIM8_CH2` runs 0.617 mm from U18's die.** v1 had this less precise and named the wrong worst signal. Actual measured distances from U18 (95, 120): /TIM8_CH2 = 0.617 mm (clipping the courtyard SW corner!), /TIM8_CH3 = 1.819 mm, /TIM8_CH3N = 2.028 mm, /SPI1_MISO = 2.621 mm (just outside ±2 mm — v1 was wrong about this one). | B.Cu near U18 | Reroute these signals away from the encoder. With fix #6 (move to B.Cu) and fix #7 (keepout), this becomes mandatory. |
+| 9 | **No motor-shaft cutouts in Edge.Cuts.** Outline is a single rounded rectangle (8 elements lines 45476-45558). | Edge.Cuts | Add cutouts or confirm shafts don't protrude through PCB. |
 
-### A2. PCB layout
+### A2. Schematic / electrical
 
 | # | Issue | Where | Action |
 |---|---|---|---|
-| 8 | **Bulk electrolytic pads overhang top board edge.** C43 (109.0, 106.8) and C57 (123.7, 106.8) — both 330 µF `EEEFT1H331GP` — have **0.000 mm** clearance from VCC pad to top Edge.Cuts (y = 100.8). Fab router will cut through copper. | Top side, C43 / C57 | Move both ~1 mm inward (decrease Y). |
-| 9 | **GND via 0.19 mm from J9 PHB1 motor pin** at (136.5, 101.95) vs J9 pin 2 at (135.75, 103.15). Drill registration tolerance can short motor phase to GND. | J9 vicinity | Move the GND via or shift J9. |
-| 10 | **J5 / J1 GND pads 0.175-0.196 mm from bottom edge** (y = 137.725). Four pads in violation. | J5, J1 | Shift these connectors ~0.3 mm up. |
-| 11 | **MT6701 encoders on the wrong side.** U16 and U18 are on **F.Cu (top)**, but per design intent the motors mount on the **back**. The magnet then has to sense through 1.62 mm FR4 + ~0.9 mm QFN package ≈ **2.5 mm** total — at the upper edge of the MT6701's usable sensing range, and SNR / linearity will be significantly degraded. (`stats.json` confirms 0 components on B.Cu; B.Paste / B.Courtyard / B.Fab SVGs are empty.) | U16 (135.0, 120.03), U18 (95.0, 120.03) | Move U16 and U18 to B.Cu, centered over their respective motor magnet axes. |
-| 12 | **Continuous GND pour passes directly under the MT6701 magnetic-sense area.** Zone `In1.GND` fills F.Cu, B.Cu, In1.Cu, In2.Cu over the entire board outline with no keepout under U16/U18. Eddy currents in the copper will distort the rotating magnetic field — true regardless of which side the encoder is on. | All 4 layers, encoder areas | Add a circular copper keepout (≥ 6 mm dia, MagnTek's recommended footprint app note) on every copper layer concentric with the magnet axis. |
-| 13 | **Hard-switching PWM and SPI traces under U18 on B.Cu.** `/TIM8_CH2`, `/TIM8_CH3`, `/TIM8_CH3N` (gate-drive PWM, 0.20 mm width) and `/SPI1_MISO` cross within ±2 mm of the U18 die (95, 120). These will inject switching noise into Hall sensor reads. | B.Cu near U18 | Reroute these signals away from the encoder. Combined with fix #11, when encoders move to B.Cu the keepout zone should explicitly forbid these signals. |
-| 14 | **No motor-shaft cutouts in Edge.Cuts.** Board outline is rectangular only — there is no cut-out / clearance hole for the motor shaft to pass through. | Edge.Cuts | Add motor-shaft cutouts or confirm the motor shaft does not protrude through the PCB. |
+| 10 | **CAN-FD termination jumper logic mis-designed.** Default config (R21 DNP, J6 DNP, R27/R28 populated) leaves bus with NO termination. With R21 populated, R27/R28 end up between CAN_H and the C30/GND center as a shorted asymmetric load — *not* a 60+60 Ω split termination. Only "J6 alone" gives a valid termination. | CAN bus around U11/J5 | Re-think the jumper logic. The schematic should either default-populate a clean split termination, OR provide a clear single-jumper toggle for end-of-bus vs middle-of-bus. |
+| 11 | **DRV8316C nFAULT pull-up is an LED + 330 Ω in series with +3.3V — not a real pull-up.** TI SLVSH07 §6 p.5 and §8.3 Table 8-1 p.19 require nFAULT > 2.2 V at power-up to avoid **test-mode lockup**. During the +3.3 V rail's bring-up the LED forward-drop and 330 Ω impedance can keep nFAULT below 2.2 V for several ms. | DRV8316 nFAULT net | Add a real ~10 kΩ pull-up from nFAULT to +3.3 V; keep the LED in parallel for fault indication. |
+| 12 | **DRV8316C BUCK_OUT defaults to 3.3 V at boot** (BUCK_SEL reset = 00b per TI SLVSH07 §8.6.2.6 Table 8-23 p.67). On first power-up with no firmware, the DRV's buck delivers 3.3 V → P-FET-OR'd +5V rail sits at ~3.0 V → XC6206 LDO falls into dropout → +3.3 V rail at ~2.6 V → MT6701 below its 3.3 V minimum (§5 p.7). Cold-start chicken-and-egg. | DRV8316 buck control | Hard-strap BUCK_SEL high so the DRV comes up at 5 V regardless of firmware. (Or verify USB will be present at every cold-start, which is implausible.) |
+| 13 | **CA-IF1044VD-Q1 VIO driven by STM32 GPIO PC4** instead of a permanent supply rail. Chipanalog datasheet §9 Fig 9-2 requires VIO tied to MCU supply. CAN dies with the MCU — boot-time CAN, hung-MCU CAN, and bootloader-over-CAN all impossible. | U11 VIO pin | Tie VIO directly to +3.3 V. |
+| 14 | **CAN bus ships unprotected: ACT1210D CMC populates fine (was a v1 false alarm — the X marks were symbol coupling glyphs, not DNP), but the 120 Ω termination jumper still depends on the broken logic in #10.** Plus PESD2CAN ESD is OK. | CAN bus | Subsumed by #10 fix. |
+| 15 | **QWIIC I²C bus has no working pull-ups.** R15/R16 = 120 Ω in *series* with SDA/SCL (CAN-style termination values miscoded onto an I²C bus). Only pull-up R18 is gated by DNP jumper J4 and is on SDA only — SCL has no pull-up at all. | Top sheet, J5 area | Replace 120 Ω series Rs with 0 Ω; add 4.7-10 kΩ pull-ups on both SDA and SCL to +3.3 V; populate J4 or remove it. |
+| 16 | **SMF30CA TVS clamps 8 V over DRV8316C abs max.** V_C = 48.4 V at I_PP = 4.1 A (Hongjiacheng Rev 2.1 p.2). DRV8316C abs max VM = 40 V (TI SLVSH07 §7.1 p.6). At sub-rated transients (≤ 2 A) it stays inside abs max but well over the 35 V operating ceiling, tripping the DRV's VM_OVP. | U5 | Same SOD-123FL footprint: swap to **SMF24CA (LCSC C19077515)** — V_C = 38.9 V at I_PP, under abs max. Better: footprint to DO-214AC and use SMAJ26CA. See `07_smf30ca_deep_dive.md`. |
 
 ---
 
 ## B. CRITICAL — should fix (functional risk, not a fab show-stopper)
 
-### B1. Schematic
-- **STM32 VDDA / VREF+ tied straight to digital +3.3 V.** AN4488 §3.2 calls for a ferrite bead + 1 µF + 10 nF analog filter. Missing this costs ~1-2 ENOB on ADC reads, including the DRV8316 current-sense channels (`/SOA*`, `/SOB*`, `/SOC*`) that drive your motor control loop, and adds noise to STM32G4 integrated op-amps if used. (U7 pins 28, 29.)
-- **USB-C VBUS not ESD-protected.** SRV05-4A only covers D+, D-, CC1, CC2. VBUS should have its own TVS / SMD fuse / both, given hot-plug ESD events.
-- **DRV8316 VREF / ILIM has no decoupling cap.** Datasheet recommends a 100 nF on this pin.
-- **DRVOFF floating by default** on DRV8316 (or wired to MCU but with no power-on-reset state). Confirm this defaults to safe (no PWM) before MCU comes up.
+### B1. PCB layout
 
-### B2. PCB
+- **DRV8316 ceramic decoupling caps 6-8 mm from VM/CPH/CPL pins.** v1 quoted ~3.4 mm but that was distance to EP center. Actual distance to the relevant power pins is 6-8 mm; TI SLVSH07 §11.2 example shows ~2 mm. At 6-8 mm the bypass loop inductance defeats the 100 nF / 47 nF caps at switching transitions.
+- **BK22 (U1, U2) power-input vias are sparsely stitched** — only 0-1 GND vias within 3 mm of each connector vs. 18 unique GND vias under each DRV8316 EP. (Updated count: TI SLVSH07 §11.1 has no specific count rule, but §11.2 shows a 4×4 = 16-via reference; this board has 18 — *exceeds* the example. Prior "22" was inflated by counting U15's duplicated stacked vias from blocker #5.) The deficiency is at the BK22, not at the EP — high-current return into the bulk caps takes too long a path.
+- **In2.Cu is a split power plane WITH signals routed on it** (verified: zone fills for VCC_IN2 line 82846, VBAT line 83185, +3.3V_BCC line 83937; plus 142 routed segments across 17 nets). Any B.Cu trace crossing a power-rail boundary breaks return path.
+  - **CAN-FD pair fragmented**: CAN_H = 62 segments / 123.9 mm, CAN_L = 42 segments / 112.4 mm — **11.5 mm length mismatch** alone, plus return-path discontinuity at every layer transition.
+  - **Current-sense `/SOC2` jumps F.Cu ↔ In2.Cu** through the noisy split-plane region. (v1 said all four `/SOA2 /SOB2 /SOC2 /SOC1` did — actually only `/SOC2`. v2 corrected.)
+- **12 starved-thermal connections** (single-spoke instead of dual): STM32 U7 pin 63, X1 crystal pins 2 & 4 (clock-stability concern), J5 GND, decoupling caps C8 / C14 / C23 / C59 / C60. Right-click → properties → Spoke style: Default override.
+- **M3 mounting-hole NPTH conflict** (H1 / H4 / H7 / H10 SMD standoffs stacked on M3 PTH pads) — 18 hole-clearance + 33 hole-to-hole DRC errors (count updated for KiCad 10). Either move the stitching vias outside the standoff keepout or get explicit DRC waiver from fab.
+- **18 courtyard overlaps** in dense central area — pick-and-place is OK, rework headroom is gone.
+- **25 F.Cu footprints have their Reference text on B.Silkscreen mirrored** (v1 said "26+", actual count is 25). Bottom silk will print labels for parts that don't exist on the back.
 
-- **In2.Cu is a split power plane with signals routed on it.** The plane carries +BATT/24 V, VCC, +5 V, +3.3 V *and* signals: CAN_H, CAN_L, /SOA1, /SOB1, /SOC1, /SOC2, /BUCK, /ADC5_IN1/2, VBUS, /+3.3V, /+5V. Any B.Cu trace that crosses a power-rail boundary on In2.Cu breaks the return path.
-  - **CAN-FD pair fragmented** across F.Cu + In2.Cu + B.Cu with asymmetric segment counts (CAN_H = 62 segments, CAN_L = 42) → return-path discontinuity, length mismatch, EMC liability at 5 Mbps CAN-FD rates.
-  - **Current-sense analog signals (~80 mV)** routed across the same plane couple motor switching noise into the ADC reads.
-- **12 starved-thermal connections** on critical nets (single-spoke instead of dual-spoke): STM32 U7 pin 63, X1 crystal pins 2 & 4 (**clock-stability concern**), J5 GND, decoupling caps C8 / C14 / C23 / C59 / C60. In a high-current design the spoke widths affect transient currents to/from decoupling caps.
-- **M3 mounting-hole NPTH conflict.** H1 / H4 / H7 / H10 SMD standoffs are stacked on M3 PTH pads; the 8 stitching vias around each M3 sit inside the standoff's NPTH clearance. Source of 33 hole-clearance + 8 mask-bridge DRC errors. Either move vias outside standoff keepout or get an explicit DRC waiver from your fab.
-- **18 courtyard overlaps** in the dense central area (C7/C8, C25-28, R12/TP19, R23/R24, etc.). Pick-and-place is OK; rework will be very tight.
-- **26+ F.Cu footprints have their Reference text forced onto B.Silkscreen (mirrored).** The bottom silk will print component reference labels for parts that don't exist on the back.
+### B2. Schematic
 
-### B3. ERC
+- **Thermal envelope is the binding limit for motor current.** Re-derived per TI SLVSH07 §11.3.1 Table 11-1 (FOC: P_CON = 3 × I_RMS² × R_DS(on)) and §7.4 (θ_JA = 25.7 °C/W). Result table:
+  - **T_A = 25 °C, T_J = 125 °C, max slew**: ~2.7 A_RMS continuous
+  - **T_A = 85 °C, T_J = 125 °C, max slew**: ~1.3 A_RMS continuous
+  - **T_A = 25 °C, T_J = 140 °C, max slew**: ~3.1 A_RMS continuous
+  - **T_A = 85 °C, T_J = 140 °C, max slew**: ~1.6 A_RMS continuous
+  - With default slew rate (50 V/µs) instead of max, derate further by ~30 %.
+- The user's 3-5 A_RMS target is **only feasible at low ambient (≤ 40 °C) with max slew rate and tight T_J target**. 8 A peak transient is fine. TI's own headline ("<80 W motors at 12-24 V") backs ~2-3 A continuous — consistent with this calc, not with v1's 3-5 A claim.
+- **HSE crystal load caps over-loaded.** ST DS12288 §5.3.10 p.123 explicitly specifies stray Cs = 10 pF (v1 used 3-5 pF). With C11/C18 = 30 pF: CL_eff = (30·30)/60 + 10 = 25 pF. X322512MSB4SI datasheet load = 20 pF. **Optimal cap value = 20 pF each.** Current values cause slow startup and small frequency offset.
+- **DRV8316C nSLEEP is on the 100 kΩ + Zener path and is NOT routed to the MCU at all** (NEW finding from v2 schematic agent — v1 had nFAULT and nSLEEP wrongly bundled). Firmware has no software control over DRV sleep; the DRV always sees nSLEEP high (driven from VCC through the divider). Power-management implication: cannot put DRV into 1.5 µA sleep mode for low-power operation.
+- **DRV8316C VREF/ILIM (pin 37) connection unverified.** TI SLVSH07 Table 6-1 p.5: in default PWM Mode 1 (PWM_MODE reset = 00b = 6× PWM), pin 37 is the CSA reference and must have 0.1 µF cap to AGND; if floating, current sensing breaks. Needs visual check in `motor_driver.kicad_sch`.
+- **STM32 VDDA not isolated from digital +3.3V.** ST AN4488 §3.3.2 p.14 says ferrite "can be" used (recommendation, not requirement). The 2× (100 nF + 1 µF) decoupling pairs (C25-C28) **do exist** (v1 missed this). Performance impact: 1-2 ENOB ADC degradation that affects current-sense reads. **Demoted from CRITICAL in v1 to "should consider" — adding a ferrite is cheap.**
 
-- **Re-running ERC found 132 violations: 17 errors + 115 warnings** (your `erc.json` had a parsing pitfall — violations live under `sheets[].violations`, not the top-level array; my initial read showed 0 by mistake).
-  - 6 × `label_dangling` errors → all on `/PHA1`, `/PHB1`, `/PHC1`, `/PHA2`, `/PHB2`, `/PHC2` at the top sheet. **These are NOT broken motor connections** — Conn_01x03 J9/J10 motor connectors are inside `motor_driver.kicad_sch` (line 5985), so motor phases route correctly via the subsheet. The top-level labels are debug stubs that should be deleted to silence ERC.
-  - 2 × `power_pin_not_driven`: U9 (XC6206) Vin and H1 pin 1. The XC6206 case is likely a false positive from the P-FET-OR'd 5 V rail (KiCad doesn't see a P-FET as a power output). The H1 case is a mounting-hole symbol with a bogus power pin — symbol-library issue.
-  - 9 × `pin_to_pin` errors and 70 × `pin_to_pin` warnings — many will be symbol-library cosmetic issues; some are real (e.g., diode bridge symbols showing power outputs colliding). Worth a clean-up pass.
-  - 51 × `lib_symbol_issues` — symbol library hygiene.
+### B3. ERC / DRC summary
+
+- **132 ERC violations: 17 errors + 115 warnings.** Of the 17 errors:
+  - 6× `label_dangling` on top sheet for `/PHA1`, `/PHB1`, `/PHC1`, `/PHA2`, `/PHB2`, `/PHC2`. **NOT broken motor connections** — Conn_01x03 J9/J10 motor connectors live inside `motor_driver.kicad_sch` (line 5985), so motor phases route correctly via the subsheet. The top-level labels are debug stubs to be deleted to silence ERC. (v1 agent 5 and v2 agent 5 both called this a BLOCKER. Wrong both times.)
+  - 2× `power_pin_not_driven`: U9 (XC6206) Vin and H1 pin 1. Both are KiCad library artifacts — Q1 P-FET drain symbol-pin type is "passive" (not "power-output"), so KiCad doesn't see the +5V net as driven; H1 is a mounting-hole symbol with a bogus power pin. Real circuit is fine — agent 6 v2 traced wires explicitly (twinspora.kicad_sch lines 14175/14425/33958) and confirmed +5V drives U9 V_in.
+  - 9× `pin_to_pin` errors and 70× `pin_to_pin` warnings — many are symbol-library cosmetic; some real (diode-bridge symbol artifacts).
+- **719 DRC violations** (down from 758 after your earlier fixes). Of those: ~509 cosmetic silk (199 silk_over_copper, 192 text_height, 118 silk_overlap), 46 lib_footprint_mismatch, 16 padstack_invalid, plus the electrical/mechanical issues called out in A1.
 
 ---
 
 ## C. NITS — improvements / cosmetic
 
-- DRC currently shows **719 violations** (down from 758 after your fixes). Of those: ~509 are cosmetic silk (199 silk_over_copper, 192 text_height, 118 silk_overlap), 46 lib_footprint_mismatch, 16 padstack_invalid; the rest are the electrical/mechanical issues called out above.
-- 6 dangling top-level motor-phase labels (debug stubs, see B3). Either delete or wire to test points.
-- USB CC pull-down caps (C1, C2 = 47 pF) are DNP — fine for stock USB-C device-mode behavior, but verify intent.
-- ADC channel naming mismatches in net names (cosmetic).
-- 2 zombie tracks `/SPI2_MISO` and `/BOOT` (track_dangling).
-- Test point `/VCP` unconnected.
-- Wrong DRV8316 datasheet URL in the symbol property.
-- A few unused F-Mask paste apertures noted.
+- **VDDA ferrite missing** (demoted from v1 CRITICAL — see B2 note). AN4488 frames it as optional; low-priority improvement.
+- **6 dangling top-level motor-phase labels** (debug stubs — delete to silence ERC).
+- **2 zombie tracks** `/SPI2_MISO` and `/BOOT` (track_dangling).
+- **Test point `/VCP` unconnected.**
+- **DRVOFF default state**: confirm it boots in a safe (no-PWM) state before MCU comes up.
+- **USB CC pull-down caps C1, C2 (47 pF) are DNP** — fine for stock USB-C device-mode. (The 49.9 Ω resistors that v1 thought were USB series resistors are actually on the SOx current-sense ADC filter path — v2 corrected this, no USB external Rs are needed since STM32G4 has internal D+ pull-up.)
+- **ADC channel naming**: v1 said off-by-one. v2 verified **correct** against DS12288 Rev 1 Table 12. Removed.
+- **VCC ampacity** for 8 A peak: v1 claimed it from IPC-2152, v2 couldn't verify against a primary-source IPC PDF. Probably fine given the pour geometry, but the master limit is the DRV8316 thermal envelope (B2) at ~1.5 A_RMS at 85 °C ambient — well below the trace ampacity question.
+- DRV8316 datasheet URL in symbol property — wrong link.
 
 ---
 
-## D. Analytical sims — answers to your questions
+## D. Analytical sims — answers to your questions (corrected)
 
-### D1. "How much current can the board safely handle?" (DRV8316C thermal limit)
+### D1. "How much current can the board safely handle?"
 
-**Result: ~2.7-3.1 A RMS continuous per phase at 85 °C ambient. 5 A RMS at 85 °C ambient is not achievable** without forced cooling or a heat-spreader; **8 A peak is transient only.** At 25 °C ambient the board can do ~5 A RMS continuous comfortably. Your spec ("3-5 A RMS, 8 A peaks") is achievable in normal indoor ambient but margin-limited.
+**Verified directly from TI SLVSH07 datasheet.**
 
-Calculation (per IC, sinusoidal commutation, balanced 3-phase):
+**Answer: ~1.3-1.6 A_RMS continuous per phase at 85 °C ambient. ~2.7-3.1 A_RMS at 25 °C ambient. 8 A peak transient is fine.** The user's 3-5 A_RMS target is **not safely achievable continuous on the standard 4-layer board at 85 °C ambient** without active cooling. At 25 °C ambient with max slew rate, ~3 A continuous is feasible.
 
-```
-R_DS(on) HS+LS @ 25 °C  = 95 mΩ  (TI DRV8316C datasheet, SLVSF65)
-R_DS(on) factor @ 125 °C = 1.47×    → R_DS(on) = 140 mΩ at T_J = 125 °C
-P_cond ≈ 1.5 × I_RMS² × R_DS(on)    (factor accounts for HS+LS sharing)
+Verified inputs:
+- V_VM operating: 4.5/24/35 V min/nom/max (sec 7.3 p.6); abs max 40 V (sec 7.1 p.6).
+- R_DS(on) HS+LS: typ 95 mΩ / max 120 mΩ at T_A=25 °C; typ 140 mΩ / max 185 mΩ at T_J=150 °C (sec 7.5 p.11).
+- θ_JA: **25.7 °C/W** (sec 7.4 p.7, JEDEC 4-layer reference).
+- P_CON (FOC) = **3 × I_RMS² × R_DS(on)** (sec 11.3.1 Table 11-1 p.85).
+- P_SW = 3 × I_RMS × V_PK × t_rise/fall × f_PWM.
 
-θ_JA = 33 °C/W  (JEDEC 4-layer reference, single 2 oz GND plane)
-       ~28 °C/W (the actual board with ~22 thermal vias under EP, 1 oz copper)
+The v1 calc had two compounding errors: P_CON formula off by 2× (used 1.5×, should be 3×) and θ_JA off by 28% (used 33, should be 25.7 — but 25.7 is *better*, partially compensating). Net: v1 was ~50% optimistic. Corrected numbers are conservative.
 
-T_J,max = 150 °C, derated to 125 °C target for margin
-T_A,max = 85 °C
-ΔT      = 40 °C
-P_max   = ΔT / θ_JA = 40 / 28 = 1.43 W
+### D2. IR-drop on power rails
 
-I_RMS² × 0.140 ≤ 1.43
-I_RMS ≤ 3.20 A → call it ~3 A continuous at 85 °C ambient with this PCB.
+VCC pour ampacity is not the binding limit; the DRV8316 thermal envelope is. At ~1.3-2 A_RMS the IR drop on VCC is negligible (< 50 mV).
 
-At T_A = 25 °C:
-ΔT      = 100 °C
-P_max   = 100 / 28 = 3.57 W
-I_RMS² × 0.140 ≤ 3.57
-I_RMS ≤ 5.05 A → call it ~5 A continuous at 25 °C ambient.
-```
+### D3. Signal-integrity for fast signals
 
-Switching loss is small for the DRV8316C's integrated FETs at typical 30 kHz PWM (well below 0.1 W per IC at these currents) and is included in the headroom margin. The ~22 thermal vias under each EP that the top-side review confirmed put your effective θ_JA at the favorable end of the curve. The major thermal limiter is *ambient*, not the PCB.
-
-### D2. IR-drop on power rails (24 V VCC, motor phases)
-
-VCC pour on F.Cu + In2.Cu + B.Cu provides ample copper area for 8 A peak per phase at minimal IR drop (< 50 mV peak). VCC ampacity is **not a limiter**. The thermal limit on DRV8316C (D1) is the constraint.
-
-### D3. Signal integrity for fast signals
-
-- **USB FS (12 Mbps)**: Differential pair routing not impedance-controlled (per your stackup choice) but FS is forgiving — 90 Ω target needs ~0.36 mm width / 0.25 mm gap on 0.1 mm dielectric to In1.GND. Length matching and reference-plane continuity matter more than absolute impedance at this rate. **Your D+/D- routing references In1.Cu solid GND — that's good.** Verify lengths are matched and routing has no stub.
-- **CAN-FD (5 Mbps differential)**: Layer-fragmenting (B1 above) is the actual concern. CAN-FD signal integrity depends on continuous diff-pair geometry; your asymmetric-segment-count CAN_H vs CAN_L suggests one signal hops layers more than the other → length mismatch and skew. Reroute as a clean diff pair on a single signal layer (preferably F.Cu over In1.GND) before fab.
-- **SPI to encoders**: Short, low-rate. No SI concern.
-- **Crystal (12 MHz HSE)**: Load caps 30 pF are correct for the X322512MSB4SI's 20 pF datasheet load (CL_eff = (30·30)/60 + ~5 pF stray = 20 pF). The 12 single-spoke thermal connections on X1 pads 2 & 4 (B2) is the only crystal concern; otherwise good.
+- **USB FS (12 Mbps)**: routes over solid In1.GND, no impedance issue at this rate. Good.
+- **CAN-FD (5 Mbps)**: layer-fragmented diff pair (62 vs 42 segments, 11.5 mm length mismatch) — needs reroute as a clean diff pair on F.Cu over In1.GND. Key concern.
+- **SPI to encoders**: short, low-rate. No SI concern.
+- **HSE 12 MHz crystal**: load caps over-loaded by ~5 pF (D2/B2 above). Slow startup, small freq offset. Cosmetic-functional.
 
 ---
 
 ## E. Positive findings (sanity confirmations)
 
-- **In1.Cu = solid GND plane** — textbook L2 placement, ideal F.Cu signal reference.
-- **VCC pour on F.Cu + In2 + B.Cu provides adequate 8 A ampacity.**
-- **~22 thermal vias under each DRV8316 EP** — well above the 9-12 datasheet recommendation; this is what gives you the favorable θ_JA in D1.
-- **Edge.Cuts is closed and clean.**
-- **Crystal load caps (C11/C18 = 30 pF) match the X1 datasheet load exactly.** No change needed.
-- **DRV8316C charge-pump cap (C32/C46 = 47 nF) matches the C-variant datasheet exactly.** (My initial briefing of "22 nF" was wrong — that's for the older DRV8316 non-C.)
-- **Power-OR architecture** (DRV8316 buck OR'd with USB VBUS via Q1 P-FET) is clever and works in principle — the only catch is the cold-start sequencing in A1.4.
+- **In1.Cu = clean solid GND plane** — verified by parser, zero routed segments. Textbook L2.
+- **In2.Cu = split power + signals** — known constraint; B.Cu signals crossing splits is the SI risk.
+- **18 unique GND vias under each DRV8316 EP** — exceeds TI's reference 16-via array (sec 11.2 p.84). Good thermal coupling.
+- **MT6701 is correctly wired for I²C/SSI mode** — MODE pin hard-tied to +3.3V (verified `magnetic_encoder.kicad_sch` lines 2273/2193/2333/3129). Per Rev 1.8 §1.2 p.4 the chip supports both I²C and SSI on the same pins; master selects SSI by pulling NSS low. Both v1 agents had this wrong.
+- **CAN choke U12 (ACT1210D-101) is populated**, not DNP. v1 false alarm — the X marks in the rendered schematic were the symbol's coupling glyph, not DNP markers.
+- **DRV8316C charge-pump cap (C32 / C46 = 47 nF)** is correct for the C-variant. Confirmed.
+- **DRV8316C VM bulk capacitance** (660 µF total per driver: 330 µF SMD + 330 µF THT) is generous.
+- **BUCK power-OR architecture** (DRV buck OR'd with USB VBUS via Q1 P-FET) is clever and works in principle. Cold-start sequencing (#12) is the only catch.
+- **Edge.Cuts is closed and clean** (pending the motor-shaft cutout question, #9).
 - **SWD debug header / test points** confirmed accessible.
-- **MT6701 internal MODE pull-up correctly leaves the pin unconnected.**
+- **VDDA decoupling pairs (C25-C28) exist** (v1 missed this).
 
 ---
 
-## F. What would I change first (priority order)?
+## F. Items I could NOT verify (open questions)
 
-1. Fix the four PCB-edge clearance issues (#8, #9, #10) — these are 5-minute moves that prevent fabrication scrap.
-2. Move U16/U18 encoders to B.Cu and add the magnet-axis copper keepout zone (#11, #12). Reroute B.Cu signals away from encoders (#13).
-3. Add motor-shaft cutouts to Edge.Cuts (#14).
-4. Replace SMF30CA with a tighter-clamp TVS (#5).
-5. Hard-strap DRV8316 BUCK_SEL high so the 5 V rail comes up at 5 V on power-on without firmware (#4).
-6. Fix QWIIC pull-ups (#2).
-7. Fix nFAULT/nSLEEP topology (#3).
-8. Verify MT6701 part number for SSI mode (#1) — order ~1 of each variant if unsure.
-9. Default-populate CAN choke and termination (#6); decouple CAN_VIO (#7).
-10. Add VDDA filter (B1.1) and CAN/CSense layer cleanup (B2.1).
-11. Cleanup pass on ERC errors and the dangling labels (B3, C).
+- DRV8316C VREF / ILIM (pin 37) connection — schematic-side trace not completed by agents. Visual check needed in `motor_driver.kicad_sch`. If floating in 6× PWM mode, current sensing breaks → FOC unusable. Cheap to verify.
+- IPC-2152 8 A ampacity number — no IPC PDF available locally; agents cited the standard qualitatively only. Master thermal limit (D1) is binding anyway.
+- ST DS12288 Rev 1 directly from ST — agents used a Farnell mirror PDF (same DS12288 content, doc-ID-verified). Fine in practice.
+- Chipanalog CA-IF1044VD-Q1 full datasheet — LCSC anti-leech blocked; agent used TI TCAN1044V-Q1 SLLSF17D as functional twin. Some Chipanalog clones have NC on pin 5 instead of VIO; if your specific part is one of those, blocker #13 is moot. Verify the actual part-page on LCSC.
+- SRV05-4A exact vendor — no LCSC code in BOM. Agent used DOWO datasheet as cross-reference. Check the BOM line.
+- X322512MSB4SI Cm/C0 — used typical values for the frequency-pulling estimate (D2/B2). Order-of-magnitude correct.
+- MT6701 PCB copper-keepout dimension — datasheet has no PCB-layout section. Sized #7 by magnet geometry (radius + ~1 mm guard).
 
-After these, the board should be ready for first articles.
+---
+
+## G. What I'd actually do, in order
+
+1. **Fix the four PCB-edge-clearance issues** (#1-4): 5-minute moves. Fab will reject as drawn.
+2. **Remove the 9 stacked duplicate vias** (#5): single edit kills 9 DRC errors.
+3. **Move U16/U18 encoders to B.Cu** (#6) and **add magnet-axis copper keepouts on every layer** (#7). Reroute B.Cu signals away from encoder die (#8). This is the big layout change.
+4. **Add motor-shaft cutouts to Edge.Cuts** (#9).
+5. **Replace SMF30CA → SMF24CA** (#16) — same SOD-123FL footprint, drop-in.
+6. **Hard-strap DRV8316 BUCK_SEL high** (#12) so 5 V rail comes up at 5 V on power-on.
+7. **Add real 10 kΩ nFAULT pull-up** to +3.3V (#11), keep the LED.
+8. **Re-do CAN termination jumper logic** (#10); **wire CAN_VIO to +3.3V** (#13); fix QWIIC pull-ups (#15).
+9. **Verify DRV VREF/ILIM pin 37 cap exists and is 100 nF to AGND** (B2 / F).
+10. **Pull DRV nSLEEP onto an MCU GPIO** if you ever want sleep-mode power saving.
+11. Layout cleanups: re-pour around BK22 with denser GND stitching (B1); fix 12 starved-thermal connections; resolve M3 standoff conflict; reroute CAN-FD as clean diff pair on F.Cu over In1.GND.
+12. Cosmetic ERC pass: delete dangling motor-phase labels, fix mirrored-on-back silk references, etc.
+13. Optional: change C11/C18 to 20 pF for cleaner crystal startup; add VDDA ferrite if ADC noise floor matters.
+
+After items 1-10 the board should be ready for first articles.

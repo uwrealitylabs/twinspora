@@ -1,0 +1,2651 @@
+PDF: D:\gehub\twinspora\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf
+Pages: 36
+
+===== PAGE 1 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+Features and Benefits
+￭Based on Hall Sensing Technology with 
+0°~360° Full Range Angle Sensing
+￭3.3~5.0V Operation Power Supply, build in 
+EEPROM (Programing at VDD>4.5V)
+￭Independent Output Interface: I2C, SSI, ABZ，
+UVW, Analog/PWM and Push-Button 
+Function on Z-Axis
+￭Maximum Rotation Speed 55,000 RPM
+￭Output Propagation Delay 5 us
+￭Incremental ABZ Resolution 1~1024 Pulses 
+per Revolution (PPR) User Programmable
+￭UVW Output Resolution 1~16 Pole-Pairs 
+per Revolution User Programmable
+￭RoHS Compliant 2011/65/EU
+￭SOP-8 and QFN-16 Package
+1
+General Description
+The MagnTek rotary position sensor MT6701
+is an IC based on Hall sensing technology. A
+rotating magnetic field in the x-y sensor plane
+delivers
+two
+sinusoidal
+output
+signals
+indicating the angle (α) between the sensor
+and the magnetic field direction.
+The incremental ABZ output mode is available
+in this sensor series, making the chip suitable
+to
+replace
+various
+optical
+encoders.
+The
+maximum resolution is 1024 pulse/4096 steps
+per revolution in binary mode.
+A standard I2C or SSI interface allows a host
+microcontroller to read the 14-bit absolute
+angle
+position
+data
+from
+MT6701.
+The
+absolute angle position is also provided as
+PWM
+output
+or
+linear
+analog
+signal
+proportional to VDD from a 12-bit DAC.
+Additionally, the PUSH output indicates the
+fast air-gap changes between the MT6701 and
+magnet which can be used to implement a
+contactless pushbutton function in which the
+knob can be pressed to move the magnet
+toward the MT6701.
+Applications
+￭Absolute Linear Position Sensor
+￭Robotics Control
+￭Contactless Knob
+￭Contactless Potentiometer
+Downloaded From  Oneyac.com
+
+===== PAGE 2 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+2
+Table of Contents
+Features and Benefits………….……………..……………...…………………………………….…….………1
+Applications……………………………….……….…………………………………………………………….…….1
+General Description……..………………..…………………………………….…………………………………1
+1
+Pin Configuration…………………………..…………………..……………………………..……….…….3
+1.1
+SOP-8 Package……...…………………….…………………...………………………………………………3
+1.2
+QFN-16 Package…….…………….…………………………………………………………………………….4
+2
+Function Diagram………….………………………………………………………….………………………5
+3
+Absolute Maximum Ratings……………………………………………………………………………..5
+4
+Electrical Characteristics…………………………………….……………………………………...……..6
+5
+Magnetic Input Specifications..………………………….……………………………………...……..8
+6
+Output Mode……………………………………………………………………………..…………..………….9
+6.1
+I/O Pin Configuration……..…………….…….…………………...………………………..…………….…9
+6.2
+Reference Circuit for ABZ/UVW/PWM/Analog Output….………………….……………...10
+6.3
+Quadrature A,B and Zero-Position Output Signal (ABZ Mode)………….…..……...11
+6.4
+UVW Output Mode……………………….………………………...………………………..……..….15
+6.5
+Analog Output Mode…………………….……………….………...……..…….………..……..……..….16
+6.6
+Pulse Width Modulation (PWM) Output Mode………...…………………………………….…17
+6.7
+I2C Interface………………..……………….……………………………....…….……………….………….…18
+6.7.1
+I2C Timing Diagram……………..…..…...…….……………..…………………..…………..….19
+6.7.2
+I2C Read Angle Registers….….…………………………...………………………………….…20
+6.7.3
+I2C Write………………………..….….…………………………...………………………………….…21
+6.8
+SSI Interface…………….……………………..……..……………………..……………………….………….22
+6.7.1
+SSI Timing Diagram…………………….………………..…….…………………………………….23
+6.7.2
+SSI Read Angle………..………….……………………………...………………………………….…24
+6.9
+Pushbutton Output..…….……………………..……..…………..…..………………………….………….25
+7
+Register Map & EEPROM Programming…………………………………….……………………….26
+8
+Mechanical Angle Direction…………………………………………………………………….…………….31
+9
+Package Information……..………….…….…….………………….……………………………………...……..32
+9.1
+SOP-8 Package………………….…..…………………………...………………………………….…………32
+9.2
+QFN-16 Package…………..….…..………….……………………………………………………..….……. 33
+10 Copy Rights and Disclaimer….….…….……………………………………………………….……...……..34
+11 Revision History.……………………………….……………………………………………………….……...……..35
+Downloaded From  Oneyac.com
+
+===== PAGE 3 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+1.    Pin Configuration
+3
+1. 1  SOP-8 Package
+Figure 1: Pin Configuration for SOP-8 Package
+Name
+#
+Type 
+Description
+VDD
+1
+Power Supply
+3.3~5.0V Supply
+MODE
+2
+Digital Input with Build in 
+200KΩ Pull-up Resistor
+ABZ or I2C/SSI Selection
+OUT
+3
+Analog/Digital Output
+Analog or PWM Output
+GND
+4
+Power Supply
+Ground
+PUSH
+5
+Digital Output
+Push Button Function Output
+A
+6
+Digital Input/output
+Incremental Signal A/U or I2C  Data ‘SDA’, 
+or SSI  Data ‘DO’
+B
+7
+Digital Input/output
+Incremental Signal B/V or I2C Clock ‘SCL’, 
+or SSI  Clock ‘CLK’
+Z
+8
+Digital Input/output with Build 
+in 200KΩ Pull-up Resistor
+Incremental Signal Z/W or SSI ‘CSN’
+Part Number 
+Description
+MT6701CT-STD
+SOP-8 Package, Tube Pack (100pcs/Tube) or Tape & Reel Pack (3000pcs/Reel)
+Family Members
+Pin List
+*SOP-8 Reflow Sensitivity Classification: MSL-3 
+Sensing Center at
+Geometry Center
+1
+2
+3
+4
+8
+7
+6
+5
+Downloaded From  Oneyac.com
+
+===== PAGE 4 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+4
+1. 2  QFN-16 Package
+Figure 2: Pin Configuration for QFN-16 Package
+Name
+#
+Type 
+Description
+NC
+1
+-
+Not Connected
+NC
+2
+-
+Not Connected
+NC
+3
+-
+Not Connected
+NC
+4
+-
+Not Connected
+PUSH
+5
+Digital Output
+Push Button Function Output
+A
+6
+Digital Input/output
+Incremental Signal A, or I2C  data‘SDA’, 
+or SSI  data‘DO’
+B
+7
+Digital Input/output
+Incremental Signal B, or I2C clock‘SCL’, 
+or SSI  clock‘CLK’
+Z
+8
+Digital Input/output with Build 
+in 200KΩ Pull-up Resistor
+Incremental Signal Z, or SSI ‘CSN’
+W
+9
+Digital Output
+Incremental Signal W or –Z
+NC
+10
+-
+Not Connected
+U
+11
+Digital Output
+Incremental Signal U or –A
+V
+12
+Digital Output
+Incremental Signal V or –B
+VDD
+13
+Power Supply
+3.3~5.0V Supply
+MODE
+14
+Digital Input with Build in 200KΩ 
+Pull-up Resistor
+ABZ or I2C/SSI Selection
+OUT
+15
+Analog/Digital Output
+Analog or PWM Output
+GND
+16
+Power Supply
+Ground
+Part Number 
+Description
+MT6701QT-STD
+QFN-16 Package, Reel Pack (1000pcs/Reel)
+Family Members
+Pin List
+*QFN-16 Reflow Sensitivity Classification: MSL-1 
+Top View
+Bottom View
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+Sensing Center at
+Geometry Center
+Downloaded From  Oneyac.com
+
+===== PAGE 5 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+5
+2.  Functional Diagram
+Figure 3: Block Diagram 
+The MT6701 is manufactured in a CMOS standard process and uses advanced magnet
+sensing technology to sense the magnetic field distribution across the surface of the chip.
+The integrated magnetic sensing element array is placed around the center of the device
+and delivers a voltage representation of the magnetic field at the surface of the IC.
+3.  Absolute Maximum Ratings (Non-Operating)
+Name
+Min.
+Max.
+Unit
+DC Voltage at Pin VDD
+-0.5
+7
+V
+Storage Temperature
+-55
+150
+℃
+Operating Temperature
+-40
+125
+℃
+Electrostatic Discharge (HBM)
+-
+±6.0
+KV
+Electrostatic Discharge (CDM)
+-
+±1.5
+KV
+Figure 3 shows a simplified block diagram of the chip, consisting of the magnetic sensing
+element modeled by two interleaved Wheatstone bridges to generate cosine and sine
+signals, gain stages, analog-to-digital converters (ADC) for signal conditioning, and a
+digital signal processing (DSP) unit for encoding. Other supporting blocks such as LDO, etc.
+are also included.
+Stresses beyond those listed under “Absolute Maximum Ratings” may cause permanent
+damage to the device. These are stress ratings only. Functional operation of the device at
+these or any other conditions beyond those indicated under “Operating Conditions” is
+not implied. Exposure to absolute maximum rating conditions for extended periods may
+affect device reliability.
+G
+G
+ADC
+ADC
+DSP
+LDO
+Calibration
+EEPROM
+UVW/
+-A-B-Z
+PWM
+VDD
+A
+B
+Z
+MODE
+M
+U
+X
+OSC
+SSI
+ABZ
+VSS
+Angle 
+Calculation
+Interpolator
+Magnetic 
+Sensing 
+Element
+I/V 
+REF
+U
+V
+W
+M
+U
+X
+DAC
+OUT
+M
+U
+X
+I2C
+PUSH
+Push 
+Button
+Downloaded From  Oneyac.com
+
+===== PAGE 6 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+6
+4.  Electrical Characteristics
+Operation conditions: Ta=-40 to 125℃, VDD=3.0~5.5V unless otherwise noted.
+Symbol
+Parameter
+Conditions/Notes
+Min.
+Typ.
+Max.
+Unit
+VDD
+Supply Voltage
+-
+3.0
+3.3~5.0
+5.5
+V
+Idd
+Supply Current
+-
+10.0
+14.0
+mA
+LSB
+Resolution (ABZ Mode)
+N Steps per Cycle
+360°/N
+-
+°
+INL
+Integral Non-Linearity
+Note (1)
+-
+±1.0
+±1.5
+°
+DNL
+Differential Non-Linearity 
+(ABZ Mode), Figure 4
+-
+±0.02
+-
+°
+TN
+Transition Noise  (ABZ Mode)
+25℃
+-
+0.01
+°rms
+Hyst
+Hysteresis (ABZ Mode)
+-
+0.088
+-
+°
+TPwrUp
+Power-Up Time
+VDD Ramp<10us
+-
+-
+1.0
+ms
+TDelay
+Propagation Delay
+Constant Speed
+-
+5
+-
+us
+Analog Output Specification
+ROUT
+Analog Output Resistance
+-
+-
+15
+30
+Ω
+RL
+Pull-Up or Pull-Down
+-
+10
+-
+-
+KΩ
+CL
+Loading Capacitor
+-
+-
+-
+1
+nF
+VSat_High
+Saturation High Voltage
+Iload=1mA
+VDD-
+0.5
+-
+-
+V
+VSat_Low
+Saturation Low Voltage
+Iload=1mA
+-
+-
+0.5
+V
+DAC_LSB
+DAC LSB
+12-bit DAC
+-
+0.025
+-
+%VDD
+VNoise
+Analog Output Noise
+Ta=25℃, RMS Value 
+excluding DAC 
+Quantization Noise
+-
+-
+0.5
+mVrms
+Erm
+Ratiometric Error
+Note (2)
+-0.3
+-
+0.3
+%
+PWM Output Characteristics
+FPWM
+PWM Frequency
+Programmable
+-5%
+@27℃
+994.4
+/497.2
++5%
+@27℃
+Hz
+TRise
+Rising Time
+CL=1nF
+-
+-
+1
+us
+TFall
+Falling Time
+CL=1nF
+-
+-
+1
+us
+Downloaded From  Oneyac.com
+
+===== PAGE 7 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+7
+Note (1): The typical error value can be achieved at room temperature and with no off-axis
+misalignment error. The maximum error value can be achieved over operation temperature range,
+at maximum air gap and with worst-case off-axis misalignment error.
+Note (2): The analog output is by design ratiometric, i.e. it is proportional to the supply voltage
+VDD. The ratiometric error is calculated as follows.
+Erm ൌሾ𝑉𝑜𝑢𝑡𝑉஽஽
+𝑉஽஽
+െ𝑉𝑜𝑢𝑡5V
+5𝑉
+ሿ· 100%
+Digital I/O Characteristics (Push-Pull Type in Normal Mode)
+VIH
+High Level Input Voltage
+-
+0.7*VDD
+-
+-
+V
+VIL
+Low Level Input Voltage
+-
+-
+-
+0.3*VDD
+V
+VOH
+GPIO Output High Level
+Push-pull 
+(Iout=2mA)
+VDD-0.5
+-
+-
+V
+VOL
+GPIO Output Low Level
+Push-pull
+(Iout=2mA)
+-
+-
+0.5
+V
+ILK
+Input Leakage Current
+-
+-
+-
+±1
+uA
+Figure 4: Drawing Illustration INL, DNL and TN (for 10-bit case)
+Downloaded From  Oneyac.com
+
+===== PAGE 8 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+8
+5.  Magnetic Input Specifications
+Operation conditions: Ta=-40 to 125℃, VDD=3.0~5.5V unless otherwise noted, two-pole
+cylindrical diametrically magnetized source.
+Symbol
+Parameter
+Conditions/Notes
+Min.
+Typ.
+Max.
+Unit
+Dmag
+Diameter of Magnet
+Recommended Magnet: Ø6mm 
+x 2.5mm for Cylindrical Magnets
+-
+6.0
+-
+mm
+Tmag
+Thickness of Magnet
+-
+2.5
+-
+mm
+Bpk
+Magnetic Input Field 
+Amplitude
+Measure at the IC Surface
+200
+-
+1,000
+Gauss
+AG
+Air Gap
+Magnetic to IC Surface Distance
+0.5
+1.0
+2.0
+mm
+RS 
+Rotation Speed
+-
+-
+55,000
+RPM
+DISP
+Off Axis Misalignment
+Misalignment Error Between 
+Sensor Sensing Center and 
+Magnet Axis (See Figure 5)
+-
+-
+0.3
+mm
+TCmag1
+Recommended Magnet
+Material and Temperature 
+Drift Coefficient
+NdFeB (Neodymium Iron Boron)
+-
+-0.12
+-
+%/℃
+TCmag2
+SmCo (Samarium Cobalt)
+-
+-0.035
+-
+Figure 5: Magnet Arrangement
+Downloaded From  Oneyac.com
+
+===== PAGE 9 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+9
+6.  Output Mode
+The MT6701 provides ABZ, UVW, Analog and PWM at output pins, also angle position data
+could be transferred by I2C or SSI interface. A PUSH output indicating pushbutton function is
+also provided.
+6.1  I/O Pin Configuration
+Pin#
+I2C 
+SSI
+ABZ
+UVW
+PWM
+Analog
+Push
+3
+PWM
+Analog
+5
+Push
+6
+SDA
+DO
+A
+U
+7
+SCL
+CLK
+B
+V
+8
+CSN
+Z
+W
+SOP-8 Package I/O Pin Configuration
+For SOP-8 package, ABZ/UVW (Single-end), I2C and SSI are configured to Pin.6, Pin.7 and
+Pin.8. Analog and PWM output is configured to Pin.3.
+Pin#
+I2C 
+SSI
+ABZ
+ABZ+UVW
+ABZ Differential
+PWM
+Analog
+Push
+5
+Push
+6
+SDA
+DO
+A
+A
+A
+7
+SCL
+CLK
+B
+B
+B
+8
+CSN
+Z
+Z
+Z
+9
+W
+-Z
+11
+U
+-A
+12
+V
+-B
+15
+PWM
+Analog
+QFN-16 Package I/O Pin Configuration
+For QFN-16 package, ABZ (Single-end), I2C and SSI are configured to Pin.6, Pin.7 and Pin.8.
+UVW and –A-B-Z are configured to Pin.11, Pin.12 and Pin.9. Analog and PWM output is
+configured to Pin.15.
+Downloaded From  Oneyac.com
+
+===== PAGE 10 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+10
+6.2  Reference Circuit for ABZ/UVW/PWM/Analog/Push Output
+Figure 6:  MT6701CT(SOP-8) Reference Circuit for ABZ/UVW/PWM/Analog/Push Output
+Figure 7:  MT6701QT(QFN-16) Reference Circuit for ABZ/UVW/PWM/Analog/Push Output
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+V/-B
+W/-Z
+0.1uf
+A
+TVS(6V)
+Recommended 
+for Better Reliability
+U/-A
+NC
+NC
+NC
+NC
+NC
+B
+Z
+PUSH
+VDD
+Analog
+/PWM
+200KΩ
+200KΩ
+7
+1
+2
+3
+4
+5
+6
+8
+B/V
+A/U
+0.1uf
+VDD
+TVS(6V)
+Recommended 
+for Better Reliability
+Z/W
+Analog
+/PWM
+Push
+200KΩ
+200KΩ
+Downloaded From  Oneyac.com
+
+===== PAGE 11 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+11
+6.3 Quadrature A, B and Index Output
+As shown in Figure 8, when the magnet rotates counter-clock-wise (CCW), output B leads
+output A by 1/4 cycle, when the magnet rotates clock-wise (CW), output A leads output B
+by 1/4 cycle (or 1 LSB). Output Z indicates the zero position of the magnet.
+After chip power-on, the ABZ output is blocked for 50ms to guarantee proper output.
+Figure 8: ABZ output with VDD Power-on
+A
+Z
+CCW
+B
+360°
+VDD
+CW
+50ms
+S
+N
+1
+2
+3
+4
+8
+7
+6
+5
+Top View
+CCW
+Magnet Rotation 
+Direction
+Downloaded From  Oneyac.com
+
+===== PAGE 12 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+12
+Output Z indicates the zero position of the magnet and it is user programmable. The pulse
+width of Z is selectable as 1, 2, 4, 8, 12, 16 LSBs and 180° as shown in Figure 9 and Figure
+10. It is guaranteed that one Z pulse is generated for every rotation round.
+A
+Z
+1LSB
+CCW
+B
+2LSB ...4LSB...8LSB...12LSB….16LSB
+360°
+A
+Z
+CCW
+B
+360°
+180°
+1LSB
+2LSB ...4LSB...8LSB...12LSB….16LSB
+Figure 9: Typical ABZ Output w/i Z Pules Width=1,2,4,8,12 and 16 LSBs
+Figure 10: Typical ABZ Output w/i Z pules width=180°
+Downloaded From  Oneyac.com
+
+===== PAGE 13 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+13
+10 bit=210 LSBs=1024 Steps=256 PPR
+1000 PPR=4000 Steps
+1000 Pulses Per Revolution
+1000 Pulses Per Revolution
+1
+2
+3
+4
+5
+1024
+Per Revolution 360°
+256 Pulses Per Revolution
+256 Pulses Per Revolution
+1023
+1022
+1021
+1020
+1019
+A
+Z
+B
+LSB
+Z
+B
+A
+1
+2
+3
+4
+5
+Per Revolution 360°
+4000
+3999
+3998
+3997
+3996
+3995
+1
+255
+256
+1
+255
+256
+LSB
+1
+999
+1000
+1
+999
+1000
+ABZ resolution is user programmable as 1~1024 PPR any resolution. The relationship
+between binary bits, LSBs and PPR resolution of ABZ output are shown in Figure 11 and
+Figure 12.
+Figure 12: ABZ Output Resolution=1000 PPR
+Figure 11: ABZ Output Resolution=10 bit
+Downloaded From  Oneyac.com
+
+===== PAGE 14 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+14
+The Z/Index pulse width could be programmed
+Reg. Z_Pulse_Width<2:0>
+Width (LSBs)
+Reg. Z_Pulse_Width<2:0>
+Width (LSBs)
+000
+1
+100
+12
+001
+2
+101
+16
+010
+4
+110
+180°
+011
+8
+111
+1
+Z/Index Pulse Width Register (EEPROM)
+Register
+bit7
+bit6
+bit5
+bit4
+bit3
+bit2
+bit1
+bit0
+Zero_MSB
+NA
+Z_PULSE_WIDTH<2:0>
+ZERO<11:8>
+Zero_LSB
+ZERO<7:0>
+Zero Position Register (EEPROM)
+ABZ Resolution Register (EEPROM)
+The mechanical zero position could be programmed, it is a 12 bits data for 0~360°.
+Register
+bit7
+bit6
+bit5
+bit4
+bit3
+bit2
+bit1
+bit0
+ABZ_RES
+UVW_RES<3:0>
+NA
+NA
+ABZ_RES<9:8>
+ABZ_RES
+ABZ_RES<7:0>
+The resolution of ABZ could be programmed by a 10-bit register ‘ABZ_RES’
+* To program EEPROM, please refer Chapter-7
+Downloaded From  Oneyac.com
+
+===== PAGE 15 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+15
+6.4 UVW Output Mode
+The MT6701 provides U, V and W pulses which are 120° (electrical) out of phase as shown in
+Figure 13. The cycles of UVW per rotation can be programmed.
+UVW Pole Pairs Register (EEPROM)
+Figure 13: Typical Output Waveform for UVW Mode
+Reg. UVW_RES<3:0>
+UVW Pole Pairs
+0000
+1
+0001
+2
+0010
+3
+0011
+4
+0100
+5
+0101
+6
+0110
+7
+0111
+8
+1000
+9
+1001
+10
+1010
+11
+1011
+12
+1100
+13
+1101
+14
+1110
+15
+1111
+16
+0° 
+180° 
+120° 
+60° 
+240° 300° 
+360° 
+U
+V
+W
+Clockwise
+0° 
+180° 120° 
+60° 
+240° 
+300° 
+360° 
+Counter Clockwise
+U
+V
+W
+Downloaded From  Oneyac.com
+
+===== PAGE 16 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+16
+6.5 Analog Output Mode
+The MT6701 provides a rail-to-rail linear analog output by a build-in 12 bit DAC as shown in
+Figure 14. It’s a linear transfer function of absolute angle and output voltage. To enable
+analog output, register ‘Output Mode’ should be programmed to logic ‘Low’.
+Figure 14:  Default Analog Output
+Reg. Output Mode
+Pin.3 (SOP-8), Pin.15 (QFN-16)
+0
+Analog
+1
+PWM
+Analog or PWM Output Control Register (EEPROM)
+The angle and voltage value of start-point, Clamp_Low (0% or 10%) and Clamp_High (100% or
+90%) could be user programmed, also the Zero Point could be user programmed as shown in
+Figure 15.
+Figure 15: Analog Output Transfer Function
+VDD
+0 
+ 360°
+100%
+VDD
+Clamp_High
+Clamp_Low
+0° 
+360° 
+Degrees
+Analog Output
+A_Start
+A_Stop
+A_Start
+DP
+Downloaded From  Oneyac.com
+
+===== PAGE 17 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+17
+6.6  Pulse Width Modulation (PWM) Output Mode
+The MT6701 provides a digital Pulse Width Modulation (PWM) output, whose duty cycle is
+proportional to the measured angle as shown in Figure 16.
+The PWM output consists of a frame of 4119 PWM clock periods. The angle data is
+represented with 12-bit resolution in the frame. One PWM clock period represents 0.088°
+and has a typical duration of 244 ns which also could be programmed to be 488 ns.
+Figure 16: PWM Output Frame
+Reg. PWM_FREQ
+PWM Frame Frequency
+0
+994.4 Hz
+1
+497.2 Hz
+PWM Frequency (EEPROM)
+6
+5
+4
+3
+2
+1
+Start
+ Pattern
+16 Clock 
+Periods High
+4095
+4094
+4093
+4092
+4091
+4090
+8 Clock 
+Periods Low
+End
+ Pattern
+Time
+PWM Frame  994.4Hz or 497.2Hz
+Downloaded From  Oneyac.com
+
+===== PAGE 18 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+18
+6.7  I2C Interface
+The MT6701 provides a slave I2C interface for host MCU to read back digital absolute angle
+information from its internal registers. The reference circuit for I2C interface is shown in
+Figure 17, whether the need for pull-up resistor on SCL is determined by MCU, for MT6701
+SCL is a digital input.
+Figure 17: I2C Reference Circuit of SOP-8 Package
+Figure 18: I2C Reference Circuit  of QFN3x3 Package
+200KΩ
+200KΩ
+7
+1
+2
+3
+4
+5
+6
+8
+0.1uf
+VDD
+TVS(6V)
+Recommended 
+for Better Reliability
+Analog
+/PWM
+Push
+MCU
+Master
+Slave
+MT6701
+SDA
+SCL
+5K
+5K
+SDA
+MCU
+Master
+5K
+SCL
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+V/-B
+W/-Z
+0.1uf
+TVS(6V)
+Recommended 
+for Better Reliability
+U/-A
+NC
+NC
+NC
+NC
+NC
+PUSH
+VDD
+Analog
+/PWM
+5K
+Slave
+MT6701
+200KΩ
+200KΩ
+Downloaded From  Oneyac.com
+
+===== PAGE 19 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+19
+Parameter
+Notes
+Min.
+Max.
+Unit
+TSCL
+SCL Clock Period
+1
+-
+μs
+THD.STA
+Hold Time of ‘START’
+250
+-
+ns
+TLOW
+Low Phase of SCL
+250
+-
+ns
+THIGH
+High Phase of SCL
+250
+-
+ns
+TSU.DA
+Setup Time of SDA
+100
+-
+ns
+THD.DA
+Hold Time of SDA
+50
+-
+ns
+TR
+Rising Time of SDA/SCL
+-
+150
+ns
+TF
+Falling Time of SDA/SCL
+-
+150
+ns
+TSU.STP
+Setup Time of ‘Stop’
+250
+-
+ns
+I2C Timing Parameter
+6.7.1  I2C Timing Diagram
+Figure 19: I2C  Timing Diagram
+Downloaded From  Oneyac.com
+
+===== PAGE 20 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+20
+6.7.2  I2C Read Angle Registers
+The default slave ID of MT6701 is b’0000110 in 7 bit binary form(It could be programmed
+to b’1000110) . The 14 bits angle data is stored in internal register 0x03 and 0x04. Please
+follow the I2C timing of Figure 20 to read the angle data from 0x03 and 0x04 registers.
+Note: Please read Register 0x03 first and then read 0x04
+Figure 20: I2C Single Byte Read
+Reg. Addresss
+Bit7
+Bit6
+Bit5
+Bit4
+Bit3
+Bit2
+Bit1
+Bit0
+0x03
+Angle<13:6>
+0x04
+Angle<5:0>
+NA
+NA
+Angle Data Register
+0~360° absolute angle θ could be calculated by the below formula:
+13
+0
+2
+=
+360
+16384
+i
+i
+Angle
+i
+
+
+
+
+
+
+
+0
+0
+0
+0
+1
+1
+0
+0
+Slave ID: 06
+37
+38
+39
+40
+41
+42
+43
+44
+45
+0
+0
+0
+0
+0
+1
+0
+46
+47
+48
+49
+50
+0
+Register Address: 04
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+0
+0
+0
+0
+1
+1
+0
+1
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Slave ID: 06
+Data of 0x04
+0
+0
+0
+0
+1
+1
+0
+Slave 
+ACK
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Write
+0
+0
+0
+0
+0
+0
+1
+10
+11
+12
+13
+14
+1
+15
+16
+17
+Slave 
+ACK
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+0
+0
+0
+0
+1
+1
+0
+1
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Read
+Slave ID: 06
+Register Address: 03
+Slave ID: 06
+Data of 0x03
+Master 
+No ACK
+Slave 
+ACK
+Slave 
+ACK
+Write
+Slave 
+ACK
+Read
+Master 
+No ACK
+Slave 
+ACK
+Downloaded From  Oneyac.com
+
+===== PAGE 21 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+21
+6.7.3  I2C Write
+Figure 21: I2C Write
+0
+0
+0
+0
+1
+1
+0
+Slave 
+ACK
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Write
+A7
+A6
+A5
+A4
+A3
+A2
+A1
+10
+11
+12
+13
+14
+A0
+15
+16
+17
+Slave 
+ACK
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+Slave ID: 06
+Register Address
+Data for Writing
+Slave 
+ACK
+D0
+Stop
+Downloaded From  Oneyac.com
+
+===== PAGE 22 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+22
+The MT6701 also provides an SSI interface for host MCU to read back digital absolute
+angle information. The reference circuits for SSI interface are shown in Figure 22 and
+Figure 23.
+Figure 22: SSI Interface Reference Circuit of SOP-8 Package
+6.8  SSI Interface
+Figure 23: SSI Interface Reference Circuit of QFN-16 Package
+7
+1
+2
+3
+4
+5
+6
+8
+0.1uf
+VDD
+TVS(6V)
+Recommended 
+for Better Reliability
+Analog
+/PWM
+Push
+MCU
+Master
+Slave
+MT6701
+DO
+CLK
+CSN
+200KΩ
+200KΩ
+DO
+MCU
+Master
+CLK
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+V/-B
+W/-Z
+0.1uf
+TVS(6V)
+Recommended 
+for Better Reliability
+U/-A
+NC
+NC
+NC
+NC
+NC
+PUSH
+VDD
+Analog
+/PWM
+CSN
+MT6701
+Slave
+200KΩ
+200KΩ
+Downloaded From  Oneyac.com
+
+===== PAGE 23 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+23
+The MT6701 SSI is shown in Figure 24, a data transfer starts when CSN is pulled to logic
+‘Low’. The MT6701 transfers data on the falling edge of CLK, and the data transfer finally
+stops when CSN is pulled to logic ‘High’
+6.8.1  SSI Timing Diagram
+Figure 24: SSI Timing Diagram
+SSI Timing Parameter
+Symbol
+Notes
+Min.
+Typ.
+Max.
+Unit
+TL
+Time between CSN falling edge and CLK falling edge
+100
+-
+ns
+TCLK
+Clock period
+64
+-
+ns
+TCLKL
+Low period of clock
+30
+-
+ns
+TCLKH
+High period of clock
+30
+-
+ns
+TH
+Time between CLK last rising edge and CSN rising edge
+0.5•TCLK
+-
+ns
+TR
+Rise Time of Digital Signal (with 20pf Loading Condition)
+-
+10
+-
+ns
+TF
+Fall Time of Digital Signal (with 20pf Loading Condition)
+-
+10
+-
+ns
+TDV
+Data valid time of DO (with 20pf Loading Condition)
+-
+-
+15
+ns
+CSN
+(Input)
+CLK
+(Input)
+DO
+(Output)
+TL
+TCLK
+TCLKL
+TCLKH
+TDV
+TH
+Data N
+Data N+1
+CSN, CLK, DO
+0.8VDD
+0.2VDD
+TR
+TF
+Downloaded From  Oneyac.com
+
+===== PAGE 24 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+24
+An SSI data transfer starts when CSN is pulled to logic ‘Low’, as shown in Figure 25. CLK is the
+Serial Port Clock and it is controlled by the SSI master; it is high when there is no SSI
+transmission. DO (Data Output) is the Serial Port Data Output from MT6701, it is driven at the
+rising edge of CLK and should be captured at the falling edge of CLK.
+Bit 0-13:    14-bit Angle Data D[13:0]    
+Bit 14-17:  4-bit Magnetic Field Status Mg[3:0]
+Bit 18-23:  6-bit CRC Code CRC[5:0] 
+Figure 25: SSI Data Format
+6.8.2  SSI Read Angle
+CRC Data Range: D[13:0] and Mg[3:0] total 18-bit, D[13] is the MSB, Mg[0] is the LSB
+CRC polynomials: X6+X+1, MSB steam in first.
+D13 D12 D11 D10 D9
+D8
+D7
+CLK
+DO
+D6
+1
+2
+3
+4
+5
+6
+7
+8
+9
+D4
+D3
+D2
+Mg
+3
+Mg
+2
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+CRC
+5
+CRC
+4
+CRC
+3
+CRC
+2
+CRC
+1
+CRC
+0
+14 bit angle data
+6 bit CRC
+D5
+4 bit Status
+CSN
+0
+Mg
+0
+Mg
+1
+D1
+D0
+13
+0
+D
+2
+=
+360
+16384
+i
+i
+i
+
+
+
+
+
+
+
+0~360° absolute angle θ could be calculated by the below formula with D[13:0]:
+Mg[1:0]
+Status
+0
+Normal
+1
+Magnetic Field is too Strong
+2
+Magnetic Field is too Weak
+3
+-
+Mg[2]
+Status
+0
+Normal
+1
+Push Button is 
+Detected
+Mg[3]
+Status
+0
+Normal
+1
+Loss of Track
+Mg[3:0] Magnetic Field Status Truth Table:
+Downloaded From  Oneyac.com
+
+===== PAGE 25 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+25
+Figure 26: Pushbutton Function
+The MT6701 implements a pushbutton detection function through a dynamic and relative
+measurement of the orthogonal magnetic field strength. This pushbutton detection function
+drives the PUSH output pin high when the MT6701 detects a fast (which is less than the time
+defined by‘PUSH_DIFF_DLY’) increase of the magnetic field (which is larger than the
+percentage defined by‘PUSH_THRD’). After a fast decrease of the magnetic field, the
+PUSH output is driven low.
+6.9  Pushbutton Output
+Reg. PUSH_THRD
+Change Percentage
+0
++44%
+1
++50%
+2
++38%
+3
++31%
+PUSH_THRD Register (EEPROM)
+Magnetic Field
+0° 
+Time
+Push 
+Released
+Push 
+Pressed
+PUSH_THRD
+Push
+Threshold
+PUSH_DIFF_DLY
+PUSH_DIFF_DLY
+PUSH_TIME_OUT
+Push
+Reg. PUSH_DIFF_DLY
+Time (Second)
+0
+0.5
+1
+0.25
+PUSH_DIFF_DLY Register (EEPROM)
+Reg. PUSH_TIME_OUT
+Time (Second)
+0
+8
+1
+16
+2
+4
+3
+2
+PUSH_TIME_OUT Register (EEPROM)
+Downloaded From  Oneyac.com
+
+===== PAGE 26 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+26
+7.  Register Map & EEPROM Programming 
+7.1 EEPROM Register Map
+Reg. Addr.
+bit7
+bit6
+bit5
+bit4
+bit3
+bit2
+bit1
+bit0
+0x25
+UVW_MUX
+0x29
+ABZ_MUX
+DIR
+0x30
+UVW_RES[3:0]
+ABZ_RES[9:8]
+0x31
+ABZ_RES[7:0]
+0x32
+HYST[2]
+Z_PULSE_WIDTH[2:0]
+ZERO [11:8]
+0x33
+ZERO [7:0]
+0x34
+HYST[1:0]
+0x38
+PWM_FREQ
+PWM_POL
+OUT_MODE
+0x3E
+A_STOP[11:8]
+A_START[11:8]
+0x3F
+A_START[7:0]
+0x40
+A_STOP[7:0]
+*UVW_MUX (Address 0x25[7])
+UVW_MUX register contains the configuration data of UVW output type.
+UVW_MUX
+UVW Output Type(Only for QFN Package)
+0x0
+UVW
+0x1
+-A-B-Z
+*ABZ_MUX (Address 0x29[6])
+ABZ_MUX register contains data of ABZ output type.
+ABZ_MUX
+ABZ Output Type
+0x0
+ABZ
+0x1
+UVW
+*DIR(Address 0x29[1])
+DIR register contains the configuration data of output rotation direction
+DIR
+Output Direction
+0x0
+CCW
+0x1
+CW
+Warning: the register bits which filled by
+are reserved by MagnTek, please DO
+NOT change the value of these bits!!!
+Downloaded From  Oneyac.com
+
+===== PAGE 27 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+27
+*UVW_RES[3:0] (Address 0x30[7:4])
+UVW_RES register contains the configuration data of UVW output resolution (Pole-Paris).
+*HYST[2:0] (Address 0x32[7] & 0x34[7:6])
+HYST register contains the configuration data of hysteresis filter parameter.
+HYST
+Hysteresis (LSB)
+0x0
+1
+0x1
+2
+0x2
+4
+0x3
+8
+0x4
+0
+0x5
+0.25
+0x6
+0.5
+0x7
+1
+Reg. UVW_RES<3:0>
+UVW Output Pole Pairs
+0x0
+1
+0x1
+2
+0x2
+3
+…….
+…….
+0xD
+14
+0xE
+15
+0xF
+16
+*ABZ_RES[9:0] (Address 0x30[1:0] & 0x31[7:0])
+ABZ_RES register contains the configuration data of ABZ output resolution (PPR).
+Reg. ABZ_RES<9:0>
+ABZ Resolution (Pulse per Round)
+0x000
+1
+0x001
+2
+0x002
+3
+…….
+…….
+0x3FD
+1022
+0x3FE
+1023
+0x3FF
+1024
+Downloaded From  Oneyac.com
+
+===== PAGE 28 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+28
+*Z_PULSE_WIDTH[2:0] (Address 0x32[6:4])
+Z_PULSE_WIDTH register contains the configuration data of Z pulse width (Fig.9 & Fig.10 )
+HYST
+Z Pulse Width
+0x0
+1 LSB
+0x1
+2 LSB
+0x2
+4 LSB
+0x3
+8 LSB
+0x4
+12 LSB
+0x5
+16 LSB
+0x6
+180°
+0x7
+1 LSB
+*ZERO[11:0] (Address 0x32[3:0] & 0x33[7:0])
+ZERO register contains the configuration data of zero-degree position.
+ZERO
+Zero Degree Position
+0x000
+0°
+0x001
+0.088°
+0x002
+0.176°
+…
+…
+0xFFD
+359.736°
+0xFFE
+359.824°
+0xFFF
+359.912°
+*PWM_FREQ (Address 0x38[7])
+PWM_FREQ register contains the configuration data of PWM frame frequency
+PWM_FREQ
+PWM Frame Frequency
+0x0
+994.4 Hz
+0x1
+497.2 Hz
+*PWM_POL (Address 0x38[6])
+PWM_POL register contains data of PWM polarity.
+PWM_POL
+PWM Polarity
+0x0
+High Level Valid
+0x1
+Low Level Valid
+Downloaded From  Oneyac.com
+
+===== PAGE 29 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+29
+*OUT_MODE(Address 0x38[5])
+OUT_MODE register contains the configuration data of ‘Out’ Pin Mode
+OUT_MODE
+‘Out’ Pin Mode
+0x0
+Analog Output
+0x1
+PWM Output
+*A_START[11:0] (Address 0x3E[3:0] & 0x3F[7:0])
+A_START register contains the configuration data of start-point of analog output (Fig.15)
+A_START
+Analog/PWM Start Angle
+0x000
+0°
+0x001
+0.088°
+0x002
+0.176°
+…
+…
+0xFFD
+359.736°
+0xFFE
+359.824°
+0xFFF
+359.912°
+*A_STOP[11:0] (Address 0x3E[7:4] & 0x40[7:0])
+A_STOP register contains the configuration data of stop-point of analog output (Fig.15)
+A_STOP
+Analog/PWM Stop Angle
+0x000
+0°
+0x001
+0.088°
+0x002
+0.176°
+…
+…
+0xFFD
+359.736°
+0xFFE
+359.824°
+0xFFF
+359.912°
+Downloaded From  Oneyac.com
+
+===== PAGE 30 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+30
+7.2 EEPROM Programming
+Reg. Addr.
+bit7
+bit6
+bit5
+bit4
+bit3
+bit2
+bit1
+bit0
+0x25
+UVW_MUX
+0x29
+ABZ_MUX
+DIR
+0x30
+UVW_RES[3:0]
+ABZ_RES[9:8]
+0x31
+ABZ_RES[7:0]
+0x32
+HYST[2]
+Z_PULSE_WIDTH[2:0]
+ZERO [11:8]
+0x33
+ZERO [7:0]
+0x34
+HYST[1:0]
+0x38
+PWM_FREQ
+PWM_POL
+OUT_MODE
+0x3E
+A_STOP[11:8]
+A_START[11:8]
+0x3F
+A_START[7:0]
+0x40
+A_STOP[7:0]
+Warning: the register bits which filled by
+are reserved by MagnTek, please DO NOT
+change the value of these bits!!!
+Customer can program the EEPROM registers by I2C interface (Fig.17 & Fig.18) and follow
+the below steps. When programming EEPROM, must keep 4.5V<VDD<5.5V.
+Step
+Operation
+Writing Register
+Writing the right value to the target EEPROM registers
+(Do Not Change the         bits, customer should read out 
+the         bits and logic these bits ‘or’ with others)  
+Programming Key
+Write value ‘0xB3’ to Register ‘0x09’
+Programming Command
+Write value ‘0x05’ to Register ‘0x0A’
+Programming (VDD>4.5V)
+Waiting >600ms without any operation to MT6701
+Check Programming Data
+Power-down MT6701 and then power-up it again, read 
+the EEPROM register to check if the data is successfully 
+programmed
+Downloaded From  Oneyac.com
+
+===== PAGE 31 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+31
+8.  Mechanical Angle Direction
+Figure 27: Mechanical Angle Position 
+0 degree
+90 degree
+180 degree
+270 degree
+S
+N
+S
+N
+S
+N
+1
+2
+3
+4
+8
+7
+6
+5
+1
+2
+3
+4
+8
+7
+6
+5
+1
+2
+3
+4
+8
+7
+6
+5
+1
+2
+3
+4
+8
+7
+6
+5
+S
+N
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+S
+N
+180 degree
+0 degree
+90 degree
+270 degree
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+S
+N
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+S
+N
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+12
+16
+14
+15
+S
+N
+Top View
+Top View
+45°
+45°
+Downloaded From  Oneyac.com
+
+===== PAGE 32 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+32
+9.  Package Information
+9.1 SOP-8 Package
+Symbol
+Dimensions in Millimeters
+Dimensions in Inches
+Min.
+Max.
+Min.
+Max
+A
+1.450
+1.750
+0.057
+0.069
+A1
+0.100
+0.250
+0.004
+0.010
+A2
+1.350
+1.550
+0.053
+0.061
+b
+0.330
+0.510
+0.013
+0.020
+c
+0.170
+0.250
+0.007
+0.010
+D
+4.700
+5.100
+0.185
+0.201
+E
+5.800
+6.200
+0.228
+0.244
+E1
+3.800
+4.000
+0.150
+0.157
+e
+1.270(BSC)
+0.050(BSC)
+L
+0.400
+1.270
+0.016
+0.050
+θ
+0˚
+8˚
+0˚
+8˚
+Z
+0.45
+0.65
+0.018
+0.026
+Z
+Downloaded From  Oneyac.com
+
+===== PAGE 33 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+33
+9.2 QFN-16 Package
+Symbol
+Dimensions in Millimeters
+Dimensions in Inches
+Min.
+Max.
+Min.
+Max.
+A
+0.700
+0.800
+0.028
+0.031
+A1
+0.000
+0.050
+0.000
+0.002
+A3
+0.203REF
+0.008REF
+D
+2.900
+3.100
+0.114
+0.122
+E
+2.900
+3.100
+0.114
+0.122
+D1
+1.600
+1.800
+0.063
+0.071
+E1
+1.600
+1.800
+0.063
+0.071
+k
+0.275REF
+0.011REF
+b
+0.180
+0.300
+0.007
+0.012
+e
+0.500REF
+0.020REF
+L
+0.300
+0.500
+0.012
+0.020
+Z
+0.220
+0.420
+0.009
+0.017
+Z
+Downloaded From  Oneyac.com
+
+===== PAGE 34 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+34
+10.  Copy Rights and Disclaimer
+1. This document may not be reproduced or duplicated, in any form, in whole or in
+part
+without prior written consent of MagnTek . Copyrights © 2020, MagnTek
+Incorporated.
+2. MagnTek reserves the right to make changes to the information published in this
+document at anytime without notice.
+3. MagnTek’s products are limited for use in normal commercial applications.
+MagnTek’s products are not to be used in any device or system, including but not
+limited to medical life support equipment and system.
+For the latest version of this document, please visit our website: www.magntek.com.cn
+Downloaded From  Oneyac.com
+
+===== PAGE 35 =====
+www.magntek.com.cn | Magnetic Tech Makes Magic Change
+Rev.1.5    2021.03
+MT6701
+Hall Based Angle Position Encoder Sensor
+35
+11.  Revision History
+Revision Number
+Date
+Comments
+1.0
+2020.03
+Initial Release
+1.1
+2020.06
+Update EEPROM Programming Condition :
+4.5V<VDD<5.5V
+1.2 
+2020.07
+Update POD
+1.3
+2020.09
+Update Mechanical Angle Figure 27
+1.4
+2021.01
+Update Page-17 PWM Description
+1.5
+2021.03
+Update PWM Clock Duration
+Downloaded From  Oneyac.com
+
+===== PAGE 36 =====
+单击下面可查看定价，库存，交付和生命周期等信息
+>>Magntek(麦歌恩)
+Downloaded From  Oneyac.com

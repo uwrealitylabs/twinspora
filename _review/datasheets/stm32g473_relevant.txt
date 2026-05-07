@@ -1,0 +1,4192 @@
+=== PAGE 1 ===
+This is information on a product in full production. 
+May 2019
+DS12288 Rev 1
+1/232
+STM32G474xB STM32G474xC 
+STM32G474xE
+Arm® Cortex®-M4 32b MCU+FPU, up to 512 KB Flash, 170 MHz / 213 DMIPS, 
+128 KB SRAM, rich analog, math accelerator, 184ps 12ch Hi-res timer
+Datasheet - production data
+Features
+•
+Core: Arm® 32-bit Cortex®-M4 CPU with FPU, 
+Adaptive real-time accelerator (ART 
+Accelerator) allowing 0-wait-state execution 
+from Flash memory, frequency up to 170 MHz 
+with 213 DMIPS, MPU, DSP instructions
+•
+Operating conditions:
+–
+VDD, VDDA voltage range:  
+1.71 V to 3.6 V
+•
+Mathematical hardware accelerators
+–
+CORDIC for trigonometric functions 
+acceleration
+–
+FMAC: Filter mathematical accelerator
+•
+Memories
+–
+512 Kbytes of Flash memory with ECC 
+support, two banks read-while-write, 
+proprietary code readout protection 
+(PCROP), securable memory area, 1 Kbyte 
+OTP
+–
+96 Kbytes of SRAM, with hardware parity 
+check implemented on the first 32 Kbytes
+–
+Routine booster: 32 Kbytes of SRAM on 
+instruction and data bus, with hardware 
+parity check (CCM SRAM)
+–
+External memory interface for static 
+memories FSMC supporting SRAM, 
+PSRAM, NOR and NAND memories
+–
+Quad-SPI memory interface
+•
+Reset and supply management
+–
+Power-on/power-down reset 
+(POR/PDR/BOR)
+–
+Programmable voltage detector (PVD)
+–
+Low-power modes: sleep, stop, standby 
+and shutdown
+–
+VBAT supply for RTC and backup registers
+•
+Clock management
+–
+4 to 48 MHz crystal oscillator
+–
+32 kHz oscillator with calibration
+–
+Internal 16 MHz RC with PLL option (± 1%)
+–
+Internal 32 kHz RC oscillator (± 5%)
+•
+Up to 107 fast I/Os
+–
+All mappable on external interrupt vectors
+–
+Several I/Os with 5 V tolerant capability
+•
+Interconnect matrix
+•
+16-channel DMA controller
+•
+25 x 12-bit ADCs 0.25 µs, up to 42 channels. 
+Resolution up to 16-bit with hardware 
+oversampling, 0 to 3.6 V conversion range
+•
+7 x 12-bit DAC channels 
+–
+3 x buffered external channels 1 MSPS
+–
+4 x unbuffered internal channels 15 MSPS
+•
+7 x ultra-fast rail-to-rail analog comparators
+•
+6 x operational amplifiers that can be used in 
+PGA mode, all terminals accessible
+•
+Internal voltage reference buffer (VREFBUF) 
+supporting three output voltages (2.048 V, 
+2.5 V, 2.95 V)
+•
+17 timers:
+–
+HRTIM (Hi-Resolution and complex 
+waveform builder): 6 x16-bit counters, 
+184 ps resolution, 12 PWM
+–
+2 x 32-bit timer and 2 x 16-bit timers with 
+up to four IC/OC/PWM or pulse counter 
+and quadrature (incremental) encoder input
+–
+3 x 16-bit 8-channel advanced motor 
+control timers, with up to 8 x PWM 
+LQFP48 (7 x 7 mm)
+UFQFPN48
+(7 x 7 mm)
+LQFP64 (10 x 10 mm)
+LQFP100 (14 x 14 mm)
+LQFP128 (14 x 14 mm)
+WLCSP81
+(4.02 x 4.27 mm)
+Pitch 0.8)
+TFBGA100
+ (8 x 8 mm 
+LQFP80 (12 x 12 mm) 
+www.st.com
+
+=== PAGE 5 ===
+DS12288 Rev 1
+5/232
+STM32G474xB STM32G474xC STM32G474xE
+Contents
+6
+4
+Pinouts and pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+4.1
+UFQFPN48 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+4.2
+LQFP48 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+4.3
+LQFP64 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+4.4
+LQFP80 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+4.5
+LQFP100 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+4.6
+LQFP128 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+4.7
+WLCSP81 pinout description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+4.8
+TFBGA100 pinout description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+4.9
+Pin definition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+4.10
+Alternate functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+5
+Electrical characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1
+Parameter conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.1
+Minimum and maximum values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.2
+Typical values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.3
+Typical curves  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.4
+Loading capacitor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.5
+Pin input voltage  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5.1.6
+Power supply scheme  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+5.1.7
+Current consumption measurement  . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+5.2
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+5.3
+Operating conditions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+5.3.1
+General operating conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+5.3.2
+Operating conditions at power-up / power-down . . . . . . . . . . . . . . . . . . 85
+5.3.3
+Embedded reset and power control block characteristics . . . . . . . . . . . 85
+5.3.4
+Embedded voltage reference . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+5.3.5
+Supply current characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+5.3.6
+Wakeup time from low-power modes and voltage scaling 
+transition times . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+5.3.7
+External clock source characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+5.3.8
+Internal clock source characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+5.3.9
+PLL characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+5.3.10
+Flash memory characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+5.3.11
+EMC characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+5.3.12
+Electrical sensitivity characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+
+=== PAGE 6 ===
+Contents
+STM32G474xB STM32G474xC STM32G474xE
+6/232
+DS12288 Rev 1
+5.3.13
+I/O current injection characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+5.3.14
+I/O port characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+5.3.15
+NRST pin characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+5.3.16
+High-resolution timer (HRTIM) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+5.3.17
+Extended interrupt and event controller input (EXTI) characteristics . . 142
+5.3.18
+Analog switches booster  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+5.3.19
+Analog-to-digital converter characteristics . . . . . . . . . . . . . . . . . . . . . . 144
+5.3.20
+Digital-to-Analog converter characteristics  . . . . . . . . . . . . . . . . . . . . . 155
+5.3.21
+Voltage reference buffer characteristics . . . . . . . . . . . . . . . . . . . . . . . . 162
+5.3.22
+Comparator characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165
+5.3.23
+Operational amplifiers characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . 166
+5.3.24
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
+5.3.25
+VBAT monitoring characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
+5.3.26
+Timer characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 171
+5.3.27
+Communication interfaces characteristics . . . . . . . . . . . . . . . . . . . . . . 172
+5.3.28
+FSMC characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+5.3.29
+QUADSPI characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+5.3.30
+UCPD characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+6
+Package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+6.1
+WLCSP81 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+6.2
+UFQFPN48 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204
+6.3
+LQFP48 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+6.4
+ LQFP64 package information  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .211
+6.5
+LQFP80 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 214
+6.6
+TFBGA100 package information  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+6.7
+LQFP100 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+6.8
+LQFP128 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+6.9
+Thermal characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226
+6.9.1
+Reference document . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+6.9.2
+Selecting the product temperature range  . . . . . . . . . . . . . . . . . . . . . . 227
+7
+Ordering information  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+8
+Revision history  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+
+=== PAGE 7 ===
+DS12288 Rev 1
+7/232
+STM32G474xB STM32G474xC STM32G474xE
+List of tables
+9
+List of tables
+Table 1.
+Device summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Table 2.
+STM32G474xB/xC/xE features and peripheral counts . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Table 3.
+STM32G474xB/xC/xE peripherals interconnect matrix. . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Table 4.
+DMA implementation  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 5.
+Temperature sensor calibration values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 6.
+Internal voltage reference calibration values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 7.
+Timer feature comparison. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 8.
+I2C implementation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+Table 9.
+USART/UART/LPUART features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Table 10.
+SAI implementation for the features implementation  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Table 11.
+Legend/abbreviations used in the pinout table . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 12.
+STM32G474xB/xC/xE pin definition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+Table 13.
+Alternate function . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 14.
+Voltage characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Table 15.
+Current characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+Table 16.
+Thermal characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+Table 17.
+General operating conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+Table 18.
+Operating conditions at power-up / power-down  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85
+Table 19.
+Embedded reset and power control block characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . 85
+Table 20.
+Embedded internal voltage reference. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+Table 21.
+Current consumption in Run and Low-power run modes, code with data 
+processing running from Flash in single Bank, ART enable (Cache ON Prefetch OFF)  . . 89
+Table 22.
+Current consumption in Run and Low-power run modes, code with data 
+processing running from Flash in dual bank, ART enable (Cache ON Prefetch OFF) . . . . 91
+Table 23.
+Current consumption in Run and Low-power run modes, code with data 
+processing running from Flash in single bank, ART disable. . . . . . . . . . . . . . . . . . . . . . . . 93
+Table 24.
+Current consumption in Run and Low-power run modes, 
+code with data processing running from Flash in dual bank, ART disable . . . . . . . . . . . . . 95
+Table 25.
+Current consumption in Run and Low-power run modes, 
+code with data processing running from SRAM1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Table 26.
+Typical current consumption in Run and Low-power run modes, with different codes  
+running from Flash, ART enable (Cache ON Prefetch OFF)  . . . . . . . . . . . . . . . . . . . . . . . 99
+Table 27.
+Typical current consumption in Run and Low-power run modes,  
+with different codes running from Flash, ART disable  . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Table 28.
+Typical current consumption in Run and Low-power run modes, with different codes  
+running from SRAM1  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Table 29.
+Typical current consumption in Run and Low-power run modes, with different codes  
+running from SRAM2  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Table 30.
+Typical current consumption in Run and Low-power run modes, with different codes  
+running from CCMSRAM  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+Table 31.
+Current consumption in Sleep and Low-power sleep mode Flash ON . . . . . . . . . . . . . . . 106
+Table 32.
+Current consumption in low-power sleep modes, Flash in power-down. . . . . . . . . . . . . . 107
+Table 33.
+Current consumption in Stop 1 mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+Table 34.
+Current consumption in Stop 0 mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+Table 35.
+Current consumption in Standby mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+Table 36.
+Current consumption in Shutdown mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+Table 37.
+Current consumption in VBAT mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Table 38.
+Peripheral current consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+
+=== PAGE 10 ===
+List of figures
+STM32G474xB STM32G474xC STM32G474xE
+10/232
+DS12288 Rev 1
+List of figures
+Figure 1.
+STM32G474xB/xC/xE block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Figure 2.
+Multi-AHB bus matrix  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Figure 3.
+Voltage reference buffer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Figure 4.
+Infrared transmitter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+Figure 5.
+STM32G474xB/xC/xE UFQFPN48 pinout  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Figure 6.
+STM32G474xB/xC/xE LQFP48 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Figure 7.
+STM32G474xB/xC/xE LQFP64 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Figure 8.
+STM32G474xB/xC/xE LQFP80 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Figure 9.
+STM32G474xB/xC/xE LQFP100 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Figure 10.
+STM32G474xB/xC/xE LQFP128 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Figure 11.
+STM32G474xB/xC/xE WLCSP81 pinout  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Figure 12.
+STM32G474xB/xC/xE TFBGA100 pinout. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Figure 13.
+Pin loading conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+Figure 14.
+Pin input voltage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+Figure 15.
+Power supply scheme. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+Figure 16.
+Current consumption measurement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Figure 17.
+VREFINT versus temperature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+Figure 18.
+High-speed external clock source AC timing diagram  . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+Figure 19.
+Low-speed external clock source AC timing diagram. . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+Figure 20.
+Typical application with an 8 MHz crystal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+Figure 21.
+Typical application with a 32.768 kHz crystal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Figure 22.
+HSI16 frequency versus temperature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+Figure 23.
+HSI48 frequency versus temperature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Figure 24.
+I/O input characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135
+Figure 25.
+I/O AC characteristics definition(1)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+Figure 26.
+Recommended NRST pin protection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+Figure 27.
+ADC accuracy characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Figure 28.
+Typical connection diagram using the ADC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Figure 29.
+12-bit buffered / non-buffered DAC. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+Figure 30.
+VREFOUT_TEMP in case VRS = 00 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Figure 31.
+VREFOUT_TEMP in case VRS = 01 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+Figure 32.
+VREFOUT_TEMP in case VRS = 10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+Figure 33.
+OPAMP noise density @ 25°C . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169
+Figure 34.
+SPI timing diagram - slave mode and CPHA = 0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+Figure 35.
+SPI timing diagram - slave mode and CPHA = 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Figure 36.
+SPI timing diagram - master mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Figure 37.
+SAI master timing waveforms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Figure 38.
+SAI slave timing waveforms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Figure 39.
+Asynchronous non-multiplexed SRAM/PSRAM/NOR read waveforms . . . . . . . . . . . . . . 183
+Figure 40.
+Asynchronous non-multiplexed SRAM/PSRAM/NOR write waveforms . . . . . . . . . . . . . . 185
+Figure 41.
+Asynchronous multiplexed PSRAM/NOR read waveforms. . . . . . . . . . . . . . . . . . . . . . . . 186
+Figure 42.
+Asynchronous multiplexed PSRAM/NOR write waveforms  . . . . . . . . . . . . . . . . . . . . . . . 188
+Figure 43.
+Synchronous multiplexed NOR/PSRAM read timings  . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
+Figure 44.
+Synchronous multiplexed PSRAM write timings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 192
+Figure 45.
+Synchronous non-multiplexed NOR/PSRAM read timings . . . . . . . . . . . . . . . . . . . . . . . . 194
+Figure 46.
+Synchronous non-multiplexed PSRAM write timings . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+Figure 47.
+NAND controller waveforms for read access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+Figure 48.
+NAND controller waveforms for write access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+
+=== PAGE 11 ===
+DS12288 Rev 1
+11/232
+STM32G474xB STM32G474xC STM32G474xE
+List of figures
+11
+Figure 49.
+NAND controller waveforms for common memory read access . . . . . . . . . . . . . . . . . . . . 197
+Figure 50.
+NAND controller waveforms for common memory write access. . . . . . . . . . . . . . . . . . . . 198
+Figure 51.
+Quad SPI timing diagram - SDR mode. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+Figure 52.
+Quad SPI timing diagram - DDR mode. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+Figure 53.
+WLCSP - 81 balls, 4.02x4.27 mm, 0.4 mm pitch wafer level chip scale 
+package outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+Figure 54.
+WLCSP - 81 balls, 4.02x4.27 mm, 0.4 mm pitch wafer level chip scale 
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+Figure 55.
+UFQFPN - 48 leads, 7x7 mm, 0.5 mm pitch, ultra thin fine pitch quad flat  
+package outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204
+Figure 56.
+UFQFPN - 48 leads, 7x7 mm, 0.5 mm pitch, ultra thin fine pitch quad flat  
+package recommended footprint  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+Figure 57.
+UFQFPN48, 7 x 7 mm, low-profile quad flat package top view example . . . . . . . . . . . . . 206
+Figure 58.
+LQFP - 48 pins, 7 x 7 mm low-profile quad flat package outline. . . . . . . . . . . . . . . . . . . . 207
+Figure 59.
+LQFP - 48 pins, 7 x 7 mm low-profile quad flat package  
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Figure 60.
+LQFP48, 7 x 7 mm, low-profile quad flat package top view example . . . . . . . . . . . . . . . . 210
+Figure 61.
+LQFP - 64 pins, 10 x 10 mm low-profile quad flat package outline. . . . . . . . . . . . . . . . . . 211
+Figure 62.
+LQFP - 64 pins, 10 x 10 mm low-profile quad flat package  
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+Figure 63.
+LQFP64, 10 x 10 mm, low-profile quad flat package top view example  . . . . . . . . . . . . . 213
+Figure 64.
+LQFP - 80 pins, 12 x 12 mm low-profile quad flat package outline. . . . . . . . . . . . . . . . . . 214
+Figure 65.
+LQFP - 80 pins, 12 x 12 mm low-profile quad flat package  
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+Figure 66.
+LQFP80, 12 x 12 mm, low-profile quad flat package top view example . . . . . . . . . . . . . . 216
+Figure 67.
+TFBGA - 100 balls, 8X8 mm, 0.8 mm pitch fine pitch ball grid array 
+package outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+Figure 68.
+TFBGA - 100 balls, 8X8 mm, 0.8 mm pitch fine pitch ball grid array 
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+Figure 69.
+TFBGA100 - 8 x 8 mm, low-profile quad flat package top view example  . . . . . . . . . . . . 219
+Figure 70.
+LQFP - 100 pins, 14 x 14 mm low-profile quad flat package outline. . . . . . . . . . . . . . . . . 220
+Figure 71.
+LQFP - 100 pins, 14 x 14 mm low-profile quad flat  
+recommended footprint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Figure 72.
+LQFP100 - 14 x 14 mm, low-profile quad flat package top view example . . . . . . . . . . . . 222
+Figure 73.
+LQFP - 128 pins, 14 x 14 mm low-profile quad flat package outline. . . . . . . . . . . . . . . . . 223
+Figure 74.
+LQFP128 - 14 x 14 mm, low-profile quad flat package top view example . . . . . . . . . . . . 225
+
+=== PAGE 15 ===
+DS12288 Rev 1
+15/232
+STM32G474xB STM32G474xC STM32G474xE
+Description
+47
+12-bit ADCs 
+Number of channels
+5
+20 in LQFP48
+21 in 
+UFQFPN48
+26
+42 in 
+WLCSP81
+41 in LQFP80
+42
+42
+12-bit DAC  
+Number of channels
+4
+7 (3 external + 4 internal)
+Internal voltage reference 
+buffer
+Yes
+Analog comparator
+7
+Operational amplifiers
+6
+Max. CPU frequency
+170 MHz
+Operating voltage
+1.71 V to 3.6 V
+Operating temperature
+Ambient operating temperature: -40 to 85 °C / -40 to 105 °C / -40 to 125 °C
+Packages
+LQFP48/
+UFQFPN48
+LQFP64
+WLCSP81
+LQFP80
+LQFP100/
+TFBGA100
+LQFP128
+1.
+For the LQFP100 package, only FMC bank1 and NAND bank are available. Bank1 can only support a multiplexed 
+NOR/PSRAM memory using the NE1 chip select.
+2.
+The SPI2/3 interfaces can work in an exclusive way in either the SPI mode or the I2S audio mode.
+Table 2. STM32G474xB/xC/xE features and peripheral counts (continued)
+Peripheral
+STM32G474
+Cx
+STM32G474
+Rx
+STM32G474
+Mx
+STM32G474
+Vx
+STM32G474
+Qx 
+
+=== PAGE 50 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+50/232
+DS12288 Rev 1
+4.3 
+LQFP64 pinout description
+Figure 7. STM32G474xB/xC/xE LQFP64 pinout
+1.
+The above figure shows the package top view.
+06Y9
+/4)3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9%$7
+3&26&B,1
+3&26&B287
+3)26&B,1
+3)26&B287
+3*1567
+3&
+3&
+3&
+3&
+3$
+3$
+3$
+966
+9''
+3&
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3$
+3$
+3$
+3%
+95()
+3$
+3$
+3%
+3%
+3&
+3&
+966
+3%
+966$
+9''$
+9''
+9''
+3$
+3$
+3$
+3$
+3$
+3&
+3&
+3&
+3&
+3%
+3%
+3%
+3%
+3%
+966
+9''
+966
+3%
+3%
+3&
+3%
+3%%227
+3%
+3$
+3%
+3%
+3$
+3'
+3&
+3&
+3$
+
+=== PAGE 55 ===
+DS12288 Rev 1
+55/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+4.9 
+Pin definition
+ 
+          
+          
+Table 11. Legend/abbreviations used in the pinout table 
+Name
+Abbreviation
+Definition
+Pin name
+Unless otherwise specified in brackets below the pin name, the pin function during and after 
+reset is the same as the actual pin name
+Pin type
+S
+Supply pin
+I
+Input only pin
+I/O
+Input / output pin
+I/O structure
+FT
+5 V tolerant I/O
+TT
+3.6 V tolerant I/O
+B
+Dedicated BOOT0 pin
+NRST
+Bidirectional reset pin with embedded weak pull-up resistor
+Option for TT or FT I/Os
+_a(1)
+I/O, with Analog switch function supplied by VDDA
+_c
+I/O, USB Type-C PD capable
+_d
+I/O, USB Type-C PD Dead Battery function
+_f(2)
+I/O, Fm+ capable
+_u(3)
+I/O, with USB function 
+Notes
+Unless otherwise specified by a note, all I/Os are set as floating inputs during and after reset
+Pin functions
+Alternate 
+functions
+Functions selected through GPIOx_AFR registers
+Additional 
+functions
+Functions directly selected/enabled through peripheral registers
+1.
+The related I/O structures in Table 12 are: FT_a, FT_fa, TT_a.
+2.
+The related I/O structures in Table 12 are: FT_f, FT_fa.
+3.
+The related I/O structures in Table 12 are FT_u.
+
+=== PAGE 56 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+56/232
+DS12288 Rev 1
+Table 12. STM32G474xB/xC/xE pin definition 
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+-
+-
+-
+-
+-
+C3
+1
+1
+PE2
+I/O
+FT
+-
+TRACECK, 
+TIM3_CH1,
+SAI1_CK1, 
+SPI4_SCK, 
+TIM20_CH1, 
+FMC_A23, 
+SAI1_MCLK_A, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+B2
+2
+2
+PE3
+I/O
+FT
+-
+TRACED0, 
+TIM3_CH2, 
+SPI4_NSS, 
+TIM20_CH2, 
+FMC_A19, 
+SAI1_SD_B, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+A1
+3
+3
+PE4
+I/O
+FT
+-
+TRACED1, 
+TIM3_CH3, SAI1_D2, 
+SPI4_NSS, 
+TIM20_CH1N, 
+FMC_A20, 
+SAI1_FS_A, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+B1
+4
+4
+PE5
+I/O
+FT
+-
+TRACED2, 
+TIM3_CH4, 
+SAI1_CK2, 
+SPI4_MISO, 
+TIM20_CH2N, 
+FMC_A21, 
+SAI1_SCK_A, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+C2
+5
+5
+PE6 
+I/O
+FT
+-
+TRACED3, SAI1_D1, 
+SPI4_MOSI, 
+TIM20_CH3N, 
+FMC_A22, 
+SAI1_SD_A, 
+EVENTOUT
+WKUP3, 
+RTC_TAMP3
+B9
+1
+1
+1
+1
+D3
+6
+6
+VBAT
+S
+-
+-
+-
+-
+B8
+2
+2
+2
+2
+D4
+7
+7
+PC13 
+I/O
+FT
+(2)
+(3)
+TIM1_BKIN, 
+TIM1_CH1N, 
+TIM8_CH4N, 
+EVENTOUT
+WKUP2, 
+RTC_TAMP1, 
+RTC_TS, 
+RTC_OUT1
+C9
+3
+3
+3
+3
+C1
+8
+8
+PC14-
+OSC32_IN
+I/O
+FT
+(2)
+(3)
+EVENTOUT
+OSC32_IN
+D9
+4
+4
+4
+4
+D1
+9
+9
+PC15-
+OSC32_OUT
+I/O
+FT
+(2)
+(3)
+EVENTOUT
+OSC32_OUT
+
+=== PAGE 57 ===
+DS12288 Rev 1
+57/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+-
+-
+-
+-
+-
+-
+-
+10
+PF3
+I/O
+FT_f
+-
+TIM20_CH4, 
+I2C3_SCL, 
+FMC_A3, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+11
+PF4
+I/O
+FT_f
+-
+COMP1_OUT, 
+TIM20_CH1N, 
+I2C3_SDA, FMC_A4, 
+EVENTOUT
+-
+F1
+-
+-
+-
+-
+D2
+-
+12
+VSS
+S
+-
+-
+-
+-
+A9
+-
+-
+-
+-
+D5
+-
+13
+VDD
+S
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+14
+PF5
+I/O
+FT
+-
+TIM20_CH2N, 
+FMC_A5, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+15
+PF7
+I/O
+FT
+-
+TIM20_BKIN, 
+TIM5_CH2, 
+QUADSPI1_BK1_IO2
+, FMC_A1, 
+SAI1_MCLK_B, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+16
+PF8
+I/O
+FT
+-
+TIM20_BKIN2, 
+TIM5_CH3, 
+QUADSPI1_BK1_IO0
+, FMC_A24, 
+SAI1_SCK_B, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+E3
+10
+17
+PF9
+I/O
+FT
+-
+TIM20_BKIN, 
+TIM15_CH1, 
+SPI2_SCK, 
+TIM5_CH4, 
+QUADSPI1_BK1_IO1
+, FMC_A25, 
+SAI1_FS_B, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+E4
+11
+18
+PF10
+I/O
+FT
+-
+TIM20_BKIN2, 
+TIM15_CH2, 
+SPI2_SCK, 
+QUADSPI1_CLK, 
+FMC_A0, SAI1_D3, 
+EVENTOUT
+-
+E9
+5
+5
+5
+5
+E1
+12
+19
+PF0-OSC_IN
+I/O
+FT_fa
+-
+I2C2_SDA, 
+SPI2_NSS/I2S2_WS, 
+TIM1_CH3N, 
+EVENTOUT
+ADC1_IN10, 
+OSC_IN
+F9
+6
+6
+6
+6
+E2
+13
+20
+PF1-
+OSC_OUT
+I/O
+FT_a
+-
+SPI2_SCK/I2S2_CK, 
+EVENTOUT
+ADC2_IN10, 
+COMP3_INM, 
+OSC_OUT
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 58 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+58/232
+DS12288 Rev 1
+D8
+7
+7
+7
+7
+F3
+14
+21
+PG10-NRST
+I/O
+FT
+-
+MCO, EVENTOUT
+NRST
+E8
+-
+-
+8
+8
+F2
+15
+22
+PC0
+I/O
+FT_a
+-
+LPTIM1_IN1, 
+TIM1_CH1, 
+LPUART1_RX, 
+EVENTOUT
+ADC12_IN6, 
+COMP3_INM
+C8
+-
+-
+9
+9
+F4
+16
+23
+PC1
+I/O
+TT_a
+-
+LPTIM1_OUT, 
+TIM1_CH2, 
+LPUART1_TX, 
+QUADSPI1_BK2_IO0
+, SAI1_SD_A, 
+EVENTOUT
+ADC12_IN7, 
+COMP3_INP
+F8
+-
+-
+10
+10
+F1
+17
+24
+PC2
+I/O
+FT_a
+-
+LPTIM1_IN2, 
+TIM1_CH3, 
+COMP3_OUT, 
+TIM20_CH2, 
+QUADSPI1_BK2_IO1
+, EVENTOUT
+ADC12_IN8
+G9
+-
+-
+11
+11
+G1
+18
+25
+PC3
+I/O
+TT_a
+-
+ LPTIM1_ETR, 
+TIM1_CH4, SAI1_D1, 
+TIM1_BKIN2, 
+QUADSPI1_BK2_IO2
+, SAI1_SD_A, 
+EVENTOUT
+ADC12_IN9, 
+OPAMP5_VINP
+-
+-
+-
+-
+-
+G3
+19
+26
+PF2
+I/O
+FT
+-
+TIM20_CH3, 
+I2C2_SMBA, 
+FMC_A2, 
+EVENTOUT
+-
+D7
+8
+8
+12
+12
+G4
+20
+27
+PA0 
+I/O
+TT_a
+-
+TIM2_CH1, 
+TIM5_CH1, 
+USART2_CTS, 
+COMP1_OUT, 
+TIM8_BKIN, 
+TIM8_ETR, 
+TIM2_ETR, 
+EVENTOUT
+ADC12_IN1, 
+COMP1_INM, 
+COMP3_INP, 
+RTC_TAMP2,WK
+UP1
+E7
+9
+9
+13
+13
+G2
+21
+28
+PA1
+I/O
+TT_a
+-
+RTC_REFIN, 
+TIM2_CH2, 
+TIM5_CH2, 
+USART2_RTS_DE, 
+TIM15_CH1N, 
+EVENTOUT
+ADC12_IN2, 
+COMP1_INP, 
+OPAMP1_VINP, 
+OPAMP3_VINP, 
+OPAMP6_VINM
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 59 ===
+DS12288 Rev 1
+59/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+G8
+10
+10
+14
+14
+H1
+22
+29
+PA2
+I/O
+FT_a
+-
+TIM2_CH3, 
+TIM5_CH3, 
+USART2_TX, 
+COMP2_OUT, 
+TIM15_CH1, 
+QUADSPI1_BK1_NC
+S, LPUART1_TX, 
+UCPD1_FRSTX, 
+EVENTOUT
+ADC1_IN3, 
+COMP2_INM, 
+OPAMP1_VOUT, 
+WKUP4/LSCO
+H9
+-
+-
+15
+15
+D6
+23
+30
+VSS
+S
+-
+-
+-
+-
+J9
+-
+-
+16
+16
+D7
+24
+31
+VDD
+S
+-
+-
+-
+-
+H8
+11
+11
+17
+17
+H3
+25
+32
+PA3
+I/O
+TT_a
+-
+TIM2_CH4, 
+TIM5_CH4, 
+SAI1_CK1, 
+USART2_RX, 
+TIM15_CH2, 
+QUADSPI1_CLK, 
+LPUART1_RX, 
+SAI1_MCLK_A, 
+EVENTOUT
+ADC1_IN4, 
+COMP2_INP, 
+OPAMP1_VINM/
+OPAMP
+1_VINP, 
+OPAMP5_VINM
+D6
+12
+12
+18
+18
+H2
+26
+33
+PA4
+I/O
+TT_a
+-
+TIM3_CH2, 
+SPI1_NSS, 
+SPI3_NSS/I2S3_WS, 
+USART2_CK, 
+SAI1_FS_B, 
+EVENTOUT
+ADC2_IN17, 
+DAC1_OUT1, 
+COMP1_INM
+F7
+13
+13
+19
+19
+J1
+27
+34
+PA5
+I/O
+TT_a
+-
+TIM2_CH1, 
+TIM2_ETR, 
+SPI1_SCK, 
+UCPD1_FRSTX, 
+EVENTOUT
+ADC2_IN13, 
+DAC1_OUT2, 
+COMP2_INM, 
+OPAMP2_VINM
+G7
+14
+14
+20
+20
+J2
+28
+35
+PA6
+I/O
+TT_a
+-
+TIM16_CH1, 
+TIM3_CH1, 
+TIM8_BKIN, 
+SPI1_MISO, 
+TIM1_BKIN, 
+COMP1_OUT, 
+QUADSPI1_BK1_IO3
+, LPUART1_CTS, 
+EVENTOUT
+ADC2_IN3, 
+DAC2_OUT1, 
+OPAMP2_VOUT
+J8
+15
+15
+21
+21
+K1
+29
+36
+PA7
+I/O
+TT_a
+-
+TIM17_CH1, 
+TIM3_CH2, 
+TIM8_CH1N, 
+SPI1_MOSI, 
+TIM1_CH1N, 
+COMP2_OUT, 
+QUADSPI1_BK1_IO2
+, UCPD1_FRSTX, 
+EVENTOUT
+ADC2_IN4, 
+COMP2_INP, 
+OPAMP1_VINP, 
+OPAMP2_VINP
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 60 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+60/232
+DS12288 Rev 1
+E6
+16
+-
+22
+22
+K2
+30
+37
+PC4
+I/O
+FT_fa
+-
+TIM1_ETR, 
+I2C2_SCL, 
+USART1_TX, 
+QUADSPI1_BK2_IO3
+, EVENTOUT
+ADC2_IN5
+H7
+-
+-
+23
+23
+J3
+31
+38
+PC5
+I/O
+TT_a
+-
+TIM15_BKIN, 
+SAI1_D3, 
+TIM1_CH4N, 
+USART1_RX, 
+HRTIM1_EEV10, 
+EVENTOUT
+ADC2_IN11, 
+OPAMP1_VINM, 
+OPAMP2_VINM, 
+WKUP5
+F6
+17
+16
+24
+24
+H4
+32
+39
+PB0
+I/O
+TT_a
+-
+TIM3_CH3, 
+TIM8_CH2N, 
+TIM1_CH2N, 
+QUADSPI1_BK1_IO1
+, HRTIM1_FLT5, 
+UCPD1_FRSTX, 
+EVENTOUT
+ADC3_IN12/ADC
+1_IN15, 
+COMP4_INP, 
+OPAMP2_VINP, 
+OPAMP3_VINP
+G6
+18
+17
+25
+25
+K3
+33
+40
+PB1
+I/O
+TT_a
+-
+TIM3_CH4, 
+TIM8_CH3N, 
+TIM1_CH3N, 
+COMP4_OUT, 
+QUADSPI1_BK1_IO0
+, 
+LPUART1_RTS_DE, 
+HRTIM1_SCOUT, 
+EVENTOUT
+ADC3_IN1/ADC1
+_IN12, 
+COMP1_INP, 
+OPAMP3_VOUT, 
+OPAMP6_VINM
+J7
+19
+18
+26
+26
+J4
+34
+41
+PB2
+I/O
+TT_a
+-
+RTC_OUT2, 
+LPTIM1_OUT, 
+TIM5_CH1, 
+TIM20_CH1, 
+I2C3_SMBA, 
+QUADSPI1_BK2_IO1
+, HRTIM1_SCIN, 
+EVENTOUT
+ADC2_IN12, 
+COMP4_INM, 
+OPAMP3_VINM
+H6
+-
+19
+27
+27
+K4
+35
+42
+VSSA
+S
+-
+-
+-
+-
+J6
+20
+20
+28
+28
+K5
+36
+43
+VREF+
+S
+-
+-
+-
+VREFBUF_OUT
+-
+-
+-
+-
+-
+-
+-
+44
+VREF+
+S
+-
+-
+-
+VREFBUF_OUT
+J5
+21
+21
+29
+29
+J5
+37
+45
+VDDA
+S
+-
+-
+-
+-
+H9
+-
+-
+-
+-
+E5
+-
+46
+VSS
+S
+-
+-
+-
+-
+J1
+-
+-
+-
+-
+F5
+-
+47
+VDD
+S
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+48
+PF11
+I/O
+FT
+-
+TIM20_ETR, 
+FMC_NE4, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 61 ===
+DS12288 Rev 1
+61/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+-
+-
+-
+-
+-
+-
+-
+49
+PF12
+I/O
+FT
+-
+TIM20_CH1, 
+FMC_A6, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+50
+PF13
+I/O
+FT
+-
+TIM20_CH2, 
+I2C4_SMBA, 
+FMC_A7, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+51
+PF14
+I/O
+FT_f
+-
+TIM20_CH3, 
+I2C4_SCL, FMC_A8, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+52
+PF15
+I/O
+FT_f
+-
+TIM20_CH4, 
+I2C4_SDA, FMC_A9, 
+EVENTOUT
+-
+H5
+-
+-
+-
+30
+G5
+38
+53
+PE7
+I/O
+TT_a
+-
+TIM1_ETR, FMC_D4, 
+SAI1_SD_B, 
+EVENTOUT
+ADC3_IN4, 
+COMP4_INP
+G5
+-
+-
+-
+31
+H5
+39
+54
+PE8
+I/O
+FT_a
+-
+TIM5_CH3, 
+TIM1_CH1N, 
+FMC_D5, 
+SAI1_SCK_B, 
+EVENTOUT
+ADC345_IN6, 
+COMP4_INM
+F5
+-
+-
+-
+32
+H6
+40
+55
+PE9
+I/O
+FT_a
+-
+TIM5_CH4, 
+TIM1_CH1, FMC_D6, 
+SAI1_FS_B, 
+EVENTOUT
+ADC3_IN2
+J4
+-
+-
+-
+33
+K6
+41
+56
+PE10
+I/O
+FT_a
+-
+TIM1_CH2N, 
+QUADSPI1_CLK, 
+FMC_D7, 
+SAI1_MCLK_B, 
+EVENTOUT
+ADC345_IN14
+H4
+-
+-
+-
+34
+J6
+42
+57
+PE11
+I/O
+FT_a
+-
+TIM1_CH2, 
+SPI4_NSS, 
+QUADSPI1_BK1_NC
+S, FMC_D8, 
+EVENTOUT
+ADC345_IN15
+E5
+-
+-
+-
+35
+G6
+43
+58
+PE12
+I/O
+FT_a
+-
+TIM1_CH3N, 
+SPI4_SCK, 
+QUADSPI1_BK1_IO0
+, FMC_D9, 
+EVENTOUT
+ADC345_IN16
+G4
+-
+-
+-
+36
+K7
+44
+59
+PE13
+I/O
+FT_a
+-
+TIM1_CH3, 
+SPI4_MISO, 
+QUADSPI1_BK1_IO1
+, FMC_D10, 
+EVENTOUT
+ADC3_IN3
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 62 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+62/232
+DS12288 Rev 1
+J3
+-
+-
+-
+37
+J7
+45
+60
+PE14
+I/O
+FT_a
+-
+TIM1_CH4, 
+SPI4_MOSI, 
+TIM1_BKIN2, 
+QUADSPI1_BK1_IO2
+, FMC_D11, 
+EVENTOUT
+ADC4_IN1
+F4
+-
+-
+-
+38
+H7
+46
+61
+PE15
+I/O
+FT_a
+-
+TIM1_BKIN, 
+TIM1_CH4N, 
+USART3_RX, 
+QUADSPI1_BK1_IO3
+, FMC_D12, 
+EVENTOUT
+ADC4_IN2
+H3
+22
+22
+30
+39
+J8
+47
+62
+PB10
+I/O
+TT_a
+-
+TIM2_CH3, 
+USART3_TX, 
+LPUART1_RX, 
+QUADSPI1_CLK, 
+TIM1_BKIN, 
+HRTIM1_FLT3, 
+SAI1_SCK_A, 
+EVENTOUT
+COMP5_INM, 
+OPAMP3_VINM, 
+OPAMP4_VINM
+J2
+-
+23
+31
+40
+E6
+48
+63
+VSS
+S
+-
+-
+-
+-
+J1
+23
+24
+32
+41
+F7
+49
+64
+VDD
+S
+-
+-
+-
+-
+H2
+24
+25
+33
+42
+H8
+50
+65
+PB11
+I/O
+TT_a
+-
+TIM2_CH4, 
+USART3_RX, 
+LPUART1_TX, 
+QUADSPI1_BK1_NC
+S, HRTIM1_FLT4, 
+EVENTOUT
+ADC12_IN14, 
+COMP6_INP, 
+OPAMP4_VINP, 
+OPAMP6_VOUT
+G3
+25
+26
+34
+43
+K8
+51
+66
+PB12
+I/O
+TT_a
+-
+TIM5_ETR, 
+I2C2_SMBA, 
+SPI2_NSS/I2S2_WS, 
+TIM1_BKIN, 
+USART3_CK, 
+LPUART1_RTS_DE, 
+FDCAN2_RX, 
+HRTIM1_CHC1, 
+EVENTOUT
+ADC4_IN3/ADC1
+_IN11, 
+COMP7_INM, 
+OPAMP4_VOUT, 
+OPAMP6_VINP
+H1
+26
+27
+35
+44
+J9
+52
+67
+PB13
+I/O
+TT_a
+-
+SPI2_SCK/I2S2_CK, 
+TIM1_CH1N, 
+USART3_CTS, 
+LPUART1_CTS, 
+FDCAN2_TX, 
+HRTIM1_CHC2, 
+EVENTOUT
+ADC3_IN5, 
+COMP5_INP, 
+OPAMP3_VINP, 
+OPAMP4_VINP, 
+OPAMP6_VINP
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 63 ===
+DS12288 Rev 1
+63/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+G2
+27
+28
+36
+45
+H9
+53
+68
+PB14
+I/O
+TT_a
+-
+TIM15_CH1, 
+SPI2_MISO, 
+TIM1_CH2N, 
+USART3_RTS_DE, 
+COMP4_OUT, 
+HRTIM1_CHD1, 
+EVENTOUT
+ADC4_IN4/ADC1
+_IN5, 
+COMP7_INP, 
+OPAMP2_VINP, 
+OPAMP5_VINP
+E4
+28
+29
+37
+46
+K9
+54
+69
+PB15
+I/O
+TT_a
+-
+RTC_REFIN, 
+TIM15_CH2, 
+TIM15_CH1N, 
+COMP3_OUT, 
+TIM1_CH3N, 
+SPI2_MOSI/I2S2_SD
+, HRTIM1_CHD2, 
+EVENTOUT
+ADC4_IN5/ADC2
+_IN15, 
+COMP6_INM, 
+OPAMP5_VINM
+G1
+-
+-
+-
+47
+K10
+55
+70
+PD8
+I/O
+TT_a
+-
+USART3_TX, 
+FMC_D13, 
+EVENTOUT
+ADC4_IN12/ADC
+5_IN12, 
+OPAMP4_VINM
+F3
+-
+-
+-
+48
+G8
+56
+71
+PD9
+I/O
+TT_a
+-
+USART3_RX, 
+FMC_D14, 
+EVENTOUT
+ADC4_IN13/ADC
+5_IN13, 
+OPAMP6_VINP
+F2
+-
+-
+-
+49
+G7
+57
+72
+PD10
+I/O
+FT_a
+-
+USART3_CK, 
+FMC_D15, 
+EVENTOUT
+ADC345_IN7, 
+COMP6_INM
+E2
+-
+-
+-
+-
+H10
+58
+73
+PD11
+I/O
+TT_a
+-
+TIM5_ETR, 
+I2C4_SMBA, 
+USART3_CTS, 
+FMC_A16, 
+EVENTOUT
+ADC345_IN8, 
+COMP6_INP, 
+OPAMP4_VINP
+-
+-
+-
+-
+-
+J10
+59
+74
+PD12
+I/O
+TT_a
+-
+TIM4_CH1, 
+USART3_RTS_DE, 
+FMC_A17, 
+EVENTOUT
+ADC345_IN9, 
+COMP5_INP, 
+OPAMP5_VINP
+-
+-
+-
+-
+-
+G9
+60
+75
+PD13
+I/O
+FT_a
+-
+TIM4_CH2, 
+FMC_A18, 
+EVENTOUT
+ADC345_IN10, 
+COMP5_INM
+-
+-
+-
+-
+-
+F8
+61
+76
+PD14
+I/O
+TT_a
+-
+TIM4_CH3, 
+FMC_D0, 
+EVENTOUT
+ADC345_IN11, 
+COMP7_INP, 
+OPAMP2_VINP
+-
+-
+-
+-
+-
+G10
+62
+77
+PD15
+I/O
+FT_a
+-
+TIM4_CH4, 
+SPI2_NSS, 
+FMC_D1, 
+EVENTOUT
+COMP7_INM
+B1
+-
+-
+-
+50
+E7
+63
+78
+VSS
+S
+-
+-
+-
+-
+E1
+-
+-
+-
+51
+-
+64
+79
+VDD
+S
+-
+-
+-
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 64 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+64/232
+DS12288 Rev 1
+E3
+29
+-
+38
+52
+F9
+65
+80
+PC6
+I/O
+FT_f
+-
+TIM3_CH1, 
+HRTIM1_EEV10, 
+TIM8_CH1, 
+I2S2_MCK, 
+COMP6_OUT, 
+I2C4_SCL, 
+HRTIM1_CHF1, 
+EVENTOUT
+-
+D5
+-
+-
+39
+53
+F10
+66
+81
+PC7
+I/O
+FT_f
+-
+TIM3_CH2, 
+HRTIM1_FLT5, 
+TIM8_CH2, 
+I2S3_MCK, 
+COMP5_OUT, 
+I2C4_SDA, 
+HRTIM1_CHF2, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+82
+PG0
+I/O
+FT
+-
+TIM20_CH1N, 
+FMC_A10, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+83
+PG1
+I/O
+FT
+-
+TIM20_CH2N, 
+FMC_A11, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+84
+PG2
+I/O
+FT
+-
+TIM20_CH3N, 
+SPI1_SCK, 
+FMC_A12, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+85
+PG3
+I/O
+FT_f
+-
+TIM20_BKIN, 
+I2C4_SCL, 
+SPI1_MISO, 
+TIM20_CH4N, 
+FMC_A13, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+86
+PG4
+I/O
+FT_f
+-
+TIM20_BKIN2, 
+I2C4_SDA, 
+SPI1_MOSI, 
+FMC_A14, 
+EVENTOUT
+-
+C5
+-
+-
+40
+54
+E8
+67
+87
+PC8
+I/O
+FT_f
+-
+TIM3_CH3, 
+HRTIM1_CHE1, 
+TIM8_CH3, 
+TIM20_CH3, 
+COMP7_OUT, 
+I2C3_SCL, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 65 ===
+DS12288 Rev 1
+65/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+D2
+-
+-
+41
+55
+E9
+68
+88
+PC9
+I/O
+FT_f
+-
+TIM3_CH4, 
+RTIM1_CHE2, 
+TIM8_CH4, I2SCKIN, 
+TIM8_BKIN2, 
+I2C3_SDA, 
+EVENTOUT
+-
+D1
+30
+30
+42
+56
+E10
+69
+89
+PA8
+I/O
+FT_a
+-
+MCO, I2C3_SCL, 
+I2C2_SDA, 
+I2S2_MCK, 
+TIM1_CH1, 
+USART1_CK, 
+COMP7_OUT, 
+TIM4_ETR, 
+FDCAN3_RX, 
+SAI1_CK2, 
+HRTIM1_CHA1, 
+SAI1_SCK_A, 
+EVENTOUT
+ADC5_IN1, 
+OPAMP5_VOUT
+D4
+31
+31
+43
+57
+D10
+70
+90
+PA9
+I/O
+FT_fd
+a
+-
+I2C3_SMBA, 
+I2C2_SCL, 
+I2S3_MCK, 
+TIM1_CH2, 
+USART1_TX, 
+OMP5_OUT, 
+TIM15_BKIN, 
+TIM2_CH3, 
+HRTIM1_CHA2, 
+SAI1_FS_A, 
+EVENTOUT
+ADC5_IN2, 
+UCPD1_DBCC1
+D3
+32
+32
+44
+58
+D9
+71
+91
+PA10
+I/O
+FT_fd
+a
+-
+TIM17_BKIN, 
+USB_CRS_SYNC, 
+I2C2_SMBA, 
+SPI2_MISO, 
+TIM1_CH3, 
+USART1_RX, 
+COMP6_OUT, 
+TIM2_CH4, 
+TIM8_BKIN, 
+SAI1_D1, 
+HRTIM1_CHB1, 
+SAI1_SD_A, 
+EVENTOUT
+UCPD1_DBCC2
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 66 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+66/232
+DS12288 Rev 1
+C2
+33
+33
+45
+59
+C10
+72
+92
+PA11
+I/O
+FT_u
+-
+SPI2_MOSI/I2S2_SD
+, TIM1_CH1N, 
+USART1_CTS, 
+COMP1_OUT, 
+FDCAN1_RX, 
+TIM4_CH1, 
+TIM1_CH4, 
+TIM1_BKIN2, 
+HRTIM1_CHB2, 
+EVENTOUT
+USB_DM
+C1
+34
+34
+46
+60
+C9
+73
+93
+PA12
+I/O
+FT_u
+-
+TIM16_CH1, 
+I2SCKIN, 
+TIM1_CH2N, 
+USART1_RTS_DE, 
+COMP2_OUT, 
+FDCAN1_TX, 
+TIM4_CH2, 
+TIM1_ETR, 
+HRTIM1_FLT1, 
+EVENTOUT
+USB_DP
+A8
+-
+35
+47
+61
+F6
+74
+94
+VSS
+S
+-
+-
+-
+-
+A1
+35
+36
+48
+62
+-
+75
+95
+VDD
+S
+-
+-
+-
+-
+B2
+36
+37
+49
+63
+D8
+76
+96
+PA13
+I/O
+FT_f
+(4)
+SWDIO-JTMS, 
+TIM16_CH1N, 
+I2C4_SCL, 
+I2C1_SCL, IR_OUT, 
+USART3_CTS, 
+TIM4_CH3, 
+SAI1_SD_B, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+97
+PF6
+I/O
+FT_f
+-
+TIM5_ETR, 
+TIM4_CH4, 
+SAI1_SD_B, 
+I2C2_SCL, 
+TIM5_CH1, 
+USART3_RTS, 
+QUADSPI1_BK1_IO3
+, EVENTOUT
+-
+C3
+37
+38
+50
+64
+B10
+77
+98
+PA14
+I/O
+FT_f
+(4)
+SWCLK-JTCK, 
+LPTIM1_OUT, 
+I2C4_SMBA, 
+I2C1_SDA, 
+TIM8_CH2, 
+TIM1_BKIN, 
+USART2_TX, 
+SAI1_FS_B, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 67 ===
+DS12288 Rev 1
+67/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+A2
+38
+39
+51
+65
+B9
+78
+99
+PA15
+I/O
+FT_f
+(4)
+JTDI, TIM2_CH1, 
+TIM8_CH1, 
+I2C1_SCL, 
+SPI1_NSS, 
+SPI3_NSS/I2S3_WS, 
+USART2_RX, 
+UART4_RTS_DE, 
+TIM1_BKIN, 
+FDCAN3_TX, 
+HRTIM1_FLT2, 
+TIM2_ETR, 
+EVENTOUT
+-
+B3
+39
+-
+52
+66
+C8
+79
+100
+PC10
+I/O
+FT
+-
+TIM8_CH1N, 
+UART4_TX, 
+SPI3_SCK/I2S3_CK, 
+USART3_TX, 
+HRTIM1_FLT6, 
+EVENTOUT
+-
+C4
+40
+-
+53
+67
+C7
+80
+101
+PC11
+I/O
+FT_f
+-
+HRTIM1_EEV2, 
+TIM8_CH2N, 
+UART4_RX, 
+SPI3_MISO, 
+USART3_RX, 
+I2C3_SDA, 
+EVENTOUT
+-
+A3
+-
+-
+54
+68
+A10
+81
+102
+PC12
+I/O
+FT
+-
+TIM5_CH2, 
+HRTIM1_EEV1, 
+TIM8_CH3N, 
+UART5_TX, 
+SPI3_MOSI/I2S3_SD
+, USART3_CK, 
+UCPD1_FRSTX, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+103
+PG5
+I/O
+FT
+-
+TIM20_ETR, 
+SPI1_NSS, 
+LPUART1_CTS, 
+FMC_A15, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+104
+PG6
+I/O
+FT
+-
+TIM20_BKIN, 
+I2C3_SMBA, 
+LPUART1_RTS_DE, 
+FMC_INT, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+105
+PG7
+I/O
+FT_f
+-
+SAI1_CK1, 
+I2C3_SCL, 
+LPUART1_TX, 
+FMC_INT, 
+SAI1_MCLK_A, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 68 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+68/232
+DS12288 Rev 1
+-
+-
+-
+-
+-
+-
+-
+106
+PG8
+I/O
+FT_f
+-
+I2C3_SDA, 
+LPUART1_RX, 
+FMC_NE3, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+107
+PG9
+I/O
+FT
+-
+SPI3_SCK, 
+USART1_TX, 
+FMC_NCE/FMC_NE
+2, TIM15_CH1N, 
+EVENTOUT
+-
+B4
+-
+-
+-
+69
+B8
+82
+108
+PD0
+I/O
+FT
+-
+TIM8_CH4N, 
+FDCAN1_RX, 
+FMC_D2, 
+EVENTOUT
+-
+A4
+-
+-
+-
+70
+A9
+83
+109
+PD1
+I/O
+FT
+-
+TIM8_CH4, 
+TIM8_BKIN2, 
+FDCAN1_TX, 
+FMC_D3, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+-
+-
+110
+VSS
+S
+-
+-
+-
+-
+A1
+-
+-
+-
+-
+-
+-
+111
+VDD
+S
+-
+-
+-
+-
+B5
+-
+-
+55
+71
+B7
+84
+112
+PD2
+I/O
+FT
+-
+TIM3_ETR, 
+TIM8_BKIN, 
+UART5_RX, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+C6
+85
+113
+PD3
+I/O
+FT
+-
+TIM2_CH1/ 
+TIM2_ETR, 
+USART2_CTS, 
+QUADSPI1_BK2_NC
+S, FMC_CLK, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+A8
+86
+114
+PD4
+I/O
+FT
+-
+TIM2_CH2, 
+USART2_RTS_DE, 
+QUADSPI1_BK2_IO0
+, FMC_NOE, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+A7
+87
+115
+PD5
+I/O
+FT
+-
+USART2_TX, 
+QUADSPI1_BK2_IO1
+, FMC_NWE, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+A6
+88
+116
+PD6
+I/O
+FT
+-
+TIM2_CH4, SAI1_D1, 
+USART2_RX, 
+QUADSPI1_BK2_IO2
+, FMC_NWAIT, 
+SAI1_SD_A, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 69 ===
+DS12288 Rev 1
+69/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+-
+-
+-
+-
+-
+B6
+89
+117
+PD7
+I/O
+FT
+-
+TIM2_CH3, 
+USART2_CK, 
+QUADSPI1_BK2_IO3
+, 
+FMC_NCE/FMC_NE
+1, EVENTOUT
+-
+A5
+41
+40
+56
+72
+A5
+90
+118
+PB3
+I/O
+FT
+(4)
+JTDO-TRACESWO, 
+TIM2_CH2, 
+TIM4_ETR, 
+UCPD1_CRS_SYNC, 
+TIM8_CH1N, 
+SPI1_SCK, 
+SPI3_SCK/I2S3_CK, 
+USART2_TX, 
+TIM3_ETR, 
+FDCAN3_RX, 
+HRTIM1_SCOUT, 
+HRTIM1_EEV9, 
+SAI1_SCK_B, 
+EVENTOUT
+-
+C6
+42
+41
+57
+73
+C5
+91
+119
+PB4
+I/O
+FT_c
+(4)
+JTRST, TIM16_CH1, 
+TIM3_CH1, 
+TIM8_CH2N, 
+SPI1_MISO, 
+SPI3_MISO, 
+USART2_RX, 
+UART5_RTS_DE, 
+TIM17_BKIN, 
+FDCAN3_TX, 
+HRTIM1_EEV7, 
+SAI1_MCLK_B, 
+EVENTOUT
+UCPD1_CC2
+A6
+43
+42
+58
+74
+B5
+92
+120
+PB5
+I/O
+FT_f
+-
+TIM16_BKIN, 
+TIM3_CH2, 
+TIM8_CH3N, 
+I2C1_SMBA, 
+SPI1_MOSI, 
+SPI3_MOSI/I2S3_SD
+, USART2_CK, 
+I2C3_SDA, 
+FDCAN2_RX, 
+TIM17_CH1, 
+LPTIM1_IN1, 
+SAI1_SD_B, 
+HRTIM1_EEV6, 
+UART5_CTS, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 70 ===
+Pinouts and pin description
+STM32G474xB STM32G474xC STM32G474xE
+70/232
+DS12288 Rev 1
+B6
+44
+43
+59
+75
+A4
+93
+121
+PB6
+I/O
+FT_c
+-
+TIM16_CH1N, 
+TIM4_CH1, 
+TIM8_CH1, 
+TIM8_ETR, 
+USART1_TX, 
+COMP4_OUT, 
+FDCAN2_TX, 
+TIM8_BKIN2, 
+LPTIM1_ETR, 
+HRTIM1_SCIN, 
+HRTIM1_EEV4, 
+SAI1_FS_B, 
+EVENTOUT
+UCPD1_CC1
+C7
+45
+44
+60
+76
+B4
+94
+122
+PB7
+I/O
+FT_f
+-
+TIM17_CH1N, 
+TIM4_CH2, 
+I2C4_SDA, 
+I2C1_SDA, 
+TIM8_BKIN, 
+USART1_RX, 
+COMP3_OUT, 
+TIM3_CH4, 
+LPTIM1_IN2, 
+FMC_NL, 
+HRTIM1_EEV3, 
+UART4_CTS, 
+EVENTOUT
+PVD_IN
+B7
+46
+45
+61
+77
+A3
+95
+123
+PB8-BOOT0
+I/O
+FT_f
+(5)
+TIM16_CH1, 
+TIM4_CH3, 
+SAI1_CK1, 
+I2C1_SCL, 
+USART3_RX, 
+COMP1_OUT, 
+FDCAN1_RX, 
+TIM8_CH2, 
+TIM1_BKIN, 
+HRTIM1_EEV8, 
+SAI1_MCLK_A, 
+EVENTOUT
+-
+A7
+47
+46
+62
+78
+A2
+96
+124
+PB9
+I/O
+FT_f
+-
+TIM17_CH1, 
+TIM4_CH4, 
+SAI1_D2, 
+I2C1_SDA, 
+IR_OUT, 
+USART3_TX, 
+COMP2_OUT, 
+FDCAN1_TX, 
+TIM8_CH3, 
+TIM1_CH3N, 
+HRTIM1_EEV5, 
+SAI1_FS_A, 
+EVENTOUT
+-
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 71 ===
+DS12288 Rev 1
+71/232
+STM32G474xB STM32G474xC STM32G474xE
+Pinouts and pin description
+78
+-
+-
+-
+-
+-
+C4
+97
+125
+PE0
+I/O
+FT
+-
+TIM4_ETR, 
+TIM20_CH4N, 
+TIM16_CH1, 
+TIM20_ETR, 
+USART1_TX, 
+FMC_NBL0, 
+EVENTOUT
+-
+-
+-
+-
+-
+-
+B3
+98
+126
+PE1
+I/O
+FT
+-
+TIM17_CH1, 
+TIM20_CH4, 
+USART1_RX, 
+FMC_NBL1, 
+EVENTOUT
+-
+-
+-
+47
+63
+79
+-
+99
+127
+VSS
+S
+-
+-
+-
+-
+A9
+48
+48
+64
+80
+-
+100
+128
+VDD
+S
+-
+-
+-
+-
+1.
+Function availability depends on the chosen device.
+2.
+PC13, PC14 and PC15 are supplied through the power switch. Since the switch only sinks a limited amount of current (3 
+mA), the use of GPIOs PC13 to PC15 in output mode is limited:  
+- The speed should not exceed 2 MHz with a maximum load of 30 pF  
+- These GPIOs must not be used as current sources (e.g. to drive an LED).
+3.
+ After a backup domain power-up, PC13, PC14 and PC15 operate as GPIOs. Their function then depends on the content of 
+the RTC registers which are not reset by the system reset. For details on how to manage these GPIOs, refer to the Backup 
+domain and RTC register descriptions in the reference manual RM0440 "STM32G4 Series advanced Arm®-based 32-bit 
+MCUs".
+4.
+After reset, these pins are configured as JTAG/SW debug alternate functions, and the internal pull-up on PA15, PA13, PB4 
+pins and the internal pull-down on PA14 pin are activated. 
+5.
+ It is recommended to set PB8 in another mode than analog mode after startup to limit consumption if the pin is left 
+unconnected.
+Table 12. STM32G474xB/xC/xE pin definition (continued)
+Pin Number
+Pin name 
+(function 
+after reset)(1)
+Pin type
+I/O structure
+Notes
+Alternate 
+functions
+Additional 
+functions
+WLCSP81
+UFQFPN48
+LQFP48
+LQFP64
+LQFP80
+TFBGA100
+LPQF100
+LPQF128
+
+=== PAGE 83 ===
+DS12288 Rev 1
+83/232
+STM32G474xB STM32G474xC STM32G474xE
+Electrical characteristics
+201
+5.3 
+Operating conditions
+5.3.1 
+General operating conditions
+          
+Table 17. General operating conditions 
+Symbol
+Parameter
+ Conditions
+Min
+Max
+Unit
+fHCLK
+Internal AHB clock frequency
+-
+0 
+170
+MHz
+fPCLK1
+Internal APB1 clock frequency
+-
+0 
+170
+fPCLK2
+Internal APB2 clock frequency
+-
+0 
+170
+VDD
+Standard operating voltage
+-
+1.71(1)
+3.6
+V
+VDDA
+Analog supply voltage
+ADC
+1.62
+3.6
+V
+DAC 1 MSPS or DAC 15 MSPS 
+or OPAMP
+1.8
+COMP used
+1.8
+3.6
+VREFBUF used
+2.4
+3.6
+ADC, DAC, OPAMP, COMP, 
+VREFBUF not used
+0
+VBAT
+Backup operating voltage
+-
+1.55
+3.6
+V
+VIN
+I/O input voltage
+TT_xx
+-0.3
+VDD+0.3
+V
+FT_c
+-0.3
+5
+All I/O except TT_xx and FT_c
+-0.3
+MIN(MIN(VDD, 
+VDDA)+3.6 V, 
+5.5 V)(2)(3)
+PD
+Power dissipation at 
+TA = 85 °C for suffix 6(4)
+LQFP128
+-
+-
+399
+mW
+LQFP100
+-
+-
+399
+LQFP80
+-
+-
+TBD
+LQFP64
+-
+-
+388
+LQFP48
+-
+-
+376
+UFQFPN48
+-
+-
+778
+TFBGA100
+-
+-
+649
+WLCSP81
+-
+-
+444
+
+=== PAGE 84 ===
+Electrical characteristics
+STM32G474xB STM32G474xC STM32G474xE
+84/232
+DS12288 Rev 1
+PD
+Power dissipation at 
+TA = 125 °C for suffix 3(4)
+LQFP128
+-
+-
+100
+mW
+LQFP100
+-
+-
+100
+LQFP80
+-
+-
+TBD
+LQFP64
+-
+-
+97
+LQFP48
+-
+-
+94
+UFQFPN48
+-
+-
+194
+TFBGA100
+-
+-
+162
+WLCSP81
+-
+-
+111
+TA 
+Ambient temperature for the 
+suffix 6 version
+Maximum power dissipation 
+-40
+85
+°C
+Low-power dissipation(5)
+-40
+105
+Ambient temperature for the 
+suffix 3 version
+Maximum power dissipation 
+-40
+125
+Low-power dissipation(5)
+-40
+130
+TJ 
+Junction temperature range
+Suffix 6 version
+-40
+105
+°C
+Suffix 3 version
+-40
+130
+1.
+When RESET is released functionality is guaranteed down to VBOR0 Min.
+2.
+This formula has to be applied only on the power supplies related to the IO structure described by the pin definition table. 
+Maximum I/O input voltage is the smallest value between MIN(VDD, VDDA)+3.6 V and 5.5V.
+3.
+For operation with voltage higher than Min (VDD, VDDA) +0.3 V, the internal Pull-up and Pull-Down resistors must be 
+disabled.
+4.
+If TA is lower, higher PD values are allowed as long as TJ does not exceed TJmax (see Section 6.9: Thermal 
+characteristics).
+5.
+In low-power dissipation state, TA can be extended to this range as long as TJ does not exceed TJmax (see Section 6.9: 
+Thermal characteristics).
+Table 17. General operating conditions (continued)
+Symbol
+Parameter
+ Conditions
+Min
+Max
+Unit
+
+=== PAGE 211 ===
+DS12288 Rev 1
+211/232
+STM32G474xB STM32G474xC STM32G474xE
+Package information
+229
+6.4 
+ LQFP64 package information
+Figure 61. LQFP - 64 pins, 10 x 10 mm low-profile quad flat package outline
+1.
+Drawing is not to scale.
+          
+Table 115. LQFP - 64 pins, 10 x 10 mm low-profile quad flat 
+package mechanical data 
+Symbol
+millimeters
+inches(1)
+Min
+Typ
+Max
+Min
+Typ
+Max
+A
+-
+-
+1.600
+-
+-
+0.0630
+A1
+0.050
+-
+0.150
+0.0020
+-
+0.0059
+A2
+1.350
+1.400
+1.450
+0.0531
+0.0551
+0.0571
+b
+0.170
+0.220
+0.270
+0.0067
+0.0087
+0.0106
+c
+0.090
+-
+0.200
+0.0035
+-
+0.0079
+D
+-
+12.000
+-
+-
+0.4724
+-
+D1
+-
+10.000
+-
+-
+0.3937
+-
+D3
+-
+7.500
+-
+-
+0.2953
+-
+E
+-
+12.000
+-
+-
+0.4724
+-
+E1
+-
+10.000
+-
+-
+0.3937
+-
+:B0(B9
+$
+$
+$
+6($7,1*3/$1(
+FFF
+&
+E
+&
+F
+$
+/
+/
+.
+,'(17,),&$7,21
+3,1
+'
+'
+'
+H
+
+
+
+
+
+
+
+
+(
+(
+(
+*$8*(3/$1(
+PP
+
+=== PAGE 213 ===
+DS12288 Rev 1
+213/232
+STM32G474xB STM32G474xC STM32G474xE
+Package information
+229
+LQFP64 device marking
+The following figure gives an example of topside marking orientation versus pin 1 identifier 
+location.
+The printed markings may differ depending on the supply chain.
+Other optional marking or inset/upset marks, which identify the parts throughout supply 
+chain operations, are not indicated below.
+Figure 63. LQFP64, 10 x 10 mm, low-profile quad flat package top view example 
+1.
+Parts marked as ES or E or accompanied by an engineering sample notification letter are not yet qualified 
+and therefore not approved for use in production. ST is not responsible for any consequences resulting 
+from such use. In no event will ST be liable for the customer using any of these engineering samples in 
+production. ST’s Quality department must be contacted prior to any decision to use these engineering 
+samples to run a qualification activity.
+069
+670*
+5(7
+z
+%
+
+3URGXFW
+LGHQWLILFDWLRQ
+3LQ
+LGHQWLILFDWLRQ
+5HYLVLRQFRGH
+tt
+'DWHFRGH
+
+=== PAGE 226 ===
+Package information
+STM32G474xB STM32G474xC STM32G474xE
+226/232
+DS12288 Rev 1
+6.9 
+Thermal characteristics
+The maximum chip-junction temperature, TJ max, in degrees Celsius, may be calculated 
+using the following equation:
+TJ max = TA max + (PD max x ΘJA)
+Where:
+•
+TA max is the maximum ambient temperature in °C,
+•
+ΘJA is the package junction-to-ambient thermal resistance, in °C/W,
+•
+PD max is the sum of PINT max and PI/O max (PD max = PINT max + PI/Omax),
+•
+PINT max is the product of IDD and VDD, expressed in Watts. This is the maximum chip 
+internal power.
+PI/O max represents the maximum power dissipation on output pins where:
+PI/O max = Σ (VOL × IOL) + Σ ((VDDIOx – VOH) × IOH),
+taking into account the actual VOL / IOL and VOH / IOH of the I/Os at low and high level in the 
+application.
+          
+Table 121. Package thermal characteristics 
+Symbol
+Parameter
+Value
+Unit
+ΘJA
+Thermal resistance junction-ambient 
+LQFP128 - 14 × 14 mm
+50.1
+°C/W
+Thermal resistance junction-ambient 
+LQFP100 - 14 × 14 mm
+50.1
+Thermal resistance junction-ambient 
+LQFP80 - 12 × 12 mm
+TBD
+Thermal resistance junction-ambient 
+LQFP64 - 10 × 10 mm
+51.6
+Thermal resistance junction-ambient 
+LQFP48 - 7 × 7 mm
+53.2
+Thermal resistance junction-ambient 
+TFBGA100 - 8 × 8 mm
+30.8
+Thermal resistance junction-ambient 
+UFQFPN48 - 7 × 7 mm
+25.7
+Thermal resistance junction-ambient 
+WLCSP81 - 4.02 X 4.27 mm
+45
+
+=== PAGE 227 ===
+DS12288 Rev 1
+227/232
+STM32G474xB STM32G474xC STM32G474xE
+Package information
+229
+          
+6.9.1 
+Reference document
+JESD51-2 Integrated Circuits Thermal Test Method Environment Conditions - Natural 
+Convection (Still Air). Available from www.jedec.org
+6.9.2 
+Selecting the product temperature range
+When ordering the microcontroller, the temperature range is specified in the ordering 
+information scheme shown in Section 7: Ordering information.
+ΘJC
+Thermal resistance junction-case 
+LQFP128 - 14 × 14 mm
+14.5
+°C/W
+Thermal resistance junction-case 
+LQFP100 - 14 × 14 mm
+14.5
+Thermal resistance junction-case 
+LQFP80 - 12 × 12 mm
+TBD
+Thermal resistance junction-case 
+LQFP64 - 10 × 10 mm
+14.7
+Thermal resistance junction-case 
+LQFP48 - 7 × 7 mm
+14.9
+Thermal resistance junction-case 
+TFBGA100 - 8 × 8 mm
+13
+Thermal resistance junction-case 
+UFQFPN48 - 7 × 7 mm
+1.5
+Thermal resistance junction-case 
+WLCSP81 - 4.02 X 4.27 mm
+1.46
+ΘJB
+Thermal resistance junction-board 
+LQFP128 - 14 × 14 mm
+42.5
+°C/W
+Thermal resistance junction-board 
+LQFP100 - 14 × 14 mm
+42.5
+Thermal resistance junction-board 
+LQFP80 - 12 × 12 mm
+TBD
+Thermal resistance junction-board 
+LQFP64 - 10 × 10 mm
+40.4
+Thermal resistance junction-board 
+LQFP48 - 7 × 7 mm
+38.3
+Thermal resistance junction-board 
+TFBGA100 - 8 × 8 mm
+13.42
+Thermal resistance junction-board 
+UFQFPN48 - 7 × 7 mm
+13.6
+Thermal resistance junction-board 
+WLCSP81 - 4.02 X 4.27 mm
+27.45
+Table 121. Package thermal characteristics (continued)
+Symbol
+Parameter
+Value
+Unit

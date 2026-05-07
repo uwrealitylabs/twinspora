@@ -1,0 +1,19 @@
+pin   1 NC              sym-rel (-10.16,12.7) ang 0 type=no_connect
+pin   2 NC              sym-rel (-10.16,10.16) ang 0 type=no_connect
+pin   3 NC              sym-rel (-10.16,7.62) ang 0 type=no_connect
+pin   4 NC              sym-rel (-10.16,5.08) ang 0 type=no_connect
+pin   5 PUSH            sym-rel (12.7,-12.7) ang 180 type=output
+pin   6 A               sym-rel (12.7,12.7) ang 180 type=output
+pin   7 B               sym-rel (12.7,10.16) ang 180 type=output
+pin   8 Z               sym-rel (12.7,7.62) ang 180 type=output
+pin   9 W               sym-rel (12.7,-2.54) ang 180 type=output
+pin  10 NC              sym-rel (-10.16,2.54) ang 0 type=no_connect
+pin  11 U               sym-rel (12.7,2.54) ang 180 type=output
+pin  12 V               sym-rel (12.7,0) ang 180 type=output
+pin  13 VDD             sym-rel (0,17.78) ang 270 type=power_in
+pin  14 MODE            sym-rel (-12.7,0) ang 0 type=input
+pin  15 OUT             sym-rel (12.7,-7.62) ang 180 type=output
+pin  16 GND             sym-rel (0,-17.78) ang 90 type=power_in
+pin  17 GND             sym-rel (0,-17.78) ang 90 type=passive
+--- Instances ---
+instance at (140.97,102.87,0)

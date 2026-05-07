@@ -1,0 +1,647 @@
+PAGES: 95
+=== PAGE 1 ===
+DRV8316C Three-Phase Integrated FET Motor Driver
+1 Features
+•
+Three-phase BLDC motor driver
+–
+Cycle-by-cycle current limit to limit phase 
+current
+–
+Supports up to 200-kHz PWM frequency
+–
+Active demagnetization to reduce power losses
+•
+4.5-V to 35-V operating voltage (40-V abs max)
+•
+High output current capability: 8-A Peak
+•
+Low MOSFET on-state resistance
+–
+95-mΩ RDS(ON) (HS + LS) at TA = 25°C
+•
+Low power sleep mode
+–
+1.5-µA at VVM = 24-V, TA = 25°C
+•
+Multiple control interface options
+–
+6x PWM control interface
+–
+3x PWM control interface
+–
+6x PWM control interface with cycle by cycle 
+current limit
+–
+3x PWM control interface with cycle by cycle 
+current limit
+•
+Does not require external current sense resistors, 
+built-in current sensing
+•
+Flexible device configuration options
+–
+DRV8316CR: 5-MHz 16-bit SPI interface for 
+device configuration and fault status
+–
+DRV8316CT: Hardware pin based configuration
+•
+Supports 1.8-V, 3.3-V, and 5-V logic inputs
+•
+Built-in 3.3-V (5%), 30-mA LDO regulator
+•
+Built-in 3.3-V/5-V, 200-mA buck regulator
+•
+Built-in 3.3-V, 30-mA LDO
+•
+Delay compensation reduces duty cycle distortion
+•
+Suite of integrated protection features
+–
+Supply undervoltage lockout (UVLO)
+–
+Charge pump undervoltage (CPUV)
+–
+Overcurrent protection (OCP)
+–
+Thermal warning and shutdown (OTW/OTSD)
+–
+Fault condition indication pin (nFAULT)
+–
+Optional fault diagnostics over SPI interface
+2 Applications
+•
+CPAP machines
+•
+Brushless-DC (BLDC) Motor Modules
+•
+Printers
+•
+Camera gimbals
+•
+HVAC motors
+•
+Small home appliances
+•
+Office automation machines
+•
+Factory automation and robotics
+3 Description
+DRV8316C integrates three H-bridges with 40-V 
+absolute maximum capability and a very low RDS(ON) 
+of 95 mΩ (high-side + low-side) to enable high power 
+drive capability for 12-V/24-V brushless-DC motors. 
+DRV8316C provides integrated current sensing which 
+eliminates the need for external sense resistors. 
+DRV8316C integrates power management circuits 
+including an voltage-adjustable buck regulator (3.3 V / 
+5 V, 200-mA) and LDO (3.3 V / 30 mA) that can be 
+used to power external circuits.
+DRV8316C provides a configurable 6x or 3x PWM 
+control scheme which can be used to implement 
+sensored or sensorless field-oriented control (FOC), 
+sinusoidal control, or trapezoid control using an 
+external microcontroller. DRV8316C is capable of 
+driving a PWM frequency of up to 200 kHz. 
+DRV8316C is highly configurable either through SPI 
+(DRV8316CR) or pins (DRV8316CT) - PWM mode. 
+slew rate, OCP level, current sense gain are some of 
+the configurable features.
+A number of protection features including supply 
+undervoltage lockout (UVLO), overvoltage protection 
+(OVP), 
+charge 
+pump 
+undervoltage 
+(CPUV), 
+overcurrent 
+protection 
+(OCP), 
+over-temperature 
+warning (OTW) and over-temperature shutdown 
+(OTSD) are integrated into DRV8316C to protect the 
+device, motor, and system against fault events. Fault 
+conditions are indicated by the nFAULT pin.
+Refer Application Information for design consideration 
+and recommendation on device usage.
+Device Information(1) 
+PART NUMBER
+PACKAGE
+BODY SIZE (NOM)
+DRV8316CR
+VQFN (40)
+7.00 mm x 5.00 mm
+DRV8316CT
+VQFN (40)
+7.00 mm x 5.00 mm
+(1)
+For all available packages, see the orderable addendum at 
+the end of the data sheet.
+nSLEEP
+DRVOFF
+SPI
+Only on SPI 
+variant
+PWM input
+6x / 3x PWM
+CSA out
+nFAULT
+A
+B
+C
+4.5V to 35V (40V abs max)
+8-A peak output current,
+typically 12-V/24-V, 
+<80W motors
+Buck out
+3.3 or 5.0 V, up to 200mA
+DRV8316C
+MOSFETs
+Buck/LDO Regulator
+Integrated Current Sensing
+Built-in Protecon
+Charge Pump
+MCU
+LDO out
+3.3-V, up to 30-mA
+Simplified Schematic
+DRV8316C
+SLVSH07 – DECEMBER 2022
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+
+=== PAGE 11 ===
+TJ = –40°C to +150°C, VVM = 4.5 to 35 V (unless otherwise noted). Typical limits apply for TA = 25°C, VVM = 24 V
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+FOUR-LEVEL INPUTS (GAIN, MODE, SLEW, VSEL_BK)
+VL1
+Input mode 1 voltage
+Tied to AGND
+0
+0.2*AVD
+D
+V
+VL2
+Input mode 2 voltage
+Hi-Z
+0.27*AV
+DD
+0.5*AVDD 0.545*AV
+DD
+V
+VL3
+Input mode 3 voltage
+47 kΩ +/- 5% tied to AVDD
+0.606*AV
+DD
+0.757*AVD
+D
+0.909*AV
+DD
+V
+VL4
+Input mode 4 voltage
+Tied to AVDD
+0.945*AV
+DD
+AVDD
+V
+RPU
+Input pullup resistance
+To AVDD
+70
+100
+130
+kΩ
+RPD
+Input pulldown resistance
+To AGND
+70
+100
+130
+kΩ
+FOUR-LEVEL INPUTS (OCP/SR)
+VL1
+Input mode 1 voltage
+Tied to AGND
+0
+0.09*AV
+DD
+V
+VL2
+Input mode 2 voltage
+22 kΩ ± 5% to AGND
+0.12*AV
+DD 0.15*AVDD
+0.2*AVD
+D
+V
+VL3
+Input mode 3 voltage
+Hi-Z
+0.45*AV
+DD
+0.5*AVDD
+0.55*AV
+DD
+V
+VL4
+Input mode 4 voltage
+Tied to AVDD
+0.94*AV
+DD
+AVDD
+V
+RPU
+Input pullup resistance
+To AVDD
+80
+100
+120
+kΩ
+RPD
+Input pulldown resistance
+To AGND
+80
+100
+120
+kΩ
+OPEN-DRAIN OUTPUTS (nFAULT)
+VOL
+Output logic low voltage
+IOD = 5 mA
+0.4
+V
+IOH
+Output logic high current
+VOD = 5 V
+–1
+1
+µA
+COD
+Output capacitance
+30
+pF
+PUSH-PULL OUTPUTS (SDO)
+VOL
+Output logic low voltage
+IOP = 5 mA
+0
+0.4
+V
+VOH
+Output logic high voltage
+IOP = 5 mA
+2.2
+5.5
+V
+IOL
+Output logic low leakage current
+VOP = 0 V
+–1
+1
+µA
+IOH
+Output logic high leakage current
+VOP = 5 V
+–1
+1
+µA
+COD
+Output capacitance
+30
+pF
+DRIVER OUTPUTS
+RDS(ON)
+Total MOSFET on resistance (High-side 
++ Low-side)
+VVM > 6 V, IOUT = 1 A, TA = 25°C
+95
+120
+mΩ
+VVM < 6 V, IOUT = 1 A, TA = 25°C
+105
+130
+mΩ
+VVM > 6 V, IOUT = 1 A, TJ = 150 °C
+140
+185
+mΩ
+VVM < 6 V, IOUT = 1 A, TJ = 150 °C
+145
+190
+mΩ
+SR
+Phase pin slew rate switching low to high 
+(Rising from 20 % to 80 %)
+ 
+VVM = 24 V, SLEW = 00b or SLEW pin 
+tied to AGND
+14
+25
+45
+V/µs
+VVM = 24 V, SLEW = 01b or SLEW pin to 
+Hi-Z
+30
+50
+80
+V/µs
+VVM = 24 V, SLEW = 10b or SLEW pin to 
+47 kΩ +/- 5% to AVDD
+80
+125
+185
+V/µs
+VVM = 24 V, SLEW = 11b or SLEW pin 
+tied to AVDD
+130
+200
+280
+V/µs
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: DRV8316C
+
+
+
+=== PAGE 15 ===
+7.7 SPI Slave Mode Timings
+tHI_nSCS
+tSU_nSCS
+tSCLK
+tSCLKH
+tSCLKL
+MSB
+LSB
+tHD_SDI
+tSU_SDI
+Z
+Z
+MSB
+LSB
+tHD_nSCS
+tDIS_SDO
+X
+X
+tEN_SDO
+tDLY_SDO
+Figure 7-1. SPI Secondary Mode Timings
+7.8 Typical Characteristics
+Supply Voltage (V)
+Active Current (mA)
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+FPWM = 25 kHz
+FPWM = 200 kHz
+TJ = -40 C
+TJ = 25 C
+TJ = 150 C
+Figure 7-2. Supply current over supply voltage
+Junction Temperature (C)
+RDS(ON) (m)
+-40
+-20
+0
+20
+40
+60
+80
+100
+120
+140
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+Figure 7-3. RDS(ON) (high and low side combined) 
+for MOSFETs over temperature
+Supply Voltage (V)
+Buck Efficiency (%)
+4
+8
+12
+16
+20
+24
+28
+32
+36
+75
+77.5
+80
+82.5
+85
+87.5
+90
+92.5
+95
+97.5
+100
+TJ = -40 C
+TJ = 25 C
+TJ = -150 C
+Figure 7-4. Buck regulator efficiency over supply 
+voltage
+Buck Output Load Current (A)
+Buck Output Voltage (V)
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+0.18
+0.2
+3
+3.25
+3.5
+3.75
+4
+4.25
+4.5
+4.75
+5
+5.25
+5.5
+5.75
+BUCK_SEL = 00b
+BUCK_SEL = 01b
+BUCK_SEL = 10b
+BUCK_SEL = 11b
+Figure 7-5. Buck regulator output voltage over load 
+current
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: DRV8316C
+
+
+
+=== PAGE 34 ===
+8.3.8 Cross Conduction (Dead Time)
+The device is fully protected against any cross conduction of MOSFETs - during the switching of high-side 
+and low-side MOSFETs, DRV8316C avoids shoot-through events by inserting a dead time (tdead). This is 
+implemented by sensing the gate-source voltage (VGS) of the high-side and low-side MOSFETs and ensuring 
+that VGS of high-side MOSFET has reached below turn-off levels before switching on the low-side MOSFET of 
+same half-bridge (or vice-versa) as shown in Figure 8-18 and Figure 8-19.
+VM
+OUTx
+GND
+HS Gate 
+Control
+LS Gate 
+Control
+–
++
+–
++
+VGS_LS
+VGS_HS
+Figure 8-18. Cross Conduction Protection
+VGS_HS
+VGS_LS
+tDEAD
+Time
+10%
+10%
+Figure 8-19. Dead Time
+DRV8316C
+SLVSH07 – DECEMBER 2022
+www.ti.com
+34
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: DRV8316C
+
+
+
+=== PAGE 83 ===
+11 Layout
+11.1 Layout Guidelines
+The bulk capacitor should be placed to minimize the distance of the high-current path through the motor driver 
+device. The connecting metal trace widths should be as wide as possible, and numerous vias should be used 
+when connecting PCB layers. These practices minimize inductance and allow the bulk capacitor to deliver high 
+current.
+Small-value capacitors such as the charge pump, AVDD, and VREF capacitors should be ceramic and placed 
+closely to device pins.
+The high-current device outputs should use wide metal traces.
+To reduce noise coupling and EMI interference from large transient currents into small-current signal paths, 
+grounding should be partitioned between PGND and AGND. TI recommends connecting all non-power stage 
+circuitry (including the thermal pad) to AGND to reduce parasitic effects and improve power dissipation from the 
+device. Optionally, GND_BK can be split. Ensure grounds are connected through net-ties or wide resistors to 
+reduce voltage offsets and maintain gate driver performance.
+The device thermal pad should be soldered to the PCB top-layer ground plane. Multiple vias should be used to 
+connect to a large bottom-layer ground plane. The use of large metal planes and multiple vias helps dissipate 
+the I2 × RDS(on) heat that is generated in the device.
+To improve thermal performance, maximize the ground area that is connected to the thermal pad ground across 
+all possible layers of the PCB. Using thick copper pours can lower the junction-to-air thermal resistance and 
+improve thermal dissipation from the die surface.
+Separate the SW_BUCK and FB_BUCK traces with ground separation to reduce buck switching from coupling 
+as noise into the buck outer feedback loop. Widen the FB_BUCK trace as much as possible to allow for faster 
+load switching.
+Recommended Layout Example for VQFN Package shows a layout example for the DRV8316C.
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+83
+Product Folder Links: DRV8316C
+
+
+
+=== PAGE 85 ===
+11.3 Thermal Considerations
+The DRV8316C has thermal shutdown (TSD) as previously described. A die temperature in excess of 150°C 
+(minimally) disables the device until the temperature drops to a safe level.
+Any tendency of the device to enter thermal shutdown is an indication of excessive power dissipation, insufficient 
+heatsinking, or too high an ambient temperature.
+11.3.1 Power Dissipation
+The power loss in DRV8316C include standby power losses, LDO and Buck power losses, FET conduction 
+and switching losses, and diode losses. The FET conduction loss dominates the total power dissipation in 
+DRV8316C. At start-up and fault conditions, the output current is much higher than normal current; remember 
+to take these peak currents and their duration into consideration. The total device dissipation is the power 
+dissipated in each of the three half bridges added together. The maximum amount of power that the device can 
+dissipate depends on ambient temperature and heatsinking. Note that RDS,ON increases with temperature, so 
+as the device heats, the power dissipation increases. Take this into consideration when designing the PCB and 
+heatsinking.
+A summary of equations for calculating each loss is shown below for trapezoidal controland field-oriented 
+control.
+Table 11-1. DRV8316C Power Losses for Trapezoidal and Field-oriented Control
+Loss type
+Trapezoidal
+Field-oriented control
+Standby power
+Pstandby = VM x IVM_TA
+LDO 
+PLDO = (VM-VAVDD) x IAVDDD, if BUCK_PS_DIS = 1b
+PLDO = (VBK-VAVDD) x IAVDDD, if BUCK_PS_DIS = 0b
+FET conduction
+PCON = 2 x (IPK(trap))2 x Rds,on(TA)
+PCON = 3 x ( IRMS(FOC))2 x Rds,on(TA)
+FET switching
+PSW = IPK(trap) x VPK(trap) x trise/fall x fPWM
+PSW = 3 x IRMS(FOC) x VPK(FOC) x trise/fall x 
+fPWM
+Diode
+Pdiode = 2 x IPK(trap) x VF(diode)x tDEADTIME x 
+fPWM
+Pdiode = 6 x IRMS(FOC) x VF(diode) x tDEADTIME x 
+fPWM
+Buck
+PBK = 0.11 x VBK x IBK assuming (ηBK = 90%)
+www.ti.com
+DRV8316C
+SLVSH07 – DECEMBER 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+85
+Product Folder Links: DRV8316C
+
+
+
