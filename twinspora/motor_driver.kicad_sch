@@ -5132,7 +5132,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "R31")
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
@@ -8340,7 +8340,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "R32")
+					(reference "R39")
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"

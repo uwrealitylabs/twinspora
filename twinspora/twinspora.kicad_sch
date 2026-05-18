@@ -12678,7 +12678,7 @@
 		)
 		(uuid "f93c8150-fb07-48cc-9fce-5e0358975a66")
 	)
-	(text_box "R39: If you want to cheap out"
+	(text_box "R34: If you want to cheap out"
 		(exclude_from_sim no)
 		(at 341.63 103.2271 0)
 		(size 19.05 5.9929)
@@ -26948,7 +26948,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "3eb18f4a-28b2-4107-b304-764e0958107a")
-		(property "Reference" "R39"
+		(property "Reference" "R34"
 			(at 365.76 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27057,7 +27057,7 @@
 		(instances
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "R39")
+					(reference "R34")
 					(unit 1)
 				)
 			)

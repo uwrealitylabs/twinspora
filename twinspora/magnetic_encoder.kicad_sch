@@ -2644,7 +2644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b84da72-3b88-4dce-a7f5-2ae863822efa")
-		(property "Reference" "R34"
+		(property "Reference" "R32"
 			(at 115.57 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2757,7 +2757,7 @@
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "R34")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -3516,7 +3516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2ddbdf5-cdc3-4a57-a5e1-9eb21a438346")
-		(property "Reference" "R35"
+		(property "Reference" "R31"
 			(at 123.19 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3629,7 +3629,7 @@
 					(unit 1)
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/59ac2ac7-da91-4c77-8dbc-3d7c7b498637"
-					(reference "R35")
+					(reference "R31")
 					(unit 1)
 				)
 			)
