@@ -28707,7 +28707,7 @@
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP38"
-			(at 2.040064 1.466505 0)
+			(at 2.151907 0.722789 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "17aa1d11-3375-45f6-98de-1e7909a032e0")
@@ -48327,7 +48327,7 @@
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP37"
-			(at 2.073557 0.908494 0)
+			(at 1.691682 -0.38008 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "a0a7ec10-af72-42ee-8077-6d2d3b922836")
