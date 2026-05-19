@@ -12341,8 +12341,8 @@
 		(uuid "a483a33a-ede6-48c6-b252-64eedafb533d")
 	)
 	(rectangle
-		(start 242.57 234.95)
-		(end 274.32 274.32)
+		(start 351.79 186.69)
+		(end 378.46 226.06)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -12365,8 +12365,8 @@
 		(uuid "d6bfef23-5c56-4a9a-8162-8682a1951354")
 	)
 	(rectangle
-		(start 276.86 234.95)
-		(end 355.6 255.27)
+		(start 241.3 233.68)
+		(end 330.2 262.89)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -12401,8 +12401,8 @@
 		(uuid "e83ec966-2696-4d09-8988-d038b4e175c0")
 	)
 	(rectangle
-		(start 339.09 182.88)
-		(end 368.3 231.14)
+		(start 320.04 182.88)
+		(end 349.25 231.14)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -12414,7 +12414,7 @@
 	)
 	(text "Battery Voltage Sense"
 		(exclude_from_sim no)
-		(at 352.044 189.23 0)
+		(at 332.994 189.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12478,7 +12478,7 @@
 	)
 	(text "CAN Termination — regular & split"
 		(exclude_from_sim no)
-		(at 315.722 251.968 0)
+		(at 285.75 251.206 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12597,9 +12597,20 @@
 		)
 		(uuid "ae10e8cb-b0a4-4580-9642-6320dfb454d4")
 	)
+	(text "I2C Pullup & Jumper"
+		(exclude_from_sim no)
+		(at 252.222 260.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b0c19685-ab3f-4a6f-a45f-d8a2cd383b8d")
+	)
 	(text "Voltage Divider"
 		(exclude_from_sim no)
-		(at 352.298 185.928 0)
+		(at 333.248 185.928 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -12610,7 +12621,7 @@
 	)
 	(text "Jumpers (2.54 mm)"
 		(exclude_from_sim no)
-		(at 278.638 236.982 0)
+		(at 243.078 235.712 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12669,7 +12680,7 @@
 	)
 	(text "TagConnect Debug Header\nTC2030-NL"
 		(exclude_from_sim no)
-		(at 243.84 237.998 0)
+		(at 352.552 189.738 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12765,6 +12776,12 @@
 		(uuid "02cff601-2f4a-4f83-b277-b569a77510ce")
 	)
 	(junction
+		(at 115.57 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "034f43de-8b2b-4f51-996f-88b6733088db")
+	)
+	(junction
 		(at 100.33 218.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12819,6 +12836,12 @@
 		(uuid "108c6ce8-41a0-4c2c-8419-bde9fcd9c790")
 	)
 	(junction
+		(at 269.24 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12be930d-e87f-4a32-b125-b969a05a6bcf")
+	)
+	(junction
 		(at 85.09 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12835,12 +12858,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1704da8d-7c29-4eb5-af90-5e50c26cd98d")
-	)
-	(junction
-		(at 115.57 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18fe2bad-3fda-46ac-b6ab-1a1c17372fa1")
 	)
 	(junction
 		(at 185.42 49.53)
@@ -13095,7 +13112,7 @@
 		(uuid "69937bbc-1e50-461d-8ff0-1a7481b54a6b")
 	)
 	(junction
-		(at 350.52 208.28)
+		(at 331.47 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b91c612-b74d-46a1-9a8e-4e92770692cb")
@@ -13131,7 +13148,7 @@
 		(uuid "7483abde-d98b-4f50-a2ac-44f8637a0671")
 	)
 	(junction
-		(at 306.07 243.84)
+		(at 270.51 242.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "764555cf-ab21-4b29-ac82-032b4562e7cc")
@@ -13365,7 +13382,7 @@
 		(uuid "bbcd3a85-b808-4af3-a23c-f6294106fc3f")
 	)
 	(junction
-		(at 353.06 219.71)
+		(at 334.01 219.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd8fa241-f5a4-4f4d-8137-eb438b610a9a")
@@ -13419,7 +13436,7 @@
 		(uuid "d33c2c7d-c5aa-4ac1-acbe-974486a5efab")
 	)
 	(junction
-		(at 340.36 242.57)
+		(at 304.8 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d66e0333-7db7-424f-bc39-9b82a9e2c510")
@@ -13603,15 +13620,15 @@
 		(uuid "73d61a56-7371-469d-ba16-a05b841285f1")
 	)
 	(no_connect
-		(at 251.46 255.27)
+		(at 356.87 207.01)
 		(uuid "9e146a02-3eb5-4673-ae52-e19733dc9d7c")
 	)
 	(no_connect
-		(at 261.62 257.81)
+		(at 367.03 209.55)
 		(uuid "a7286d8b-9411-4090-9534-5e5f32f60a1b")
 	)
 	(no_connect
-		(at 251.46 257.81)
+		(at 356.87 209.55)
 		(uuid "b765e00a-b9c2-46ed-930d-cc6162b41d95")
 	)
 	(wire
@@ -13626,7 +13643,7 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 207.01) (xy 350.52 208.28)
+			(xy 331.47 207.01) (xy 331.47 208.28)
 		)
 		(stroke
 			(width 0)
@@ -13636,7 +13653,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 163.83) (xy 393.7 163.83)
+			(xy 393.7 163.83) (xy 396.24 163.83)
 		)
 		(stroke
 			(width 0)
@@ -13716,7 +13733,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 36.83) (xy 121.92 36.83)
+			(xy 115.57 36.83) (xy 119.38 36.83)
 		)
 		(stroke
 			(width 0)
@@ -13786,7 +13803,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 243.84) (xy 340.36 242.57)
+			(xy 304.8 242.57) (xy 304.8 241.3)
 		)
 		(stroke
 			(width 0)
@@ -13836,7 +13853,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 168.91) (xy 384.81 168.91)
+			(xy 396.24 168.91) (xy 387.35 168.91)
 		)
 		(stroke
 			(width 0)
@@ -13916,7 +13933,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 163.83) (xy 391.16 162.56)
+			(xy 393.7 163.83) (xy 393.7 162.56)
 		)
 		(stroke
 			(width 0)
@@ -13946,7 +13963,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 251.46) (xy 307.34 251.46)
+			(xy 245.11 257.81) (xy 271.78 257.81)
 		)
 		(stroke
 			(width 0)
@@ -14016,7 +14033,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 49.53) (xy 121.92 36.83)
+			(xy 119.38 49.53) (xy 119.38 36.83)
 		)
 		(stroke
 			(width 0)
@@ -14146,7 +14163,7 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 208.28) (xy 350.52 209.55)
+			(xy 331.47 208.28) (xy 331.47 209.55)
 		)
 		(stroke
 			(width 0)
@@ -14666,7 +14683,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 252.73) (xy 248.92 252.73)
+			(xy 356.87 204.47) (xy 354.33 204.47)
 		)
 		(stroke
 			(width 0)
@@ -14766,7 +14783,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 243.84) (xy 295.91 243.84)
+			(xy 259.08 242.57) (xy 260.35 242.57)
 		)
 		(stroke
 			(width 0)
@@ -14816,7 +14833,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 234.95) (xy 387.35 234.95)
+			(xy 396.24 234.95) (xy 389.89 234.95)
 		)
 		(stroke
 			(width 0)
@@ -15166,7 +15183,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 219.71) (xy 353.06 223.52)
+			(xy 334.01 219.71) (xy 334.01 223.52)
 		)
 		(stroke
 			(width 0)
@@ -15266,7 +15283,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 208.28) (xy 350.52 208.28)
+			(xy 328.93 208.28) (xy 331.47 208.28)
 		)
 		(stroke
 			(width 0)
@@ -15306,6 +15323,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 257.81) (xy 271.78 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d15c3ba-81d2-4c7a-894c-0301eeafac9d")
+	)
+	(wire
+		(pts
 			(xy 203.2 101.6) (xy 205.74 101.6)
 		)
 		(stroke
@@ -15326,7 +15353,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 49.53) (xy 121.92 49.53)
+			(xy 123.19 49.53) (xy 119.38 49.53)
 		)
 		(stroke
 			(width 0)
@@ -15456,7 +15483,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 242.57) (xy 350.52 242.57)
+			(xy 323.85 241.3) (xy 314.96 241.3)
 		)
 		(stroke
 			(width 0)
@@ -15606,7 +15633,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 219.71) (xy 358.14 219.71)
+			(xy 334.01 219.71) (xy 339.09 219.71)
 		)
 		(stroke
 			(width 0)
@@ -15946,7 +15973,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 166.37) (xy 384.81 166.37)
+			(xy 396.24 166.37) (xy 387.35 166.37)
 		)
 		(stroke
 			(width 0)
@@ -16006,7 +16033,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 243.84) (xy 330.2 243.84)
+			(xy 293.37 242.57) (xy 294.64 242.57)
 		)
 		(stroke
 			(width 0)
@@ -16106,7 +16133,7 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 246.38) (xy 294.64 246.38)
+			(xy 271.78 245.11) (xy 259.08 245.11)
 		)
 		(stroke
 			(width 0)
@@ -16123,6 +16150,16 @@
 			(type default)
 		)
 		(uuid "a7a0a801-0d11-4887-8fa0-c1cd0e9509db")
+	)
+	(wire
+		(pts
+			(xy 271.78 247.65) (xy 269.24 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b7e5d1-5eb6-4cfe-ac6b-d981b3c71507")
 	)
 	(wire
 		(pts
@@ -16226,7 +16263,7 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 166.37) (xy 384.81 163.83)
+			(xy 387.35 166.37) (xy 387.35 163.83)
 		)
 		(stroke
 			(width 0)
@@ -16316,7 +16353,7 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 168.91) (xy 384.81 171.45)
+			(xy 387.35 168.91) (xy 387.35 171.45)
 		)
 		(stroke
 			(width 0)
@@ -16356,7 +16393,7 @@
 	)
 	(wire
 		(pts
-			(xy 387.35 234.95) (xy 387.35 233.68)
+			(xy 389.89 234.95) (xy 389.89 233.68)
 		)
 		(stroke
 			(width 0)
@@ -16393,6 +16430,16 @@
 			(type default)
 		)
 		(uuid "b9258f92-1951-441e-bcfa-5396e9670c1c")
+	)
+	(wire
+		(pts
+			(xy 269.24 250.19) (xy 269.24 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9838ba2-cb98-477b-8aab-8a782fe6d861")
 	)
 	(wire
 		(pts
@@ -16526,7 +16573,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 252.73) (xy 248.92 262.89)
+			(xy 354.33 204.47) (xy 354.33 214.63)
 		)
 		(stroke
 			(width 0)
@@ -16676,16 +16723,6 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 248.92) (xy 297.18 248.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca7cb08b-5342-4a25-8eae-16e0a296ef36")
-	)
-	(wire
-		(pts
 			(xy 228.6 46.99) (xy 228.6 45.72)
 		)
 		(stroke
@@ -16746,7 +16783,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 242.57) (xy 342.9 242.57)
+			(xy 304.8 241.3) (xy 307.34 241.3)
 		)
 		(stroke
 			(width 0)
@@ -16756,7 +16793,7 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 219.71) (xy 353.06 219.71)
+			(xy 331.47 219.71) (xy 334.01 219.71)
 		)
 		(stroke
 			(width 0)
@@ -16876,6 +16913,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 247.65) (xy 269.24 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d731d69f-467d-44d9-9377-9d3b48d372e8")
+	)
+	(wire
+		(pts
 			(xy 95.25 66.04) (xy 95.25 59.69)
 		)
 		(stroke
@@ -16906,7 +16953,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 243.84) (xy 307.34 243.84)
+			(xy 270.51 242.57) (xy 271.78 242.57)
 		)
 		(stroke
 			(width 0)
@@ -16966,7 +17013,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 251.46) (xy 285.75 245.11)
+			(xy 245.11 257.81) (xy 245.11 243.84)
 		)
 		(stroke
 			(width 0)
@@ -17036,7 +17083,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 246.38) (xy 351.79 242.57)
+			(xy 323.85 245.11) (xy 323.85 241.3)
 		)
 		(stroke
 			(width 0)
@@ -17056,7 +17103,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 238.76) (xy 306.07 243.84)
+			(xy 270.51 237.49) (xy 270.51 242.57)
 		)
 		(stroke
 			(width 0)
@@ -17186,7 +17233,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 241.3) (xy 320.04 241.3)
+			(xy 294.64 240.03) (xy 284.48 240.03)
 		)
 		(stroke
 			(width 0)
@@ -17226,7 +17273,7 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 208.28) (xy 358.14 208.28)
+			(xy 331.47 208.28) (xy 339.09 208.28)
 		)
 		(stroke
 			(width 0)
@@ -17246,7 +17293,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 241.3) (xy 320.04 238.76)
+			(xy 284.48 240.03) (xy 284.48 237.49)
 		)
 		(stroke
 			(width 0)
@@ -17386,7 +17433,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 238.76) (xy 306.07 238.76)
+			(xy 284.48 237.49) (xy 270.51 237.49)
 		)
 		(stroke
 			(width 0)
@@ -17406,7 +17453,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 209.55) (xy 358.14 208.28)
+			(xy 339.09 209.55) (xy 339.09 208.28)
 		)
 		(stroke
 			(width 0)
@@ -17506,7 +17553,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 241.3) (xy 340.36 242.57)
+			(xy 304.8 240.03) (xy 304.8 241.3)
 		)
 		(stroke
 			(width 0)
@@ -18939,7 +18986,7 @@
 		(uuid "0147f24b-8c3d-4591-a36d-3ffda0b11b8a")
 	)
 	(label "FDCAN_TX"
-		(at 393.7 130.81 180)
+		(at 396.24 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18949,7 +18996,7 @@
 		(uuid "04e7a2d4-a8db-41b9-98d2-6aec984ca6b2")
 	)
 	(label "SPI1_SCK"
-		(at 393.7 82.55 180)
+		(at 396.24 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18979,7 +19026,7 @@
 		(uuid "07984eba-2d04-47b1-8700-115cb3de586d")
 	)
 	(label "SPI2_MOSI"
-		(at 393.7 97.79 180)
+		(at 396.24 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18999,7 +19046,7 @@
 		(uuid "08b45f23-f3c7-4b37-8e0e-89861f2509dc")
 	)
 	(label "TIM1_CH3N"
-		(at 393.7 189.23 180)
+		(at 396.24 189.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19049,7 +19096,7 @@
 		(uuid "13ec6fa2-9f5e-4a64-92fb-020877818f16")
 	)
 	(label "SPI4_MISO"
-		(at 393.7 125.73 180)
+		(at 396.24 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19139,7 +19186,7 @@
 		(uuid "1cb9d354-832e-4de1-aed5-69a7aa7a9c98")
 	)
 	(label "SPI1_MISO"
-		(at 393.7 87.63 180)
+		(at 396.24 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19289,7 +19336,7 @@
 		(uuid "36023697-63ea-4fb5-a214-d83cf76ba4a6")
 	)
 	(label "SOB1"
-		(at 393.7 146.05 180)
+		(at 396.24 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19299,7 +19346,7 @@
 		(uuid "365245a9-a397-4efa-b118-3e7dc01bb8e2")
 	)
 	(label "TIM1_CH1"
-		(at 393.7 201.93 180)
+		(at 396.24 201.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19319,7 +19366,7 @@
 		(uuid "37395535-52cd-4db4-bb58-1a2b7d9ef791")
 	)
 	(label "I2C_SDA"
-		(at 295.91 248.92 180)
+		(at 259.08 250.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19329,7 +19376,7 @@
 		(uuid "39a3ff8e-0f40-4bbc-a150-35af3f40dd82")
 	)
 	(label "TIM1_CH3"
-		(at 393.7 191.77 180)
+		(at 396.24 191.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19339,7 +19386,7 @@
 		(uuid "39f4ff4d-1117-4320-bda1-f8a442f29f38")
 	)
 	(label "VCP"
-		(at 393.7 240.03 180)
+		(at 396.24 240.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19349,7 +19396,7 @@
 		(uuid "3b16a53a-a9b3-499d-bf9c-5bc8886d025b")
 	)
 	(label "I2C_SCL"
-		(at 393.7 182.88 180)
+		(at 396.24 182.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19369,7 +19416,7 @@
 		(uuid "3be7f40d-f0ea-40a2-b7f2-62c855cf9b30")
 	)
 	(label "CAN_H"
-		(at 328.93 243.84 180)
+		(at 293.37 242.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19379,7 +19426,7 @@
 		(uuid "3d48b865-1c9d-44ac-9c88-c9765fae26e7")
 	)
 	(label "TIM8_CH1"
-		(at 393.7 220.98 180)
+		(at 396.24 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19419,7 +19466,7 @@
 		(uuid "41b27929-1e12-4158-a90d-42cbb38d3c8d")
 	)
 	(label "TIM1_CH2"
-		(at 393.7 196.85 180)
+		(at 396.24 196.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19489,7 +19536,7 @@
 		(uuid "49a86d0d-ad2d-4fa2-a4f1-4699499faf9b")
 	)
 	(label "TIM8_CH3"
-		(at 393.7 210.82 180)
+		(at 396.24 210.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19709,7 +19756,7 @@
 		(uuid "651d5d97-fa6d-47c1-aede-f35590e368a8")
 	)
 	(label "SPI3_MISO"
-		(at 393.7 113.03 180)
+		(at 396.24 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19749,7 +19796,7 @@
 		(uuid "692229e3-1ec8-424e-bc3e-d8ebcfa03f95")
 	)
 	(label "SOB2"
-		(at 393.7 148.59 180)
+		(at 396.24 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19839,7 +19886,7 @@
 		(uuid "72361c49-a41f-49cf-8a1e-e3e196483bd0")
 	)
 	(label "FDCAN_RX"
-		(at 393.7 133.35 180)
+		(at 396.24 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19869,7 +19916,7 @@
 		(uuid "7660d842-4639-4905-8c8a-0f7f5c593695")
 	)
 	(label "CAN_VIO"
-		(at 393.7 226.06 180)
+		(at 396.24 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19889,7 +19936,7 @@
 		(uuid "78bacb36-bb52-45ca-93e9-c20f24f41392")
 	)
 	(label "SOC2"
-		(at 393.7 153.67 180)
+		(at 396.24 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19909,7 +19956,7 @@
 		(uuid "7b93125e-3f7d-4499-8300-ae6552095dc4")
 	)
 	(label "TIM8_CH2"
-		(at 393.7 215.9 180)
+		(at 396.24 215.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19949,7 +19996,7 @@
 		(uuid "81c52dc0-b93b-4df5-a718-8dbc63982209")
 	)
 	(label "VSENS"
-		(at 393.7 171.45 180)
+		(at 396.24 171.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20069,7 +20116,7 @@
 		(uuid "92ceadca-bb60-4b42-a05d-c633f39ae8dc")
 	)
 	(label "TIM1_CH2N"
-		(at 393.7 194.31 180)
+		(at 396.24 194.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20089,7 +20136,7 @@
 		(uuid "95007198-2cce-4e93-b69a-51334a7bedfa")
 	)
 	(label "SPI4_SCK"
-		(at 393.7 120.65 180)
+		(at 396.24 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20119,7 +20166,7 @@
 		(uuid "9a6791ca-3c1c-447f-a451-fda88a2334dd")
 	)
 	(label "TIM8_CH1N"
-		(at 393.7 218.44 180)
+		(at 396.24 218.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20129,7 +20176,7 @@
 		(uuid "9d0c5f78-2856-4be0-ad21-4af5be5d13b7")
 	)
 	(label "SPI2_NSS"
-		(at 393.7 92.71 180)
+		(at 396.24 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20188,6 +20235,16 @@
 		)
 		(uuid "abb82849-95f8-4292-9ce9-a069637c8b74")
 	)
+	(label "I2C_SCL"
+		(at 259.08 252.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "accc1a0a-8d0d-4ab5-88c7-85cc068e8567")
+	)
 	(label "SPI2_NSS"
 		(at 31.75 170.18 180)
 		(effects
@@ -20219,7 +20276,7 @@
 		(uuid "adf2c975-b3af-40b5-b109-0e9aa95b6779")
 	)
 	(label "CAN_H"
-		(at 294.64 243.84 180)
+		(at 259.08 242.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20299,7 +20356,7 @@
 		(uuid "b8ca7c3c-7a8c-4dd9-b061-012f0be7939f")
 	)
 	(label "BUCK"
-		(at 393.7 237.49 180)
+		(at 396.24 237.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20329,7 +20386,7 @@
 		(uuid "bc28584f-2499-4455-a7b8-0478abd22423")
 	)
 	(label "VSENS"
-		(at 347.98 208.28 180)
+		(at 328.93 208.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20369,7 +20426,7 @@
 		(uuid "c007f688-dea9-423c-9c3c-4cf1647abf75")
 	)
 	(label "SPI3_SCK"
-		(at 393.7 107.95 180)
+		(at 396.24 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20409,7 +20466,7 @@
 		(uuid "c80bf922-243f-4c46-a6d8-db7e2c0701f1")
 	)
 	(label "I2C_SDA"
-		(at 393.7 180.34 180)
+		(at 396.24 180.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20449,7 +20506,7 @@
 		(uuid "ca0284aa-8b20-444b-bc6b-6b941d64e703")
 	)
 	(label "SOA1"
-		(at 393.7 140.97 180)
+		(at 396.24 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20469,7 +20526,7 @@
 		(uuid "cae4312a-40a8-4577-9e64-35046b8d593f")
 	)
 	(label "SPI4_NSS"
-		(at 393.7 118.11 180)
+		(at 396.24 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20489,7 +20546,7 @@
 		(uuid "cdf6a73e-9e65-45cd-bf48-d1a7b108731f")
 	)
 	(label "SPI1_MOSI"
-		(at 393.7 85.09 180)
+		(at 396.24 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20509,7 +20566,7 @@
 		(uuid "cea0800b-67d2-4843-91e7-9f812a16cce5")
 	)
 	(label "SOC1"
-		(at 393.7 151.13 180)
+		(at 396.24 151.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20529,7 +20586,7 @@
 		(uuid "d13cfb7a-7c43-44f1-9dab-505e5506aa28")
 	)
 	(label "TIM1_CH1N"
-		(at 393.7 199.39 180)
+		(at 396.24 199.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20559,7 +20616,7 @@
 		(uuid "d3fd4517-a717-4fa8-a8a6-db32d043d469")
 	)
 	(label "SPI3_NSS"
-		(at 393.7 105.41 180)
+		(at 396.24 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20589,7 +20646,7 @@
 		(uuid "d771c136-a4e6-4046-af85-ab2e9ec640d8")
 	)
 	(label "SYS_SWDIO"
-		(at 261.62 252.73 0)
+		(at 367.03 204.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20599,7 +20656,7 @@
 		(uuid "d7f21b05-4231-4687-83ba-501781f052c4")
 	)
 	(label "TIM8_CH3N"
-		(at 393.7 208.28 180)
+		(at 396.24 208.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20619,7 +20676,7 @@
 		(uuid "da77a298-a832-4581-971f-b04300f99c63")
 	)
 	(label "SOA2"
-		(at 393.7 143.51 180)
+		(at 396.24 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20659,7 +20716,7 @@
 		(uuid "dd77c29e-6be4-4058-93c8-72e3564a69f4")
 	)
 	(label "SPI4_MOSI"
-		(at 393.7 123.19 180)
+		(at 396.24 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20669,7 +20726,7 @@
 		(uuid "ddb61c07-0db9-4d9d-a652-de0a0d0eec1e")
 	)
 	(label "SYS_SWCLK"
-		(at 261.62 255.27 0)
+		(at 367.03 207.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20749,7 +20806,7 @@
 		(uuid "ead80686-6c3c-4371-a984-d41c7488707f")
 	)
 	(label "SPI2_MISO"
-		(at 393.7 100.33 180)
+		(at 396.24 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20759,7 +20816,7 @@
 		(uuid "eaf3873f-e0c7-4af8-a3fe-90cbbf2e9df7")
 	)
 	(label "SPI1_NSS"
-		(at 393.7 80.01 180)
+		(at 396.24 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20779,7 +20836,7 @@
 		(uuid "efa7df82-c63e-41c8-ba88-4d5f5b5acf41")
 	)
 	(label "CAN_L"
-		(at 294.64 246.38 180)
+		(at 259.08 245.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20789,7 +20846,7 @@
 		(uuid "f2aa8129-c4aa-4fc5-8daa-cffa263734fa")
 	)
 	(label "SPI3_MOSI"
-		(at 393.7 110.49 180)
+		(at 396.24 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20839,7 +20896,7 @@
 		(uuid "f892df2f-cc56-4e4a-92fa-b161e267a9ac")
 	)
 	(label "SPI2_SCK"
-		(at 393.7 95.25 180)
+		(at 396.24 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20859,7 +20916,7 @@
 		(uuid "fa7951e1-69ca-47bd-aa80-7afa29de7698")
 	)
 	(label "TIM8_CH2N"
-		(at 393.7 213.36 180)
+		(at 396.24 213.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21084,7 +21141,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 100.33 0)
+		(at 398.78 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21095,7 +21152,7 @@
 		(fields_autoplaced yes)
 		(uuid "05a63e79-d03a-48ad-81d9-50af750f3bdb")
 		(property "Reference" "TP8"
-			(at 398.78 100.3299 0)
+			(at 401.32 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21106,7 +21163,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21116,7 +21173,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21127,7 +21184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21138,7 +21195,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21149,7 +21206,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21160,7 +21217,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 100.33 0)
+			(at 398.78 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21184,7 +21241,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 113.03 0)
+		(at 398.78 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21195,7 +21252,7 @@
 		(fields_autoplaced yes)
 		(uuid "05e95c1e-28c6-427c-ada2-943d6a5982ff")
 		(property "Reference" "TP12"
-			(at 398.78 113.0299 0)
+			(at 401.32 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21206,7 +21263,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21216,7 +21273,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21227,7 +21284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21238,7 +21295,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21249,7 +21306,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21260,7 +21317,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 113.03 0)
+			(at 398.78 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21617,7 +21674,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05A105KA5NQNC")
-		(at 358.14 214.63 90)
+		(at 339.09 214.63 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21627,7 +21684,7 @@
 		(dnp no)
 		(uuid "0a645049-30b6-4457-920d-2c3252a29ef6")
 		(property "Reference" "C29"
-			(at 361.442 214.63 90)
+			(at 342.392 214.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21638,7 +21695,7 @@
 			)
 		)
 		(property "Value" "CL05A105KA5NQNC"
-			(at 360.68 214.63 0)
+			(at 341.63 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21649,7 +21706,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 368.3 214.63 0)
+			(at 349.25 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21661,7 +21718,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/15869.html"
-			(at 358.013 216.916 0)
+			(at 338.963 216.916 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21673,7 +21730,7 @@
 			)
 		)
 		(property "Description" "1uF ±10% 25V Ceramic Capacitor X5R 0402"
-			(at 358.14 214.63 0)
+			(at 339.09 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21684,7 +21741,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 358.14 214.63 0)
+			(at 339.09 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21695,7 +21752,7 @@
 			)
 		)
 		(property "Symbol Name" "CL05A105KA5NQNC"
-			(at 358.14 214.63 0)
+			(at 339.09 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21706,7 +21763,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 358.14 214.63 90)
+			(at 339.09 214.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21717,7 +21774,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 358.14 214.63 90)
+			(at 339.09 214.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21744,7 +21801,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 171.45 0)
+		(at 398.78 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21755,7 +21812,7 @@
 		(fields_autoplaced yes)
 		(uuid "0aab8584-4e8c-4bce-baa1-eaf786eabad0")
 		(property "Reference" "TP28"
-			(at 398.78 171.4499 0)
+			(at 401.32 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21766,7 +21823,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21776,7 +21833,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21787,7 +21844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21798,7 +21855,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21809,7 +21866,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21820,7 +21877,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 171.45 0)
+			(at 398.78 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22505,7 +22562,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 105.41 0)
+		(at 398.78 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22516,7 +22573,7 @@
 		(fields_autoplaced yes)
 		(uuid "1485faad-7c0b-4095-a681-a247870839c8")
 		(property "Reference" "TP9"
-			(at 398.78 105.4099 0)
+			(at 401.32 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22527,7 +22584,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22537,7 +22594,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22548,7 +22605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22559,7 +22616,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22570,7 +22627,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22581,7 +22638,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 105.41 0)
+			(at 398.78 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22987,7 +23044,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 182.88 0)
+		(at 398.78 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22998,7 +23055,7 @@
 		(fields_autoplaced yes)
 		(uuid "176d3e8f-2ca0-4110-9384-5fd562f2b923")
 		(property "Reference" "TP30"
-			(at 398.78 182.8799 0)
+			(at 401.32 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23009,7 +23066,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23019,7 +23076,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23030,7 +23087,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23041,7 +23098,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23052,7 +23109,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23063,7 +23120,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 182.88 0)
+			(at 398.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23165,7 +23222,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 351.79 246.38 0)
+		(at 323.85 245.11 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -23177,7 +23234,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ab71c3a-1e85-4928-8ab0-6adb274429f7")
 		(property "Reference" "#PWR056"
-			(at 351.79 252.73 0)
+			(at 323.85 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23188,7 +23245,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 351.79 251.46 0)
+			(at 323.85 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23198,7 +23255,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 351.79 246.38 0)
+			(at 323.85 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23209,7 +23266,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 351.79 246.38 0)
+			(at 323.85 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23220,7 +23277,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 351.79 246.38 0)
+			(at 323.85 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23654,7 +23711,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 194.31 0)
+		(at 398.78 194.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23665,7 +23722,7 @@
 		(fields_autoplaced yes)
 		(uuid "20035581-e0fe-4e6a-859d-1a862afab39b")
 		(property "Reference" "TP33"
-			(at 398.78 194.3099 0)
+			(at 401.32 194.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23676,7 +23733,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23686,7 +23743,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23697,7 +23754,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23708,7 +23765,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23719,7 +23776,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23730,7 +23787,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 194.31 0)
+			(at 398.78 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23969,7 +24026,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 85.09 0)
+		(at 398.78 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23980,7 +24037,7 @@
 		(fields_autoplaced yes)
 		(uuid "2346efbd-f4cf-4cdc-a513-f89f2322bad5")
 		(property "Reference" "TP3"
-			(at 398.78 85.0899 0)
+			(at 401.32 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23991,7 +24048,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24001,7 +24058,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24012,7 +24069,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24023,7 +24080,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24034,7 +24091,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24045,7 +24102,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 85.09 0)
+			(at 398.78 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24069,7 +24126,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 350.52 196.85 0)
+		(at 331.47 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24080,7 +24137,7 @@
 		(fields_autoplaced yes)
 		(uuid "28a9635c-3d8a-4fda-a954-27f622aec5be")
 		(property "Reference" "#PWR053"
-			(at 350.52 200.66 0)
+			(at 331.47 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24091,7 +24148,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 350.52 191.77 0)
+			(at 331.47 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24101,7 +24158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 350.52 196.85 0)
+			(at 331.47 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24112,7 +24169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 350.52 196.85 0)
+			(at 331.47 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24123,7 +24180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 350.52 196.85 0)
+			(at 331.47 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24147,7 +24204,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 92.71 0)
+		(at 398.78 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24158,7 +24215,7 @@
 		(fields_autoplaced yes)
 		(uuid "28d61f90-80c0-48e2-a5b3-b9e0fd878797")
 		(property "Reference" "TP5"
-			(at 398.78 92.7099 0)
+			(at 401.32 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24169,7 +24226,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24179,7 +24236,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24190,7 +24247,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24201,7 +24258,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24212,7 +24269,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24223,7 +24280,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 92.71 0)
+			(at 398.78 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24640,7 +24697,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 208.28 0)
+		(at 398.78 208.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24651,7 +24708,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c780388-0d9c-4893-b1b6-0fbbea3c2bd7")
 		(property "Reference" "TP37"
-			(at 398.78 208.2799 0)
+			(at 401.32 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24662,7 +24719,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24672,7 +24729,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24683,7 +24740,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24694,7 +24751,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24705,7 +24762,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24716,7 +24773,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 208.28 0)
+			(at 398.78 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24740,7 +24797,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 215.9 0)
+		(at 398.78 215.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24751,7 +24808,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d8210d8-fdb8-4069-b1e6-4793945728ad")
 		(property "Reference" "TP40"
-			(at 398.78 215.8999 0)
+			(at 401.32 215.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24762,7 +24819,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24772,7 +24829,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24783,7 +24840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24794,7 +24851,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24805,7 +24862,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24816,7 +24873,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 215.9 0)
+			(at 398.78 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25474,7 +25531,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 130.81 0)
+		(at 398.78 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25485,7 +25542,7 @@
 		(fields_autoplaced yes)
 		(uuid "3277e755-5b0e-4c63-afbe-fa34adad3f54")
 		(property "Reference" "TP17"
-			(at 398.78 130.8099 0)
+			(at 401.32 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25496,7 +25553,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25506,7 +25563,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25517,7 +25574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25528,7 +25585,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25539,7 +25596,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25550,7 +25607,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 130.81 0)
+			(at 398.78 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25574,7 +25631,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 166.37 0)
+		(at 398.78 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25585,7 +25642,7 @@
 		(fields_autoplaced yes)
 		(uuid "332f5817-25bf-44e1-86fb-aec24a95f4a6")
 		(property "Reference" "TP26"
-			(at 398.78 166.3699 0)
+			(at 401.32 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25596,7 +25653,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25606,7 +25663,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25617,7 +25674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25628,7 +25685,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25639,7 +25696,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25650,7 +25707,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 166.37 0)
+			(at 398.78 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26510,7 +26567,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 237.49 0)
+		(at 398.78 237.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26521,7 +26578,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a35806e-8d46-4cc6-9941-b1c499508fe9")
 		(property "Reference" "TP45"
-			(at 398.78 237.4899 0)
+			(at 401.32 237.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26532,7 +26589,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26542,7 +26599,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26553,7 +26610,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26564,7 +26621,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26575,7 +26632,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26586,7 +26643,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 237.49 0)
+			(at 398.78 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26738,7 +26795,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 110.49 0)
+		(at 398.78 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26749,7 +26806,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c99a2b3-be73-470d-8fe5-2d852da0ce13")
 		(property "Reference" "TP11"
-			(at 398.78 110.4899 0)
+			(at 401.32 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26760,7 +26817,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26770,7 +26827,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26781,7 +26838,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26792,7 +26849,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26803,7 +26860,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26814,7 +26871,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 110.49 0)
+			(at 398.78 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26838,7 +26895,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 143.51 0)
+		(at 398.78 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26849,7 +26906,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cbb8452-b863-4f3a-9daf-35c805234319")
 		(property "Reference" "TP20"
-			(at 398.78 143.5099 0)
+			(at 401.32 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26860,7 +26917,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26870,7 +26927,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26881,7 +26938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26892,7 +26949,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26903,7 +26960,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26914,7 +26971,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 143.51 0)
+			(at 398.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27396,7 +27453,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 80.01 0)
+		(at 398.78 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27407,7 +27464,7 @@
 		(fields_autoplaced yes)
 		(uuid "43076ea1-ec4f-4052-a2b0-d3a62cef379c")
 		(property "Reference" "TP1"
-			(at 398.78 80.0099 0)
+			(at 401.32 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27418,7 +27475,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27428,7 +27485,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27439,7 +27496,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27450,7 +27507,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27461,7 +27518,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27472,7 +27529,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 80.01 0)
+			(at 398.78 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27624,7 +27681,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 120.65 0)
+		(at 398.78 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27635,7 +27692,7 @@
 		(fields_autoplaced yes)
 		(uuid "451d16b0-88b0-4fb9-8ea9-88daf1e95a45")
 		(property "Reference" "TP14"
-			(at 398.78 120.6499 0)
+			(at 401.32 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27646,7 +27703,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27656,7 +27713,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27667,7 +27724,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27678,7 +27735,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27689,7 +27746,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27700,7 +27757,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 120.65 0)
+			(at 398.78 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27851,7 +27908,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF1002TCE")
-		(at 350.52 214.63 90)
+		(at 331.47 214.63 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27861,7 +27918,7 @@
 		(dnp no)
 		(uuid "48a61c46-fe0d-47bf-95b4-aa1be03503b1")
 		(property "Reference" "R26"
-			(at 343.662 214.63 90)
+			(at 324.612 214.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27872,7 +27929,7 @@
 			)
 		)
 		(property "Value" "0402WGF1002TCE"
-			(at 353.06 214.63 0)
+			(at 334.01 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27883,7 +27940,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 360.68 214.63 0)
+			(at 341.63 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27895,7 +27952,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 350.393 216.916 0)
+			(at 331.343 216.916 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27907,7 +27964,7 @@
 			)
 		)
 		(property "Description" "10kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 350.52 214.63 0)
+			(at 331.47 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27918,7 +27975,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 350.52 214.63 0)
+			(at 331.47 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27929,7 +27986,7 @@
 			)
 		)
 		(property "Symbol Name" "0402WGF1002TCE"
-			(at 350.52 214.63 0)
+			(at 331.47 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27940,7 +27997,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 350.52 214.63 90)
+			(at 331.47 214.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27951,7 +28008,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 350.52 214.63 90)
+			(at 331.47 214.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28057,7 +28114,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 107.95 0)
+		(at 398.78 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28068,7 +28125,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a0c2741-2343-4e5f-b14b-387bbe88ad30")
 		(property "Reference" "TP10"
-			(at 398.78 107.9499 0)
+			(at 401.32 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28079,7 +28136,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28089,7 +28146,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28100,7 +28157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28111,7 +28168,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28122,7 +28179,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28133,7 +28190,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 107.95 0)
+			(at 398.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28615,7 +28672,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 140.97 0)
+		(at 398.78 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28626,7 +28683,7 @@
 		(fields_autoplaced yes)
 		(uuid "52b55da2-710f-4e51-b7c6-4555014fcadd")
 		(property "Reference" "TP19"
-			(at 398.78 140.9699 0)
+			(at 401.32 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28637,7 +28694,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28647,7 +28704,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28658,7 +28715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28669,7 +28726,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28680,7 +28737,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28691,7 +28748,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 140.97 0)
+			(at 398.78 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28829,7 +28886,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF1200TCE")
-		(at 300.99 243.84 0)
+		(at 265.43 242.57 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -28840,7 +28897,7 @@
 		(dnp yes)
 		(uuid "568ec1c4-f417-4c88-9fc4-4101050dcb50")
 		(property "Reference" "R21"
-			(at 300.99 240.03 0)
+			(at 265.43 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28850,7 +28907,7 @@
 			)
 		)
 		(property "Value" "0402WGF1200TCE"
-			(at 300.99 246.38 0)
+			(at 265.43 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28861,7 +28918,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 300.99 254 0)
+			(at 265.43 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28873,7 +28930,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 303.276 243.713 0)
+			(at 267.716 242.443 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28885,7 +28942,7 @@
 			)
 		)
 		(property "Description" "120Ω ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 300.99 243.84 0)
+			(at 265.43 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28896,7 +28953,7 @@
 			)
 		)
 		(property "LCSC" "C25079"
-			(at 300.99 243.84 0)
+			(at 265.43 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28907,7 +28964,7 @@
 			)
 		)
 		(property "Symbol Name" "0402WGF1200TCE"
-			(at 300.99 243.84 0)
+			(at 265.43 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28918,7 +28975,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 300.99 243.84 0)
+			(at 265.43 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28929,7 +28986,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 300.99 243.84 0)
+			(at 265.43 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29599,7 +29656,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 148.59 0)
+		(at 398.78 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29610,7 +29667,7 @@
 		(fields_autoplaced yes)
 		(uuid "60b3a7b0-d61d-4054-9e87-0200b6062e56")
 		(property "Reference" "TP22"
-			(at 398.78 148.5899 0)
+			(at 401.32 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29621,7 +29678,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29631,7 +29688,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29642,7 +29699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29653,7 +29710,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29664,7 +29721,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29675,7 +29732,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 148.59 0)
+			(at 398.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30306,7 +30363,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 391.16 162.56 0)
+		(at 393.7 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30317,7 +30374,7 @@
 		(fields_autoplaced yes)
 		(uuid "671084b7-8580-44b6-98ea-db39968ce3b2")
 		(property "Reference" "#PWR061"
-			(at 391.16 166.37 0)
+			(at 393.7 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30328,7 +30385,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 391.16 157.48 0)
+			(at 393.7 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30338,7 +30395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 391.16 162.56 0)
+			(at 393.7 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30349,7 +30406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 391.16 162.56 0)
+			(at 393.7 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30360,7 +30417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 391.16 162.56 0)
+			(at 393.7 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30384,7 +30441,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 151.13 0)
+		(at 398.78 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30395,7 +30452,7 @@
 		(fields_autoplaced yes)
 		(uuid "6883bad8-ae85-4e99-a643-aae9e7cd9f48")
 		(property "Reference" "TP23"
-			(at 398.78 151.1299 0)
+			(at 401.32 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30406,7 +30463,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30416,7 +30473,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30427,7 +30484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30438,7 +30495,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30449,7 +30506,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30460,7 +30517,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 151.13 0)
+			(at 398.78 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30978,7 +31035,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 146.05 0)
+		(at 398.78 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30989,7 +31046,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fd872d4-9bed-4c96-930f-b063485966d7")
 		(property "Reference" "TP21"
-			(at 398.78 146.0499 0)
+			(at 401.32 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31000,7 +31057,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31010,7 +31067,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31021,7 +31078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31032,7 +31089,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31043,7 +31100,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31054,7 +31111,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 146.05 0)
+			(at 398.78 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31078,7 +31135,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 196.85 0)
+		(at 398.78 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31089,7 +31146,7 @@
 		(fields_autoplaced yes)
 		(uuid "707c4823-372a-4582-86bb-35adc698daaf")
 		(property "Reference" "TP34"
-			(at 398.78 196.8499 0)
+			(at 401.32 196.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31100,7 +31157,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31110,7 +31167,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31121,7 +31178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31132,7 +31189,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31143,7 +31200,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31154,7 +31211,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 196.85 0)
+			(at 398.78 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31178,7 +31235,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF1003TCE")
-		(at 350.52 201.93 90)
+		(at 331.47 201.93 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31188,7 +31245,7 @@
 		(dnp no)
 		(uuid "71a1dfb7-abf7-4ba2-ac92-da91bd237519")
 		(property "Reference" "R25"
-			(at 343.662 201.93 90)
+			(at 324.612 201.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31199,7 +31256,7 @@
 			)
 		)
 		(property "Value" "0402WGF1003TCE"
-			(at 353.06 201.93 0)
+			(at 334.01 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31210,7 +31267,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 360.68 201.93 0)
+			(at 341.63 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31222,7 +31279,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 350.393 204.216 0)
+			(at 331.343 204.216 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31234,7 +31291,7 @@
 			)
 		)
 		(property "Description" "100kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 350.52 201.93 0)
+			(at 331.47 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31245,7 +31302,7 @@
 			)
 		)
 		(property "LCSC" "C25741"
-			(at 350.52 201.93 0)
+			(at 331.47 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31256,7 +31313,7 @@
 			)
 		)
 		(property "Symbol Name" "0402WGF1003TCE"
-			(at 350.52 201.93 0)
+			(at 331.47 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31267,7 +31324,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 350.52 201.93 90)
+			(at 331.47 201.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31278,7 +31335,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 350.52 201.93 90)
+			(at 331.47 201.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31305,7 +31362,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 248.92 262.89 0)
+		(at 354.33 214.63 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -31317,7 +31374,7 @@
 		(fields_autoplaced yes)
 		(uuid "74d04fd3-f989-477b-82bb-ab683f29a023")
 		(property "Reference" "#PWR034"
-			(at 248.92 269.24 0)
+			(at 354.33 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31328,7 +31385,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 267.97 0)
+			(at 354.33 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31338,7 +31395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 262.89 0)
+			(at 354.33 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31349,7 +31406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 262.89 0)
+			(at 354.33 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31360,7 +31417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 262.89 0)
+			(at 354.33 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31627,7 +31684,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 153.67 0)
+		(at 398.78 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31638,7 +31695,7 @@
 		(fields_autoplaced yes)
 		(uuid "794ce01e-6d76-4e65-a9b8-c8eea0e23410")
 		(property "Reference" "TP24"
-			(at 398.78 153.6699 0)
+			(at 401.32 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31649,7 +31706,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31659,7 +31716,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31670,7 +31727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31681,7 +31738,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31692,7 +31749,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31703,7 +31760,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 153.67 0)
+			(at 398.78 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32386,7 +32443,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 213.36 0)
+		(at 398.78 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32397,7 +32454,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f01d351-28a5-4180-a895-3a5e6e019adb")
 		(property "Reference" "TP39"
-			(at 398.78 213.3599 0)
+			(at 401.32 213.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32408,7 +32465,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32418,7 +32475,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32429,7 +32486,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32440,7 +32497,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32451,7 +32508,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32462,7 +32519,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 213.36 0)
+			(at 398.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32486,7 +32543,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF604JTCE")
-		(at 335.28 241.3 0)
+		(at 299.72 240.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32496,7 +32553,7 @@
 		(dnp no)
 		(uuid "81a50c52-972a-4f50-912c-4bbd7838b98f")
 		(property "Reference" "R27"
-			(at 335.28 237.49 0)
+			(at 299.72 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32506,7 +32563,7 @@
 			)
 		)
 		(property "Value" "0402WGF604JTCE"
-			(at 335.28 243.84 0)
+			(at 299.72 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32517,7 +32574,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 335.28 251.46 0)
+			(at 299.72 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32529,7 +32586,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 332.994 241.173 0)
+			(at 297.434 239.903 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32541,7 +32598,7 @@
 			)
 		)
 		(property "Description" "RES 60.4Ω ±1% 62.5mW 0402"
-			(at 335.28 241.3 0)
+			(at 299.72 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32552,7 +32609,7 @@
 			)
 		)
 		(property "LCSC" "C60310"
-			(at 335.28 241.3 0)
+			(at 299.72 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32563,7 +32620,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 335.28 241.3 0)
+			(at 299.72 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32574,7 +32631,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 335.28 241.3 0)
+			(at 299.72 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33527,7 +33584,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 191.77 0)
+		(at 398.78 191.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33538,7 +33595,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b7cbb42-f2bb-4fe7-a322-227e9a544b69")
 		(property "Reference" "TP32"
-			(at 398.78 191.7699 0)
+			(at 401.32 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33549,7 +33606,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33559,7 +33616,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33570,7 +33627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33581,7 +33638,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33592,7 +33649,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33603,7 +33660,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 191.77 0)
+			(at 398.78 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33833,7 +33890,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 133.35 0)
+		(at 398.78 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33844,7 +33901,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c9529ae-b4b2-45bb-adda-c5d8ec3dc9f2")
 		(property "Reference" "TP18"
-			(at 398.78 133.3499 0)
+			(at 401.32 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33855,7 +33912,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33865,7 +33922,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33876,7 +33933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33887,7 +33944,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33898,7 +33955,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33909,7 +33966,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 133.35 0)
+			(at 398.78 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34011,7 +34068,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 353.06 223.52 0)
+		(at 334.01 223.52 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -34023,7 +34080,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d6e7849-04de-41c7-8014-789b290e53f6")
 		(property "Reference" "#PWR054"
-			(at 353.06 229.87 0)
+			(at 334.01 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34034,7 +34091,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.06 228.6 0)
+			(at 334.01 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34044,7 +34101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 353.06 223.52 0)
+			(at 334.01 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34055,7 +34112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 353.06 223.52 0)
+			(at 334.01 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34066,7 +34123,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 353.06 223.52 0)
+			(at 334.01 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34169,7 +34226,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 125.73 0)
+		(at 398.78 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34180,7 +34237,7 @@
 		(fields_autoplaced yes)
 		(uuid "9125fe30-856f-4e8a-8346-44146f52075f")
 		(property "Reference" "TP16"
-			(at 398.78 125.7299 0)
+			(at 401.32 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34191,7 +34248,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34201,7 +34258,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34212,7 +34269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34223,7 +34280,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34234,7 +34291,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34245,7 +34302,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 125.73 0)
+			(at 398.78 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34269,7 +34326,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05B103KB5NNNC")
-		(at 346.71 242.57 180)
+		(at 311.15 241.3 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34279,7 +34336,7 @@
 		(dnp no)
 		(uuid "92c5afe8-b40b-47fe-bc9e-d65f8c792716")
 		(property "Reference" "C30"
-			(at 346.71 239.522 0)
+			(at 311.15 238.252 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34289,7 +34346,7 @@
 			)
 		)
 		(property "Value" "CL05B103KB5NNNC"
-			(at 346.71 240.03 0)
+			(at 311.15 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34300,7 +34357,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 346.71 232.41 0)
+			(at 311.15 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34312,7 +34369,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/15869.html"
-			(at 348.996 242.697 0)
+			(at 313.436 241.427 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34324,7 +34381,7 @@
 			)
 		)
 		(property "Description" "10nF ±10% 50V Ceramic Capacitor X7R 0402"
-			(at 346.71 242.57 0)
+			(at 311.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34335,7 +34392,7 @@
 			)
 		)
 		(property "LCSC" "C15195"
-			(at 346.71 242.57 0)
+			(at 311.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34346,7 +34403,7 @@
 			)
 		)
 		(property "Symbol Name" "CL05B103KB5NNNC"
-			(at 346.71 242.57 0)
+			(at 311.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34357,7 +34414,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 346.71 242.57 0)
+			(at 311.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34368,7 +34425,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 346.71 242.57 0)
+			(at 311.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34863,7 +34920,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 201.93 0)
+		(at 398.78 201.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34874,7 +34931,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a442808-2202-43f9-8aaa-61acf19b8787")
 		(property "Reference" "TP36"
-			(at 398.78 201.9299 0)
+			(at 401.32 201.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34885,7 +34942,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34895,7 +34952,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34906,7 +34963,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34917,7 +34974,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34928,7 +34985,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34939,7 +34996,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 201.93 0)
+			(at 398.78 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35167,7 +35224,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 218.44 0)
+		(at 398.78 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35178,7 +35235,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e26de64-d8ea-4ae2-ab20-fa053cde7cfd")
 		(property "Reference" "TP41"
-			(at 398.78 218.4399 0)
+			(at 401.32 218.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35189,7 +35246,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35199,7 +35256,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35210,7 +35267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35221,7 +35278,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35232,7 +35289,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35243,7 +35300,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 218.44 0)
+			(at 398.78 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35677,8 +35734,135 @@
 		)
 	)
 	(symbol
+		(lib_id "Basic_Capacitors_Resistors:0402WGF5101TCE")
+		(at 264.16 252.73 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1d20915-bd39-48c7-bd1e-a2d558065d4f")
+		(property "Reference" "R40"
+			(at 264.16 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0402WGF5101TCE"
+			(at 264.16 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 264.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/323315.html"
+			(at 261.874 252.857 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor"
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25905"
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "0402WGF5101TCE"
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "54ec5330-07bb-470d-b61d-7cce06dc4342")
+		)
+		(pin "1"
+			(uuid "5d89f96b-c64a-45d6-8fc4-9be305b081d9")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 384.81 163.83 0)
+		(at 387.35 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35689,7 +35873,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5c1560b-8351-474f-8eef-dd224d747616")
 		(property "Reference" "#PWR058"
-			(at 384.81 167.64 0)
+			(at 387.35 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35700,7 +35884,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 384.81 158.75 0)
+			(at 387.35 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35710,7 +35894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.81 163.83 0)
+			(at 387.35 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35721,7 +35905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 384.81 163.83 0)
+			(at 387.35 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35732,7 +35916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 384.81 163.83 0)
+			(at 387.35 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36480,7 +36664,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 87.63 0)
+		(at 398.78 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36491,7 +36675,7 @@
 		(fields_autoplaced yes)
 		(uuid "acebc13a-89b2-49f6-925c-7ed3499a258f")
 		(property "Reference" "TP4"
-			(at 398.78 87.6299 0)
+			(at 401.32 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36502,7 +36686,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36512,7 +36696,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36523,7 +36707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36534,7 +36718,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36545,7 +36729,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36556,7 +36740,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 87.63 0)
+			(at 398.78 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36784,7 +36968,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 97.79 0)
+		(at 398.78 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36795,7 +36979,7 @@
 		(fields_autoplaced yes)
 		(uuid "b04c1019-7677-42d9-89a0-9a619767d2e7")
 		(property "Reference" "TP7"
-			(at 398.78 97.7899 0)
+			(at 401.32 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36806,7 +36990,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36816,7 +37000,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36827,7 +37011,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36838,7 +37022,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36849,7 +37033,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36860,7 +37044,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 97.79 0)
+			(at 398.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37928,7 +38112,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 95.25 0)
+		(at 398.78 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -37939,7 +38123,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf82153d-403f-4e7e-90e2-328dc4968ff2")
 		(property "Reference" "TP6"
-			(at 398.78 95.2499 0)
+			(at 401.32 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37950,7 +38134,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37960,7 +38144,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37971,7 +38155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37982,7 +38166,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37993,7 +38177,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38004,7 +38188,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 95.25 0)
+			(at 398.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38155,7 +38339,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 220.98 0)
+		(at 398.78 220.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38166,7 +38350,7 @@
 		(fields_autoplaced yes)
 		(uuid "c19a5206-a7da-4faf-aecb-3649d1af7931")
 		(property "Reference" "TP42"
-			(at 398.78 220.9799 0)
+			(at 401.32 220.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38177,7 +38361,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38187,7 +38371,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38198,7 +38382,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38209,7 +38393,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38220,7 +38404,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38231,7 +38415,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 220.98 0)
+			(at 398.78 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38635,7 +38819,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 163.83 0)
+		(at 398.78 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38646,7 +38830,7 @@
 		(fields_autoplaced yes)
 		(uuid "c38f7610-0c75-4893-a663-7f53ec0a4de5")
 		(property "Reference" "TP25"
-			(at 398.78 163.8299 0)
+			(at 401.32 163.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38657,7 +38841,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38667,7 +38851,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38678,7 +38862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38689,7 +38873,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38700,7 +38884,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38711,7 +38895,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 163.83 0)
+			(at 398.78 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39099,7 +39283,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 123.19 0)
+		(at 398.78 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39110,7 +39294,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6ef289c-6409-4f40-9551-cae15c01fbad")
 		(property "Reference" "TP15"
-			(at 398.78 123.1899 0)
+			(at 401.32 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39121,7 +39305,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39131,7 +39315,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39142,7 +39326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39153,7 +39337,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39164,7 +39348,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39175,7 +39359,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 123.19 0)
+			(at 398.78 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39199,7 +39383,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 189.23 0)
+		(at 398.78 189.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39210,7 +39394,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8a17820-96cc-429f-8552-c2f5b4701f87")
 		(property "Reference" "TP31"
-			(at 398.78 189.2299 0)
+			(at 401.32 189.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39221,7 +39405,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39231,7 +39415,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39242,7 +39426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39253,7 +39437,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39264,7 +39448,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39275,7 +39459,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 189.23 0)
+			(at 398.78 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39377,7 +39561,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 118.11 0)
+		(at 398.78 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39388,7 +39572,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb8e7121-b054-4623-97f2-b40b7d3f6736")
 		(property "Reference" "TP13"
-			(at 398.78 118.1099 0)
+			(at 401.32 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39399,7 +39583,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39409,7 +39593,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39420,7 +39604,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39431,7 +39615,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39442,7 +39626,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39453,7 +39637,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 118.11 0)
+			(at 398.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40161,19 +40345,52 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Test_Point")
-		(at 396.24 234.95 0)
+		(lib_id "Basic_Capacitors_Resistors:0402WGF5101TCE")
+		(at 264.16 250.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d91eaa13-5c6b-45a6-b2d2-d8b982304b99")
-		(property "Reference" "TP44"
-			(at 398.78 234.9499 0)
+		(uuid "d8bc6917-0781-4465-baef-d156a1e823f9")
+		(property "Reference" "R18"
+			(at 264.16 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0402WGF5101TCE"
+			(at 264.16 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 264.16 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/323315.html"
+			(at 261.874 250.063 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40183,18 +40400,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 396.24 234.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 234.95 0)
+		(property "Description" "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor"
+			(at 264.16 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40204,8 +40411,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 396.24 234.95 0)
+		(property "LCSC" "C25905"
+			(at 264.16 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40215,8 +40422,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 396.24 234.95 0)
+		(property "Symbol Name" "0402WGF5101TCE"
+			(at 264.16 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40227,7 +40434,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 234.95 0)
+			(at 264.16 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40238,7 +40445,110 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 234.95 0)
+			(at 264.16 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2bc08e6f-c416-41bb-af01-b1afdd6e509f")
+		)
+		(pin "1"
+			(uuid "77be0955-4422-4ce6-9a99-1a3e55509219")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Test_Point")
+		(at 398.78 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d91eaa13-5c6b-45a6-b2d2-d8b982304b99")
+		(property "Reference" "TP44"
+			(at 401.32 234.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 398.78 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 398.78 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 398.78 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 398.78 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 398.78 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 398.78 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40262,7 +40572,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 384.81 171.45 0)
+		(at 387.35 171.45 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -40274,7 +40584,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9827773-d901-4a51-9c06-09ed0d56ba8e")
 		(property "Reference" "#PWR059"
-			(at 384.81 177.8 0)
+			(at 387.35 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40285,7 +40595,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 384.81 176.53 0)
+			(at 387.35 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40295,7 +40605,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.81 171.45 0)
+			(at 387.35 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40306,7 +40616,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 384.81 171.45 0)
+			(at 387.35 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40317,7 +40627,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 384.81 171.45 0)
+			(at 387.35 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40421,7 +40731,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 82.55 0)
+		(at 398.78 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40432,7 +40742,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc301d5d-600d-4f3b-9b36-53080ac53173")
 		(property "Reference" "TP2"
-			(at 398.78 82.5499 0)
+			(at 401.32 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40443,7 +40753,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40453,7 +40763,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40464,7 +40774,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40475,7 +40785,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40486,7 +40796,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40497,7 +40807,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 82.55 0)
+			(at 398.78 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40521,7 +40831,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 387.35 233.68 0)
+		(at 389.89 233.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40532,7 +40842,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc9d511c-4ada-48f5-8ead-7abfe53d42ed")
 		(property "Reference" "#PWR060"
-			(at 387.35 237.49 0)
+			(at 389.89 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40543,7 +40853,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 387.35 228.6 0)
+			(at 389.89 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40553,7 +40863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 233.68 0)
+			(at 389.89 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40564,7 +40874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 387.35 233.68 0)
+			(at 389.89 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40575,7 +40885,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 387.35 233.68 0)
+			(at 389.89 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40678,7 +40988,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 240.03 0)
+		(at 398.78 240.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40689,7 +40999,7 @@
 		(fields_autoplaced yes)
 		(uuid "df5b1f7e-ebba-4135-9123-91c8f3ca0a7e")
 		(property "Reference" "TP46"
-			(at 398.78 240.0299 0)
+			(at 401.32 240.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40700,7 +41010,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40710,7 +41020,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40721,7 +41031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40732,7 +41042,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40743,7 +41053,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40754,7 +41064,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 240.03 0)
+			(at 398.78 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40904,7 +41214,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 180.34 0)
+		(at 398.78 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40915,7 +41225,7 @@
 		(fields_autoplaced yes)
 		(uuid "e032b63f-77c6-4370-bb6a-e740fc1bd881")
 		(property "Reference" "TP29"
-			(at 398.78 180.3399 0)
+			(at 401.32 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40926,7 +41236,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40936,7 +41246,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40947,7 +41257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40958,7 +41268,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40969,7 +41279,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40980,7 +41290,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 180.34 0)
+			(at 398.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41124,7 +41434,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 199.39 0)
+		(at 398.78 199.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41135,7 +41445,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3052f17-9a28-447a-a831-eb4ede1a834d")
 		(property "Reference" "TP35"
-			(at 398.78 199.3899 0)
+			(at 401.32 199.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41146,7 +41456,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41156,7 +41466,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41167,7 +41477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41178,7 +41488,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41189,7 +41499,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41200,7 +41510,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 199.39 0)
+			(at 398.78 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41217,132 +41527,6 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "TP35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:0402WGF1002TCE")
-		(at 302.26 248.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e33ea2b7-f9e4-419c-8a44-af1134001a00")
-		(property "Reference" "R18"
-			(at 302.26 247.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0402WGF1002TCE"
-			(at 302.26 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 302.26 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 299.974 248.793 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 302.26 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 302.26 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "0402WGF1002TCE"
-			(at 302.26 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 302.26 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 302.26 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f885cada-84cc-4e4b-9cf2-981869979034")
-		)
-		(pin "2"
-			(uuid "2eca3838-36ae-4d4e-a93f-b4a306c85bc2")
-		)
-		(instances
-			(project "twinspora"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -41451,7 +41635,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 312.42 246.38 0)
+		(at 276.86 245.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41462,7 +41646,7 @@
 		(fields_autoplaced yes)
 		(uuid "e644db2f-e48f-48d1-9bfa-b7498e1b111e")
 		(property "Reference" "J13"
-			(at 314.96 246.3799 0)
+			(at 279.4 245.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41473,7 +41657,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 314.96 248.9199 0)
+			(at 279.4 247.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41484,7 +41668,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 312.42 246.38 0)
+			(at 276.86 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41495,7 +41679,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 246.38 0)
+			(at 276.86 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41506,7 +41690,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 312.42 246.38 0)
+			(at 276.86 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41539,7 +41723,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 226.06 0)
+		(at 398.78 226.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41550,7 +41734,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6d5ab5e-025d-4798-a2e6-c6d795666b33")
 		(property "Reference" "TP43"
-			(at 398.78 226.0599 0)
+			(at 401.32 226.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41561,7 +41745,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41571,7 +41755,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41582,7 +41766,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41593,7 +41777,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41604,7 +41788,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41615,7 +41799,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 226.06 0)
+			(at 398.78 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41639,7 +41823,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 168.91 0)
+		(at 398.78 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41650,7 +41834,7 @@
 		(fields_autoplaced yes)
 		(uuid "e754ad84-324c-4908-b3c7-5f0df8eb054e")
 		(property "Reference" "TP27"
-			(at 398.78 168.9099 0)
+			(at 401.32 168.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41661,7 +41845,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41671,7 +41855,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41682,7 +41866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41693,7 +41877,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41704,7 +41888,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41715,7 +41899,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 168.91 0)
+			(at 398.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41895,7 +42079,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:0402WGF604JTCE")
-		(at 335.28 243.84 180)
+		(at 299.72 242.57 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41905,7 +42089,7 @@
 		(dnp no)
 		(uuid "ea478da8-38e6-4c16-8ded-b0035049766b")
 		(property "Reference" "R28"
-			(at 335.28 247.65 0)
+			(at 299.72 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41915,7 +42099,7 @@
 			)
 		)
 		(property "Value" "0402WGF604JTCE"
-			(at 335.28 241.3 0)
+			(at 299.72 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41926,7 +42110,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 335.28 233.68 0)
+			(at 299.72 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41938,7 +42122,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 337.566 243.967 0)
+			(at 302.006 242.697 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41950,7 +42134,7 @@
 			)
 		)
 		(property "Description" "RES 60.4Ω ±1% 62.5mW 0402"
-			(at 335.28 243.84 0)
+			(at 299.72 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41961,7 +42145,7 @@
 			)
 		)
 		(property "LCSC" "C60310"
-			(at 335.28 243.84 0)
+			(at 299.72 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41972,7 +42156,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 335.28 243.84 0)
+			(at 299.72 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41983,7 +42167,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 335.28 243.84 0)
+			(at 299.72 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42385,7 +42569,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 285.75 245.11 0)
+		(at 245.11 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42396,7 +42580,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec9fcc4a-0e69-454f-8729-cd1768e09854")
 		(property "Reference" "#PWR045"
-			(at 285.75 248.92 0)
+			(at 245.11 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42407,7 +42591,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 285.75 240.03 0)
+			(at 245.11 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42417,7 +42601,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 285.75 245.11 0)
+			(at 245.11 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42428,7 +42612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 285.75 245.11 0)
+			(at 245.11 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42439,7 +42623,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 285.75 245.11 0)
+			(at 245.11 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43133,7 +43317,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TC2030-NL")
-		(at 256.54 255.27 0)
+		(at 361.95 207.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -43144,7 +43328,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3adf36d-2ff5-4e2c-8261-ebabf748cbf6")
 		(property "Reference" "J3"
-			(at 256.54 245.11 0)
+			(at 361.95 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43154,7 +43338,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 256.54 255.27 0)
+			(at 361.95 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43164,7 +43348,7 @@
 			)
 		)
 		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL"
-			(at 256.032 267.462 0)
+			(at 361.442 219.202 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43175,7 +43359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 255.27 0)
+			(at 361.95 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43186,7 +43370,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 255.27 0)
+			(at 361.95 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43197,7 +43381,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 256.54 255.27 0)
+			(at 361.95 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43208,7 +43392,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 256.54 255.27 0)
+			(at 361.95 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43326,7 +43510,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Test_Point")
-		(at 396.24 210.82 0)
+		(at 398.78 210.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -43337,7 +43521,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5ca1b8f-db60-4aba-8186-caa4aff48563")
 		(property "Reference" "TP38"
-			(at 398.78 210.8199 0)
+			(at 401.32 210.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43348,7 +43532,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43358,7 +43542,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43369,7 +43553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43380,7 +43564,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43391,7 +43575,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43402,7 +43586,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 396.24 210.82 0)
+			(at 398.78 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
