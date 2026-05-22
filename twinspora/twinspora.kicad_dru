@@ -1,0 +1,42 @@
+(version 1)
+
+# Allow SMTSOM225BTR (Mechanical__C:SMD_BD5.6-D3.6) M2 SMT round standoffs to be
+# stacked on top of M3 PTH mounting holes (MountingHole:MountingHole_3.2mm_M3_Pad_Via).
+# The stack-up is intentional and manufacturable; the standoff sits over the M3
+# mounting hole so the user can screw an M2 standoff into a board that also
+# accepts M3 mounting hardware.
+#
+# Stacked pairs (M3 mounting hole <-> SMD standoff):
+#   H1 <-> H3   H4 <-> H6   H7 <-> H9   H10 <-> H12
+#
+# Conditions use MemberOfFootprint so they also match pads and holes inside the
+# footprints (Library_Link only matches at the Footprint object level).
+
+(rule "Stacked standoff/M3 - clearance"
+	(constraint clearance (min -10mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
+(rule "Stacked standoff/M3 - hole clearance"
+	(constraint hole_clearance (min -10mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
+(rule "Stacked standoff/M3 - hole-to-hole"
+	(constraint hole_to_hole (min 0mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
+(rule "Stacked standoff/M3 - courtyard"
+	(constraint courtyard_clearance (min -10mm))
+	(condition "(A.Library_Link == 'Mechanical__C:SMD_BD5.6-D3.6' && B.Library_Link == 'MountingHole:MountingHole_3.2mm_M3_Pad_Via') || (B.Library_Link == 'Mechanical__C:SMD_BD5.6-D3.6' && A.Library_Link == 'MountingHole:MountingHole_3.2mm_M3_Pad_Via')"))
+
+(rule "Stacked standoff/M3 - physical clearance"
+	(constraint physical_clearance (min -10mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
+(rule "Stacked standoff/M3 - physical hole clearance"
+	(constraint physical_hole_clearance (min -10mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
+(rule "Stacked standoff/M3 - silk clearance"
+	(constraint silk_clearance (min -10mm))
+	(condition "(A.MemberOfFootprint('H1') && B.MemberOfFootprint('H3')) || (A.MemberOfFootprint('H3') && B.MemberOfFootprint('H1')) || (A.MemberOfFootprint('H4') && B.MemberOfFootprint('H6')) || (A.MemberOfFootprint('H6') && B.MemberOfFootprint('H4')) || (A.MemberOfFootprint('H7') && B.MemberOfFootprint('H9')) || (A.MemberOfFootprint('H9') && B.MemberOfFootprint('H7')) || (A.MemberOfFootprint('H10') && B.MemberOfFootprint('H12')) || (A.MemberOfFootprint('H12') && B.MemberOfFootprint('H10'))"))
+
