@@ -3295,6 +3295,318 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_DORABO__C:DB125-2_54-2P-GN"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DB125-2_54-2P-GN"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_DORABO__C:CONN-TH_DB125-2.54-2P-GN"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301061530_DORABO-DB125-2-54-2P-GN-S_C918120.pdf"
+				(at -2.286 0.127 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "2-position 2.54mm pitch THT vertical screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C918120"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C918120"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DB125-2_54-2P-GN_0_1"
+				(rectangle
+					(start -2.54 3.81)
+					(end 2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -1.27 2.54)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DB125-2_54-2P-GN_1_1"
+				(text "2P 2.54mm screw term"
+					(at 0 5.334 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(color 163 59 255 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_DORABO__C:DB125-2_54-2P-GN__mirror"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DB125-2_54-2P-GN__mirror"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_DORABO__C:CONN-TH_DB125-2.54-2P-GN__mirror"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301061530_DORABO-DB125-2-54-2P-GN-S_C918120.pdf"
+				(at -2.286 0.127 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "2-position 2.54mm pitch THT vertical screw terminal, body rotated 180 deg"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C918120"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C918120"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DB125-2_54-2P-GN__mirror_0_1"
+				(rectangle
+					(start -2.54 3.81)
+					(end 2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -1.27 2.54)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DB125-2_54-2P-GN__mirror_1_1"
+				(text "2P 2.54mm screw term (mirrored)"
+					(at 0 5.334 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(color 163 59 255 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -12330,7 +12642,7 @@
 	)
 	(rectangle
 		(start 14.732 186.69)
-		(end 121.92 280.67)
+		(end 121.92 284.48)
 		(stroke
 			(width 0.508)
 			(type dash)
@@ -12431,6 +12743,16 @@
 			)
 		)
 		(uuid "0f8ef9c9-8468-46b9-af58-0f80ee13d1a0")
+	)
+	(text "2.54mm (8A each) screw terminal for PWR IN"
+		(exclude_from_sim no)
+		(at 73.914 281.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1b6e61a2-bb97-4780-abfe-68ac6be18ea5")
 	)
 	(text "ADC Low Pass Filter"
 		(exclude_from_sim no)
@@ -12914,6 +13236,12 @@
 		(uuid "2638a5ad-dd72-4922-9976-833c3bce6df7")
 	)
 	(junction
+		(at 49.53 265.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "284c05b2-0703-4a32-a8ff-11419857d39d")
+	)
+	(junction
 		(at 82.55 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13314,6 +13642,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3a1ba01-9886-435c-a1a0-60d74102e595")
+	)
+	(junction
+		(at 46.99 273.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6287fe6-ef54-40ef-95c6-49d18be438a5")
 	)
 	(junction
 		(at 298.45 205.74)
@@ -14013,7 +14347,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 269.24) (xy 88.9 269.24)
+			(xy 100.33 269.24) (xy 104.14 269.24)
 		)
 		(stroke
 			(width 0)
@@ -14083,7 +14417,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 269.24) (xy 102.87 269.24)
+			(xy 114.3 269.24) (xy 118.11 269.24)
 		)
 		(stroke
 			(width 0)
@@ -14460,6 +14794,16 @@
 			(type default)
 		)
 		(uuid "32fd7098-cf30-4076-9043-23c4c36fa028")
+	)
+	(wire
+		(pts
+			(xy 54.61 262.89) (xy 46.99 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3360a141-b9bc-4bc9-818c-d9a22a734f55")
 	)
 	(wire
 		(pts
@@ -15303,6 +15647,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 265.43) (xy 49.53 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bca1dd0-cc2e-4ded-bc80-c519d28dfa54")
+	)
+	(wire
+		(pts
 			(xy 185.42 58.42) (xy 190.5 58.42)
 		)
 		(stroke
@@ -15643,6 +15997,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 273.05) (xy 54.61 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "846dc4c9-0a93-4a36-88e4-24a585dac4e2")
+	)
+	(wire
+		(pts
 			(xy 288.29 213.36) (xy 302.26 213.36)
 		)
 		(stroke
@@ -15700,6 +16064,16 @@
 			(type default)
 		)
 		(uuid "8a51cb35-5dcb-4aad-9913-40dd74c09eec")
+	)
+	(wire
+		(pts
+			(xy 49.53 265.43) (xy 49.53 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a76eb2d-77d8-4519-8938-80275e461d00")
 	)
 	(wire
 		(pts
@@ -15833,7 +16207,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 265.43) (xy 69.85 269.24)
+			(xy 85.09 265.43) (xy 85.09 269.24)
 		)
 		(stroke
 			(width 0)
@@ -16443,13 +16817,23 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 269.24) (xy 74.93 269.24)
+			(xy 85.09 269.24) (xy 90.17 269.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ba88d817-7cc6-4102-bc28-adb1690316f0")
+	)
+	(wire
+		(pts
+			(xy 46.99 262.89) (xy 46.99 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac1b7ed-5b45-4a21-ba39-85f66f0eafcd")
 	)
 	(wire
 		(pts
@@ -16530,6 +16914,16 @@
 			(type default)
 		)
 		(uuid "bf9a3f4e-ea05-4a3b-be00-b8ba996335c3")
+	)
+	(wire
+		(pts
+			(xy 49.53 275.59) (xy 49.53 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17ed31c-32d5-4197-a0d7-a53efc45e1a4")
 	)
 	(wire
 		(pts
@@ -16640,6 +17034,16 @@
 			(type default)
 		)
 		(uuid "c6d8e967-12be-4c13-9b0d-1bb120ef7822")
+	)
+	(wire
+		(pts
+			(xy 54.61 275.59) (xy 49.53 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7453f13-c1ad-4e7c-9cc3-af22a5d1bc24")
 	)
 	(wire
 		(pts
@@ -17063,7 +17467,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 269.24) (xy 102.87 273.05)
+			(xy 118.11 269.24) (xy 118.11 273.05)
 		)
 		(stroke
 			(width 0)
@@ -17280,6 +17684,16 @@
 			(type default)
 		)
 		(uuid "f0a50500-fbeb-4a81-93b4-5e5eaa40b74f")
+	)
+	(wire
+		(pts
+			(xy 46.99 273.05) (xy 46.99 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1156cb3-5407-4001-bf74-f899e60dbd1b")
 	)
 	(wire
 		(pts
@@ -21468,6 +21882,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_DORABO__C:DB125-2_54-2P-GN")
+		(at 59.69 274.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "073de091-2002-4154-a86c-189c7904f676")
+		(property "Reference" "J6"
+			(at 62.738 272.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB125-2_54-2P-GN"
+			(at 62.738 274.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_DORABO__C:CONN-TH_DB125-2.54-2P-GN"
+			(at 59.69 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301061530_DORABO-DB125-2-54-2P-GN-S_C918120.pdf"
+			(at 57.404 274.193 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "2-position 2.54mm pitch THT vertical screw terminal"
+			(at 59.69 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C918120"
+			(at 59.69 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "249ad519-59ce-47f7-80c4-73003d7d8774")
+		)
+		(pin "2"
+			(uuid "1693ff7c-bee2-4253-a3d1-ea320e06babe")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 298.45 219.71 0)
 		(unit 1)
@@ -22210,7 +22718,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -24538,7 +25046,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 273.05 0)
+		(at 118.11 273.05 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -24550,7 +25058,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a730297-510a-4206-9bda-8e8c6014b4f2")
 		(property "Reference" "#PWR012"
-			(at 102.87 279.4 0)
+			(at 118.11 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24561,7 +25069,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 278.13 0)
+			(at 118.11 278.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24571,7 +25079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 273.05 0)
+			(at 118.11 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24582,7 +25090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 273.05 0)
+			(at 118.11 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24593,7 +25101,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 273.05 0)
+			(at 118.11 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27000,7 +27508,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -27785,7 +28293,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -28333,6 +28841,99 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_DORABO__C:DB125-2_54-2P-GN__mirror")
+		(at 59.69 264.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e1bf9cc-f00c-4e2c-820f-4597b309bdb9")
+		(property "Reference" "J4"
+			(at 59.69 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DB125-2_54-2P-GN__mirror"
+			(at 59.69 255.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_DORABO__C:CONN-TH_DB125-2.54-2P-GN__mirror"
+			(at 59.69 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301061530_DORABO-DB125-2-54-2P-GN-S_C918120.pdf"
+			(at 57.404 264.033 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "2-position 2.54mm pitch THT vertical screw terminal, body rotated 180 deg"
+			(at 59.69 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C918120"
+			(at 59.69 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "03ffd817-01c6-4ced-9f90-8d01c2ad2a43")
+		)
+		(pin "2"
+			(uuid "bd2a69d7-0086-4ddb-8f18-a2ad0a0fd6a1")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -28891,7 +29492,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -31441,7 +32042,7 @@
 	)
 	(symbol
 		(lib_id "LED__C:KT-0603W")
-		(at 80.01 267.97 0)
+		(at 95.25 267.97 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -31453,7 +32054,7 @@
 		(fields_autoplaced yes)
 		(uuid "77997e4b-3e96-4a59-bf40-3d67cd76e916")
 		(property "Reference" "LED1"
-			(at 81.28 260.35 0)
+			(at 96.52 260.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31463,7 +32064,7 @@
 			)
 		)
 		(property "Value" "KT-0603W"
-			(at 81.28 262.89 0)
+			(at 96.52 262.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31473,7 +32074,7 @@
 			)
 		)
 		(property "Footprint" "LED__C:LED0603-R-RD_WHITE"
-			(at 80.01 278.13 0)
+			(at 95.25 278.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31485,7 +32086,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20180604/C192669_B0D472CB769BD043C4F2A33F1E72AA62.pdf"
-			(at 82.296 267.843 0)
+			(at 97.536 267.843 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31497,7 +32098,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 267.97 0)
+			(at 95.25 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31508,7 +32109,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 80.01 267.97 0)
+			(at 95.25 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31519,7 +32120,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 80.01 267.97 0)
+			(at 95.25 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31530,7 +32131,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 80.01 267.97 0)
+			(at 95.25 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32887,7 +33488,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -35102,7 +35703,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -35530,7 +36131,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 69.85 265.43 0)
+		(at 85.09 265.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35541,7 +36142,7 @@
 		(fields_autoplaced yes)
 		(uuid "a142d8a0-1c68-481b-abe6-6bd7c510cb68")
 		(property "Reference" "#PWR09"
-			(at 69.85 269.24 0)
+			(at 85.09 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35552,7 +36153,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 69.85 260.35 0)
+			(at 85.09 260.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35562,7 +36163,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 265.43 0)
+			(at 85.09 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35573,7 +36174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 265.43 0)
+			(at 85.09 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35584,7 +36185,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 69.85 265.43 0)
+			(at 85.09 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38439,7 +39040,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors__C:0402WGF5101TCE")
-		(at 93.98 269.24 0)
+		(at 109.22 269.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38449,7 +39050,7 @@
 		(dnp no)
 		(uuid "c1c51554-c8fc-4a0a-883e-830870910ca5")
 		(property "Reference" "R5"
-			(at 93.98 271.526 0)
+			(at 109.22 271.526 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38459,7 +39060,7 @@
 			)
 		)
 		(property "Value" "0402WGF5101TCE"
-			(at 93.98 271.78 0)
+			(at 109.22 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38470,7 +39071,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 93.98 279.4 0)
+			(at 109.22 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38482,7 +39083,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 91.694 269.113 0)
+			(at 106.934 269.113 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38494,7 +39095,7 @@
 			)
 		)
 		(property "Description" "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor"
-			(at 93.98 269.24 0)
+			(at 109.22 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38505,7 +39106,7 @@
 			)
 		)
 		(property "LCSC" "C25905"
-			(at 93.98 269.24 0)
+			(at 109.22 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38516,7 +39117,7 @@
 			)
 		)
 		(property "Symbol Name" "0402WGF5101TCE"
-			(at 93.98 269.24 0)
+			(at 109.22 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38527,7 +39128,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 93.98 269.24 0)
+			(at 109.22 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38538,7 +39139,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 93.98 269.24 0)
+			(at 109.22 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39476,6 +40077,84 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "TP31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 49.53 256.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb00b9c4-4685-44d3-a2d7-8537787fbae8")
+		(property "Reference" "#PWR095"
+			(at 49.53 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 49.53 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 49.53 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95703e78-a99a-49fd-9fa7-a554920ae5bc")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -41639,7 +42318,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -41916,6 +42595,85 @@
 			(project "twinspora"
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
 					(reference "TP27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 276.86 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7a0872d-2491-4808-877e-8efb7b089954")
+		(property "Reference" "#PWR094"
+			(at 46.99 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f57b5d4-9de9-4e74-af99-2cc4e1182b52")
+		)
+		(instances
+			(project "twinspora"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)

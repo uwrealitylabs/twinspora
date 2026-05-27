@@ -1164,7 +1164,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD_UWRL:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
+			(property "Footprint" "Capacitor_SMD__C:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1377,7 +1377,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Capacitor_THT_UWRL:CAP-TH_BD10.0-P5.00-D1.0-FD"
+			(property "Footprint" "Capacitor_THT__C:CAP-TH_BD10.0-P5.00-D1.0-FD"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1954,7 +1954,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Inductor:IND-SMD_L3.0-W3.0_PRS3015"
+			(property "Footprint" "Inductor__C:IND-SMD_L3.0-W3.0_PRS3015"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2142,7 +2142,7 @@
 					)
 				)
 			)
-			(property "Footprint" "LED:LED0603-RD"
+			(property "Footprint" "LED__C:LED0603-RD"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2337,7 +2337,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Motor_Driver:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
+			(property "Footprint" "Motor_Driver__C:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
 				(at 12.192 -34.544 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5469,7 +5469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor:IND-SMD_L3.0-W3.0_PRS3015"
+		(property "Footprint" "Inductor__C:IND-SMD_L3.0-W3.0_PRS3015"
 			(at 173.99 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6144,7 +6144,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_DORABO__C:CONN-TH_DB125-2.54-3P-GN"
 			(at 215.9 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7107,7 +7107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD_UWRL:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
+		(property "Footprint" "Capacitor_SMD__C:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
 			(at 189.23 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -7228,7 +7228,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED:LED0603-RD"
+		(property "Footprint" "LED__C:LED0603-RD"
 			(at 119.38 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7481,7 +7481,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Motor_Driver:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
+		(property "Footprint" "Motor_Driver__C:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
 			(at 131.318 128.524 0)
 			(hide yes)
 			(show_name no)
@@ -8104,7 +8104,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -8130,7 +8130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT_UWRL:CAP-TH_BD10.0-P5.00-D1.0-FD"
+		(property "Footprint" "Capacitor_THT__C:CAP-TH_BD10.0-P5.00-D1.0-FD"
 			(at 189.23 157.48 0)
 			(hide yes)
 			(show_name no)

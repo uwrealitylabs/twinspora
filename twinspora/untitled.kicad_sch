@@ -364,7 +364,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+			(property "Footprint" "Basic_Capacitors_Resistors__C:C0402"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -564,7 +564,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0603"
+			(property "Footprint" "Basic_Capacitors_Resistors__C:C0603"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -764,7 +764,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0603"
+			(property "Footprint" "Basic_Capacitors_Resistors__C:C0603"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -964,7 +964,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+			(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1163,7 +1163,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode:SOD-323_L1.7-W1.3-LS2.6-RD"
+			(property "Footprint" "Diode__C:SOD-323_L1.7-W1.3-LS2.6-RD"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1341,7 +1341,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Inductor:IND-SMD_L3.0-W3.0_PRS3015"
+			(property "Footprint" "Inductor__C:IND-SMD_L3.0-W3.0_PRS3015"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1523,7 +1523,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Motor_Driver:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
+			(property "Footprint" "Motor_Driver__C:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
 				(at 12.192 -34.544 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4130,7 +4130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0603"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0603"
 			(at 116.84 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -4234,7 +4234,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4339,7 +4339,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -4524,7 +4524,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Motor_Driver:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
+		(property "Footprint" "Motor_Driver__C:VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7"
 			(at 109.728 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -4814,7 +4814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4997,7 +4997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0603"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0603"
 			(at 129.54 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5102,7 +5102,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0402"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0402"
 			(at 232.41 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5363,7 +5363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5571,7 +5571,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode:SOD-323_L1.7-W1.3-LS2.6-RD"
+		(property "Footprint" "Diode__C:SOD-323_L1.7-W1.3-LS2.6-RD"
 			(at 92.71 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -5848,7 +5848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6031,7 +6031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor:IND-SMD_L3.0-W3.0_PRS3015"
+		(property "Footprint" "Inductor__C:IND-SMD_L3.0-W3.0_PRS3015"
 			(at 152.4 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6202,7 +6202,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 144.78 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6308,7 +6308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0603"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0603"
 			(at 109.22 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -6413,7 +6413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6518,7 +6518,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Basic_Capacitors_Resistors:C0805"
+		(property "Footprint" "Basic_Capacitors_Resistors__C:C0805"
 			(at 232.41 81.28 0)
 			(hide yes)
 			(show_name no)

@@ -788,7 +788,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "D:\\EE\\twinspora.csv",
+    "bom_export_filename": "D:\\gehub\\dubIS\\data\\twinspora.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -810,33 +810,15 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
           "group_by": true,
           "label": "Value",
           "name": "Value",
           "show": true
         },
         {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         },
         {
@@ -847,9 +829,27 @@
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
+          "label": "Qty",
+          "name": "${QUANTITY}",
           "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
         },
         {
           "group_by": false,
@@ -870,16 +870,16 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -896,7 +896,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -950,7 +950,7 @@
         "uuid": "64e594d2-0aaa-4fb1-a4b5-254d61e53018"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J4",
     "variants": []
   },
   "sheets": [
