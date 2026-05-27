@@ -705,7 +705,7 @@
 			(uuid "1fa5d5ec-77bc-4e4c-9efa-1b8d44477b65")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-3P-GN.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-3P-GN.step"
 			(offset
 				(xyz 0 -0.164008 0)
 			)
@@ -1501,7 +1501,7 @@
 			(uuid "bc4f6748-1ffa-4d5a-bbe3-0e7128e186dd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-3P-GN.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-3P-GN.step"
 			(offset
 				(xyz 0 -0.164008 0)
 			)
@@ -2075,7 +2075,7 @@
 			(uuid "9b63b9b9-2fb5-4bb0-bc8a-7e776668c6e3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_4P-P1.00_XYECONN_XY-SH1.0-4A61.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_4P-P1.00_XYECONN_XY-SH1.0-4A61.step"
 			(offset
 				(xyz 0 -0.65 3.1)
 			)
@@ -2588,7 +2588,7 @@
 			(uuid "5a011caa-3261-40de-bc6c-ee48f50038f1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
 			(offset
 				(xyz 0 -0.340995 -0.37)
 			)
@@ -3704,7 +3704,7 @@
 			(uuid "06c0e60e-322d-49bc-9bf9-11a9f6899041")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Transistor_FET__C.3dshapes/DFN-8_L3.2-W3.1-P0.65-LS3.4-BL-EP.step"
+		(model "${KIPRJMOD}/../library/packages3d/Transistor_FET__C.3dshapes/DFN-8_L3.2-W3.1-P0.65-LS3.4-BL-EP.step"
 			(offset
 				(xyz 0.0000508 0.0000254 0)
 			)
@@ -4931,7 +4931,7 @@
 			(uuid "b688cd3c-b481-4e58-8022-d786f7bb3589")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Capacitor_THT__C.3dshapes/CAP-TH_BD10.0-P5.00-D1.0-FD.step"
+		(model "${KIPRJMOD}/../library/packages3d/Capacitor_THT__C.3dshapes/CAP-TH_BD10.0-P5.00-D1.0-FD.step"
 			(offset
 				(xyz 0 0 12.5)
 			)
@@ -5693,7 +5693,7 @@
 			(uuid "5023226c-e6bd-4ecd-bbb7-3258b6cc9684")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
+		(model "${KIPRJMOD}/../library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
 			(offset
 				(xyz 0 0 -0.029994)
 			)
@@ -6087,7 +6087,7 @@
 			(uuid "dd4f026c-6d18-48c7-a875-abbc635f44da")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
 			(offset
 				(xyz 0 0 0.75)
 			)
@@ -6796,7 +6796,7 @@
 			(uuid "81f16297-f7fa-46f6-8bcb-75749b7cd907")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Capacitor_THT__C.3dshapes/CAP-TH_BD10.0-P5.00-D1.0-FD.step"
+		(model "${KIPRJMOD}/../library/packages3d/Capacitor_THT__C.3dshapes/CAP-TH_BD10.0-P5.00-D1.0-FD.step"
 			(offset
 				(xyz 0 0 12.5)
 			)
@@ -7159,7 +7159,7 @@
 			(uuid "13560daa-11b3-471d-8459-53a963e48792")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/LED__C.3dshapes/LED0603-R-RD_WHITE.step"
+		(model "${KIPRJMOD}/../library/packages3d/LED__C.3dshapes/LED0603-R-RD_WHITE.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10352,7 +10352,7 @@
 			(uuid "a8754779-2b68-4f2e-90d5-7438d881b9b6")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_6P-P1.00_XY-SH1.0-6A51.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_6P-P1.00_XY-SH1.0-6A51.step"
 			(offset
 				(xyz 0 0.237007 0)
 			)
@@ -11932,7 +11932,7 @@
 			(uuid "d6704b79-7885-406c-bb9e-e40e6b8d50dd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
+		(model "${KIPRJMOD}/../library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
 			(offset
 				(xyz 0 0 -0.029994)
 			)
@@ -12517,7 +12517,7 @@
 			(uuid "311a096a-1b12-4930-9d71-e4ff3249dc7b")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_6P-P1.00_XY-SH1.0-6A51.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_6P-P1.00_XY-SH1.0-6A51.step"
 			(offset
 				(xyz 0 0.237007 0)
 			)
@@ -13465,7 +13465,7 @@
 			(uuid "4ff835bb-cc95-485e-83d3-2ba309f3c0ca")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Switch__C.3dshapes/SW-SMD_SKSGAAE010.step"
+		(model "${KIPRJMOD}/../library/packages3d/Switch__C.3dshapes/SW-SMD_SKSGAAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14475,7 +14475,7 @@
 			(uuid "a9f560a8-18c7-4d91-a526-6f5d6b658d8c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOD-123FL_L2.7-W1.8-LS3.8-BI.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOD-123FL_L2.7-W1.8-LS3.8-BI.step"
 			(offset
 				(xyz 0 0 0.15)
 			)
@@ -14986,7 +14986,7 @@
 			(uuid "79790cda-bbe1-4226-8437-4fe578c0b000")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Switch__C.3dshapes/SW-SMD_SKSGAAE010.step"
+		(model "${KIPRJMOD}/../library/packages3d/Switch__C.3dshapes/SW-SMD_SKSGAAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16832,7 +16832,7 @@
 			(uuid "39cec75e-f861-455b-bf6c-ebdeed0ea8c3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/CMC__C.3dshapes/FILTER-SMD_4P-L3.2-W2.5-BL_ACT1210D-101-2P-TL00.step"
+		(model "${KIPRJMOD}/../library/packages3d/CMC__C.3dshapes/FILTER-SMD_4P-L3.2-W2.5-BL_ACT1210D-101-2P-TL00.step"
 			(offset
 				(xyz 0.000076 0.000102 2.15)
 			)
@@ -18964,7 +18964,7 @@
 			(uuid "226108ba-a877-4c04-9280-df11caa8be1a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_HRS_BK22__C.3dshapes/BK22C07-4DP2-0.4V_3D_STP_4800815000.stp"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_HRS_BK22__C.3dshapes/BK22C07-4DP2-0.4V_3D_STP_4800815000.stp"
 			(offset
 				(xyz -0.27 -1.1 0)
 			)
@@ -19517,7 +19517,7 @@
 			(uuid "29d765b8-678d-463d-974f-dfd262bde7ad")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Regulator_Linear__C.3dshapes/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.step"
+		(model "${KIPRJMOD}/../library/packages3d/Regulator_Linear__C.3dshapes/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20639,7 +20639,7 @@
 			(uuid "02ae32e5-1a44-4d8b-95c5-5ef7079725d3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_USB__C.3dshapes/USB-C_SMD-TYPE-C-31-M-12_1.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_USB__C.3dshapes/USB-C_SMD-TYPE-C-31-M-12_1.step"
 			(offset
 				(xyz 0 -2.5 0)
 			)
@@ -21252,7 +21252,7 @@
 			(uuid "1cc2e695-c048-4a7f-840e-0733063991b9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
 			(offset
 				(xyz 0 0 0.75)
 			)
@@ -23975,7 +23975,7 @@
 			(uuid "bb609725-2c5a-456b-bd78-06af78905efe")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-2P-GN.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-2P-GN.step"
 			(offset
 				(xyz 0 -0.1 0)
 			)
@@ -24696,7 +24696,7 @@
 			(uuid "734b81ec-96dd-4e54-af33-48601bf4cfd1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Capacitor_SMD__C.3dshapes/CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD.step"
+		(model "${KIPRJMOD}/../library/packages3d/Capacitor_SMD__C.3dshapes/CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD.step"
 			(offset
 				(xyz -5.15 0 0)
 			)
@@ -25250,7 +25250,7 @@
 			(uuid "973c8b90-1d13-4891-aa4f-3546b31e95bc")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26723,7 +26723,7 @@
 			(uuid "1bad7ae7-4762-4439-83ef-27df11e7f323")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
+		(model "${KIPRJMOD}/../library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
 			(offset
 				(xyz 0 0 -0.029994)
 			)
@@ -27458,7 +27458,7 @@
 			(uuid "94698630-fc92-4d51-bca5-9a62edf2f5a1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/DFN1006-2L-BI.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/DFN1006-2L-BI.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31174,7 +31174,7 @@
 			(uuid "5a5521af-ab16-4e8f-babe-0fda36976fb7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Motor_Driver__C.3dshapes/VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7.step"
+		(model "${KIPRJMOD}/../library/packages3d/Motor_Driver__C.3dshapes/VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32146,7 +32146,7 @@
 			(uuid "431d1ad7-0b4f-4009-8993-5557711f0ab1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_HRS_BK22__C.3dshapes/BK22C07-4DP2-0.4V_3D_STP_4800815000.stp"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_HRS_BK22__C.3dshapes/BK22C07-4DP2-0.4V_3D_STP_4800815000.stp"
 			(offset
 				(xyz -0.27 -1.1 0)
 			)
@@ -32987,7 +32987,7 @@
 			(uuid "d96ee07e-6943-46a2-836e-c882392bfed0")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/LED__C.3dshapes/LED0603-RD.step"
+		(model "${KIPRJMOD}/../library/packages3d/LED__C.3dshapes/LED0603-RD.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33532,7 +33532,7 @@
 			(uuid "bc32b134-4090-4dfd-9fe9-2094385fa668")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
+		(model "${KIPRJMOD}/../library/packages3d/Mechanical__C.3dshapes/SMD_BD5.6-D3.6.step"
 			(offset
 				(xyz 0 0 -0.029994)
 			)
@@ -35011,7 +35011,7 @@
 			(uuid "6207117e-313c-4811-8aff-8cfa4a1874eb")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/LED__C.3dshapes/LED0603-RD.step"
+		(model "${KIPRJMOD}/../library/packages3d/LED__C.3dshapes/LED0603-RD.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37230,7 +37230,7 @@
 			(uuid "c6d2f2c8-8e48-43d5-98c2-76b48c71fca9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
 			(offset
 				(xyz 0 0 0.75)
 			)
@@ -41354,7 +41354,7 @@
 			(uuid "e230a9b5-6c7c-414c-ac30-188701c6f5c2")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Motor_Driver__C.3dshapes/VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7.step"
+		(model "${KIPRJMOD}/../library/packages3d/Motor_Driver__C.3dshapes/VQFN-40_L7.0-W5.0-P0.50-BL-EP5.7.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42553,7 +42553,7 @@
 			(uuid "a3dddf94-9611-4014-9193-cc53bfe2815f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Transistor_BJT__C.3dshapes/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.step"
+		(model "${KIPRJMOD}/../library/packages3d/Transistor_BJT__C.3dshapes/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43610,7 +43610,7 @@
 			(uuid "4bef308a-bf49-4f76-be8c-0a4e6cd2b180")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Capacitor_SMD__C.3dshapes/CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD.step"
+		(model "${KIPRJMOD}/../library/packages3d/Capacitor_SMD__C.3dshapes/CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD.step"
 			(offset
 				(xyz -5.15 0 0)
 			)
@@ -43924,7 +43924,7 @@
 			(uuid "2e737de1-9a1e-4e88-9a3e-bb822741a070")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Oscillator__C.3dshapes/X322512MSB4SI.step"
+		(model "${KIPRJMOD}/../library/packages3d/Oscillator__C.3dshapes/X322512MSB4SI.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44288,7 +44288,7 @@
 			(uuid "71777e3c-99f8-4628-a762-db5a2dae24b6")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/LED__C.3dshapes/LED0603-R-RD_WHITE.step"
+		(model "${KIPRJMOD}/../library/packages3d/LED__C.3dshapes/LED0603-R-RD_WHITE.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46461,7 +46461,7 @@
 			(uuid "8b13b4e3-5494-4f45-bcb3-5aeecd219c50")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
 			(offset
 				(xyz 0 -0.340995 -0.37)
 			)
@@ -48579,7 +48579,7 @@
 			(uuid "2f5d6f7f-8cc1-4fac-bffa-27ed2a37d560")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
+		(model "${KIPRJMOD}/../library/packages3d/Diode__C.3dshapes/SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL.step"
 			(offset
 				(xyz 0 0 0.75)
 			)
@@ -54578,7 +54578,7 @@
 			(uuid "66f3c3a8-7eba-4ca1-a500-9cbc6fbdd314")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/LED__C.3dshapes/LED0603-RD.step"
+		(model "${KIPRJMOD}/../library/packages3d/LED__C.3dshapes/LED0603-RD.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -55022,7 +55022,7 @@
 			(uuid "1ae48112-1f58-4c71-b8e2-d0d5fa535758")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Inductor__C.3dshapes/IND-SMD_L3.0-W3.0_PRS3015.step"
+		(model "${KIPRJMOD}/../library/packages3d/Inductor__C.3dshapes/IND-SMD_L3.0-W3.0_PRS3015.step"
 			(offset
 				(xyz -0.000127 0 1.1)
 			)
@@ -55958,7 +55958,7 @@
 			(uuid "8ad6de4d-bc52-4972-8f91-44386318c58d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Inductor__C.3dshapes/IND-SMD_L3.0-W3.0_PRS3015.step"
+		(model "${KIPRJMOD}/../library/packages3d/Inductor__C.3dshapes/IND-SMD_L3.0-W3.0_PRS3015.step"
 			(offset
 				(xyz -0.000127 0 1.1)
 			)
@@ -56460,7 +56460,7 @@
 			(uuid "32e10e15-303d-4930-ac8d-03da8bdac9e7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Interface_CAN_LIN__C.3dshapes/DFN-8_L3.0-W3.0-P0.65-BL-EP2.45.step"
+		(model "${KIPRJMOD}/../library/packages3d/Interface_CAN_LIN__C.3dshapes/DFN-8_L3.0-W3.0-P0.65-BL-EP2.45.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -57204,7 +57204,7 @@
 			(uuid "29c881f8-e745-4fce-8618-61c976e240e3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_3P-P1.00_XYECONN_XY-SH1.0-3A61.step"
 			(offset
 				(xyz 0 -0.340995 -0.37)
 			)
@@ -57590,7 +57590,7 @@
 			(uuid "7b712cb9-1610-4bf1-9df1-080e2e54cb04")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-2P-GN.step"
+		(model "${KIPRJMOD}/../library/packages3d/Connector_DORABO__C.3dshapes/CONN-TH_DB125-2.54-2P-GN.step"
 			(offset
 				(xyz 0 0.1 0)
 			)
