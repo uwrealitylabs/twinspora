@@ -1,0 +1,10 @@
+# KiCad lock and autosave files
+*.lck
+\#auto_saved_files\#
+_autosave-*
+
+# KiCad auto-backups
+twin28xx/twin28xx-backups/
+
+# python
+__pycache__/
