@@ -2,7 +2,7 @@ import re
 import pypdf
 from pathlib import Path
 
-ds = Path(r"D:\gehub\twinspora\review\datasheets")
+ds = Path(r"D:\gehub\twin28xx\review\datasheets")
 
 for name in ["XC6206.pdf", "CA-IF1044VD-Q1.pdf"]:
     pdf = pypdf.PdfReader(str(ds / name))

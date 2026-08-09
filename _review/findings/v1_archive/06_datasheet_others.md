@@ -1,8 +1,8 @@
 # 06 Datasheet Review — Discrete & Support ICs (Pre-Fab)
 
-Twinspora dual-BLDC motor controller. Inputs: 24V via BK22 mezzanine; USB-C 5V VBUS; CAN bus (J5); SH1.0 SPI to encoders. Motor phases up to 8A peak.
+Twin28xx dual-BLDC motor controller. Inputs: 24V via BK22 mezzanine; USB-C 5V VBUS; CAN bus (J5); SH1.0 SPI to encoders. Motor phases up to 8A peak.
 
-Schematic top sheet: `twinspora/twinspora.kicad_sch` (page 1)
+Schematic top sheet: `twin28xx/twin28xx.kicad_sch` (page 1)
 Sub-sheets: `motor_driver.kicad_sch` (page 2 & 3 instances), `magnetic_encoder.kicad_sch` (page 4 & 5 instances).
 BOM: `_review/bom.csv`. Rendered: `_review/exports/sch_png/sheet_0[1-5].png`.
 

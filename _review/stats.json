@@ -2,8 +2,8 @@
   "metadata": {
     "date": "2026-05-05T16:56:18",
     "generator": "KiCad 10.0.1",
-    "project": "twinspora",
-    "board_name": "twinspora"
+    "project": "twin28xx",
+    "board_name": "twin28xx"
   },
   "board": {
     "has_outline": true,

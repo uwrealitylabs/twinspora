@@ -1,8 +1,8 @@
 # 04 - PCB Inner Copper Layers (In1.Cu, In2.Cu) Review (v2, primary-source verified)
 
-Board: 76.95 x 36.93 mm, 4-layer, 1.6167 mm thick (`twinspora.kicad_pcb` line 6, `(thickness 1.61668)`). No impedance control specified.
+Board: 76.95 x 36.93 mm, 4-layer, 1.6167 mm thick (`twin28xx.kicad_pcb` line 6, `(thickness 1.61668)`). No impedance control specified.
 
-## Stackup (verified, `twinspora.kicad_pcb` lines 28-98)
+## Stackup (verified, `twin28xx.kicad_pcb` lines 28-98)
 
 | Layer        | Material                                | Thickness | er    | tan d |
 |--------------|------------------------------------------|-----------|-------|-------|
@@ -22,7 +22,7 @@ Implications:
 ## Primary-source layer assignment (verified)
 
 ### How the primary-source numbers were obtained
-Python state-machine parser over `twinspora.kicad_pcb` extracting every `(segment ...)`, `(arc ...)`, `(via ...)`, and `(zone ...)` block, grouping by `(layer "...")` and `(net "...")`. Independent of any earlier review.
+Python state-machine parser over `twin28xx.kicad_pcb` extracting every `(segment ...)`, `(arc ...)`, `(via ...)`, and `(zone ...)` block, grouping by `(layer "...")` and `(net "...")`. Independent of any earlier review.
 
 Counts (across the entire board):
 - 1859 `(segment ...)` blocks: F.Cu=1234, In1.Cu=**0**, In2.Cu=142, B.Cu=483.
@@ -39,7 +39,7 @@ Counts (across the entire board):
 
 ### In2.Cu - confirmed split power plane WITH signals routed on it
 
-`In2.Cu` is referenced in 184 places in `twinspora.kicad_pcb`. Four zones include In2.Cu in their layer list:
+`In2.Cu` is referenced in 184 places in `twin28xx.kicad_pcb`. Four zones include In2.Cu in their layer list:
 
 | # | Zone name   | Net    | Layers                | Priority | File line |
 |---|-------------|--------|-----------------------|----------|-----------|

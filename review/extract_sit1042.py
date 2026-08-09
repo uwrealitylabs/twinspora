@@ -1,7 +1,7 @@
 import pypdf
 from pathlib import Path
 
-ds = Path(r"D:\gehub\twinspora\review\datasheets\SIT1042ATK_3.pdf")
+ds = Path(r"D:\gehub\twin28xx\review\datasheets\SIT1042ATK_3.pdf")
 pdf = pypdf.PdfReader(str(ds))
 print(f"Pages: {len(pdf.pages)}\n")
 

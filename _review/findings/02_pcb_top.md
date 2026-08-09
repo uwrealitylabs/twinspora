@@ -1,14 +1,14 @@
 # PCB Top-Side Review (v2 — primary-source verified)
 
-Twinspora dual BLDC, 76.95 x 36.93 mm, 4-layer.
+Twin28xx dual BLDC, 76.95 x 36.93 mm, 4-layer.
 Verified 2026-05-05 against:
 
 - TI DRV8316C datasheet **SLVSH07** (Dec 2022), pages 5, 19, 82, 83, 84.
-- Direct parse of `D:\gehub\twinspora\twinspora\twinspora.kicad_pcb` (segments, vias, footprints, pad-net resolution after rotation).
-- `D:\gehub\twinspora\_review\drc.json` (KiCad 10.0.1 generated 2026-05-05 16:56).
-- `D:\gehub\twinspora\_review\stats.json`.
-- Visual inspection of `D:\gehub\twinspora\_review\datasheets\drv8316c_p84_layout_zoom.png` (rendered crop of TI Layout Example, sec 11.2).
-- Visual inspection of `D:\gehub\twinspora\_review\exports\layers\F.Silkscreen.pdf` and `D:\gehub\twinspora\_review\exports\3d\top.png`.
+- Direct parse of `D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb` (segments, vias, footprints, pad-net resolution after rotation).
+- `D:\gehub\twin28xx\_review\drc.json` (KiCad 10.0.1 generated 2026-05-05 16:56).
+- `D:\gehub\twin28xx\_review\stats.json`.
+- Visual inspection of `D:\gehub\twin28xx\_review\datasheets\drv8316c_p84_layout_zoom.png` (rendered crop of TI Layout Example, sec 11.2).
+- Visual inspection of `D:\gehub\twin28xx\_review\exports\layers\F.Silkscreen.pdf` and `D:\gehub\twin28xx\_review\exports\3d\top.png`.
 
 Stackup re-confirmed from kicad_pcb lines 29-98:
 
@@ -95,7 +95,7 @@ This is genuine duplicate via geometry — the file has two `(via ...)` blocks a
 
 The datasheet does not state a numeric distance, but the TI Layout Example (sec 11.2, page 84, rendered as `drv8316c_p84_layout_zoom.png`) shows the 0.1 µF VM caps, the 47 nF CPH/CPL fly cap and the AVDD cap **immediately adjacent** to the package, all within ~1× package-pin pitch (≈ 1-2 mm of the relevant pin).
 
-On Twinspora I measured (after 90° rotation transformation of pad-local to global coordinates):
+On Twin28xx I measured (after 90° rotation transformation of pad-local to global coordinates):
 
 | Cap | Value (verified) | Function | Position | Nearest VM pin | Nearest CPH/CPL pin |
 |---|---|---|---|---|---|
@@ -134,7 +134,7 @@ Via specs: **0.45 mm pad / 0.30 mm drill**, F.Cu↔B.Cu through. Consistent with
 
 **Verdict:** the *number* of unique vias (18 each) exceeds TI's reference example (16) and is acceptable. The 16 vs 18 difference is not material. The U15 stacked-via fault (B5) is the actual problem — it's a fab issue, not a thermal one.
 
-**Correction to prior review:** drop the "9-via minimum" claim. Replace with: "TI's layout example (sec 11.2) uses a 4×4 array; Twinspora has 18 unique via positions per EP, exceeding TI's example."
+**Correction to prior review:** drop the "9-via minimum" claim. Replace with: "TI's layout example (sec 11.2) uses a 4×4 array; Twin28xx has 18 unique via positions per EP, exceeding TI's example."
 
 ### C3 — Twelve `starved_thermal` connections to GND zone
 
@@ -216,13 +216,13 @@ Re-verified:
 
 Both stay on F.Cu (good — In1.Cu solid GND is the reference plane below at 210 µm dielectric, per `04_pcb_inner.md`). Length mismatch ~1.95 mm, well within USB 2.0 FS tolerance (~5 mm). USB FS will work without controlled impedance.
 
-`tuning_profiles` in twinspora.kicad_pro is unset — no impedance constraint defined. With 0.20 mm trace width on 0.21 mm prepreg er≈4.4 to In1.Cu, single-ended Z₀ is approximately 65-70 Ω; coupled differential Z_diff is approximately 90-100 Ω depending on gap (could not measure gap without rendering). This is acceptable for FS USB.
+`tuning_profiles` in twin28xx.kicad_pro is unset — no impedance constraint defined. With 0.20 mm trace width on 0.21 mm prepreg er≈4.4 to In1.Cu, single-ended Z₀ is approximately 65-70 Ω; coupled differential Z_diff is approximately 90-100 Ω depending on gap (could not measure gap without rendering). This is acceptable for FS USB.
 
 ### C9 — Crystal X1 ~10 mm diagonal from STM32 OSC pins, plus 2 starved_thermal
 
 X1 (X322512MSB4SI, 4-pad SMD crystal) at (125.0, 120.75), 90°. U7 STM32G473RB at (115.0, 125.028), -135° (LQFP-64 rotated 45°). Center-to-center distance ≈ 10.9 mm. OSC_IN/OSC_OUT trace length ~8-12 mm running across mid-board F.Cu zone fills.
 
-Per ST AN4488 §3.3 (Clock System), the crystal should be placed close to the OSC pins. Twinspora is at the edge of typical guidance. Combined with the two starved_thermal connections on X1 pins 2 and 4 (see C3), the HSE oscillator is the most sensitive node on the design.
+Per ST AN4488 §3.3 (Clock System), the crystal should be placed close to the OSC pins. Twin28xx is at the edge of typical guidance. Combined with the two starved_thermal connections on X1 pins 2 and 4 (see C3), the HSE oscillator is the most sensitive node on the design.
 
 For a 12 MHz HSE this is functional but tight. Per master findings D3, the load caps (30 pF) match the X322512MSB4SI 20 pF datasheet load correctly. Verify visually on F.Cu: (a) OSC traces are guarded by GND on both sides, (b) load-cap returns connect with 2 GND vias right at the crystal, (c) no PHA*/PHB*/PHC* gate-drive nets cross within 2 mm.
 
@@ -238,7 +238,7 @@ drc.json: courtyards C39 / C38 / C37 each overlap H10. All three caps are at x=1
 
 ### N1 — Silkscreen pollution (199 silk_over_copper, 192 text_height, 118 silk_overlap, 31 silk_edge_clearance)
 
-Visual inspection of `D:\gehub\twinspora\_review\exports\layers\F.Silkscreen.pdf` confirms the central area (around U7/X1/encoders) is essentially unreadable — refdes stack on top of pads and on each other. After placement is locked, hide refdes for parts smaller than 0805 in this region. Cosmetic.
+Visual inspection of `D:\gehub\twin28xx\_review\exports\layers\F.Silkscreen.pdf` confirms the central area (around U7/X1/encoders) is essentially unreadable — refdes stack on top of pads and on each other. After placement is locked, hide refdes for parts smaller than 0805 in this region. Cosmetic.
 
 ### N2 — Footprint-symbol-mismatch warnings (46 lib_footprint_mismatch + 1 lib_footprint_issues)
 
@@ -250,7 +250,7 @@ Custom pad shapes resolve to multiple polygons. Cosmetic; gerbers rasterize fine
 
 ### N4 — F.Paste apertures
 
-Visual inspection of `D:\gehub\twinspora\_review\exports\layers\F.Paste.svg`: the DRV8316 EP shows a single solid 5.7 × 5.7 mm aperture. For best yield TI typically recommends splitting the EP paste into a grid (typical 4×4 or 5×5 with ~50-70 % paste coverage) to prevent solder volcano + IC float during reflow.
+Visual inspection of `D:\gehub\twin28xx\_review\exports\layers\F.Paste.svg`: the DRV8316 EP shows a single solid 5.7 × 5.7 mm aperture. For best yield TI typically recommends splitting the EP paste into a grid (typical 4×4 or 5×5 with ~50-70 % paste coverage) to prevent solder volcano + IC float during reflow.
 
 > Note: this is **not** stated in DRV8316C SLVSH07 — it is general industry practice for QFN/VQFN with large EPs (e.g. IPC-7093). I am citing it as a process-level recommendation, not a TI requirement.
 
@@ -308,7 +308,7 @@ After fixing B5 the count drops to 4, all explained.
 - **C36/C50** = 100 nF X7R 50 V (CL05B104KB54PNC, 0402) — matches CVM1 in Table 8-1: "X5R or X7R, 0.1-µF". The cap values are correct; the placement is the issue (C1).
 - **C40/C41/C42** = 10 µF X5R 50 V (GRM21BR61H106KE43L, 0805) — matches CVM2: "≥ 10-µF, voltage rating ≥ 2× operating (i.e. ≥ 48 V)". 50 V rating meets the spec.
 - **C43/C57** = 330 µF SMD electrolytic plus C44/C58 = 330 µF radial THT — large bulk per sec 10.1 ("Bulk Capacitance"). Value fine; placement (B1) is the issue.
-- **VM/charge-pump/AVDD** — TI Layout Example sec 11.2 page 84 visible in `drv8316c_p84_layout_zoom.png`: shows 4×4 = 16-via EP array, ceramics directly adjacent to package. Twinspora has 18 vias under each EP — exceeds the example.
+- **VM/charge-pump/AVDD** — TI Layout Example sec 11.2 page 84 visible in `drv8316c_p84_layout_zoom.png`: shows 4×4 = 16-via EP array, ceramics directly adjacent to package. Twin28xx has 18 vias under each EP — exceeds the example.
 - **In1.Cu = solid GND** (per `04_pcb_inner.md`) — textbook L2 placement, ideal F.Cu signal reference.
 - **Component density** 37 (front) vs 9.6 (back) per stats.json — heavily front-loaded, but back has GND copper area 2614 mm² to share heat.
 - **No motor-phase or VCC routed on inner copper** — keeps the high-current paths on 1 oz outer layers (smart given 0.5 oz inner copper).
@@ -354,11 +354,11 @@ After fixing B5 the count drops to 4, all explained.
 
 ## Primary-source citations
 
-- **TI DRV8316C datasheet SLVSH07 (Dec 2022)** — `D:\gehub\twinspora\_review\datasheets\DRV8316C_TI.pdf`:
+- **TI DRV8316C datasheet SLVSH07 (Dec 2022)** — `D:\gehub\twin28xx\_review\datasheets\DRV8316C_TI.pdf`:
   - Page 5 (Pin Functions table) — VM bypass cap requirement, CFLY 47 nF, CCP 1 µF, AVDD 1 µF.
   - Page 19 (sec 8.3, Table 8-1) — full external component list with values and ratings.
   - Page 83 (sec 11.1 Layout Guidelines) — quoted in C1 and C2.
-  - Page 84 (sec 11.2 Layout Example) — visual 4×4 EP via grid; rendered to `D:\gehub\twinspora\_review\datasheets\drv8316c_p84_layout_zoom.png`.
+  - Page 84 (sec 11.2 Layout Example) — visual 4×4 EP via grid; rendered to `D:\gehub\twin28xx\_review\datasheets\drv8316c_p84_layout_zoom.png`.
   - Page 6 (sec 7.1, 7.3) — operating range 4.5-35 V, abs max 40 V.
 - **ST AN4488** — referenced in C9 for crystal placement guidance. Not held locally; cited only qualitatively.
 - **IPC-2152** — referenced by prior review for ampacity. **Not held locally**, so no numerical claim from this standard appears in this re-verified review (see N7).

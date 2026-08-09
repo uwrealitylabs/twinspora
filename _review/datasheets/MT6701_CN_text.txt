@@ -1,4 +1,4 @@
-PDF: D:\gehub\twinspora\_review\datasheets\MT6701_Rev1.8.pdf
+PDF: D:\gehub\twin28xx\_review\datasheets\MT6701_Rev1.8.pdf
 Pages: 37
 
 ===== PAGE 1 =====

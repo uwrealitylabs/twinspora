@@ -1,6 +1,6 @@
 # 06 Datasheet Review — Discrete & Support ICs (Pre-Fab) — v2 (primary-source verified)
 
-Twinspora dual-BLDC motor controller. Inputs: 24 V via BK22 mezzanine; USB-C 5 V VBUS; CAN-FD on J7/J8. This document supersedes `v1_archive/06_datasheet_others.md` and resolves the MT6701 MODE-pin disagreement between `v1_archive/01_schematic.md` (claimed MODE floating defaults to I²C, conflicting with SPI) and `v1_archive/06_datasheet_others.md` (claimed MODE floats and SSI works).
+Twin28xx dual-BLDC motor controller. Inputs: 24 V via BK22 mezzanine; USB-C 5 V VBUS; CAN-FD on J7/J8. This document supersedes `v1_archive/06_datasheet_others.md` and resolves the MT6701 MODE-pin disagreement between `v1_archive/01_schematic.md` (claimed MODE floating defaults to I²C, conflicting with SPI) and `v1_archive/06_datasheet_others.md` (claimed MODE floats and SSI works).
 
 Every datasheet number below has document ID + section/page citation. PDFs were pulled to `_review/datasheets/` for re-verification.
 
@@ -16,21 +16,21 @@ The DRV8316CR (SPI variant of the U14/U15 motor driver) integrates a **mixed-mod
 - **§ 7.1 Absolute Maximum Ratings (p. 6)**: VM **abs max = 40 V** (not 35 V — corrects v1).
 - **§ 7.3 Recommended Operating Conditions (p. 6)**: VVM 4.5 V (min) / 24 V (nom) / **35 V (max)**.
 
-**Schematic-side verification (file `twinspora.kicad_sch`):**
+**Schematic-side verification (file `twin28xx.kicad_sch`):**
 
 ```
 +24V (BK22) ──► U14/U15 DRV8316CR VM
                    └─► internal buck (3.3 V default → 5.0 V via BUCK_SEL=01b) ──► hier-pin BUCK_OUT
                                           (motor_driver.kicad_sch line 4833)
                                           ──► top-sheet labels "BUCK"
-                                              (twinspora.kicad_sch lines 19107, 19127, 19927)
+                                              (twin28xx.kicad_sch lines 19107, 19127, 19927)
 
 USB-C VBUS ──► D2 (1N4148WS) ──► +5V net (anode at VBUS, cathode at +5V; OR-ing diode)
 
 BUCK ──► Q1 AO3401A P-FET (S=+5V, D=BUCK, G=R10 330Ω + R11 10kΩ network)
            └─► +5V (when VBUS absent and BUCK ≥ 5V firmware-configured)
 
-+5V net ──► U9 XC6206P332MR pin 2 (Vin)  [verified at world coord (219.71, 36.83) connecting via wire to +5V power-symbol at (208.28, 29.21) — `twinspora.kicad_sch` lines 14175, 14425, 14675, 33958]
++5V net ──► U9 XC6206P332MR pin 2 (Vin)  [verified at world coord (219.71, 36.83) connecting via wire to +5V power-symbol at (208.28, 29.21) — `twin28xx.kicad_sch` lines 14175, 14425, 14675, 33958]
         ──► U8 H5VL10BC TVS clamp
         ──► various decoupling
 
@@ -39,7 +39,7 @@ U9 Vout pin 3 (3.3 V) ──► +3.3V net ──► everything else logic-side
 
 **ERC `power_pin_not_driven` for U9 pin 2** (`_review/erc.json`): explained — the +5V net is fed from Q1's drain (a `passive` pin) and from D2's cathode. KiCad cannot identify a `power_out` pin driving +5V, so flags it as a *symbol-library* warning. The net is electrically driven; this is a KiCad ERC artefact, not a real connectivity bug. The schematic also has explicit `PWR_FLAG` placed on the +3.3V output (visible in `_review/s1_3v3.png`).
 
-**Top-sheet annotation `text_box` at (157.48, 26.67)** confirms the design intent: *"200ma LDO / Power OR-ing with PMOS / -PMOS gate VBUS pull-up to prevent reverse current to buck output / -This provides low voltage drop / BUCK starts at 3.3 V default / -Also prioritizes VBUS over BUCK"* (`twinspora.kicad_sch` line 12435). The "BUCK starts at 3.3 V default" matches TI Table 8-23.
+**Top-sheet annotation `text_box` at (157.48, 26.67)** confirms the design intent: *"200ma LDO / Power OR-ing with PMOS / -PMOS gate VBUS pull-up to prevent reverse current to buck output / -This provides low voltage drop / BUCK starts at 3.3 V default / -Also prioritizes VBUS over BUCK"* (`twin28xx.kicad_sch` line 12435). The "BUCK starts at 3.3 V default" matches TI Table 8-23.
 
 **Net result**: the +5V rail droops to whatever (BUCK − 0V + small body-diode drop) is on power-up if VBUS is absent and firmware has not yet flipped BUCK_SEL to 5 V. Default BUCK = 3.3 V → +5V rail will be at ~3.3 V minus body-diode drop ≈ 2.6 V. The XC6206 then runs at Vin ≈ 2.6 V which is below the dropout corner; +3.3V output collapses. **This is a real bring-up bomb** (already called as BLOCKER #3 in v1; reaffirmed here with verified citations).
 
@@ -182,7 +182,7 @@ Abs max (§ 6.1, p. 5): VCC -0.3 to 7 V; VIO -0.3 to 7 V. Bus voltage CANH/CANL:
 
 ### Schematic check on STB, VIO, VCC
 
-Tracing U11 (CA-IF1044VD-Q1, instance at (311.15, 43.18) — `twinspora.kicad_sch` line 32003):
+Tracing U11 (CA-IF1044VD-Q1, instance at (311.15, 43.18) — `twin28xx.kicad_sch` line 32003):
 
 | Pin | Function | Net | Verdict |
 |-----|----------|-----|---------|
@@ -198,7 +198,7 @@ Tracing U11 (CA-IF1044VD-Q1, instance at (311.15, 43.18) — `twinspora.kicad_sc
 
 ### CRITICAL — VIO driven by GPIO, not by a supply rail
 
-The Chipanalog datasheet § 9 explicitly shows VIO connected to the MCU's logic-supply rail (their Figure 9-2 has VIO and the MCU's 3.3 V Vdd connected together). On Twinspora, **CAN_VIO is driven by GPIO PC4**, which:
+The Chipanalog datasheet § 9 explicitly shows VIO connected to the MCU's logic-supply rail (their Figure 9-2 has VIO and the MCU's 3.3 V Vdd connected together). On Twin28xx, **CAN_VIO is driven by GPIO PC4**, which:
 
 1. Requires firmware to drive PC4 high before any CAN traffic. If bootloader / fault state leaves PC4 low or hi-Z, CAN is dead and the transceiver may sit in a degraded state.
 2. Backfeeds the GPIO during bus glitches — the VIO pin draws ~125-300 µA in normal mode (§ 6.5, p. 6, IIO row), within GPIO drive capability, but any inrush at startup (capacitor charging on the VIO rail) can momentarily peg the GPIO above the abs-max +0.3 V.
@@ -310,7 +310,7 @@ The Semtech SRV05-4A version typically has **slightly tighter clamp** (V_C ≤ 6
 
 ### USB-C VBUS coverage — confirmed not protected
 
-Tracing `twinspora.kicad_sch` near U6 and J2: U6 has 4 I/O pins routed to D+/D-/CC1/CC2, plus the SRV05's V_CC pin tied to +5V (the rail-clamp anchor). **VBUS does not pass through U6** — VBUS goes from J2 directly to D2 (1N4148WS) and into the +5V tree. The only VBUS-side protection is the C5/C26 decoupling. **No polyfuse, no VBUS TVS** — same finding as v1, confirmed.
+Tracing `twin28xx.kicad_sch` near U6 and J2: U6 has 4 I/O pins routed to D+/D-/CC1/CC2, plus the SRV05's V_CC pin tied to +5V (the rail-clamp anchor). **VBUS does not pass through U6** — VBUS goes from J2 directly to D2 (1N4148WS) and into the +5V tree. The only VBUS-side protection is the C5/C26 decoupling. **No polyfuse, no VBUS TVS** — same finding as v1, confirmed.
 
 ---
 
@@ -363,7 +363,7 @@ Re-running the analysis from `07_smf30ca_deep_dive.md` against TI SLVSH07 **§ 7
 
 ### Schematic + ERC check
 
-U9 at (229.87, 36.83). Pin 2 (Vin) at world (219.71, 36.83). Wire trail: (219.71, 36.83) → (215.9, 36.83) → (208.28, 36.83) (junction) → (208.28, 29.21) which is the **+5V power symbol** (`twinspora.kicad_sch` lines 14175, 14425, 33958). U9 input is **+5V**, not 24 V — same as v1's claim.
+U9 at (229.87, 36.83). Pin 2 (Vin) at world (219.71, 36.83). Wire trail: (219.71, 36.83) → (215.9, 36.83) → (208.28, 36.83) (junction) → (208.28, 29.21) which is the **+5V power symbol** (`twin28xx.kicad_sch` lines 14175, 14425, 33958). U9 input is **+5V**, not 24 V — same as v1's claim.
 
 The ERC `power_pin_not_driven` warnings on U9 pin 2 (Vin) and pin 3 (Vout) (`_review/erc.json`) are KiCad library artefacts: the +5V net is fed from Q1's drain (a `passive` pin) and D2's cathode (no `power_out` pin in the path), so KiCad reports it as undriven. The +3.3V net is downstream of U9's Vout (which is `power_out`), so the only true "driven" net there is +3.3V; ERC complains because it can't see who drives +5V upstream. These are not real connectivity bugs — there is also a `PWR_FLAG` placed on the +3.3V output as a workaround.
 
@@ -392,7 +392,7 @@ The ERC `power_pin_not_driven` warnings on U9 pin 2 (Vin) and pin 3 (Vout) (`_re
 
 (AOS datasheet § Electrical Characteristics, p. 2)
 
-### Role on Twinspora
+### Role on Twin28xx
 
 Q1 in the +5V OR-ing tree (`_review/s1_3v3.png`):
 - Source = +5V net
@@ -426,7 +426,7 @@ NIT: the gate-discharge path (R11 alone is 10 kΩ to GND) gives an RC time const
 
 Pinout (DFN3×3-8L, p. 1): G1 = pin 2, S1 = pin 1, D1 = pins 7,8 (joined). G2 = pin 4, S2 = pin 3, D2 = pins 5,6 (joined). Two independent N-FETs.
 
-### Role on Twinspora
+### Role on Twin28xx
 
 In the POWER IN block alongside U3 (FMMT620 NPN BJT) and U5 (SMF30CA TVS). Per the v1 NIT and the rendered `_review/sheet1_q1.png` and `_review/findings/v1_archive/01_schematic.md` line 50: **back-to-back common-drain N-FET ideal-diode reverse-polarity protection**, with gate boost from the DRV8316 charge pump (VCP). The body diode of one FET passes current during the brief startup window before VCP ramps up; once VCP is up, both FETs conduct fully (R_DS(on) ≈ 17 mΩ × 2 = 34 mΩ total). At 8 A peak this dissipates ~2.2 W, brief-only OK; at 4 A continuous it's ~0.5 W, well within the DFN package thermal envelope.
 
@@ -475,7 +475,7 @@ Bidirectional, 5 V working voltage, sits on the +5V rail near U9 (XC6206) Vin. *
 | h_FE @ I_C = 1 A | 100 — 250 (typ) |
 | AEC-Q101 qualified | yes |
 
-### Role on Twinspora
+### Role on Twin28xx
 
 In the POWER IN block at (77.47, 234.95), alongside U4 (WSD4066DN33). Per v1's analysis (`_review/findings/v1_archive/01_schematic.md` NIT line 50): U3 acts as part of the **N-FET ideal-diode reverse-polarity scheme** — the BJT, biased from the DRV8316 charge-pump (VCP net), drives the gates of the two WSD4066 N-FETs to turn them on during normal-polarity operation, and is held off (or actively pulled down) when VCP is unavailable / during reverse polarity. The 80 V V_CEO survives 24 V + transient, and the high I_C / low V_CE(sat) is overkill but matches a generic high-side pre-driver role.
 

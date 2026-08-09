@@ -2,7 +2,7 @@ import pypdf, sys, io, re
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 from pathlib import Path
 
-ds = Path(r"D:\gehub\twinspora\review\datasheets")
+ds = Path(r"D:\gehub\twin28xx\review\datasheets")
 
 FILES = {
     "AO3401A.pdf": ("VDS", "VGS", "ID", "Absolute", "Continuous", "BVDSS", "Pulsed", "Drain"),

@@ -1,4 +1,4 @@
-# SMF30CA vs SMF24CA — TVS deep dive for Twinspora 24 V input
+# SMF30CA vs SMF24CA — TVS deep dive for Twin28xx 24 V input
 
 **Goal:** decide whether to keep U5 = SMF30CA (LCSC C19077519) or swap to SMF24CA, and what the right choice actually is given the DRV8316C's 35 V VM absolute maximum.
 
@@ -35,7 +35,7 @@ Both behave identically over the operating range; the only meaningful difference
 
 ---
 
-## 2. Twinspora operating constraint
+## 2. Twin28xx operating constraint
 
 - **V_nominal** at the BK22 mezzanine: 24 V (per your spec)
 - **Supply tolerance**, realistic worst-case: 24 V ± 10 % → up to **26.4 V** continuous

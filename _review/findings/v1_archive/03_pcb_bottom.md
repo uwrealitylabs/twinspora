@@ -1,7 +1,7 @@
-# PCB Bottom-Side Pre-Fab Review — `twinspora.kicad_pcb`
+# PCB Bottom-Side Pre-Fab Review — `twin28xx.kicad_pcb`
 
 Reviewed: 2026-05-05
-Source: `D:\gehub\twinspora\twinspora\twinspora.kicad_pcb`
+Source: `D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb`
 Stats: 76.95 mm × 36.93 mm, 4-layer, 1.62 mm thick.
 Per `stats.json`: front-density 37.04%, back-density 9.59%, but **0 components** are recorded as residing on the back layer (`components.smd.back = 0`, `components.tht.back = 0`, `components.unspecified.back = 0`).
 
@@ -21,8 +21,8 @@ What the file actually shows:
 | U16 | `Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm` | **F.Cu** | (135.0000, 120.0275) |
 
 Evidence:
-- `twinspora.kicad_pcb` line 6618–6619: `(footprint "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" (layer "F.Cu") … (at 95.000001 120.0275))` — Reference U18 at line 6624.
-- `twinspora.kicad_pcb` line 13129–13130: same for U16 at (135, 120.0275).
+- `twin28xx.kicad_pcb` line 6618–6619: `(footprint "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" (layer "F.Cu") … (at 95.000001 120.0275))` — Reference U18 at line 6624.
+- `twin28xx.kicad_pcb` line 13129–13130: same for U16 at (135, 120.0275).
 - All pads of U18 and U16 are on `"F.Cu" "F.Mask" "F.Paste"` (e.g. lines 7030–7195 for U18). Silk, courtyard, and fab marks are on `F.SilkS`/`F.CrtYd`/`F.Fab`.
 - Independently confirmed by `stats.json`: `components.smd.back = 0`. Bottom-side B.Paste, B.Courtyard, B.Fab SVG exports contain only the board outline + drilled-pad apertures — **no SMD pads at all on the bottom**.
 

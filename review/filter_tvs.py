@@ -3,7 +3,7 @@ import csv, re, sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 from pathlib import Path
 
-table = Path(r"D:\gehub\twinspora\review\jlc_tvs_table.tsv")
+table = Path(r"D:\gehub\twin28xx\review\jlc_tvs_table.tsv")
 rows = []
 with table.open(encoding="utf-8") as f:
     reader = csv.DictReader(f, delimiter="\t")

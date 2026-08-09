@@ -2,7 +2,7 @@ import re
 import collections
 from pathlib import Path
 
-pcb = Path(r"D:\gehub\twinspora\twinspora\twinspora.kicad_pcb").read_text(encoding="utf-8")
+pcb = Path(r"D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb").read_text(encoding="utf-8")
 
 # Find each top-level zone block. They start with "\t(zone\n" at column 1 (one tab).
 zone_starts = [m.start() for m in re.finditer(r"^\t\(zone\n", pcb, re.MULTILINE)]

@@ -1,7 +1,7 @@
-# Twinspora — Pre-Fabrication Review (Master Findings)
+# Twin28xx — Pre-Fabrication Review (Master Findings)
 
 **Date:** 2026-05-05
-**Board:** Twinspora dual BLDC motor controller
+**Board:** Twin28xx dual BLDC motor controller
 **Specs:** 24 V nominal input, 3-5 A RMS / 8 A peak per motor phase, dual DRV8316C + dual MT6701 + STM32G473
 **Stackup:** 4-layer FR4, 1.62 mm, no impedance control specified
 **Outcome:** Board is structurally sound. Several real BLOCKERS require fixes before fab. Functional architecture works once fixed.

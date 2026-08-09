@@ -1,5 +1,5 @@
 """
-Calculate stray capacitance for the HSE crystal on twinspora.kicad_pcb.
+Calculate stray capacitance for the HSE crystal on twin28xx.kicad_pcb.
 
 Stray = MCU pin Cin + trace-to-plane cap + pad-to-plane cap + via cap (per side)
 """
@@ -7,7 +7,7 @@ import re
 import math
 from pathlib import Path
 
-pcb = Path(r"D:\gehub\twinspora\twinspora\twinspora.kicad_pcb").read_text(encoding="utf-8")
+pcb = Path(r"D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb").read_text(encoding="utf-8")
 
 # --- 1. Trace lengths --------------------------------------------------------
 parts = pcb.split("(segment")

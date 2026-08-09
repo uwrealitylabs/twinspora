@@ -4,7 +4,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 import pypdf
 from pathlib import Path
 
-ds_dir = Path(r"D:\gehub\twinspora\review\datasheets")
+ds_dir = Path(r"D:\gehub\twin28xx\review\datasheets")
 
 KEYWORDS = {
     "DRV8316.pdf": ("VM", "Absolute", "absolute", "abs max", "VVM", "ABS", "Vbst",

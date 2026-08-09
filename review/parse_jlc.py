@@ -49,7 +49,7 @@ def row_text(a):
     return a.get_text(" | ", strip=True)
 
 # Save full table for grepping
-out = Path(r"D:\gehub\twinspora\review\jlc_tvs_table.tsv")
+out = Path(r"D:\gehub\twin28xx\review\jlc_tvs_table.tsv")
 with out.open("w", encoding="utf-8") as f:
     f.write("c_number\tmpn\trow_text\n")
     for cnum, a in seen.items():

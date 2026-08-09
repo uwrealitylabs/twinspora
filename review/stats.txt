@@ -1,8 +1,8 @@
 PCB statistics report
 =====================
 - Date: 2026-05-03 11:46:16 PM
-- Project: twinspora
-- Board name: twinspora
+- Project: twin28xx
+- Board name: twin28xx
 
 Board
 -----

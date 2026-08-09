@@ -1,7 +1,7 @@
-# Twinspora — Pre-Fabrication Review (Master Findings, v2)
+# Twin28xx — Pre-Fabrication Review (Master Findings, v2)
 
 **Date:** 2026-05-05
-**Board:** Twinspora dual BLDC motor controller
+**Board:** Twin28xx dual BLDC motor controller
 **Specs:** 24 V nominal input, 3-5 A RMS / 8 A peak per motor phase, dual DRV8316C + dual MT6701 + STM32G473
 **Stackup:** 4-layer FR4, 1.62 mm thick, no impedance control specified
 
@@ -73,7 +73,7 @@ The two factual errors that triggered the re-run (DRV8316C abs max 35→40 V; FO
 
 - **132 ERC violations: 17 errors + 115 warnings.** Of the 17 errors:
   - 6× `label_dangling` on top sheet for `/PHA1`, `/PHB1`, `/PHC1`, `/PHA2`, `/PHB2`, `/PHC2`. **NOT broken motor connections** — Conn_01x03 J9/J10 motor connectors live inside `motor_driver.kicad_sch` (line 5985), so motor phases route correctly via the subsheet. The top-level labels are debug stubs to be deleted to silence ERC. (v1 agent 5 and v2 agent 5 both called this a BLOCKER. Wrong both times.)
-  - 2× `power_pin_not_driven`: U9 (XC6206) Vin and H1 pin 1. Both are KiCad library artifacts — Q1 P-FET drain symbol-pin type is "passive" (not "power-output"), so KiCad doesn't see the +5V net as driven; H1 is a mounting-hole symbol with a bogus power pin. Real circuit is fine — agent 6 v2 traced wires explicitly (twinspora.kicad_sch lines 14175/14425/33958) and confirmed +5V drives U9 V_in.
+  - 2× `power_pin_not_driven`: U9 (XC6206) Vin and H1 pin 1. Both are KiCad library artifacts — Q1 P-FET drain symbol-pin type is "passive" (not "power-output"), so KiCad doesn't see the +5V net as driven; H1 is a mounting-hole symbol with a bogus power pin. Real circuit is fine — agent 6 v2 traced wires explicitly (twin28xx.kicad_sch lines 14175/14425/33958) and confirmed +5V drives U9 V_in.
   - 9× `pin_to_pin` errors and 70× `pin_to_pin` warnings — many are symbol-library cosmetic; some real (diode-bridge symbol artifacts).
 - **719 DRC violations** (down from 758 after your earlier fixes). Of those: ~509 cosmetic silk (199 silk_over_copper, 192 text_height, 118 silk_overlap), 46 lib_footprint_mismatch, 16 padstack_invalid, plus the electrical/mechanical issues called out in A1.
 

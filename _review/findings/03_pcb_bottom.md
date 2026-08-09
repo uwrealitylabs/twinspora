@@ -1,7 +1,7 @@
-# PCB Bottom-Side Pre-Fab Review (v2) — `twinspora.kicad_pcb`
+# PCB Bottom-Side Pre-Fab Review (v2) — `twin28xx.kicad_pcb`
 
 Reviewed: 2026-05-05 (re-do with primary-source verification)
-Source: `D:\gehub\twinspora\twinspora\twinspora.kicad_pcb`
+Source: `D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb`
 Stats: 76.95 × 36.925 mm, 4-layer, 1.6167 mm thick (`_review/stats.json`).
 Per `stats.json`: front-density 37.04 %, back-density 9.59 %, **0 components** on the back layer (`components.smd.back = 0`, `components.tht.back = 0`, `components.unspecified.back = 0`).
 
@@ -13,7 +13,7 @@ Per `stats.json`: front-density 37.04 %, back-density 9.59 %, **0 components** o
 |---|---|---|
 | 1 | "Magnet → encoder die distance is now FR4 (1.62 mm) + QFN-16 package thickness (~0.85 mm) ≈ 2.5 mm. MT6701 datasheet operating range is ~1–3 mm but signal magnitude … degrades sharply past ~2 mm." | **Wrong on both numbers.** MT6701 datasheet (MagnTek Rev.1.5, 2021.03 / Rev.1.8, 2022.12) §5 "Magnetic Input Specifications", page 8, parameter **AG (Air Gap, Magnetic to IC Surface Distance)**: **Min 0.5 mm, Typ 1.0 mm, Max 2.0 mm**. The "operating range" is 0.5–2.0 mm, not 1–3 mm. QFN-16 package thickness from §9.2 (page 33), parameter **A**: **0.700–0.800 mm** (max), not 0.85 mm. The realistic stack-up is 1.617 mm FR4 + ~0.75 mm package ≈ **2.37 mm**, which **exceeds the datasheet AG_max (2.0 mm) by ~0.37 mm — the part is operating *outside its specified magnetic-input range*, not "at the upper limit."** |
 | 2 | "/SPI1_MISO 0.16 mm at (93.25, 117.41)→(97.41, 117.41) within ±2.5 mm of U18 die" | Re-measured: closest distance from U18 center (95.000, 120.0275) to the /SPI1_MISO segment is **2.621 mm** (just outside 2.5 mm). The /TIM8_CH3N segment is 2.028 mm. The /SPI1_MISO concern as stated overshot by ~0.1 mm. Real worst-offenders (re-listed in B3): /TIM8_CH2 at **0.617 mm** (clipping the courtyard) and /TIM8_CH3 at 1.819 mm. |
-| 3 | "no keepout/anti-pad is defined under the MT6701 die" | True, **but verify the KiCad construct**. The two `(keepout …)` blocks at lines 66599 and 82824 in `twinspora.kicad_pcb` are *placement-rule areas* (`auto-placement-area-/motor_driver/`, `auto-placement-area-/motor_driver1/`) with `tracks/vias/pads/copperpour/footprints` all set to `allowed`. They are NOT copper exclusions and do nothing to clear the GND pour. Confirmed there is no `(rule_area)` or copper keepout anywhere in the file. |
+| 3 | "no keepout/anti-pad is defined under the MT6701 die" | True, **but verify the KiCad construct**. The two `(keepout …)` blocks at lines 66599 and 82824 in `twin28xx.kicad_pcb` are *placement-rule areas* (`auto-placement-area-/motor_driver/`, `auto-placement-area-/motor_driver1/`) with `tracks/vias/pads/copperpour/footprints` all set to `allowed`. They are NOT copper exclusions and do nothing to clear the GND pour. Confirmed there is no `(rule_area)` or copper keepout anywhere in the file. |
 | 4 | "MT6701/AS5048 designs is a circular copper keepout of at least 5–6 mm diameter" | The MT6701 datasheet (Rev 1.5 / 1.8) **does not specify a copper keepout** anywhere in the document. There is no mention of "keepout", "PCB layout", or copper near the magnetic path. The datasheet only specifies AG and Bpk as measured at the IC surface. The "5–6 mm keepout" recommendation is **not from MagnTek's datasheet** — sourced rule of thumb only and removed from this review. |
 | 5 | "MT6701 QFN-16 package thickness ~0.85 mm" | MT6701 §9.2 gives **A = 0.700–0.800 mm** (typ ~0.75 mm), not 0.85 mm. |
 
@@ -24,8 +24,8 @@ The two trace-routing and GND-fill structural findings (B2, B3) and the no-cutou
 ## Datasheet citations (primary sources, this review)
 
 - MT6701 — MagnTek MT6701 Hall-Based Angle Position Encoder Sensor.
-  - Rev.1.5, 2021.03 (English, 36 pp). Mirrored at https://uploadcdn.oneyac.com/attachments/files/brand_pdf/magntek/F3/CA/MT6701QT-STD.pdf — local copy at `D:\gehub\twinspora\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf`. The footprint's own `Datasheet` property in `twinspora.kicad_pcb` (lines 6647 and 13158) references **Rev.1.5**, so this is the working revision.
-  - Rev.1.8, 2022.12 (Chinese, 36 pp). Direct from MagnTek: https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_中文版.pdf — local copy at `D:\gehub\twinspora\_review\datasheets\MT6701_Rev1.8.pdf`. Spec values for AG and Bpk are identical between Rev 1.5 and Rev 1.8.
+  - Rev.1.5, 2021.03 (English, 36 pp). Mirrored at https://uploadcdn.oneyac.com/attachments/files/brand_pdf/magntek/F3/CA/MT6701QT-STD.pdf — local copy at `D:\gehub\twin28xx\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf`. The footprint's own `Datasheet` property in `twin28xx.kicad_pcb` (lines 6647 and 13158) references **Rev.1.5**, so this is the working revision.
+  - Rev.1.8, 2022.12 (Chinese, 36 pp). Direct from MagnTek: https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_中文版.pdf — local copy at `D:\gehub\twin28xx\_review\datasheets\MT6701_Rev1.8.pdf`. Spec values for AG and Bpk are identical between Rev 1.5 and Rev 1.8.
   - **§5 "Magnetic Input Specifications" / "外加磁场参数", page 8/9** — verbatim:
     - `Bpk` (Magnetic Input Field Amplitude, "Measure at the IC Surface"): **Min 200, Max 1,000, Unit Gauss**.
     - `AG` (Air Gap, "Magnetic to IC Surface Distance"): **Min 0.5, Typ 1.0, Max 2.0, Unit mm**.
@@ -52,8 +52,8 @@ What the file actually shows:
 
 | Designator | Footprint | Layer | Center (mm) | Source line |
 |---|---|---|---|---|
-| U18 | `Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm` | **F.Cu** | (95.000001, 120.0275) | `twinspora.kicad_pcb` 6618–6624 |
-| U16 | same | **F.Cu** | (135.000001, 120.0275) | `twinspora.kicad_pcb` 13129–13135 |
+| U18 | `Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm` | **F.Cu** | (95.000001, 120.0275) | `twin28xx.kicad_pcb` 6618–6624 |
+| U16 | same | **F.Cu** | (135.000001, 120.0275) | `twin28xx.kicad_pcb` 13129–13135 |
 
 Pads of both parts are on `F.Cu` / `F.Mask` / `F.Paste`; silk, courtyard, and fab on `F.SilkS` / `F.CrtYd` / `F.Fab`. Independently confirmed by `stats.json`: `components.smd.back = 0`. Bottom-side `B.Paste`, `B.Courtyard`, and `B.Fab` SVG exports contain only board-outline plus drill apertures.
 
@@ -74,7 +74,7 @@ Pads of both parts are on `F.Cu` / `F.Mask` / `F.Paste`; silk, courtyard, and fa
 
 ### B2 — Continuous GND copper pour passes directly under both encoder sense paths on every relevant layer
 
-Zone `In1.GND` (`twinspora.kicad_pcb` line 66621) is filled on **F.Cu, B.Cu, In1.Cu, In2.Cu** with a polygon (75.80, 96.55) → (75.78, 138.95) → (156.78, 138.95) → (157.78, 93.45) — i.e. the entire active region. The two `(keepout …)` blocks at lines 66599 and 82824 are KiCad *placement* rule areas, not copper exclusions (all five `allowed` flags). No copper keepout exists anywhere in the file.
+Zone `In1.GND` (`twin28xx.kicad_pcb` line 66621) is filled on **F.Cu, B.Cu, In1.Cu, In2.Cu** with a polygon (75.80, 96.55) → (75.78, 138.95) → (156.78, 138.95) → (157.78, 93.45) — i.e. the entire active region. The two `(keepout …)` blocks at lines 66599 and 82824 are KiCad *placement* rule areas, not copper exclusions (all five `allowed` flags). No copper keepout exists anywhere in the file.
 
 Geometric verification (script `_review/datasheets/_check_zone.py`): the encoder centers (95.000, 120.0275) and (135.000, 120.0275) lie inside `In1.GND` filled-polygons on **F.Cu, In1.Cu, and B.Cu**. (On In2.Cu the GND polygon does not cover those points because In2.Cu is dominated by VCC zones — but VCC copper is just as opaque to magnetic flux.) Thus continuous copper sits on every metal layer between the magnet and the encoder die.
 
@@ -113,7 +113,7 @@ U16 is significantly cleaner than U18 because the second motor-driver IC is on t
 
 ### C1 — No motor-shaft cutout / clearance hole in `Edge.Cuts`
 
-`Edge.Cuts` contains one rectangular outline (8 elements: 4 lines + 4 R3.4 mm corner arcs) at lines 45476–45558 of `twinspora.kicad_pcb`. Corners at (76.525, 100.8) → (153.475, 137.725). **No interior cutouts**. The 1 mm `gr_circle` rings at the encoder centers are on `B.SilkS`, not `Edge.Cuts` — they are silkscreen alignment targets only.
+`Edge.Cuts` contains one rectangular outline (8 elements: 4 lines + 4 R3.4 mm corner arcs) at lines 45476–45558 of `twin28xx.kicad_pcb`. Corners at (76.525, 100.8) → (153.475, 137.725). **No interior cutouts**. The 1 mm `gr_circle` rings at the encoder centers are on `B.SilkS`, not `Edge.Cuts` — they are silkscreen alignment targets only.
 
 For GM2804 / GL-30 motor mounting on the back: the rotor face sits ~1–3 mm below the PCB; the magnet (Dmag 6.0 mm × Tmag 2.5 mm per MT6701 §5) on the rotor would pass through that air gap. With AG_max 2.0 mm and current stack-up 2.37 mm (B1), the only way to bring the magnet within spec — without moving encoders to B.Cu — is to inset the magnet through the PCB via a cutout. Verify mechanical drawing for the chosen motor and decide between (a) moving encoders to B.Cu (B1) and a small recess, (b) thinning the PCB so 1 mm FR4 + ~0.75 mm package gives sub-2 mm AG, or (c) a Ø6–10 mm cutout under each encoder so the magnet protrudes into the board cavity.
 
@@ -197,11 +197,11 @@ Total violations: 719 (84 error, 635 warning). Top warning types: silk_over_copp
 
 ## Verification scripts created in this re-review
 
-- `D:\gehub\twinspora\_review\datasheets\_extract_mt6701.py` — pdftotext via PyMuPDF, used to extract MT6701 PDF text.
-- `D:\gehub\twinspora\_review\datasheets\_check_traces.py` — distance-from-segment scan for B.Cu and F.Cu nets near U16 / U18 centers.
-- `D:\gehub\twinspora\_review\datasheets\_check_zone.py` — point-in-polygon test for `In1.GND` filled polygons on each layer at the encoder centers.
-- `D:\gehub\twinspora\_review\datasheets\_drc_summary.py` — DRC by-severity / by-type summary.
+- `D:\gehub\twin28xx\_review\datasheets\_extract_mt6701.py` — pdftotext via PyMuPDF, used to extract MT6701 PDF text.
+- `D:\gehub\twin28xx\_review\datasheets\_check_traces.py` — distance-from-segment scan for B.Cu and F.Cu nets near U16 / U18 centers.
+- `D:\gehub\twin28xx\_review\datasheets\_check_zone.py` — point-in-polygon test for `In1.GND` filled polygons on each layer at the encoder centers.
+- `D:\gehub\twin28xx\_review\datasheets\_drc_summary.py` — DRC by-severity / by-type summary.
 
 Datasheets cached locally:
-- `D:\gehub\twinspora\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf` (Rev 1.5 EN, 36 pp).
-- `D:\gehub\twinspora\_review\datasheets\MT6701_Rev1.8.pdf` (Rev 1.8 CN, 36 pp).
+- `D:\gehub\twin28xx\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf` (Rev 1.5 EN, 36 pp).
+- `D:\gehub\twin28xx\_review\datasheets\MT6701_Rev1.8.pdf` (Rev 1.8 CN, 36 pp).

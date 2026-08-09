@@ -2,8 +2,8 @@ import sys
 from PIL import Image
 from pathlib import Path
 
-renders = Path(r"D:\gehub\twinspora\review\renders")
-crops = Path(r"D:\gehub\twinspora\review\crops")
+renders = Path(r"D:\gehub\twin28xx\review\renders")
+crops = Path(r"D:\gehub\twin28xx\review\crops")
 crops.mkdir(exist_ok=True)
 
 # 3D top/bottom: 3200x1600. Crop into 6 tiles (3 cols x 2 rows) so each crop is 1067x800.

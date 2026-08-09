@@ -2,7 +2,7 @@ import re
 import collections
 from pathlib import Path
 
-pcb = Path(r"D:\gehub\twinspora\twinspora\twinspora.kicad_pcb").read_text(encoding="utf-8")
+pcb = Path(r"D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb").read_text(encoding="utf-8")
 
 # Split file on "(segment" markers, take everything up to next "(segment" or matching close.
 # Segments are short blocks ~ 200 chars. Easier: regex each field independently within a chunk.

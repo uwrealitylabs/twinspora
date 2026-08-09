@@ -2,7 +2,7 @@
 
 Twin DRV8316 motor drivers controlled by an STM32G473 with an onboard MT6701 magnetic encoder for each motor. Sized to fit two iPOWER GM2804 / Cubemars GL-30 motors on the back of the PCB.
 
-![twin28xx PCB](twinspora/image.png)
+![twin28xx PCB](twin28xx/image.png)
 
 ## Specs
 

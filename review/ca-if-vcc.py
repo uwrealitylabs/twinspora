@@ -1,7 +1,7 @@
 import pypdf
 from pathlib import Path
 
-ds = Path(r"D:\gehub\twinspora\review\datasheets\CA-IF1044VD-Q1.pdf")
+ds = Path(r"D:\gehub\twin28xx\review\datasheets\CA-IF1044VD-Q1.pdf")
 pdf = pypdf.PdfReader(str(ds))
 
 keep = ("VCC", "VIO", "supply", "Supply", "operating", "Operating", "5V", "3.3V", "3V3",

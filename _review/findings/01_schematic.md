@@ -1,6 +1,6 @@
 # Schematic Review (v2 — primary-source verified)
 
-Pre-fabrication review of `twinspora.kicad_sch` (top), `motor_driver.kicad_sch` (sub, U14/U15), `magnetic_encoder.kicad_sch` (sub, U16/U18). Net topology cross-checked against the S-expression source (pin coordinates derived from each part's `lib_id` block, mirror/rotation applied). Every datasheet number below has been read out of the manufacturer's PDF — citations are inline `[doc §section page]`.
+Pre-fabrication review of `twin28xx.kicad_sch` (top), `motor_driver.kicad_sch` (sub, U14/U15), `magnetic_encoder.kicad_sch` (sub, U16/U18). Net topology cross-checked against the S-expression source (pin coordinates derived from each part's `lib_id` block, mirror/rotation applied). Every datasheet number below has been read out of the manufacturer's PDF — citations are inline `[doc §section page]`.
 
 Datasheets used for verification (all on disk under `_review/datasheets/`):
 
@@ -30,7 +30,7 @@ Datasheets used for verification (all on disk under `_review/datasheets/`):
 
 - **MT6701QT (U16/U18) is wired for SSI but ships in I²C/SSI digital mode, and pins 6/7/8 share both protocols — net intent must be confirmed by the firmware author, not the schematic.** Per MagnTek MT6701 Rev 1.8 §1.2 page 4: pin 14 = `MODE`, "数字输入, 内置200KΩ 上拉电阻, ABZ或者I2C/SSI模式选择" ("digital input, built-in 200 kΩ pull-up, ABZ or I²C/SSI mode select"). Per §7.1 page 10 QFN-16 I/O configuration table: pins 6/7/8 are `SDA/SCL/CSN` for I²C, `DO/CLK/CSN` for SSI, or `A/B/Z` for ABZ — **MODE selects only between (digital = I²C/SSI) and (incremental = ABZ/UVW)**, *not* between I²C and SSI. The MT6701QT-STD ordering code (per §2 page 5) supports **both I²C and SSI** ("MT6701QT-STD: QFN3x3 基础型号：I2C, SSI"); selection between the two protocols is by host-driven activity (CSN edges → SSI; START condition with no CSN → I²C), no register/strap changes that.
 
-  In the Twinspora schematic (`magnetic_encoder.kicad_sch`):
+  In the Twin28xx schematic (`magnetic_encoder.kicad_sch`):
     - U16/U18 pin 14 (MODE) is at `(153.67, 102.87)` (instance at `(140.97, 102.87)`, `mirror y`, sym-rel pin 14 at `(-12.7, 0)`). It is **wired** via `(153.67, 102.87) → (153.67, 83.82) → (140.97, 83.82) → +3.3 V power symbol at (140.97, 77.47)`. So MODE = high → digital mode. ✓
     - Pins 6/7/8 (sym-rel `(12.7, 12.7)`, `(12.7, 10.16)`, `(12.7, 7.62)` respectively, after `mirror y` at abs x=128.27) are jumpered via `R33-R38` (0 Ω) onto hierarchical labels MISO/SCK/NSS for SSI use.
 
@@ -129,7 +129,7 @@ Datasheets used for verification (all on disk under `_review/datasheets/`):
   - PA3 (pin 17) = ADC1_IN4 — schematic label `ADC1_IN4` ✓
   **The prior review claimed off-by-one mismatches here. That was wrong. No action.**
 
-- **PA1 is `TT_a` (3.3 V tolerant only), NOT 5 V tolerant.** Per DS12288 §3.6 Table 12 page 58. PA0/PA1/PA3/PA4 are TT_a; PA2/PA5/onwards through PA10/PA15 are FT_a (5 V tolerant). The Twinspora schematic uses PA1 as ADC2_IN2 routed through a 49.9 Ω + 10 nF anti-alias filter from a DRV current-sense output (SOA/SOB/SOC at ~0–3.3 V). No 5 V signal touches PA1 → fine.
+- **PA1 is `TT_a` (3.3 V tolerant only), NOT 5 V tolerant.** Per DS12288 §3.6 Table 12 page 58. PA0/PA1/PA3/PA4 are TT_a; PA2/PA5/onwards through PA10/PA15 are FT_a (5 V tolerant). The Twin28xx schematic uses PA1 as ADC2_IN2 routed through a 49.9 Ω + 10 nF anti-alias filter from a DRV current-sense output (SOA/SOB/SOC at ~0–3.3 V). No 5 V signal touches PA1 → fine.
 
 - **DRV8316C charge-pump and bypass caps match TI's recommendations.** Verified against SLVSH07 §6 Table 6-1 page 4-5 and §8.3 Table 8-1 page 19:
   - C32/C46 = 47 nF X7R between CPH and CPL (CFLY) ✓

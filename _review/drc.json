@@ -197,7 +197,7 @@
             "type": "footprint_symbol_mismatch"
         }
     ],
-    "source": "twinspora.kicad_pcb",
+    "source": "twin28xx.kicad_pcb",
     "unconnected_items": [
         {
             "description": "Missing connection between items",

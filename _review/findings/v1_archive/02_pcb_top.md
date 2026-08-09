@@ -1,9 +1,9 @@
 # PCB Top-Side Review
 
-Twinspora dual BLDC, 76.95 x 36.93 mm, 4-layer (F.Cu / In1.Cu / In2.Cu / B.Cu).
+Twin28xx dual BLDC, 76.95 x 36.93 mm, 4-layer (F.Cu / In1.Cu / In2.Cu / B.Cu).
 Stackup note: inner layers are 0.5 oz (0.0152 mm) — half the ampacity of outer 1 oz (0.035 mm).
 Reviewed against `_review/exports/layers/{F.Cu,F.Silkscreen,F.Fab,F.Mask,F.Paste,F.Courtyard,Edge.Cuts}.{svg,pdf,png}`,
-`_review/exports/3d/top.png`, `twinspora.kicad_pcb`, `_review/drc.json`.
+`_review/exports/3d/top.png`, `twin28xx.kicad_pcb`, `_review/drc.json`.
 
 ## BLOCKERS
 

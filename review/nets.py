@@ -2,7 +2,7 @@ import re
 import collections
 from pathlib import Path
 
-pcb = Path(r"D:\gehub\twinspora\twinspora\twinspora.kicad_pcb").read_text(encoding="utf-8")
+pcb = Path(r"D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb").read_text(encoding="utf-8")
 
 parts = pcb.split("(segment")
 n_re = re.compile(r'\(net\s+"([^"]+)"\)')

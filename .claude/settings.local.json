@@ -7,9 +7,7 @@
       "WebFetch(domain:www.lcsc.com)",
       "WebSearch",
       "WebFetch(domain:www.manualslib.com)",
-      "Bash(cp \"C:\\\\\\\\Users\\\\\\\\isaac\\\\\\\\.claude\\\\\\\\projects\\\\\\\\D--gehub-twinspora\\\\\\\\2a2e5812-67fe-4021-8804-2e5a2480cc16\\\\\\\\tool-results\\\\\\\\webfetch-1777280287526-a8w69f.pdf\" /tmp/ft_datasheet.pdf)",
-      "Read(//tmp/**)",
-      "Bash(unzip -l \"twinspora-2026-04-28_120851.zip\")"
+      "Read(//tmp/**)"
     ]
   }
 }

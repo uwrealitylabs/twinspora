@@ -2,7 +2,7 @@
 import re, math, sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-with open(r'D:\gehub\twinspora\twinspora\twinspora.kicad_pcb', 'r', encoding='utf-8') as f:
+with open(r'D:\gehub\twin28xx\twin28xx\twin28xx.kicad_pcb', 'r', encoding='utf-8') as f:
     txt = f.read()
 
 # Build a net id -> name table

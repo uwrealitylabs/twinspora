@@ -4,17 +4,17 @@ Round-2 fully primary-source-cited audit. Date: 2026-05-05.
 
 **Primary sources used (all verified by direct PDF read, not search-snippet paraphrase):**
 - Texas Instruments, *DRV8316C Three-Phase Integrated FET Motor Driver Datasheet*, doc ID **SLVSH07** (December 2022).
-  Local copy: `D:\gehub\twinspora\_review\datasheets\DRV8316C_TI.pdf`
+  Local copy: `D:\gehub\twin28xx\_review\datasheets\DRV8316C_TI.pdf`
 - STMicroelectronics, *STM32G474xB/xC/xE Datasheet* (also covers STM32G473xB pin map; all G473RB pin/electrical specs identical), doc ID **DS12288 Rev 1** (May 2019).
-  Local copy: `D:\gehub\twinspora\_review\datasheets\STM32G473_farnell.pdf`
+  Local copy: `D:\gehub\twin28xx\_review\datasheets\STM32G473_farnell.pdf`
 - STMicroelectronics, *AN4488 Application note — Getting started with STM32F4xxxx MCU hardware development* (June 2014, Rev 1).
-  Local copy: `D:\gehub\twinspora\_review\datasheets\AN4488.pdf`
+  Local copy: `D:\gehub\twin28xx\_review\datasheets\AN4488.pdf`
   *Note: ST has no STM32G4-specific equivalent of AN4488; AN4488's power-supply-scheme guidance is identical to the STM32G4 datasheet §5.1.6 figure 15 (DS12288 p80), and the same recommendations apply.*
 - STMicroelectronics, *AN2867 Application note — Oscillator design guide* (January 2009, Rev 1).
-  Local copy: `D:\gehub\twinspora\_review\datasheets\AN2867.pdf`
+  Local copy: `D:\gehub\twin28xx\_review\datasheets\AN2867.pdf`
 
-Schematic files: `D:\gehub\twinspora\twinspora\twinspora.kicad_sch` (top), `D:\gehub\twinspora\twinspora\motor_driver.kicad_sch` (DRV sub-sheet).
-BOM: `D:\gehub\twinspora\_review\bom.csv`.
+Schematic files: `D:\gehub\twin28xx\twin28xx\twin28xx.kicad_sch` (top), `D:\gehub\twin28xx\twin28xx\motor_driver.kicad_sch` (DRV sub-sheet).
+BOM: `D:\gehub\twin28xx\_review\bom.csv`.
 
 ---
 
@@ -29,8 +29,8 @@ BOM: `D:\gehub\twinspora\_review\bom.csv`.
 | C5 | Safe IRMS at TA=85 °C | "~2.7-3.1 A continuous" | At max slew (200 V/µs), fPWM=50 kHz, FOC, with active demag: **≈ 1.27 A at TJ_target=125 °C; ≈ 1.61 A at TJ_target=140 °C** (using TI's actual P_CON=3×I²×R, switching, dead-time, standby losses summed and equated to (TJ-TA)/θJA = (TJ-85)/25.7). See §3.5 below for full math. |
 | C6 | Safe IRMS at TA=25 °C | "~4.2 A continuous" | At max slew, FOC, AD on: **≈ 2.49 A at TJ_target=125 °C; ≈ 2.68 A at TJ_target=140 °C** (per same calc). |
 | C7 | HSE Cstray assumption | "Typical Cstray on a clean 4-layer PCB with short tracks = 3–5 pF. Effective load = 18–20 pF, matching 20 pF spec" | **DS12288 §5.3.10 p123 explicitly says: "PCB and MCU pin capacitance must be included (10 pF can be used as a rough estimate of the combined pin and board capacitance) when sizing CL1 and CL2."** With Cstray = 10 pF and Cl1=Cl2=30 pF: CL_eff = 30·30/60 + 10 = **25 pF, not 20 pF**. C11/C18 are over-loading the crystal by ~5 pF. Optimal would be Cl1=Cl2 = **20 pF** each (yielding CL_eff = 10 + 10 = 20 pF). With 30 pF the oscillator will still start, but f will be slightly low (typically –20 to –40 ppm, depending on motional capacitance Cm; not catastrophic, but suboptimal). See §1.4. |
-| C8 | VDDA / VREF+ filter status | "Wired DIRECTLY to +3.3V rail, no dedicated cap on the VDDA pin near the chip; VREF+ wired straight to +3.3V rail too (no 100nF/1µF cap pair)" | **Twinspora HAS dedicated decoupling pairs**: at world (X=355.6, Y=101.6 / 114.3 / 127 / 139.7) there is a column of four caps tagged "VDDA/VREF Decoupling": **C25 = 100 nF X7R + C26 = 1 µF X5R** (one pair) and **C27 = 100 nF X7R + C28 = 1 µF X5R** (second pair). These are tied to the global +3.3V net. The remaining valid critique is that there is **no ferrite isolating VDDA/VREF+ from the digital VDD rail** (per AN4488 §2.2 p8 "Additional precautions can be taken: VDDA can be connected to VDD through a ferrite bead.") and that the caps are placed ~150 mm in schematic-space from U7 — they need to be physically near the U7 pins on the PCB. See §1.2 below. |
-| C9 | USB series-resistor remark | Implied 22 Ω needed; observed 49.9 Ω in BOM and questioned them as USB | **DS12288 Table 92 (USB electrical characteristics) footnote 4 p181: "No external termination series resistors are required on USB_PD (D+) and USB_DM (D-); the matching impedance is already included in the embedded driver."** STM32G4 USB FS PHY has driver impedance ZsDRV = 28-44 Ω built-in (Table 92). **49.9 Ω resistors R12-R14, R17, R19, R20 are NOT for USB.** They are most likely the SOA/SOB/SOC current-sense filter resistors (DRV8316C §9.2.1.1.6 p73 recommends "330-ohms, 22-pF" — Twinspora used 49.9 Ω for lower noise / wider bandwidth, valid choice). USB design uses ONLY the U17/U19 (SRV05-4A) ESD protection at the connector + internal 1.5 kΩ D+ pull-up (DS12288 Table 92 row RPUI = 900–1500 Ω). |
+| C8 | VDDA / VREF+ filter status | "Wired DIRECTLY to +3.3V rail, no dedicated cap on the VDDA pin near the chip; VREF+ wired straight to +3.3V rail too (no 100nF/1µF cap pair)" | **Twin28xx HAS dedicated decoupling pairs**: at world (X=355.6, Y=101.6 / 114.3 / 127 / 139.7) there is a column of four caps tagged "VDDA/VREF Decoupling": **C25 = 100 nF X7R + C26 = 1 µF X5R** (one pair) and **C27 = 100 nF X7R + C28 = 1 µF X5R** (second pair). These are tied to the global +3.3V net. The remaining valid critique is that there is **no ferrite isolating VDDA/VREF+ from the digital VDD rail** (per AN4488 §2.2 p8 "Additional precautions can be taken: VDDA can be connected to VDD through a ferrite bead.") and that the caps are placed ~150 mm in schematic-space from U7 — they need to be physically near the U7 pins on the PCB. See §1.2 below. |
+| C9 | USB series-resistor remark | Implied 22 Ω needed; observed 49.9 Ω in BOM and questioned them as USB | **DS12288 Table 92 (USB electrical characteristics) footnote 4 p181: "No external termination series resistors are required on USB_PD (D+) and USB_DM (D-); the matching impedance is already included in the embedded driver."** STM32G4 USB FS PHY has driver impedance ZsDRV = 28-44 Ω built-in (Table 92). **49.9 Ω resistors R12-R14, R17, R19, R20 are NOT for USB.** They are most likely the SOA/SOB/SOC current-sense filter resistors (DRV8316C §9.2.1.1.6 p73 recommends "330-ohms, 22-pF" — Twin28xx used 49.9 Ω for lower noise / wider bandwidth, valid choice). USB design uses ONLY the U17/U19 (SRV05-4A) ESD protection at the connector + internal 1.5 kΩ D+ pull-up (DS12288 Table 92 row RPUI = 900–1500 Ω). |
 | C10 | DRV8316C CPH/CPL cap value | "47 nF" — correct in prior; restated for traceability | **Confirmed**: TI SLVSH07 Table 6-1 (Pin Functions) p4-5: "Connect a X5R or X7R, 47-nF, ceramic capacitor between the CPH and CPL pins." Schematic uses **CL10B473KB8NNNC = 47 nF X7R 0603** for C32/C46. ✓ |
 
 ---
@@ -39,7 +39,7 @@ BOM: `D:\gehub\twinspora\_review\bom.csv`.
 
 ### 1.1 LQFP-64 pin map (verified against DS12288 §4.3 fig 7 p50 and §4.9 Table 12 p56-71)
 
-| LQFP-64 pin | Pin name | I/O class | Twinspora net | Status |
+| LQFP-64 pin | Pin name | I/O class | Twin28xx net | Status |
 |---:|---|---|---|---|
 | 1 | VBAT | S | +3.3V (tied to VDD) | OK — AN4488 §2.1.2 p7: "If no external battery is used in the application, it is highly recommended to connect VBAT externally to VDD." Confirmed. NIT: AN4488 §2.2 p8 also recommends "100 nF external ceramic decoupling capacitor" on VBAT — verify a 100 nF cap is physically near pin 1 in PCB layout. |
 | 5 | PF0-OSC_IN | I/O FT_fa | RCC_OSC_IN → X1 | OK |
@@ -67,7 +67,7 @@ Per **DS12288 §5.1.6 fig 15 p80** ("Power supply scheme"), and **AN4488 §2.2 p
 - VREF+ pair: **100 nF + 1 µF** to AGND (or tie to VDDA for non-precision ADC).
 - Additional precaution (AN4488 §2.2 p8): "VDDA can be connected to VDD through a ferrite bead. The VREF+ pin can be connected to VDDA through a resistor (typ. 47 Ω)."
 
-**Twinspora schematic (verified from `twinspora.kicad_sch`):**
+**Twin28xx schematic (verified from `twin28xx.kicad_sch`):**
 
 | Cap | Position (world XY) | Value | Net |
 |---|---|---|---|
@@ -90,7 +90,7 @@ A schematic text label "VDDA/VREF Decoupling" is placed at (355.346, 84.074) abo
 - **DS12288 §5.3.15 Table 61 p139**: VIL = 0.3 × VDD = 0.99 V max; VIH = 0.7 × VDD = 2.31 V min. Internal RPU = 25 / 40 / 55 kΩ (min/typ/max).
 - **DS12288 fig 26 p140 "Recommended NRST pin protection"**: external 100 nF cap from NRST to GND, plus optional external reset circuit. The cap "must be placed as close as possible to the device" (footnote 3).
 - **AN4488 §2.3.3 p11**: "Only a pull-down capacitor is recommended to improve EMS performance by protecting the device against parasitic resets ... The capacitor recommended value (100 nF) can be reduced to 10 nF to limit this power consumption."
-- **Twinspora**: BOM has 0.1 µF caps in the +3.3V cap pool. SW1/SW2 (SKSGPAE010, BOM line 34) — one is RESET, one is BOOT. The schematic has a "RESET SW" label at (135.128, 138.43) and "BOOT SW" label at (134.874, 92.964). No external 10 kΩ pull-up is needed for NRST (internal pull-up exists per DS Table 61). **Verify in PCB review**: a 100 nF cap exists physically within ~2 mm of pin 7 (NRST). Not visible by inspecting the schematic alone since global +3.3V/GND net membership is what matters.
+- **Twin28xx**: BOM has 0.1 µF caps in the +3.3V cap pool. SW1/SW2 (SKSGPAE010, BOM line 34) — one is RESET, one is BOOT. The schematic has a "RESET SW" label at (135.128, 138.43) and "BOOT SW" label at (134.874, 92.964). No external 10 kΩ pull-up is needed for NRST (internal pull-up exists per DS Table 61). **Verify in PCB review**: a 100 nF cap exists physically within ~2 mm of pin 7 (NRST). Not visible by inspecting the schematic alone since global +3.3V/GND net membership is what matters.
 
 ### 1.4 HSE crystal (X1, X322512MSB4SI, 12 MHz, datasheet CL = 20 pF)
 
@@ -104,7 +104,7 @@ where Cs is the stray (PCB + MCU pin) capacitance.
 
 **Crystal X322512MSB4SI**: BOM line 48 shows 12 MHz ±10 ppm 20 pF SMD3225-4P, so target CL = 20 pF.
 
-**Twinspora as designed (C11/C18 = 30 pF C0G, BOM line 7)**:
+**Twin28xx as designed (C11/C18 = 30 pF C0G, BOM line 7)**:
 - CL_eff = 30·30/(30+30) + Cs
 - With **Cs = 10 pF (per DS12288 §5.3.10 quote above)**: CL_eff = 15 + 10 = **25 pF** ← over-loads crystal by 5 pF.
 
@@ -123,7 +123,7 @@ For USB FS this would be a problem if Δf > ±200 ppm (USB FS spec ±2500 ppm; l
 - AN4488 §5.2 fig 19 p27 shows recommended boot pin connection: external 10 kΩ pull-down to GND, plus optional momentary switch to VDD for serial-bootloader access.
 - BOOT mode selection (AN4488 §5.1 Table 7 p27 — the table is shown for STM32F4, but G4 boot semantics are identical when nBOOT_SEL option byte = 1, the factory default per RM0440 §3.5.5): BOOT0=0 → main flash; BOOT0=1 → system bootloader.
 
-**Twinspora**: BOOT label at (218.44, 172.72) and at (135.128, 92.964) ("BOOT SW"). One of R1/R4/R7/R11/R18/R22/R26 (10 kΩ 0402, BOM line 26) provides the pull-down — and SW1 or SW2 (SKSGPAE010) momentary switch ties BOOT to +3.3V when pressed. Standard ST-recommended circuit. ✓
+**Twin28xx**: BOOT label at (218.44, 172.72) and at (135.128, 92.964) ("BOOT SW"). One of R1/R4/R7/R11/R18/R22/R26 (10 kΩ 0402, BOM line 26) provides the pull-down — and SW1 or SW2 (SKSGPAE010) momentary switch ties BOOT to +3.3V when pressed. Standard ST-recommended circuit. ✓
 
 ### 1.6 USB Full-Speed (PA11/PA12)
 
@@ -131,9 +131,9 @@ For USB FS this would be a problem if Δf > ±200 ppm (USB FS spec ±2500 ppm; l
 - **DS12288 Table 92 p181 row RPUI**: Embedded USB_DP pull-up during idle = 900–1500 Ω (typ 1250 Ω). No external pull-up needed.
 - **AN4488 §3.2 p18 pinout** confirms PA11/PA12 are USB capable on G4.
 
-**Twinspora**: PA11 (pin 45) → USB_DM, PA12 (pin 46) → USB_DP. ESD protection via U17/U19 (SRV05-4A) — correct part for USB (TVS array, low capacitance, USB-rated).
+**Twin28xx**: PA11 (pin 45) → USB_DM, PA12 (pin 46) → USB_DP. ESD protection via U17/U19 (SRV05-4A) — correct part for USB (TVS array, low capacitance, USB-rated).
 
-The 49.9 Ω resistors R12-R14, R17, R19, R20 (BOM line 29) are **not for USB**. They are very likely for the DRV8316C SOx current-sense filter (DS SLVSH07 §9.2.1.1.6 p73 recommends "330-ohms, 22-pF"; Twinspora's 49.9 Ω is a lower-noise / wider-bandwidth choice — also valid). Verify in PCB review by tracing R12/R13/R14 to the SOA/SOB/SOC nets.
+The 49.9 Ω resistors R12-R14, R17, R19, R20 (BOM line 29) are **not for USB**. They are very likely for the DRV8316C SOx current-sense filter (DS SLVSH07 §9.2.1.1.6 p73 recommends "330-ohms, 22-pF"; Twin28xx's 49.9 Ω is a lower-noise / wider-bandwidth choice — also valid). Verify in PCB review by tracing R12/R13/R14 to the SOA/SOB/SOC nets.
 
 ### 1.7 SWD debug
 
@@ -141,13 +141,13 @@ DS12288 Table 12 p66, AN4488 Table 8 p30 (same SWJ-DP assignment for all STM32 w
 - SWDIO → PA13 (FT_f, internal pull-up after reset, DS Table 12 note 4 p71)
 - SWCLK → PA14 (FT_f, internal pull-down after reset, DS Table 12 note 4 p71)
 
-**Twinspora**: PA13 → SYS_SWDIO ✓, PA14 → SYS_SWCLK ✓. No external pull-ups/downs needed (handled internally).
+**Twin28xx**: PA13 → SYS_SWDIO ✓, PA14 → SYS_SWCLK ✓. No external pull-ups/downs needed (handled internally).
 
 ### 1.8 VDD decoupling sufficiency
 
 - **DS12288 §5.1.6 fig 15 p80**: "n × 100 nF + 1 × 4.7 µF" where n = number of VDD/VSS pairs.
 - LQFP-64 has **4 × VDD pins** (16, 32, 48, 64, per DS12288 Table 12). So spec calls for **4 × 100 nF + 1 × 4.7 µF**.
-- **Twinspora BOM line 3** (`CL05B104KB54PNC`, 100 nF X7R 0402) lists 14 instances on +3.3V net; BOM line 8 (`CL10A475KO8NNNC`, 4.7 µF 16V X5R 0603) C14/C24 — 2 instances. Plus larger bulk caps (10 µF X5R 0805 — multiple). Quantitatively **abundant**, exceeds spec.
+- **Twin28xx BOM line 3** (`CL05B104KB54PNC`, 100 nF X7R 0402) lists 14 instances on +3.3V net; BOM line 8 (`CL10A475KO8NNNC`, 4.7 µF 16V X5R 0603) C14/C24 — 2 instances. Plus larger bulk caps (10 µF X5R 0805 — multiple). Quantitatively **abundant**, exceeds spec.
 - **Layout flag**: each VDD pin needs a 100 nF within ≤2 mm in PCB layout. The schematic groups caps in remote columns (X=355) — global net is correct, but PCB review must verify physical co-location.
 
 ---
@@ -160,7 +160,7 @@ DS12288 Table 12 p66, AN4488 Table 8 p30 (same SWJ-DP assignment for all STM32 w
 - DRV8316C**R** (suffix R) = SPI variant. PWM mode, slew rate, CSA gain, OCP level, OVP threshold, BUCK_SEL all configured via **SPI registers** (Control Register 1-12, §8.6).
 - DRV8316C**T** (suffix T) = Hardware variant. Same parameters set by 4-level pin straps (MODE/SLEW/GAIN/OCP-SR/VSEL_BK).
 
-**Twinspora**: BOM line 46 lists `DRV8316CRRGFR` ⇒ **SPI variant**. Confirmed by symbol pinout: pins 33/34/35/36 are SDO/SDI/SCLK/nSCS (SPI), and there is no MODE/SLEW/GAIN pin (those positions are NC on the R variant per §6.1 Fig 6-1 p4).
+**Twin28xx**: BOM line 46 lists `DRV8316CRRGFR` ⇒ **SPI variant**. Confirmed by symbol pinout: pins 33/34/35/36 are SDO/SDI/SCLK/nSCS (SPI), and there is no MODE/SLEW/GAIN pin (those positions are NC on the R variant per §6.1 Fig 6-1 p4).
 
 ### 2.2 V_VM voltage ratings (cited)
 
@@ -230,21 +230,21 @@ These are JEDEC-standard 4-layer board values. RθJA = 25.7 is achievable on a r
 
 **Conclusion**: at power-up, before any SPI write, the DRV8316C buck comes up at **3.3 V, 600 mA limit, with AVDD power-sequencing enabled**. This is exactly what is needed to bootstrap the +3.3V rail for the STM32 — no chicken-and-egg problem. The STM32 is powered by either USB VBUS (5 V → XC6206 LDO → 3.3 V) or by the DRV8316 buck (24 V → buck → 3.3 V → XC6206 LDO acts as a downstream regulator with 3.3 V input dropping to ~3.0–3.05 V output given XC6206's typ 250 mV dropout at light load — verify this in `06_datasheet_others.md` against the XC6206 spec; if dropout pulls the rail below 3.0 V, the STM32 USB block (DS12288 Table 92, VDD min for USB = 3.0 V) may not function).
 
-For the **DRV8316CT (HW variant)**, the boot-time buck voltage is set by the VSEL_BK pin tied at hardware-design time (§7.5 p8, four-level pin: AGND→3.3V, Hi-Z→5.0V, 47k to AVDD→4.0V, AVDD→5.7V). **Twinspora is the SPI variant** so this does not apply — but for completeness, on the CR variant the analogous pin is FB_BK (which is just feedback, not a select pin), and BUCK_SEL register bits start at 00b ⇒ 3.3 V at boot.
+For the **DRV8316CT (HW variant)**, the boot-time buck voltage is set by the VSEL_BK pin tied at hardware-design time (§7.5 p8, four-level pin: AGND→3.3V, Hi-Z→5.0V, 47k to AVDD→4.0V, AVDD→5.7V). **Twin28xx is the SPI variant** so this does not apply — but for completeness, on the CR variant the analogous pin is FB_BK (which is just feedback, not a select pin), and BUCK_SEL register bits start at 00b ⇒ 3.3 V at boot.
 
-### 2.7 DRV8316C cap recommendations vs Twinspora (cited per pin)
+### 2.7 DRV8316C cap recommendations vs Twin28xx (cited per pin)
 
 **TI SLVSH07 Table 6-1 (Pin Functions) p4-5** quotes (verbatim):
 
-| Pin | TI requirement (verbatim) | Twinspora actual (BOM cross-check) | Status |
+| Pin | TI requirement (verbatim) | Twin28xx actual (BOM cross-check) | Status |
 |---|---|---|---|
 | AVDD (25) | "Connect an X5R or X7R, 1-µF, 6.3-V ceramic capacitor between the AVDD and AGND pins. This regulator can source up to 30 mA externally." | C31/C45 = CL10A105KB8NNNC = **1 µF X5R 50V 0603** (BOM line 9) | OK ✓ — value matches; voltage rating exceeds spec (50 V vs 6.3 V min); X5R OK (X7R preferred for temp coefficient but X5R within spec). |
 | CP (8, charge pump out) | "Connect a X5R or X7R, 1-µF, 16-V ceramic capacitor between the CP and VM pins." | C33/C47 = CL10A105KB8NNNC = **1 µF X5R 50V 0603** | OK ✓ |
 | CPH↔CPL (7↔6) | "Connect a X5R or X7R, 47-nF, ceramic capacitor between the CPH and CPL pins. TI recommends a capacitor voltage rating at least twice the normal operating voltage of the device." | C32/C46 = CL10B473KB8NNNC = **47 nF X7R 50V 0603** (BOM line 10) | OK ✓ — value matches exactly (47 nF C-variant requirement — older non-C parts and DRV835x require 22 nF; 47 nF is the documented value for DRV8316**C** specifically). 50 V rating > 2×24 V = 48 V minimum; just barely meets, but acceptable. |
-| VM (9, 10, 11) | "Connect to motor supply voltage; bypass to PGND with two **0.1-µF** capacitors (for each pin) plus **one bulk capacitor** rated for VM. TI recommends a capacitor voltage rating at least twice the normal operating voltage of the device." | Per driver: 5× GRM21BR61H106KE43L = **10 µF X5R 50V 0805** (BOM line 5) on VM net at world Y=101–115 (around U14/U15), plus **C43/C57 = EEEFT1H331GP = 330 µF 50V SMD aluminum electrolytic** (BOM line 11), plus optional **C44/C58 = 50PX330MEFC10X16 = 330 µF 50V THT** (BOM line 12). Total ~50 µF ceramic + 330 µF bulk per driver. | OK ✓ — *exceeds* TI spec on bulk and MF capacitance. **Note**: TI explicitly says "two 0.1-µF capacitors (for each pin)" — i.e. 6× 0.1 µF total per driver (3 VM pins × 2 caps each). Twinspora replaces those with 10 µF ceramics, which provides far better LF and MF decoupling but **slightly worse HF response** than 0.1 µF X7R 0402 placed micrometres from each VM pin would. NIT: consider adding 6× 100 nF X7R 0402 on VM at the U14/U15 footprint in next revision for HF noise rejection. |
+| VM (9, 10, 11) | "Connect to motor supply voltage; bypass to PGND with two **0.1-µF** capacitors (for each pin) plus **one bulk capacitor** rated for VM. TI recommends a capacitor voltage rating at least twice the normal operating voltage of the device." | Per driver: 5× GRM21BR61H106KE43L = **10 µF X5R 50V 0805** (BOM line 5) on VM net at world Y=101–115 (around U14/U15), plus **C43/C57 = EEEFT1H331GP = 330 µF 50V SMD aluminum electrolytic** (BOM line 11), plus optional **C44/C58 = 50PX330MEFC10X16 = 330 µF 50V THT** (BOM line 12). Total ~50 µF ceramic + 330 µF bulk per driver. | OK ✓ — *exceeds* TI spec on bulk and MF capacitance. **Note**: TI explicitly says "two 0.1-µF capacitors (for each pin)" — i.e. 6× 0.1 µF total per driver (3 VM pins × 2 caps each). Twin28xx replaces those with 10 µF ceramics, which provides far better LF and MF decoupling but **slightly worse HF response** than 0.1 µF X7R 0402 placed micrometres from each VM pin would. NIT: consider adding 6× 100 nF X7R 0402 on VM at the U14/U15 footprint in next revision for HF noise rejection. |
 | VREF/ILIM (37) | "Connect a X5R or X7R, **0.1-µF**, 6.3-V ceramic capacitor between the VREF and AGND pins." (PWM Mode 1/3 = VREF; Modes 2/4 = ILIM with resistor divider, see §9.2.2.2.2 p76) | **NEEDS VERIFICATION** in motor_driver.kicad_sch — pin 37 connection not yet fully traced. The schematic does show resistors near U14/U15 (R29/R31 = 100 kΩ, R30/R32 = 330 Ω, BOM lines 28 and 32) which could be a VREF/ILIM divider, but exact pin connectivity needs schematic-side check. | **Open question** — must verify. Promoted to a B-tier blocker pending verification (see §4 below). |
 
-**Buck output bypass C_BK (TI §9.2.1.1.5 p72 + §7.5 p8)**: "C_BK is recommended to be 22-µF" with 22 µH or 47 µH inductor. **Twinspora**: L1/L2 = PRS3015-470MT = **47 µH** (BOM line 22). The matching CBK should be 22 µF; need to verify in motor_driver schematic which cap on BUCK_OUT serves this role (likely one of C34/C35/C37-C42 = 10 µF X5R 0805, but 10 µF < 22 µF spec). **NIT: verify CBK = 22 µF on BUCK_OUT; if only 10 µF present, add another 10 µF in parallel.**
+**Buck output bypass C_BK (TI §9.2.1.1.5 p72 + §7.5 p8)**: "C_BK is recommended to be 22-µF" with 22 µH or 47 µH inductor. **Twin28xx**: L1/L2 = PRS3015-470MT = **47 µH** (BOM line 22). The matching CBK should be 22 µF; need to verify in motor_driver schematic which cap on BUCK_OUT serves this role (likely one of C34/C35/C37-C42 = 10 µF X5R 0805, but 10 µF < 22 µF spec). **NIT: verify CBK = 22 µF on BUCK_OUT; if only 10 µF present, add another 10 µF in parallel.**
 
 ### 2.8 MODE / GAIN / SLEW four-level pin tying (CT variant only — informational)
 
@@ -261,7 +261,7 @@ Internal pull-up RPU = 70-130 kΩ to AVDD; internal pull-down RPD = 70-130 kΩ t
 
 For the OCP/SR pin (CT variant), the table is similar but uses 22 kΩ to AGND for Mode 2 (VL2) instead of Hi-Z (§7.5 p11 OCP/SR row).
 
-**Twinspora is the CR (SPI) variant — these pins are not present**, so this only matters for cross-checking that the symbol/footprint is the right variant. Verified: pin 33/34/35/36 are SDO/SDI/SCLK/nSCS (SPI), confirming CR variant. ✓
+**Twin28xx is the CR (SPI) variant — these pins are not present**, so this only matters for cross-checking that the symbol/footprint is the right variant. Verified: pin 33/34/35/36 are SDO/SDI/SCLK/nSCS (SPI), confirming CR variant. ✓
 
 ### 2.9 DRVOFF (pin 21)
 
@@ -269,14 +269,14 @@ For the OCP/SR pin (CT variant), the table is similar but uses 22 kΩ to AGND fo
 - **TI SLVSH07 §6 Table 6-1 p4**: "When this pin is pulled high the six MOSFETs in the power stage are turned OFF making all outputs Hi-Z."
 - Default with DRVOFF floating (or external no-connect): pulled low by internal RPD ⇒ **drivers ENABLED** (functional).
 
-**Twinspora**: schematic shows DRVOFF tied to a `no_connect` marker at world (125.73, 105.41) — this is functional but **loses a hardware-level safety shutdown path**. Recommendation: route DRVOFF to a spare MCU GPIO so firmware can hardware-disable the driver during emergency stop. NIT, not blocker.
+**Twin28xx**: schematic shows DRVOFF tied to a `no_connect` marker at world (125.73, 105.41) — this is functional but **loses a hardware-level safety shutdown path**. Recommendation: route DRVOFF to a spare MCU GPIO so firmware can hardware-disable the driver during emergency stop. NIT, not blocker.
 
 ### 2.10 nSLEEP (pin 23)
 
 - **TI SLVSH07 §7.5 p10**: nSLEEP VIH min = 1.6 V, hysteresis typ 250 mV, internal RPD = 150-300 kΩ to AGND (typ 200 kΩ).
 - **TI SLVSH07 §7.5 p8**: tWAKE = 1 ms typ (nSLEEP=1 to outputs ready); tSLEEP = 120 µs (period to enter sleep); **tRST = 20-40 µs (period to reset faults)**.
 
-**Twinspora**: nSLEEP routed from MCU GPIO (verified by hierarchical label `nSLEEP` exiting motor_driver sub-sheet). MCU drive at 3.3 V CMOS-high → well above 1.6 V VIH. Firmware must respect 1 ms wake-up before driving inputs, and use 20-40 µs pulse (NOT 120 µs+) for fault-reset-without-sleep.
+**Twin28xx**: nSLEEP routed from MCU GPIO (verified by hierarchical label `nSLEEP` exiting motor_driver sub-sheet). MCU drive at 3.3 V CMOS-high → well above 1.6 V VIH. Firmware must respect 1 ms wake-up before driving inputs, and use 20-40 µs pulse (NOT 120 µs+) for fault-reset-without-sleep.
 
 ### 2.11 Layout / EP via recommendation
 
@@ -296,7 +296,7 @@ P_total = P_standby + P_LDO + P_CON + P_SW + P_diode + P_BK
 
 with:
 - P_standby = VM × IVM (IVM at fPWM, BUCK_DIS=0; per §7.5 p7, IVM ≈ 13–22 mA at fPWM = 25–200 kHz, TA = 25 °C, BUCK enabled). Use **IVM = 15 mA at fPWM = 50 kHz (interpolated)**.
-- P_LDO ≈ 0 if VBK = 3.3 V = VAVDD (no headroom across LDO). Twinspora uses BUCK_OUT to power the +3.3V rail through the XC6206 LDO; AVDD-internal load (max 30 mA per §7.5 p7) draws from buck through internal LDO at near-zero V drop.
+- P_LDO ≈ 0 if VBK = 3.3 V = VAVDD (no headroom across LDO). Twin28xx uses BUCK_OUT to power the +3.3V rail through the XC6206 LDO; AVDD-internal load (max 30 mA per §7.5 p7) draws from buck through internal LDO at near-zero V drop.
 - P_CON = 3 × IRMS² × R_ds,on(TJ).
 - P_SW = 3 × IRMS × V_PK_FOC × t_rf × f_PWM, with V_PK_FOC ≈ VM = 24 V.
 - P_diode = 6 × IRMS × V_F × t_DEAD × f_PWM, with V_F ≈ 0.8 V (typ body diode), t_DEAD per §7.5 p12 (depends on slew setting).
@@ -378,7 +378,7 @@ For lowest losses use SLEW = 11b (200 V/µs). For lowest EMI use SLEW = 00b. Mos
 
 ### CRITICAL nits
 
-4. **(C1) No ferrite between VDD and VDDA.** Twinspora ties VDDA pin (29) and VREF+ pin (28) directly to the +3.3V global net via short stubs at U7. AN4488 §2.2 p8 explicitly recommends a ferrite bead between VDD and VDDA, plus a 47 Ω resistor between VDDA and VREF+. Without these, motor-driver switching noise on +3.3V couples directly into the ADC reference, degrading current-sense ENOB by 1-2 bits. **For a motor controller using 12-bit ADC for FOC current feedback, this is meaningful.** Recommendation: add 1× ferrite bead (~600 Ω @ 100 MHz, 0603) between +3.3V and VDDA, and 1× 47 Ω resistor between VDDA and VREF+. Re-route C25-C28 close to U7 in PCB layout.
+4. **(C1) No ferrite between VDD and VDDA.** Twin28xx ties VDDA pin (29) and VREF+ pin (28) directly to the +3.3V global net via short stubs at U7. AN4488 §2.2 p8 explicitly recommends a ferrite bead between VDD and VDDA, plus a 47 Ω resistor between VDDA and VREF+. Without these, motor-driver switching noise on +3.3V couples directly into the ADC reference, degrading current-sense ENOB by 1-2 bits. **For a motor controller using 12-bit ADC for FOC current feedback, this is meaningful.** Recommendation: add 1× ferrite bead (~600 Ω @ 100 MHz, 0603) between +3.3V and VDDA, and 1× 47 Ω resistor between VDDA and VREF+. Re-route C25-C28 close to U7 in PCB layout.
 
 5. **(C2) DRV8316C thermal de-rating tightens design envelope.** Per the corrected calculation §3.4: at TA = 85 °C, max continuous I_RMS is ~1.27 A (TJ_target=125) to 1.61 A (TJ_target=140) with max slew + active demag. The user-stated 3-5 A RMS target requires either: (a) lowering TA spec to ≤40-50 °C, or (b) adding heat-sinking to drop θJA from 25.7 to <18 °C/W. Confirm in PCB review.
 
@@ -392,22 +392,22 @@ For lowest losses use SLEW = 11b (200 V/µs). For lowest EMI use SLEW = 00b. Mos
 
 9. **(N3) VBAT 100 nF cap** — AN4488 §2.2 p8 recommends a 100 nF cap on VBAT even when tied to VDD ("recommended to connect this pin to VDD with a 100 nF external ceramic decoupling capacitor"). Confirm a 100 nF lives near U7 pin 1 in PCB layout.
 
-10. **(N4) DRV8316C VM pin per-pin 100 nF caps**. TI Table 6-1 p5 says "two 0.1-µF capacitors (for each pin) plus one bulk capacitor". Twinspora uses 5× 10 µF X5R 0805 + 330 µF aluminum per driver, exceeding bulk and MF spec, but does not have explicit 6× 100 nF X7R 0402 close to the 3 VM pins. NIT: add 6× 100 nF X7R 0402 in PCB layout near each U14/U15 VM pin for HF noise rejection.
+10. **(N4) DRV8316C VM pin per-pin 100 nF caps**. TI Table 6-1 p5 says "two 0.1-µF capacitors (for each pin) plus one bulk capacitor". Twin28xx uses 5× 10 µF X5R 0805 + 330 µF aluminum per driver, exceeding bulk and MF spec, but does not have explicit 6× 100 nF X7R 0402 close to the 3 VM pins. NIT: add 6× 100 nF X7R 0402 in PCB layout near each U14/U15 VM pin for HF noise rejection.
 
-11. **(N5) BUCK CBK = 22 µF spec; verify Twinspora's value.** Need to inspect motor_driver.kicad_sch for the cap on BUCK_OUT/SW_BK after the inductor — if it is a single 10 µF X5R, add another in parallel to reach 22 µF (per TI §7.5 p8 buck regulator table requires CBK = 22 µF for spec'd performance).
+11. **(N5) BUCK CBK = 22 µF spec; verify Twin28xx's value.** Need to inspect motor_driver.kicad_sch for the cap on BUCK_OUT/SW_BK after the inductor — if it is a single 10 µF X5R, add another in parallel to reach 22 µF (per TI §7.5 p8 buck regulator table requires CBK = 22 µF for spec'd performance).
 
 12. **(N6) USB series resistors — not applicable / clarify documentation.** R12-R14, R17, R19, R20 (49.9 Ω) are NOT USB series resistors (DS12288 Table 92 footnote 4 explicitly says no external resistors needed on USB). They are likely the SOx current-sense filter; verify in schematic review and rename net labels for clarity.
 
 ### Open questions for designer
 
-- Is BUCK regulator on each DRV8316 actually used to power something on the board? If so, what voltage is BUCK_SEL set to (per SPI register 6, default 3.3 V)? If unused, TI §9.2.1.1.5 p72 says "even if unused, the buck regulator components must be populated" and recommends Resistor Mode (RBK = 22 Ω, CBK = 22 µF) — Twinspora uses the inductor (47 µH) which is fine but verify the buck output is loaded.
+- Is BUCK regulator on each DRV8316 actually used to power something on the board? If so, what voltage is BUCK_SEL set to (per SPI register 6, default 3.3 V)? If unused, TI §9.2.1.1.5 p72 says "even if unused, the buck regulator components must be populated" and recommends Resistor Mode (RBK = 22 Ω, CBK = 22 µF) — Twin28xx uses the inductor (47 µH) which is fine but verify the buck output is loaded.
 - What is the PWM mode (6× vs 3× PWM, with or without current limit)? Default after reset (PWM_MODE bits in Control Register 2, default = 00b = 6× PWM) — confirm firmware uses 6× PWM mode for FOC.
 
 ---
 
 ## 5. Sources cited (all primary-source; document IDs verified)
 
-- **Texas Instruments, "DRV8316C Three-Phase Integrated FET Motor Driver Datasheet", SLVSH07** (December 2022). 95 pages. Local PDF: `D:\gehub\twinspora\_review\datasheets\DRV8316C_TI.pdf`.
+- **Texas Instruments, "DRV8316C Three-Phase Integrated FET Motor Driver Datasheet", SLVSH07** (December 2022). 95 pages. Local PDF: `D:\gehub\twin28xx\_review\datasheets\DRV8316C_TI.pdf`.
   - §5 Device Comparison Table p3
   - §6.1 Pin Configuration Fig 6-1 / Table 6-1 (Pin Functions) p4-5
   - §7.1 Absolute Maximum Ratings p6 — VM abs max 40 V
@@ -421,7 +421,7 @@ For lowest losses use SLEW = 11b (200 V/µs). For lowest EMI use SLEW = 00b. Mos
   - §11.2 Layout Example p84
   - §11.3.1 Power Dissipation Table 11-1 p85 — verbatim power-loss formulas
 
-- **STMicroelectronics, "STM32G474xB/xC/xE Datasheet", DS12288 Rev 1** (May 2019). 232 pages. Same pin map as G473xB. Local PDF: `D:\gehub\twinspora\_review\datasheets\STM32G473_farnell.pdf` (mirror via Farnell — Rev 1; ST.com hosts Rev 5 with identical pin map).
+- **STMicroelectronics, "STM32G474xB/xC/xE Datasheet", DS12288 Rev 1** (May 2019). 232 pages. Same pin map as G473xB. Local PDF: `D:\gehub\twin28xx\_review\datasheets\STM32G473_farnell.pdf` (mirror via Farnell — Rev 1; ST.com hosts Rev 5 with identical pin map).
   - §4.3 LQFP-64 pinout fig 7 p50
   - §4.9 Table 11 (Legend) p55, Table 12 (pin definition) p56-71 — FT/TT classifications
   - §5.1.6 Power supply scheme fig 15 p80 — n×100 nF + 4.7 µF, 100 nF + 1 µF on VDDA / VREF+
@@ -429,7 +429,7 @@ For lowest losses use SLEW = 11b (200 V/µs). For lowest EMI use SLEW = 00b. Mos
   - §5.3.15 NRST pin Table 61 p139 / fig 26 p140
   - §5.3.27 USB Table 92 p181 — **"No external termination series resistors are required"**
 
-- **STMicroelectronics, "AN4488 — Getting started with STM32F4xxxx MCU hardware development", DocID026304 Rev 1** (June 2014). 41 pages. (Note: ST has not published a STM32G4-specific equivalent of AN4488; the power-supply-scheme guidance in DS12288 §5.1.6 fig 15 supersedes any AN4488 detail for the G4 family. AN4488 is referenced for the supplementary text recommendations on ferrite, VREF+ resistor, etc.) Local PDF: `D:\gehub\twinspora\_review\datasheets\AN4488.pdf`.
+- **STMicroelectronics, "AN4488 — Getting started with STM32F4xxxx MCU hardware development", DocID026304 Rev 1** (June 2014). 41 pages. (Note: ST has not published a STM32G4-specific equivalent of AN4488; the power-supply-scheme guidance in DS12288 §5.1.6 fig 15 supersedes any AN4488 detail for the G4 family. AN4488 is referenced for the supplementary text recommendations on ferrite, VREF+ resistor, etc.) Local PDF: `D:\gehub\twin28xx\_review\datasheets\AN4488.pdf`.
   - §2.1.2 Battery backup p7 — VBAT=VDD if no battery
   - §2.2 Power supply schemes p8 — VDD: n × 100 nF + min 4.7 µF; VDDA: 100 nF + 1 µF; VREF+: 100 nF + 1 µF; **"VDDA can be connected to VDD through a ferrite bead. The VREF+ pin can be connected to VDDA through a resistor (typ. 47 Ω)"**
   - §2.3.3 System reset p11 / fig 4 — NRST 100 nF (down to 10 nF acceptable)
@@ -437,7 +437,7 @@ For lowest losses use SLEW = 11b (200 V/µs). For lowest EMI use SLEW = 00b. Mos
   - §6.3.1 SWJ debug port pins Table 8 p30 — PA13=SWDIO, PA14=SWCLK
   - §6.3.3 Internal pull-up/down on JTAG pins p31
 
-- **STMicroelectronics, "AN2867 — Oscillator design guide", AN2867 Rev 1** (January 2009). 20 pages. Local PDF: `D:\gehub\twinspora\_review\datasheets\AN2867.pdf`. *Note: this older revision uses Cs = 5 pF as an example value; the current revision (Rev 23, January 2025) and the STM32G4 datasheet DS12288 §5.3.10 recommend Cs = 10 pF for STM32G4 for more conservative sizing. The crystal-load math is identical across revisions.*
+- **STMicroelectronics, "AN2867 — Oscillator design guide", AN2867 Rev 1** (January 2009). 20 pages. Local PDF: `D:\gehub\twin28xx\_review\datasheets\AN2867.pdf`. *Note: this older revision uses Cs = 5 pF as an example value; the current revision (Rev 23, January 2025) and the STM32G4 datasheet DS12288 §5.3.10 recommend Cs = 10 pF for STM32G4 for more conservative sizing. The crystal-load math is identical across revisions.*
   - §3 Pierce oscillator p8, fig 4 — crystal + 2× CL + Cs
   - §4.2 Load capacitor CL p10 — formula CL = (CL1·CL2)/(CL1+CL2) + Cs
   - §4.3 Gain margin p10 — gm > 5 × gmcrit

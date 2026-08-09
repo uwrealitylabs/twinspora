@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>D:\gehub\twinspora\twinspora\twinspora.kicad_sch</source>
+    <source>D:\gehub\twin28xx\twin28xx\twin28xx.kicad_sch</source>
     <date>2026-05-05T16:33:34</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Twinspora</title>
+        <title>Twin28xx</title>
         <company/>
         <rev>B</rev>
         <date>2026-03-01</date>
-        <source>twinspora.kicad_sch</source>
+        <source>twin28xx.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -112,7 +112,7 @@
       <property name="LCSC" value="C1567"/>
       <property name="Symbol Name" value="0402CG470J500NT"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="C1567"/>
       <sheetpath names="/" tstamps="/"/>
@@ -142,7 +142,7 @@
       <property name="LCSC" value="C1567"/>
       <property name="Symbol Name" value="0402CG470J500NT"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="C1567"/>
       <sheetpath names="/" tstamps="/"/>
@@ -172,7 +172,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f0990079-d051-4643-b491-97b70cf653eb</tstamps>
@@ -201,7 +201,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>dfdfb55b-fa45-42a6-bb56-d183563d33f0</tstamps>
@@ -230,7 +230,7 @@
       <property name="LCSC" value="C52923"/>
       <property name="Symbol Name" value="CL05A105KA5NQNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C52923"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1dd147e8-8e5f-4294-96dc-8005479a953b</tstamps>
@@ -259,7 +259,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4ba4fd71-fee5-438d-a5cd-670f06673ca1</tstamps>
@@ -288,7 +288,7 @@
       <property name="LCSC" value="C440198"/>
       <property name="Symbol Name" value="GRM21BR61H106KE43L"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C440198"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>374d2343-fae9-4262-b9c3-dc2a70f64c00</tstamps>
@@ -317,7 +317,7 @@
       <property name="LCSC" value="C440198"/>
       <property name="Symbol Name" value="GRM21BR61H106KE43L"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C440198"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a67a3cee-3af5-4bb1-bce8-fa4c394f7e3c</tstamps>
@@ -346,7 +346,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>9f543df8-bc1b-4d86-a184-e9390f6ddc39</tstamps>
@@ -375,7 +375,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d153c1c7-ad24-4eab-9ae4-6b54c5252ba8</tstamps>
@@ -402,7 +402,7 @@
       <libsource lib="Basic_Capacitors_Resistors" part="0402CG300J500NT" description="30pF ±5% 50V Ceramic Capacitor C0G 0402"/>
       <property name="LCSC" value="C1570"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C1570"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ba5d61a9-4a7d-4558-aeea-eaab0596062e</tstamps>
@@ -431,7 +431,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>063f8ec3-3db6-4be1-a4c6-51c607304e93</tstamps>
@@ -460,7 +460,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>440bf6bc-f9b9-4a9d-915b-e66b9306aab5</tstamps>
@@ -489,7 +489,7 @@
       <property name="LCSC" value="C19666"/>
       <property name="Symbol Name" value="CL10A475KO8NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19666"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4e49c1e2-e0e7-439a-b994-f4dd03872930</tstamps>
@@ -518,7 +518,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3a44e311-105a-4904-a263-19ef893787d6</tstamps>
@@ -547,7 +547,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>97cd74cf-e102-4638-9850-ba0a0dfb2e11</tstamps>
@@ -576,7 +576,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1148cac5-af1a-4859-adf9-06e37ad94efd</tstamps>
@@ -603,7 +603,7 @@
       <libsource lib="Basic_Capacitors_Resistors" part="0402CG300J500NT" description="30pF ±5% 50V Ceramic Capacitor C0G 0402"/>
       <property name="LCSC" value="C1570"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C1570"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>88801cec-cedc-4cec-94bf-da891dbcedab</tstamps>
@@ -632,7 +632,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>65b14121-184a-4e38-8349-44fb6993b398</tstamps>
@@ -661,7 +661,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>31270eaf-9c4e-4bca-bbfe-91a166625a4a</tstamps>
@@ -690,7 +690,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a9dfb29e-6843-491a-b6ac-b52df616774c</tstamps>
@@ -719,7 +719,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>42886a84-88d3-4e95-8f46-1a7bfc882204</tstamps>
@@ -748,7 +748,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c1fa3806-63fa-47fa-bc79-b2bab4d95567</tstamps>
@@ -777,7 +777,7 @@
       <property name="LCSC" value="C19666"/>
       <property name="Symbol Name" value="CL10A475KO8NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19666"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>164406e9-e306-4708-bf59-afa9fa2fbb6c</tstamps>
@@ -806,7 +806,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6564630b-fbcb-48a4-8472-8a7d15606e20</tstamps>
@@ -835,7 +835,7 @@
       <property name="LCSC" value="C52923"/>
       <property name="Symbol Name" value="CL05A105KA5NQNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C52923"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c0296a3f-af03-4bad-abca-ddfe31956a99</tstamps>
@@ -864,7 +864,7 @@
       <property name="LCSC" value="C307331"/>
       <property name="Symbol Name" value="CL05B104KB54PNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C307331"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c21c0a02-1fd7-4b3d-95ab-466e0e40c4b3</tstamps>
@@ -893,7 +893,7 @@
       <property name="LCSC" value="C52923"/>
       <property name="Symbol Name" value="CL05A105KA5NQNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C52923"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>790bedee-b99d-4baa-9eea-7dc931b88a15</tstamps>
@@ -922,7 +922,7 @@
       <property name="LCSC" value="C52923"/>
       <property name="Symbol Name" value="CL05A105KA5NQNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C52923"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0a645049-30b6-4457-920d-2c3252a29ef6</tstamps>
@@ -951,7 +951,7 @@
       <property name="LCSC" value="C15195"/>
       <property name="Symbol Name" value="CL05B103KB5NNNC"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C15195"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>92c5afe8-b40b-47fe-bc9e-d65f8c792716</tstamps>
@@ -977,7 +977,7 @@
       <libsource lib="Diode_UWRL" part="1N4148WS_T4" description=""/>
       <property name="LCSC" value="C2128"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C2128"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d1dc2973-e99d-4c96-b437-89c9c147c875</tstamps>
@@ -1003,7 +1003,7 @@
       <libsource lib="Diode_UWRL" part="1N4148WS_T4" description=""/>
       <property name="LCSC" value="C2128"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C2128"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a758823a-616d-4a6d-9dc2-4cab71d4e1a7</tstamps>
@@ -1029,7 +1029,7 @@
       <libsource lib="Mechanical" part="SMTSOM225BTR" description=""/>
       <property name="LCSC" value="C5301773"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5301773"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b31c0f30-1346-47b3-a58d-a58e112dd13b</tstamps>
@@ -1054,7 +1054,7 @@
       <libsource lib="Mechanical" part="SMTSOM225BTR" description=""/>
       <property name="LCSC" value="C5301773"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5301773"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5539c6f7-4402-4d08-a57c-6f1cf6e1491f</tstamps>
@@ -1079,7 +1079,7 @@
       <libsource lib="Mechanical" part="SMTSOM225BTR" description=""/>
       <property name="LCSC" value="C5301773"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5301773"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7bd54e47-28e2-4b8e-9d4c-059cf8b04f61</tstamps>
@@ -1104,7 +1104,7 @@
       <libsource lib="Mechanical" part="SMTSOM225BTR" description=""/>
       <property name="LCSC" value="C5301773"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5301773"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6a8c30bc-1372-450d-9e12-329e6a74f434</tstamps>
@@ -1131,7 +1131,7 @@
       <property name="LCSC" value="C19271997"/>
       <property name="Symbol Name" value="XY-SH1_0-3A61"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19271997"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>87cad0c8-d919-4d41-bf3c-a85714c3cacb</tstamps>
@@ -1160,7 +1160,7 @@
       <libsource lib="Connector_USB" part="TYPE-C-31-M-12" description=""/>
       <property name="LCSC" value="C165948"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C165948"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c4fe8399-5bb3-4ccd-84aa-b3a090d043bf</tstamps>
@@ -1197,7 +1197,7 @@
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
@@ -1227,7 +1227,7 @@
       <property name="LCSC" value="C19271998"/>
       <property name="Symbol Name" value="XY-SH1_0-4A61"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19271998"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b777368d-6720-4c0f-9a02-6f118a2736be</tstamps>
@@ -1254,7 +1254,7 @@
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
@@ -1284,7 +1284,7 @@
       <property name="LCSC" value="C19271997"/>
       <property name="Symbol Name" value="XY-SH1_0-3A61"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19271997"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>21882e4e-5b18-4ce9-bd1f-806fbe5dcb69</tstamps>
@@ -1315,7 +1315,7 @@
       <property name="LCSC" value="C19271997"/>
       <property name="Symbol Name" value="XY-SH1_0-3A61"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19271997"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7ccde0c4-f7f3-4fd6-975f-2753a4b67861</tstamps>
@@ -1344,7 +1344,7 @@
       <libsource lib="LED" part="KT-0603W" description=""/>
       <property name="LCSC" value="C2290"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C2290"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>77997e4b-3e96-4a59-bf40-3d67cd76e916</tstamps>
@@ -1370,7 +1370,7 @@
       <libsource lib="LED" part="KT-0603W" description=""/>
       <property name="LCSC" value="C2290"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C2290"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>cc2637f2-bb9a-4492-8fe4-66c98f104bce</tstamps>
@@ -1396,7 +1396,7 @@
       <libsource lib="LED" part="KT-0603R" description=""/>
       <property name="LCSC" value="C2286"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C2286"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>597729d7-0c03-498d-9379-e09662319ae2</tstamps>
@@ -1421,7 +1421,7 @@
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel MOSFET"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1452,7 +1452,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3f3ad079-b865-4f53-84c4-acd59a9b049d</tstamps>
@@ -1481,7 +1481,7 @@
       <property name="LCSC" value="C25905"/>
       <property name="Symbol Name" value="0402WGF5101TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25905"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>adcd6cdb-0e3f-4847-b48d-fe0d8baa48a5</tstamps>
@@ -1510,7 +1510,7 @@
       <property name="LCSC" value="C25905"/>
       <property name="Symbol Name" value="0402WGF5101TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25905"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eb2c7639-fd38-4869-b5a3-fe700763cc9b</tstamps>
@@ -1539,7 +1539,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b0fd850a-4781-4ed6-b958-a5c564a14955</tstamps>
@@ -1568,7 +1568,7 @@
       <property name="LCSC" value="C25905"/>
       <property name="Symbol Name" value="0402WGF5101TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25905"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c1c51554-c8fc-4a0a-883e-830870910ca5</tstamps>
@@ -1597,7 +1597,7 @@
       <property name="LCSC" value="C25905"/>
       <property name="Symbol Name" value="0402WGF5101TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25905"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c4f5842d-95f2-458a-80f0-a990166bb822</tstamps>
@@ -1626,7 +1626,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1eee125e-93b3-40ce-97a0-15affc53219b</tstamps>
@@ -1655,7 +1655,7 @@
       <property name="LCSC" value="C25104"/>
       <property name="Symbol Name" value="0402WGF3300TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25104"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eb7d25dd-f27d-4e87-a497-a232a319b590</tstamps>
@@ -1684,7 +1684,7 @@
       <property name="LCSC" value="C25104"/>
       <property name="Symbol Name" value="0402WGF3300TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25104"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>338dbf83-2521-4160-85b3-61be8f021e5a</tstamps>
@@ -1713,7 +1713,7 @@
       <property name="LCSC" value="C25104"/>
       <property name="Symbol Name" value="0402WGF3300TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25104"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a6814e3b-34e2-4560-ab82-0fa377efe516</tstamps>
@@ -1742,7 +1742,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00621b70-60d8-4f10-962b-c48e8b0e0be5</tstamps>
@@ -1771,7 +1771,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5de9d918-a93d-48df-804c-85883dab852b</tstamps>
@@ -1800,7 +1800,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a9c88907-a921-4fd8-aba1-ce68e49aed57</tstamps>
@@ -1829,7 +1829,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>94f7eecd-e6b0-4747-a9b9-57a962654fc8</tstamps>
@@ -1858,7 +1858,7 @@
       <property name="LCSC" value="C25079"/>
       <property name="Symbol Name" value="0402WGF1200TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25079"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a16a5efd-9273-4276-9671-c32e7feebca3</tstamps>
@@ -1887,7 +1887,7 @@
       <property name="LCSC" value="C25079"/>
       <property name="Symbol Name" value="0402WGF1200TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25079"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0f9dc858-b98a-430b-b358-61be94f84931</tstamps>
@@ -1916,7 +1916,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f7702caa-d2ce-4f6a-b3d6-f76ea07757f0</tstamps>
@@ -1945,7 +1945,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e33ea2b7-f9e4-419c-8a44-af1134001a00</tstamps>
@@ -1974,7 +1974,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2f55220e-df3b-4ca1-b456-63c621e57137</tstamps>
@@ -2003,7 +2003,7 @@
       <property name="LCSC" value="C25120"/>
       <property name="Symbol Name" value="0402WGF499JTCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25120"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7aeb311c-90e4-445b-8faa-a6769df41b57</tstamps>
@@ -2032,7 +2032,7 @@
       <property name="LCSC" value="C25079"/>
       <property name="Symbol Name" value="0402WGF1200TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="C25079"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2062,7 +2062,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>505b2c05-e1bf-4d70-a51c-4e498000bf64</tstamps>
@@ -2091,7 +2091,7 @@
       <property name="LCSC" value="C21189"/>
       <property name="Symbol Name" value="0603WAF0000T5E"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="C21189"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2121,7 +2121,7 @@
       <property name="LCSC" value="C21189"/>
       <property name="Symbol Name" value="0603WAF0000T5E"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="C21189"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2151,7 +2151,7 @@
       <property name="LCSC" value="C25741"/>
       <property name="Symbol Name" value="0402WGF1003TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25741"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>71a1dfb7-abf7-4ba2-ac92-da91bd237519</tstamps>
@@ -2180,7 +2180,7 @@
       <property name="LCSC" value="C25744"/>
       <property name="Symbol Name" value="0402WGF1002TCE"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C25744"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>48a61c46-fe0d-47bf-95b4-aa1be03503b1</tstamps>
@@ -2207,7 +2207,7 @@
       <libsource lib="Basic_Capacitors_Resistors" part="0402WGF604JTCE" description="RES 60.4Ω ±1% 62.5mW 0402"/>
       <property name="LCSC" value="C60310"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C60310"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>81a50c52-972a-4f50-912c-4bbd7838b98f</tstamps>
@@ -2234,7 +2234,7 @@
       <libsource lib="Basic_Capacitors_Resistors" part="0402WGF604JTCE" description="RES 60.4Ω ±1% 62.5mW 0402"/>
       <property name="LCSC" value="C60310"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C60310"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ea478da8-38e6-4c16-8ded-b0035049766b</tstamps>
@@ -2260,7 +2260,7 @@
       <libsource lib="Switch_UWRL" part="SKSGPAE010" description=""/>
       <property name="LCSC" value="C125045"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C125045"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0a07a7c5-5b42-4fc3-93c4-ef7f12426ba5</tstamps>
@@ -2290,7 +2290,7 @@
       <libsource lib="Switch_UWRL" part="SKSGPAE010" description=""/>
       <property name="LCSC" value="C125045"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C125045"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8508d201-e824-4b61-8ccb-1660419a9174</tstamps>
@@ -2320,7 +2320,7 @@
       <libsource lib="Connector_HRS_BK22" part="BK22C07-4DP/2-0_4V(800)" description=""/>
       <property name="LCSC" value="C27141223"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C27141223"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>323b7791-e352-4d53-87d2-40c3bf05cd07</tstamps>
@@ -2356,7 +2356,7 @@
       <libsource lib="Connector_HRS_BK22" part="BK22C07-4DP/2-0_4V(800)" description=""/>
       <property name="LCSC" value="C27141223"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C27141223"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6c784beb-440d-416b-a59b-421518df1f4e</tstamps>
@@ -2392,7 +2392,7 @@
       <libsource lib="Transistor_BJT_UWRL" part="FMMT620TA" description=""/>
       <property name="LCSC" value="C74081"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C74081"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ef9c130e-578b-447e-8bcb-ce6d1d98c992</tstamps>
@@ -2419,7 +2419,7 @@
       <libsource lib="Transistor_FET_UWRL" part="WSD4066DN" description=""/>
       <property name="LCSC" value="C377861"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C377861"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>58458a87-39f1-4193-b556-1d77e52d088a</tstamps>
@@ -2453,7 +2453,7 @@
       <libsource lib="Diode_UWRL" part="SMF30CA_C19077519" description=""/>
       <property name="LCSC" value="C19077519"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C19077519"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>38d6e290-024c-499d-9ae7-1245eec8eda2</tstamps>
@@ -2480,7 +2480,7 @@
       <libsource lib="Diode" part="SRV05-4" description="ESD Protection Diodes with Low Clamping Voltage, SOT-23-6"/>
       <property name="LCSC ID" value="C20615829"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="ESD protection diodes"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2510,7 +2510,7 @@
       </fields>
       <libsource lib="MCU_ST_STM32G4" part="STM32G473RBTx" description="STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 128KB RAM, 170 MHz, 1.71-3.6V, 52 GPIO, LQFP64"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="Arm Cortex-M4 STM32G4 STM32G4x3"/>
       <property name="ki_fp_filters" value="LQFP*10x10mm*P0.5mm*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2599,7 +2599,7 @@
       <libsource lib="Diode_UWRL" part="H5VN10B" description=""/>
       <property name="LCSC" value="C20615784"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C20615784"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>889c99ea-b773-4cfc-940a-f2a0f54916a2</tstamps>
@@ -2625,7 +2625,7 @@
       <libsource lib="Regulator_Linear" part="XC6206P332MR" description=""/>
       <property name="LCSC" value="C5446"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5446"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>666fabae-3805-490c-90b7-414c51ed8cf4</tstamps>
@@ -2653,7 +2653,7 @@
       <libsource lib="Diode" part="SRV05-4" description="ESD Protection Diodes with Low Clamping Voltage, SOT-23-6"/>
       <property name="LCSC ID" value="C20615829"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="ESD protection diodes"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2684,7 +2684,7 @@
       <libsource lib="Interface_CAN_LIN" part="CA-IF1044VD-Q1" description=""/>
       <property name="LCSC" value="C5155979"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C5155979"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>93dfec3b-5063-4b7b-88ac-8020aa9595f0</tstamps>
@@ -2717,7 +2717,7 @@
       <libsource lib="CMC_UWRL" part="ACT1210D-101-2P-TL00" description=""/>
       <property name="LCSC" value="C3039743"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C3039743"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eb67658e-cf89-4f85-b1a5-56422ccead2c</tstamps>
@@ -2745,7 +2745,7 @@
       <libsource lib="Diode_UWRL" part="PESD2CAN" description=""/>
       <property name="LCSC" value="C284078"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C284078"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e1386847-623f-4e77-9858-0eaf9b0b333e</tstamps>
@@ -2775,7 +2775,7 @@
       <property name="LCSC" value="C9002"/>
       <property name="Symbol Name" value="X322512MSB4SI"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="twinspora.kicad_sch"/>
+      <property name="Sheetfile" value="twin28xx.kicad_sch"/>
       <property name="ki_keywords" value="C9002"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b05d384f-3fd5-4ec2-bed7-b85e7eb4df9f</tstamps>

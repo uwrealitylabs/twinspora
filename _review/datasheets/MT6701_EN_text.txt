@@ -1,4 +1,4 @@
-PDF: D:\gehub\twinspora\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf
+PDF: D:\gehub\twin28xx\_review\datasheets\MT6701_alt_MT6701QT-STD.pdf
 Pages: 36
 
 ===== PAGE 1 =====

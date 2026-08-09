@@ -1,6 +1,6 @@
 # 04 — PCB Inner Copper Layers (In1.Cu, In2.Cu) Review
 
-Pre-fab review of the two inner copper layers of the 4-layer Twinspora PCB.
+Pre-fab review of the two inner copper layers of the 4-layer Twin28xx PCB.
 Board: 76.95 x 36.93 mm, 1.62 mm. Stackup (per `(stackup ...)` in `.kicad_pcb`):
 
 ```

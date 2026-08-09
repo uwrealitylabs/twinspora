@@ -1,6 +1,6 @@
 import json, sys, io, collections
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
-with open(r'D:\gehub\twinspora\_review\drc.json', 'r', encoding='utf-8') as f:
+with open(r'D:\gehub\twin28xx\_review\drc.json', 'r', encoding='utf-8') as f:
     d = json.load(f)
 print("Top-level keys:", list(d.keys()))
 for k in ('schematic_parity','violations','unconnected_items'):
