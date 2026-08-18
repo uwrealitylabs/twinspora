@@ -13176,9 +13176,9 @@
 		)
 		(uuid "dbb9336c-63ab-4a95-a2b8-db63dc408ffd")
 	)
-	(text "MCU - STM32G473RBT6"
+	(text "MCU - STM32G473RxT"
 		(exclude_from_sim no)
-		(at 175.514 84.836 0)
+		(at 172.72 86.614 0)
 		(effects
 			(font
 				(face "Comic Sans MS")

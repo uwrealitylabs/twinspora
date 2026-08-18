@@ -1131,7 +1131,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Capacitor_SMD_UWRL:EEEFT1H331GP"
+		(symbol "Capacitor_SMD__C:VHXC0581V101MVCG"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1153,7 +1153,7 @@
 					)
 				)
 			)
-			(property "Value" "EEEFT1H331GP"
+			(property "Value" "VHXC0581V101MVCG"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1164,7 +1164,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD__C:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
+			(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1176,7 +1176,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://item.szlcsc.com/245683.html"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C5139738.html"
 				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1188,7 +1188,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "100uF ±20% 35V polymer-hybrid aluminum electrolytic, SMD Ø6.3x5.8mm, 45mOhm ESR, AEC-Q200 (Ymin VHX)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1199,7 +1199,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C542207"
+			(property "LCSC" "C5139738"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1210,7 +1210,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "C542207"
+			(property "ki_keywords" "C5139738 VHXC0581V101MVCG Ymin hybrid polymer aluminum electrolytic 100uF 35V"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1221,7 +1221,7 @@
 					)
 				)
 			)
-			(symbol "EEEFT1H331GP_0_1"
+			(symbol "VHXC0581V101MVCG_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -0.508 0)
@@ -1331,221 +1331,8 @@
 					)
 				)
 			)
-			(symbol "EEEFT1H331GP_1_1"
-				(text "330uF"
-					(at 0 3.048 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-							(color 163 59 255 1)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Capacitor_THT_UWRL:50PX330MEFC10X16"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "50PX330MEFC10X16"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Capacitor_THT__C:CAP-TH_BD10.0-P5.00-D1.0-FD"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/44833.html"
-				(at -2.286 0.127 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C88789"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "C88789"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "50PX330MEFC10X16_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0.762) (xy -1.524 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 1.27) (xy -2.032 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 2.032) (xy -0.508 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.2057 -1.827)
-					(mid 0.5092 0.0844)
-					(end 1.3264 1.9474)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-			(symbol "50PX330MEFC10X16_1_1"
-				(text "330uF"
+			(symbol "VHXC0581V101MVCG_1_1"
+				(text "100uF"
 					(at 0 3.048 0)
 					(effects
 						(font
@@ -3677,32 +3464,6 @@
 		)
 		(uuid "579b72c8-c6da-4669-904e-dfec4abf2b30")
 	)
-	(text_box "Populate with 330uF ≥50V \nAluminum Electrolyic Capacitor\n\nThrough hole & SMD footprint for 10mm diameter\n\nThrough hole recommended for better mechanical strength"
-		(exclude_from_sim no)
-		(at 199.39 120.65 0)
-		(size 20.32 30.5285)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "7a02d768-85ae-4d2a-96b8-77d6a6d828df")
-	)
-	(junction
-		(at 184.15 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06376883-4c84-493b-99b8-5a797089ef3d")
-	)
 	(junction
 		(at 161.29 86.36)
 		(diameter 0)
@@ -3716,16 +3477,10 @@
 		(uuid "1470bcf3-1c6d-480f-8055-9792a5fa7adc")
 	)
 	(junction
-		(at 184.15 72.39)
+		(at 186.69 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28c5aa3b-1c50-453a-a432-65af8414e25a")
-	)
-	(junction
-		(at 194.31 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2e725616-5cae-41d0-aae3-3d43a98ac4f5")
+		(uuid "2492c3bb-44aa-4488-9695-3fa5bc7e16b3")
 	)
 	(junction
 		(at 161.29 107.95)
@@ -3734,22 +3489,16 @@
 		(uuid "3b3a515d-3149-49e6-8eb5-30f8d353d162")
 	)
 	(junction
-		(at 184.15 147.32)
+		(at 196.85 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4251efc3-d591-4bda-9b92-20d7b37c7e42")
+		(uuid "4f9acd40-97d5-4f4d-91ee-3a26175a2bee")
 	)
 	(junction
-		(at 194.31 82.55)
+		(at 196.85 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "42632bc3-174e-4cc7-a198-0d8630aeeb1a")
-	)
-	(junction
-		(at 184.15 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5443a251-5a81-4ef6-8388-7f46c6e472d4")
+		(uuid "51472720-751e-4154-ae04-2549f7f30678")
 	)
 	(junction
 		(at 176.53 95.25)
@@ -3764,22 +3513,10 @@
 		(uuid "596f27e4-0e02-456f-8d62-731fd7009a6a")
 	)
 	(junction
-		(at 194.31 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6066c589-1f3d-4bae-8507-f561bb50a2bc")
-	)
-	(junction
 		(at 95.25 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6677ea52-eee0-43ee-a2b8-068d5503d424")
-	)
-	(junction
-		(at 194.31 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67e47992-8f36-43b7-abcd-068acb417da7")
 	)
 	(junction
 		(at 123.19 123.19)
@@ -3794,12 +3531,6 @@
 		(uuid "75ae4e7c-3c76-421f-9ca2-d6c5188dfc85")
 	)
 	(junction
-		(at 194.31 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b0485a2-36e8-432f-9d01-e8ceaa29f3ef")
-	)
-	(junction
 		(at 161.29 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3812,16 +3543,22 @@
 		(uuid "8130db69-107a-4102-9d53-a85e89b1d474")
 	)
 	(junction
-		(at 194.31 134.62)
+		(at 186.69 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "894cac14-90e0-419c-8ff0-7da4a695deae")
+		(uuid "82f6c689-abf0-4ab7-b34d-7b7c8986c6b0")
 	)
 	(junction
-		(at 184.15 102.87)
+		(at 196.85 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8c816fd5-4b14-420c-8b7b-3c2884685058")
+		(uuid "83efbc0c-5adf-4c66-9d87-08f9e9a8968c")
+	)
+	(junction
+		(at 196.85 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8465def1-2aea-4975-aa17-5c55ae7c881b")
 	)
 	(junction
 		(at 167.64 95.25)
@@ -3842,40 +3579,28 @@
 		(uuid "99b78256-0578-4805-bcb4-b15a27971d8e")
 	)
 	(junction
-		(at 184.15 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9a8dce22-4bef-410a-9860-682d0ad40bff")
-	)
-	(junction
 		(at 161.29 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a691edeb-4d2d-4150-9a8e-dec9f05c7f64")
 	)
 	(junction
-		(at 194.31 123.19)
+		(at 186.69 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b882c8b8-5b12-418c-82e4-a345cf161abe")
+		(uuid "b023fd54-defb-4483-9cb2-64e65da5f1d7")
 	)
 	(junction
-		(at 194.31 72.39)
+		(at 186.69 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d2f38489-978d-43b2-aaf2-aaa7ec7525cb")
+		(uuid "c550bf08-0527-4088-9ac1-42699073bf85")
 	)
 	(junction
 		(at 167.64 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db749161-31e4-4f97-8883-c8a03cddaa42")
-	)
-	(junction
-		(at 184.15 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc4ef2c4-dfbe-4541-8c38-2ba1599c1c27")
 	)
 	(junction
 		(at 163.83 62.23)
@@ -3888,12 +3613,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0b1b57c-b92b-48ef-a84b-c4c9297fd364")
-	)
-	(junction
-		(at 184.15 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f222717b-a864-47a0-b6d5-0bac85b363f7")
 	)
 	(junction
 		(at 161.29 115.57)
@@ -3929,16 +3648,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 123.19) (xy 194.31 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bf10d75-e13b-4821-aeb1-4a8e2d777062")
-	)
-	(wire
-		(pts
 			(xy 109.22 95.25) (xy 109.22 96.52)
 		)
 		(stroke
@@ -3956,6 +3665,16 @@
 			(type default)
 		)
 		(uuid "12c3f8e0-2bbe-4449-9878-b9bf30756bf5")
+	)
+	(wire
+		(pts
+			(xy 196.85 66.04) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb541e9-0d30-499b-8c8c-662c197a5fbf")
 	)
 	(wire
 		(pts
@@ -3999,16 +3718,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 92.71) (xy 194.31 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "212a6d19-3c2f-45d9-baca-9d6d995f95c8")
-	)
-	(wire
-		(pts
 			(xy 161.29 115.57) (xy 161.29 118.11)
 		)
 		(stroke
@@ -4026,16 +3735,6 @@
 			(type default)
 		)
 		(uuid "288cd518-6593-4393-b808-8535174b49cc")
-	)
-	(wire
-		(pts
-			(xy 194.31 72.39) (xy 194.31 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "314bd189-282a-49ae-8407-02e776aeb4e2")
 	)
 	(wire
 		(pts
@@ -4059,6 +3758,26 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 96.52) (xy 186.69 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "362154af-1843-493f-a5ed-b4ea36344246")
+	)
+	(wire
+		(pts
+			(xy 186.69 74.93) (xy 186.69 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38fee528-bcdb-4c54-8e76-b1db4f54f435")
+	)
+	(wire
+		(pts
 			(xy 167.64 106.68) (xy 167.64 107.95)
 		)
 		(stroke
@@ -4066,16 +3785,6 @@
 			(type default)
 		)
 		(uuid "39fc0935-0033-48b9-ad27-fb0233ea51f5")
-	)
-	(wire
-		(pts
-			(xy 184.15 134.62) (xy 184.15 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c3661bc-3db8-48fc-8e2b-2c2706bcd90e")
 	)
 	(wire
 		(pts
@@ -4109,36 +3818,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 58.42) (xy 194.31 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43e07583-6320-4ceb-bb6d-3f5cfc58021c")
-	)
-	(wire
-		(pts
-			(xy 184.15 82.55) (xy 184.15 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48ad0d3c-396c-42bb-a86b-ac8833fe593a")
-	)
-	(wire
-		(pts
-			(xy 184.15 147.32) (xy 184.15 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "490f5edb-26af-4207-873f-91ca89026f01")
-	)
-	(wire
-		(pts
 			(xy 146.05 53.34) (xy 146.05 62.23)
 		)
 		(stroke
@@ -4146,16 +3825,6 @@
 			(type default)
 		)
 		(uuid "4bc98a61-aca4-4199-9b70-0baf2b5be2f5")
-	)
-	(wire
-		(pts
-			(xy 194.31 62.23) (xy 194.31 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51b27b70-f7f0-4459-be41-c46925f55bc8")
 	)
 	(wire
 		(pts
@@ -4176,16 +3845,6 @@
 			(type default)
 		)
 		(uuid "54c6dbd6-7db9-473c-8ab5-fc8e1dd079b0")
-	)
-	(wire
-		(pts
-			(xy 194.31 113.03) (xy 194.31 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bd9b9d0-52f4-4f83-a4a5-87001f95cd5c")
 	)
 	(wire
 		(pts
@@ -4219,6 +3878,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 107.95) (xy 186.69 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a37752-777b-448c-a146-05a61f1df56f")
+	)
+	(wire
+		(pts
 			(xy 163.83 62.23) (xy 163.83 72.39)
 		)
 		(stroke
@@ -4236,16 +3905,6 @@
 			(type default)
 		)
 		(uuid "6eda1319-c52d-4f18-8270-297dbc00c1a5")
-	)
-	(wire
-		(pts
-			(xy 184.15 102.87) (xy 184.15 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fdd8458-6d55-429f-90ac-c84d3d7a8789")
 	)
 	(wire
 		(pts
@@ -4309,16 +3968,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 113.03) (xy 184.15 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dde1ae5-a70d-456e-9b33-fdbe713f779b")
-	)
-	(wire
-		(pts
 			(xy 161.29 86.36) (xy 163.83 86.36)
 		)
 		(stroke
@@ -4336,16 +3985,6 @@
 			(type default)
 		)
 		(uuid "7e8fcbd2-f533-4d7f-9ee1-4581daeb166c")
-	)
-	(wire
-		(pts
-			(xy 184.15 62.23) (xy 184.15 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "810a68bd-ba76-4e34-b8f5-b0042d1149c0")
 	)
 	(wire
 		(pts
@@ -4389,13 +4028,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 123.19) (xy 184.15 134.62)
+			(xy 196.85 96.52) (xy 196.85 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9219e3c2-dbfd-436f-8f6e-d7d176a1b680")
+		(uuid "92704ce6-9d30-41b2-96f9-7b74c6c84756")
 	)
 	(wire
 		(pts
@@ -4406,26 +4045,6 @@
 			(type default)
 		)
 		(uuid "94cc76ea-c016-454c-b39c-aae761f939ff")
-	)
-	(wire
-		(pts
-			(xy 184.15 92.71) (xy 184.15 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97feab35-fb58-4877-be3e-d76ba9ade917")
-	)
-	(wire
-		(pts
-			(xy 184.15 147.32) (xy 185.42 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98844ab0-f378-4d53-b905-a87317bfb992")
 	)
 	(wire
 		(pts
@@ -4479,16 +4098,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 72.39) (xy 184.15 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7a5b4ee-2b37-45eb-81d6-fb80821f253a")
-	)
-	(wire
-		(pts
 			(xy 161.29 81.28) (xy 161.29 82.55)
 		)
 		(stroke
@@ -4499,16 +4108,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 82.55) (xy 194.31 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b09899b3-7148-44d8-b32f-d117f2f47115")
-	)
-	(wire
-		(pts
 			(xy 120.65 123.19) (xy 123.19 123.19)
 		)
 		(stroke
@@ -4516,6 +4115,26 @@
 			(type default)
 		)
 		(uuid "b523b59b-3031-4a3a-beb3-86cf5ba41456")
+	)
+	(wire
+		(pts
+			(xy 196.85 107.95) (xy 196.85 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbd8b77-59c8-4184-a997-bbfe6cdb87d3")
+	)
+	(wire
+		(pts
+			(xy 196.85 85.09) (xy 196.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be83e7ef-2891-4d48-9a18-fee866b32356")
 	)
 	(wire
 		(pts
@@ -4579,13 +4198,23 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 147.32) (xy 194.31 134.62)
+			(xy 196.85 74.93) (xy 196.85 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0fc2b8d-f390-488f-bd84-013cd3f866e5")
+		(uuid "d4b719fa-a2ae-4b26-ab71-948d408c77c3")
+	)
+	(wire
+		(pts
+			(xy 186.69 119.38) (xy 186.69 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce065bc-42c4-4fd7-9814-b9541aacd5c8")
 	)
 	(wire
 		(pts
@@ -4596,16 +4225,6 @@
 			(type default)
 		)
 		(uuid "df201939-a69f-45a9-9b5c-3dcc08ac9ada")
-	)
-	(wire
-		(pts
-			(xy 193.04 147.32) (xy 194.31 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1148cc7-52de-4a00-a91b-f9cf4fbadaa2")
 	)
 	(wire
 		(pts
@@ -4639,13 +4258,13 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 102.87) (xy 194.31 113.03)
+			(xy 186.69 85.09) (xy 186.69 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f11503a8-5ff0-4906-a854-4879502daa4d")
+		(uuid "efe46d42-a16f-4cdb-be94-5742909d6596")
 	)
 	(wire
 		(pts
@@ -5006,6 +4625,202 @@
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capacitor_SMD__C:VHXC0581V101MVCG")
+		(at 191.77 96.52 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "071898c0-3bad-4606-9a1a-972397d9799b")
+		(property "Reference" "C38"
+			(at 191.77 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VHXC0581V101MVCG"
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+			(at 191.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5139738.html"
+			(at 194.056 96.393 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "100uF ±20% 35V polymer-hybrid aluminum electrolytic, SMD Ø6.3x5.8mm, 45mOhm ESR, AEC-Q200 (Ymin VHX)"
+			(at 191.77 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5139738"
+			(at 191.77 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edfd43ee-8124-47a4-959b-b9abbdc46fad")
+		)
+		(pin "2"
+			(uuid "fe3d6150-4a8c-4aae-a7ac-d51afc10578f")
+		)
+		(instances
+			(project "twin28xx"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "C39")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capacitor_SMD__C:VHXC0581V101MVCG")
+		(at 191.77 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0855a6e6-d68d-4c62-80a5-550c70486d94")
+		(property "Reference" "C42"
+			(at 191.77 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VHXC0581V101MVCG"
+			(at 191.77 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+			(at 191.77 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5139738.html"
+			(at 194.056 119.253 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "100uF ±20% 35V polymer-hybrid aluminum electrolytic, SMD Ø6.3x5.8mm, 45mOhm ESR, AEC-Q200 (Ymin VHX)"
+			(at 191.77 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5139738"
+			(at 191.77 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab7df792-75c1-4cf2-96c9-2592484a9f3e")
+		)
+		(pin "2"
+			(uuid "9aaec41a-9f37-4dae-9fa3-8a00452243a9")
+		)
+		(instances
+			(project "twin28xx"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "C43")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -5557,137 +5372,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21a578f0-95c7-4d80-adcf-ea015974993f")
-		(property "Reference" "C42"
-			(at 189.23 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 129.794 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 123.063 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C440198"
-			(at 189.23 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 127.254 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6d11387c-4706-4255-a23a-82bcf9b2e3f1")
-		)
-		(pin "1"
-			(uuid "e283ace4-5754-4c1b-8a49-14fa303ed68b")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C56")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 163.83 58.42 0)
 		(unit 1)
@@ -5771,7 +5455,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 72.39 0)
+		(at 191.77 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5782,7 +5466,7 @@
 		(fields_autoplaced yes)
 		(uuid "258cc000-c186-4dec-9b8f-ecadab5b7db7")
 		(property "Reference" "C37"
-			(at 189.23 66.04 0)
+			(at 191.77 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5792,7 +5476,7 @@
 			)
 		)
 		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 78.994 0)
+			(at 191.77 91.694 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5803,7 +5487,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 82.55 0)
+			(at 191.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5815,7 +5499,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 72.263 0)
+			(at 189.484 84.963 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5827,7 +5511,7 @@
 			)
 		)
 		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 72.39 0)
+			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5838,7 +5522,7 @@
 			)
 		)
 		(property "LCSC" "C440198"
-			(at 189.23 72.39 0)
+			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5849,7 +5533,7 @@
 			)
 		)
 		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 76.454 0)
+			(at 191.77 89.154 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5860,7 +5544,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 189.23 72.39 0)
+			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5871,7 +5555,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 189.23 72.39 0)
+			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5984,7 +5668,7 @@
 	)
 	(symbol
 		(lib_id "Basic_Capacitors_Resistors:CL05B104KB54PNC")
-		(at 189.23 62.23 0)
+		(at 191.77 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5995,7 +5679,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a8a6de9-e6fc-45aa-98f9-e26a64ad0256")
 		(property "Reference" "C36"
-			(at 189.23 55.88 0)
+			(at 191.77 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6005,7 +5689,7 @@
 			)
 		)
 		(property "Value" "CL05B104KB54PNC"
-			(at 189.23 64.77 0)
+			(at 191.77 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6016,7 +5700,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 189.23 72.39 0)
+			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6028,7 +5712,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/15869.html"
-			(at 186.944 62.103 0)
+			(at 189.484 74.803 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6040,7 +5724,7 @@
 			)
 		)
 		(property "Description" "100nF ±10% 50V Ceramic Capacitor X7R 0402"
-			(at 189.23 62.23 0)
+			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6051,7 +5735,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 189.23 62.23 0)
+			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6062,7 +5746,7 @@
 			)
 		)
 		(property "Symbol Name" "CL05B104KB54PNC"
-			(at 189.23 62.23 0)
+			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6073,7 +5757,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 189.23 62.23 0)
+			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6084,7 +5768,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 189.23 62.23 0)
+			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6216,137 +5900,6 @@
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "447b4e9c-02cd-42a8-80b9-c96b16dda2e2")
-		(property "Reference" "C41"
-			(at 189.23 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 119.634 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 112.903 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C440198"
-			(at 189.23 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 117.094 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "368fb30b-a53e-4fa5-9bac-949d8a0bd29e")
-		)
-		(pin "1"
-			(uuid "f282e451-ed45-4476-824d-7142187f73d2")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C55")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -6862,7 +6415,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 152.4 0)
+		(at 186.69 127 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6874,7 +6427,7 @@
 		(fields_autoplaced yes)
 		(uuid "93187373-aaba-49ca-88f2-425003286e1b")
 		(property "Reference" "#PWR070"
-			(at 184.15 158.75 0)
+			(at 186.69 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6885,7 +6438,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 157.48 0)
+			(at 186.69 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6895,7 +6448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 152.4 0)
+			(at 186.69 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6906,7 +6459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 152.4 0)
+			(at 186.69 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6917,7 +6470,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 152.4 0)
+			(at 186.69 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7075,126 +6628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Capacitor_SMD_UWRL:EEEFT1H331GP")
-		(at 189.23 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d2357ec-39e0-4afc-a322-60e028726598")
-		(property "Reference" "C43"
-			(at 189.23 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EEEFT1H331GP"
-			(at 189.23 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD__C:CAP-SMD_BD10.0-L10.3-W10.3-LS11.0-R-RD"
-			(at 189.23 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/245683.html"
-			(at 186.944 134.493 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C542207"
-			(at 189.23 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ec03fa9c-5085-4bd6-ae3a-211d9b3d2bd1")
-		)
-		(pin "1"
-			(uuid "ffdb6db7-b3e4-4067-8fbb-b16b59b393c1")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C57")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:KT-0603R")
 		(at 109.22 90.17 90)
 		(unit 1)
@@ -7310,137 +6743,6 @@
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
 					(reference "LED4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a53e3dac-97b1-4e7a-911a-46fb0191ffca")
-		(property "Reference" "C40"
-			(at 189.23 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 109.474 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 102.743 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C440198"
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 106.934 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3b74cf2a-0d28-474d-b212-44e6ff221773")
-		)
-		(pin "1"
-			(uuid "52b7cdd7-ae6d-4e44-9581-c8d5e79f2983")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C54")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -7687,7 +6989,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 194.31 58.42 0)
+		(at 196.85 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7698,7 +7000,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4453a37-3463-40b3-9638-65fc68318539")
 		(property "Reference" "#PWR071"
-			(at 194.31 62.23 0)
+			(at 196.85 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7709,7 +7011,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 194.31 53.34 0)
+			(at 196.85 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7719,7 +7021,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 58.42 0)
+			(at 196.85 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7730,7 +7032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 58.42 0)
+			(at 196.85 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7741,7 +7043,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 194.31 58.42 0)
+			(at 196.85 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8017,6 +7319,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Capacitor_SMD__C:VHXC0581V101MVCG")
+		(at 191.77 107.95 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4bbe874-2be5-41e4-83ad-a4b688e3c607")
+		(property "Reference" "C40"
+			(at 191.77 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VHXC0581V101MVCG"
+			(at 191.77 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+			(at 191.77 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5139738.html"
+			(at 194.056 107.823 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "100uF ±20% 35V polymer-hybrid aluminum electrolytic, SMD Ø6.3x5.8mm, 45mOhm ESR, AEC-Q200 (Ymin VHX)"
+			(at 191.77 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5139738"
+			(at 191.77 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bb5b48a-6beb-43c3-9ab1-24508c990a61")
+		)
+		(pin "2"
+			(uuid "b8563550-7f0f-4b5b-b8e6-27f78d7fe543")
+		)
+		(instances
+			(project "twin28xx"
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
+					(reference "C41")
+					(unit 1)
+				)
+				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 176.53 95.25 0)
 		(mirror y)
@@ -8093,125 +7493,6 @@
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
 					(reference "#FLG07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Capacitor_THT_UWRL:50PX330MEFC10X16")
-		(at 189.23 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "d9d6f28c-ee03-4a12-b890-37e4d2f0affa")
-		(property "Reference" "C44"
-			(at 189.23 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50PX330MEFC10X16"
-			(at 189.23 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT__C:CAP-TH_BD10.0-P5.00-D1.0-FD"
-			(at 189.23 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/44833.html"
-			(at 186.944 147.193 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C88789"
-			(at 189.23 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "46562c6d-0c24-4dd1-af8a-dddd4383719f")
-		)
-		(pin "2"
-			(uuid "34ff4b6c-422f-447a-a4db-ce627a0deac0")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C58")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -8345,268 +7626,6 @@
 				)
 				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
 					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5160c22-b13c-4d59-9e01-7e91a3d6b85e")
-		(property "Reference" "C38"
-			(at 189.23 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 89.154 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 82.423 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C440198"
-			(at 189.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 86.614 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "feab6299-5e8d-4f38-ad7a-8d6e5fc57f01")
-		)
-		(pin "1"
-			(uuid "2e7209cc-0cfb-4c33-841e-c12dedafee2d")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C52")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Basic_Capacitors_Resistors:GRM21BR61H106KE43L")
-		(at 189.23 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f82bb597-879b-475e-9932-79a1042b40df")
-		(property "Reference" "C39"
-			(at 189.23 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GRM21BR61H106KE43L"
-			(at 189.23 99.314 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/373011.html"
-			(at 186.944 92.583 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "10uF ±10% 50V Ceramic Capacitor X5R 0805"
-			(at 189.23 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C440198"
-			(at 189.23 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Symbol Name" "GRM21BR61H106KE43L"
-			(at 189.23 96.774 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 189.23 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "078c2724-74bc-4139-942d-2e35da1e1e17")
-		)
-		(pin "1"
-			(uuid "ee746ff3-ce8d-4755-9a19-98d17aecdac3")
-		)
-		(instances
-			(project "twin28xx"
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/7d96679b-218a-4072-9a5c-233e6796257a"
-					(reference "C53")
-					(unit 1)
-				)
-				(path "/64e594d2-0aaa-4fb1-a4b5-254d61e53018/e10c8a45-fef0-4bcf-826b-88ad718f533d"
-					(reference "C39")
 					(unit 1)
 				)
 			)
